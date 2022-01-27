@@ -28,6 +28,7 @@ import Landing from "views/examples/Landing.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
+import Chart from "components/HCTChart/Chart.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -38,6 +39,11 @@ ReactDOM.render(
         exact
         render={props => <Landing {...props} />}
       />
+       <Route path="/chart" 
+             exact 
+             render={props => <Chart {...props} />} />
+
+
       <Route path="/login-page" exact render={props => <Login {...props} />} />
       <Route
         path="/profile-page"
