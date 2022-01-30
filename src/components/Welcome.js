@@ -11,7 +11,7 @@ class Welcome extends Component {
   
       return (
         <Router>
-          <div className="App">
+          <div>
             <Chart />
             <Action/>
           </div>
