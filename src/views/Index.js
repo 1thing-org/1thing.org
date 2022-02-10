@@ -45,10 +45,8 @@ import Carousel from "./IndexSections/Carousel.js";
 import Icons from "./IndexSections/Icons.js";
 import Login from "./IndexSections/Login.js";
 import Download from "./IndexSections/Download.js";
-import Header from "components/Headers/Header.js";
-import TopSection from "components/TopSections/TopSection.js";
-import Footer from "components/Footers/Footer.js";
-import styles from "./index.module.css";
+// import Welcome from "components/Welcome.js";
+// import styles from "./index.module.css";
 
 class Index extends React.Component {
   // componentDidMount() {
@@ -59,9 +57,6 @@ class Index extends React.Component {
   render() {
     return (
       <>
-        <Header />
-        <TopSection />
-        <Footer />
         {/* <DemoNavbar />
         <main ref="main">
           <Hero />
