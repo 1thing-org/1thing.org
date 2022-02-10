@@ -45,17 +45,24 @@ import Carousel from "./IndexSections/Carousel.js";
 import Icons from "./IndexSections/Icons.js";
 import Login from "./IndexSections/Login.js";
 import Download from "./IndexSections/Download.js";
+import Header from "components/Headers/Header.js";
+import TopSection from "components/TopSections/TopSection.js";
+import Footer from "components/Footers/Footer.js";
+import styles from "./index.module.css";
 
 class Index extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
+  // componentDidMount() {
+  //   document.documentElement.scrollTop = 0;
+  //   document.scrollingElement.scrollTop = 0;
+  //   this.refs.main.scrollTop = 0;
+  // }
   render() {
     return (
       <>
-        <DemoNavbar />
+        <Header />
+        <TopSection />
+        <Footer />
+        {/* <DemoNavbar />
         <main ref="main">
           <Hero />
           <Buttons />
@@ -90,7 +97,7 @@ class Index extends React.Component {
           <Login />
           <Download />
         </main>
-        <CardsFooter />
+        <CardsFooter /> */}
       </>
     );
   }

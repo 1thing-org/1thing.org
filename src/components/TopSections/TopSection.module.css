@@ -1,0 +1,107 @@
+.topSection {
+    width: 1440px;
+    height: 568px;
+    background: url('../../assets/img/brand/blue.png');
+    /* background: linear-gradient(0deg, #FFF3D9, #FFF3D9); */
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.topSection > h1 {
+    margin: 96px 0px 0px 736px;
+    height: 112px;
+    width: 592px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    color: #080D1F;
+}
+
+.topSection > h4 {
+    margin: 16px 0px 0px 736px;
+    height: 24px;
+    width: 592px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: rgba(8, 13, 31, 0.7);
+}
+
+.topSection > a {
+    margin: 32px 0px 0px 736px;
+    height: 24px;
+    width: 280px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-decoration-line: underline;
+    
+    color: rgba(8, 13, 31, 0.8);
+}
+
+.topSection .subscribe > p {
+    margin: 88px 0px 0px 736px;
+    height: 32px;
+    width: 488px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: rgba(8, 13, 31, 0.7);
+}
+
+.topSection .subscribe .email input {
+    margin: 8px 0px 0px 736px;
+    height: 34px;
+    width: 352px;
+    border: 0px;
+    padding: 20px 16px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 30px 50px rgba(160, 170, 196, 0.1);
+    border-radius: 10px;
+
+    /* text */
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;    
+    color: rgba(8, 13, 31, 0.6);
+}
+.email > button {
+    width: 176px;
+    height: 56px;
+    padding: 0px;
+    border: 0px;
+    margin-left: 32px;
+    
+    background: #FFBD66;
+    box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1);
+    border-radius: 10px;
+
+    /* text on button */
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}

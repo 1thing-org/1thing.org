@@ -1,0 +1,113 @@
+/* position absolute version */
+.topSection img {
+    position: absolute;
+    width: 1440px;
+    height: 568px;
+    left: 0px;
+    top: 160px;
+
+    background: url('../../assets/img/brand/blue.png');
+}
+
+.topSection h1 {
+    position: absolute;
+    width: 592px;
+    height: 112px;
+    left: 736px;
+    top: 256px;
+    margin: 0px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+
+    color: #080D1F;
+}
+
+.topSection h4 {
+    position: absolute;
+    width: 592px;
+    height: 24px;
+    left: 736px;
+    top: 384px;
+
+/* H4 */
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    display: flex;
+    align-items: center;
+
+    color: rgba(8, 13, 31, 0.7);
+}
+
+.topSection a {
+    position: absolute;
+    width: 280px;
+    height: 24px;
+    left: 736px;
+    top: 440px;
+
+    /* Link style 1 */
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    text-decoration-line: underline;
+
+    color: rgba(8, 13, 31, 0.8);
+}
+
+.subscribe p {
+    position: absolute;
+    width: 488px;
+    height: 32px;
+    left: 736px;
+    top: 552px;
+
+    /* Paragraph */
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+
+    color: rgba(8, 13, 31, 0.7);
+}
+
+.email input {
+    position: absolute;
+    width: 488px;
+    height: 64px;
+    left: 736px;
+    top: 592px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 30px 50px rgba(160, 170, 196, 0.1);
+    border-radius: 10px;
+}
+
+.email button {
+    position: absolute;
+    width: 172px;
+    height: 56px;
+    left: 1048px;
+    top: 596px;
+    
+    background: #FFBD66;
+    border-radius: 10px;
+}
