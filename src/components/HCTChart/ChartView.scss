@@ -1,7 +1,7 @@
 
 
 .word{
-    zoom: 1;
+    // zoom: 1;
     width: 90%;
     margin-left: 5%;
     height: auto;
@@ -70,3 +70,16 @@
     //  text-align: center;
      color: #080D1F;
 }
+
+.behind-relative {
+    position: relative;
+    z-index: 1;
+}
+
+// .chart{
+//     margin-top: 10%;
+//     margin-bottom: 10%;
+//     width: auto;
+//     height: auto;
+// }
+

@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import moment from 'moment';
+import { useContext, useEffect, useState } from 'react';
 
-import Chart from "components/HCTChart/Chart.js";
+import ChartView from "components/HCTChart/ChartView.js";
+
 import Action from "components/Actions/Actions.js";
 
 
@@ -12,7 +15,9 @@ class Welcome extends Component {
       return (
         <Router>
           <div>
-            <Chart />
+            
+            <ChartView />
+           
             <Action/>
           </div>
         </Router>
