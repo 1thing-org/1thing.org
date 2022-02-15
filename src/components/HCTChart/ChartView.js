@@ -19,6 +19,17 @@ import { isObjEmpty } from '../../utility/Utils';
 import { getValidState } from '../../utility/Utils';
 import { useTranslation } from 'react-i18next';
 import'../../i18n';
+// import Row from "reactstrap/lib/Row";
+import {
+  Card,
+  CardBody,
+  Col,
+  Container,
+  FormGroup,
+  Label,
+  Row,
+  Button,
+} from 'reactstrap';
 
 const ChartView =() =>{
 // class ChartView extends React.Component {
@@ -206,7 +217,8 @@ const ChartView =() =>{
     // render() {
       return (
           <>
-    
+    <Col>
+    <Row>
           <div className="word">
 
             <div className="childword">
@@ -228,20 +240,23 @@ const ChartView =() =>{
               <h2 className="t2">Over 3000</h2>
             </div>
           </div>
+          </Row>
 
               <div className="chart">
+              <Row> 
+              
               <IncidentChart
                   className="behind-relative"
                   // color={"onething"}
                   chart_data={incidentTimeSeries}
                   state={selectedState}
                   isFirstLoadData={isFirstLoadData}
-                />
+                /></Row>
               </div>
 
               <div className="link1">
               <a className="vm1">View More &rarr;</a></div>
-        
+              </Col>
 
           </>
       );
