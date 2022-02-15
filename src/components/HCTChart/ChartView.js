@@ -4,7 +4,7 @@ import './ChartView.scss'
 
 import moment from 'moment';
 import { useContext, useEffect, useState } from 'react';
-
+import { Row, Col } from 'reactstrap';
 import "../../assets/vendor/nucleo/css/nucleo.css"
 import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
 import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
@@ -18,15 +18,12 @@ import { useRouter } from '../../utility/hooks/useRouter';
 import { isObjEmpty } from '../../utility/Utils';
 import { getValidState } from '../../utility/Utils';
 import { useTranslation } from 'react-i18next';
-import'../../i18n';
+import '../../i18n';
 
-const ChartView =() =>{
-// class ChartView extends React.Component {
+const ChartView = () => {
+  // class ChartView extends React.Component {
   const router = useRouter();
   const { t, i18n } = useTranslation();
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
 
   const [cookies, setCookie] = useCookies(['lang']);
   const lang_code = router.query.lang || cookies.lang || getBrowserLang();
@@ -44,7 +41,7 @@ const ChartView =() =>{
   const [isShowPer10kAsian, setIsShowPer10kAsian] = useState(false)
   const [incidents, setIncidents] = useState([]);
   const [selectedState, setSelectedState] = useState();
-  const [dateRange, setDateRange] = useState();
+  const [dateRange, setDateRange] = useState([moment().subtract(1, 'year'), moment()]);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true)
   const [incidentTimeSeries, setIncidentTimeSeries] = useState([
     {
@@ -97,12 +94,8 @@ const ChartView =() =>{
     return new_stats;
   };
   const loadData = (updateMap = false) => {
-    if (dateRange?.length != 2) return;
 
     setLoading(true);
-    incidentsService
-      .getIncidents(dateRange[0], dateRange[1], selectedState, selectedLangCode)
-      .then((incidents) => setIncidents(incidents));
     incidentsService
       .getStats(dateRange[0], dateRange[1], selectedState)
       .then((stats) => {
@@ -125,92 +118,24 @@ const ChartView =() =>{
   const generateUrl = (from, to, state, lang) => {
     return `/home?from=${moment(from).format('YYYY-MM-DD')}&to=${moment(
       to
-    ).format('YYYY-MM-DD')}${state ? '&state=' + state.toUpperCase() : ''}${
-      lang ? '&lang=' + lang : ''
-    }`;
+    ).format('YYYY-MM-DD')}${state ? '&state=' + state.toUpperCase() : ''}${lang ? '&lang=' + lang : ''
+      }`;
   };
 
-  const isParameterChanged = () => {
-    if (dateRange?.length != 2) {
-      return true;
-    }
-    const cururl = generateUrl(
-      router.query.from,
-      router.query.to,
-      router.query.state,
-      router.query.lang
-    );
-    const newurl = generateUrl(
-      dateRange[0],
-      dateRange[1],
-      selectedState,
-      selectedLangCode
-    );
-    return cururl !== newurl;
-  };
-  const saveHistory = () => {
-    if (!dateRange) return;
-    //if date ranger or state is changed, save in router history
-    if (!isParameterChanged()) return;
-    const newurl = generateUrl(
-      dateRange[0],
-      dateRange[1],
-      selectedState,
-      selectedLangCode
-    );
-
-    router.history.push(newurl);
-  };
-
-  useEffect(() => {
-    if (isParameterChanged()) {
-      const defaultDateRange = isObjEmpty(router.query)
-        ? [moment().subtract(1, 'years').toDate(), new Date()]
-        : [
-            moment(router.query.from).toDate(),
-            moment(router.query.to).toDate(),
-          ];
-
-      setSelectedState(getValidState(router.query.state));
-      setDateRange(defaultDateRange);
-    }
-  }, [router]);
-  useEffect(() => {
-    // console.log("selectedState:" + selectedState)
-    changeLanguage(selectedLangCode);
-    loadData();
-    saveHistory();
-  }, [selectedState, selectedLangCode]);
-  //update both incidents and map
   useEffect(() => {
     loadData(true);
-    saveHistory();
-  }, [dateRange]);
+  }, []);
 
-  // const { colors } = useContext(ThemeColors);
+  // render() {
+  return (
+    <>
+      <Row>
 
-  // handle date change
-  function handleDateRangeSelect(ranges) {
-    if (ranges) {
-      setDateRange(ranges);
-    }
-  }
-
-  const stateToggled = (state) => {
-    // console.log("This is:" + this);
-    const newState = state == selectedState ? null : state
-    // console.log("Toggle state:" + state + " selectedState:" + selectedState + " new state:" + newState)
-    setSelectedState(newState);
-  }
-    
-    // render() {
-      return (
-          <>
-    
+        <Col>
           <div className="word">
 
             <div className="childword">
-            <p className="t1">*Anti-Asian hate crimes</p>
+              <p className="t1">*Anti-Asian hate crimes</p>
               <p className="t1">have increased</p>
               <h2 className="t2">By 150%</h2>
               <p className="t3">*Note: data from 1 thing team</p>
@@ -221,32 +146,35 @@ const ChartView =() =>{
               <p className="t1"> happen</p>
               <h2 className="t2">Every Day</h2>
             </div>
-              
+
             <div className="childword">
               <p className="t1">*Anti-Asian attacks have </p>
               <p className="t1">been reported since Jan</p>
               <h2 className="t2">Over 3000</h2>
             </div>
           </div>
+        </Col>
+      </Row>
+      <Row className='match-height' width="100%" >
+        <Col>
+            <IncidentChart
+              className="behind-relative"
+              // color={"onething"}
+              chart_data={incidentTimeSeries}
+              state={selectedState}
+              isFirstLoadData={isFirstLoadData}
+            />
+          
+        </Col>
+      </Row>
+    
+      <div className="link1">
+        <a className="vm1">View More &rarr;</a></div>
 
-              <div className="chart">
-              <IncidentChart
-                  className="behind-relative"
-                  // color={"onething"}
-                  chart_data={incidentTimeSeries}
-                  state={selectedState}
-                  isFirstLoadData={isFirstLoadData}
-                />
-              </div>
 
-              <div className="link1">
-              <a className="vm1">View More &rarr;</a></div>
-        
+    </>
+  );
+  // }
+}
 
-          </>
-      );
-    // }
-  }
-  
-  export default ChartView;
-  
+export default ChartView;

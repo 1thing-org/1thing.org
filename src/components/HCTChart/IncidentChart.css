@@ -27,7 +27,10 @@
     text-shadow: 2px #FFFFFF;
 }
 
-
+.recharts-wrapper {
+    height: 350px;
+}
+  
 @media (max-width: 811px) {
     .add-data-button {
         margin-top: 40%;
@@ -45,3 +48,4 @@
         position: absolute;
     }
 } 
+
