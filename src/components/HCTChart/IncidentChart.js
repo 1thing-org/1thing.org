@@ -96,7 +96,9 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             </>
           ) : null}
           <ResponsiveContainer>
+          
             <ComposedChart height={300} data={chart_data}>
+            
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey='key' tickFormatter={formatXAxis} interval="preserveStartEnd" ticks={xticks} />
               <YAxis allowDecimals={false} orientation="left" interval="preserveStartEnd"
