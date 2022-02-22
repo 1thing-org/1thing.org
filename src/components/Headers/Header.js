@@ -23,7 +23,6 @@ export default class Header extends Component {
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </section>
                 </section>
-
             </ header>
         )
     }

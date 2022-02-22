@@ -1,0 +1,35 @@
+.ActionPageBody {
+    width: 1216px;
+    height: 1844px;
+    margin-top: 78px;
+    margin-left: 112px;
+}
+
+.ActionPageBody h1 {
+    /* width: 372px; */
+    height: 56px;
+    margin-left: 104px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    
+    color: #080D1F;
+}
+
+.ActionPageBody ul {
+    margin: 24px auto 156px 104px;
+    padding: 0px;
+}
+
+.ActionPageBody li {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: rgba(8, 13, 31, 0.7);
+}

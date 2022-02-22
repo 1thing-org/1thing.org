@@ -3,7 +3,7 @@ import { Button, Input } from "reactstrap";
 import { Link, Switch, Route } from "react-router-dom";
 import styles from './Footer.module.css';
 
-export default class Header extends Component {
+export default class Footer extends Component {
     render() {
         return (
             <footer>
