@@ -1,0 +1,35 @@
+.ActionPageTop {
+    width: 1440px;
+    height: 314px;
+    background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ActionPageTop > h1 {
+    /* width: 863px; */
+    height: 56px;
+    margin-top: 80px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+
+    text-align: center;
+    
+    color: #080D1F;
+}
+
+.ActionPageTop > button {
+    margin-bottom: 90px;
+    width: 280px;
+    height: 48px;
+    
+    background: #FFC466;
+    box-shadow: 0px 3px 3px rgba(18, 39, 92, 0.1);
+    border-radius: 10px;
+}

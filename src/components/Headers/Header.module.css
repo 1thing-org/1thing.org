@@ -1,0 +1,156 @@
+header {
+    /* width: 1440px;
+    height: 160px; */
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    /* width: 1217px; */
+    width: 84.51%;
+    /* height: 80px; */
+    height: 100%;
+
+    /* background: cadetblue; */
+    margin-top: 40px;
+    /* margin-top: 2.78%; */
+    margin-left: 112px;
+    /* margin-left: 7.78%; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    /* width: 6.57%; */
+    height: 80px;
+    /* height: 100%; */
+}
+
+.header nav {
+    width: 488px;
+    height: 24px;
+    /* width: 33.89%; */
+    /* height: 15%; */
+    display: flex;
+    flex-direction: row;
+}
+
+.header nav h4 {
+    width: 57px;
+    height: 24px;
+    /* width: 11.68%; */
+    /* height: 100%; */
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(8, 13, 31, 0.9);
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 44.75px 0px 0px;
+    /* margin: 0% 9.17% 0% 0%; */
+}
+.header nav :nth-child(3) {
+    width: 70px;
+    /* width: 14.34%; */
+}
+.header nav :nth-child(4) {
+    width: 51px;
+}
+.header nav :nth-child(5) {
+    width: 74px;
+    margin-right: 0px;
+}
+
+.socialMedia {
+    width: 177px;
+    height: 24px;
+    /* width: 12.29%; */
+    /* height: 15%; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialMedia :nth-child(1) {
+    position: static;
+    left: 0%;
+    right: 86.44%;
+    top: 8.33%;
+    bottom: 8.33%;
+    
+    color: rgba(8, 13, 31, 0.9);
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 31px 0px 0px;
+}
+.socialMedia :nth-child(2) {
+    position: static;
+    left: 31.07%;
+    right: 55.37%;
+    top: 8.33%;
+    bottom: 8.33%;
+    
+    color: rgba(8, 13, 31, 0.9);
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 31px 0px 0px;
+}
+.socialMedia :nth-child(3) {
+    position: static;
+    left: 62.15%;
+    right: 24.29%;
+    top: 0%;
+    bottom: 0%;
+    
+    color: rgba(8, 13, 31, 0.9);
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 31px 0px 0px;
+}
+.socialMedia :nth-child(4) {
+    position: static;
+    left: 93.22%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    color: rgba(8, 13, 31, 0.9);
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px;
+}
