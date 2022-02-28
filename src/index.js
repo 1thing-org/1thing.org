@@ -19,6 +19,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import * as serviceWorker from './serviceWorker'
+import './i18n';
 
 // import "assets/vendor/nucleo/css/nucleo.css";
 // import "assets/vendor/font-awesome/css/font-awesome.min.css";

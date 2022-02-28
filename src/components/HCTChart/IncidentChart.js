@@ -6,7 +6,7 @@ import { ComposedChart, Area, Bar, Legend, CartesianGrid, ResponsiveContainer, T
 import { stateFullName } from '../../utility/Utils';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
-import './IncidentChart.css'
+import './IncidentChart.scss'
 
 const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
   const formatXAxis = (tickVal) => { //yyyy-mm-dd to mm/dd/2021
@@ -69,7 +69,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
   }
   return (
     <Card>
-      <CardHeader>
+      {/* <CardHeader>
         <div>
           <CardTitle tag='h4'>
             {t("incident_chart.trend")}&nbsp;-&nbsp;
@@ -79,7 +79,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             {state ? " : " + stateFullName(state) : ""}
           </CardTitle>
         </div>
-      </CardHeader>
+      </CardHeader> */}
 
       <CardBody>
         <div className='recharts-wrapper'>
@@ -96,9 +96,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             </>
           ) : null}
           <ResponsiveContainer>
-          
             <ComposedChart height={300} data={chart_data}>
-            
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey='key' tickFormatter={formatXAxis} interval="preserveStartEnd" ticks={xticks} />
               <YAxis allowDecimals={false} orientation="left" interval="preserveStartEnd"

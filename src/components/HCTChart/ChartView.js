@@ -21,7 +21,6 @@ import { useTranslation } from 'react-i18next';
 import '../../i18n';
 
 const ChartView = () => {
-  // class ChartView extends React.Component {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
@@ -126,7 +125,6 @@ const ChartView = () => {
     loadData(true);
   }, []);
 
-  // render() {
   return (
     <>
       <Row>
@@ -159,7 +157,7 @@ const ChartView = () => {
         <Col>
             <IncidentChart
               className="behind-relative"
-              // color={"onething"}
+              color="onething"
               chart_data={incidentTimeSeries}
               state={selectedState}
               isFirstLoadData={isFirstLoadData}
@@ -174,7 +172,6 @@ const ChartView = () => {
 
     </>
   );
-  // }
 }
 
 export default ChartView;

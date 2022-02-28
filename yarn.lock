@@ -5963,10 +5963,10 @@
   dependencies:
     "cross-fetch" "3.1.5"
 
-"i18next@^21.6.11", "i18next@>= 19.0.0":
-  "integrity" "sha512-tJ2+o0lVO+fhi8bPkCpBAeY1SgkqmQm5NzgPWCQssBrywJw98/o+Kombhty5nxQOpHtvMmsxcOopczUiH6bJxQ=="
-  "resolved" "https://registry.npmjs.org/i18next/-/i18next-21.6.11.tgz"
-  "version" "21.6.11"
+"i18next@^21.6.12", "i18next@>= 19.0.0":
+  "integrity" "sha512-xlGTPdu2g5PZEUIE6TA1mQ9EIAAv9nMFONzgwAIrKL/KTmYYWufQNGgOmp5Og1PvgUji+6i1whz0rMdsz1qaKw=="
+  "resolved" "https://registry.npmjs.org/i18next/-/i18next-21.6.12.tgz"
+  "version" "21.6.12"
   dependencies:
     "@babel/runtime" "^7.12.0"
 
@@ -9787,10 +9787,10 @@
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   "version" "6.0.9"
 
-"react-i18next@^11.15.4":
-  "integrity" "sha512-jKJNAcVcbPGK+yrTcXhLblgPY16n6NbpZZL3Mk8nswj1v3ayIiUBVDU09SgqnT+DluyQBS97hwSvPU5yVFG0yg=="
-  "resolved" "https://registry.npmjs.org/react-i18next/-/react-i18next-11.15.4.tgz"
-  "version" "11.15.4"
+"react-i18next@^11.15.5":
+  "integrity" "sha512-vBWuVEQgrhZrGKpyv8FmJ7Zs5jRQWl794Tte7yzJ0okZqqi3jd6j2pLYNg441WcREsbIOvWdiDXbY7W6E93p1A=="
+  "resolved" "https://registry.npmjs.org/react-i18next/-/react-i18next-11.15.5.tgz"
+  "version" "11.15.5"
   dependencies:
     "@babel/runtime" "^7.14.5"
     "html-escaper" "^2.0.2"
