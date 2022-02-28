@@ -69,18 +69,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
   }
   return (
     <Card>
-      {/* <CardHeader>
-        <div>
-          <CardTitle tag='h4'>
-            {t("incident_chart.trend")}&nbsp;-&nbsp;
-            {(totalCases > 0) ? t("incident_chart.total_cases", { count: totalCases })
-              : t("incident_chart.no_data")
-            }
-            {state ? " : " + stateFullName(state) : ""}
-          </CardTitle>
-        </div>
-      </CardHeader> */}
-
       <CardBody>
         <div className='recharts-wrapper'>
           {(totalCases === 0 && !isFirstLoadData) ?  (

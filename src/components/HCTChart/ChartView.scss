@@ -50,17 +50,15 @@
 
 .link1{
     text-align: right;
-    margin-right: 7%;
+    margin-right: 8%;
     text-decoration: underline;
+    margin-bottom: 10%;
 }
 
 
 .vm1{
-    // position: absolute;
     width: 113px;
     height: 23px;
-    // left: 1144px;
-    // top: 1632px;
     // font-family: Quicksand;
     font-style: normal;
     // font-weight: bold;
@@ -74,9 +72,12 @@
 .behind-relative {
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
-// .chart{
- 
-// }
+.chart{
+ width: 90%;
+ margin-bottom: 10%;
+ margin-left: 5%;
+}
 

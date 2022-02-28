@@ -125,6 +125,7 @@ const ChartView = () => {
     loadData(true);
   }, []);
 
+
   return (
     <>
       <Row>
@@ -153,21 +154,22 @@ const ChartView = () => {
           </div>
         </Col>
       </Row>
-      <Row className='match-height' width="100%" >
-        <Col>
+      <Row>
+        <Col >
+            <div className="chart">
             <IncidentChart
               className="behind-relative"
-              color="onething"
+              // color="onething"
               chart_data={incidentTimeSeries}
               state={selectedState}
               isFirstLoadData={isFirstLoadData}
             />
-          
+          </div>
         </Col>
       </Row>
     
       <div className="link1">
-        <a className="vm1">View More &rarr;</a></div>
+        <a className="vm1" href="https://hatecrimetracker.1thing.org/home?from=2021-02-27&to=2022-02-27&lang=en">View More &rarr;</a></div>
 
 
     </>
