@@ -17,10 +17,10 @@ export default class Header extends Component {
                         <h4>Contact</h4>
                     </nav>
                     <section className={styles.socialMedia}>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i className="fa fa-envelope" aria-hidden="true"></i>
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                        <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
                     </section>
                 </section>
             </ header>
