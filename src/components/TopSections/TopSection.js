@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react'
 import { Link, Switch, Route } from "react-router-dom";
 import styles from './TopSection.module.css';
 import hero from '../../assets/img/brand/blue.png'
+import { Button, Input } from "reactstrap";
 
 
 export default class Header extends Component {
@@ -18,7 +19,8 @@ export default class Header extends Component {
                     <p>Join mailing list and keep educating yourself. ✊</p>
                     <section className={styles.email}>
                         <input placeholder='Email address'></input>
-                        <button>Subscribe</button>
+                        <Button color="onething" type="button"> Subscribe</Button>
+                        {/* <button>Subscribe</button> */}
                     </section>
                 </section>
             </section >

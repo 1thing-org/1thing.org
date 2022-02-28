@@ -67,7 +67,7 @@
     color: rgba(8, 13, 31, 0.7);
 }
 
-.topSection .subscribe .email input {
+.topSection .subscribe .email Input {
     margin: 8px 0px 0px 736px;
     height: 34px;
     width: 352px;
@@ -93,8 +93,8 @@
     border: 0px;
     margin-left: 32px;
     
-    background: #FFBD66;
-    box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1);
+    /* background: #FFBD66;
+    box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1); */
     border-radius: 10px;
 
     /* text on button */
@@ -104,4 +104,5 @@
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+    color: #000;
 }

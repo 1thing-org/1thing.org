@@ -12,7 +12,8 @@ export default class Footer extends Component {
                     <h3>Stay tune and sign up for newsletter. ✊</h3>
                     <section className={styles.email}>
                         <input placeholder='Email address'></input>
-                        <button>Subscribe</button>
+                        <Button color="onething" type="button"> Subscribe</Button>
+                        {/* <button>Subscribe</button> */}
                     </section>
                 </section>
 
