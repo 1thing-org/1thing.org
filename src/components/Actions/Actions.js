@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "reactstrap";
 
-import "../../assets/vendor/nucleo/css/nucleo.css"
-import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
-import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
+// import "../../assets/vendor/nucleo/css/nucleo.css"
+// import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
+// import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 
 
 import './Actions.scss'
@@ -25,12 +25,11 @@ class Actions extends React.Component {
             <p className="p1">Take small actions consistently. Achieve racial equality eventually</p>
             <Button className="btn" outline color="onething" type="button"> Share what you've done</Button>
             <p className="p1">Get inspirations about what you can help. 👇</p>
+           
             <div className="vector">
-              {/* <p className="down1">
-                <i className="ni ni-bold-down"></i>
-              </p>
-              <p className="down2"><i className="ni ni-bold-down"></i></p> */}
+            <i className="fa fa-angle-double-down" ></i>
             </div>
+
           </div>
 
           <div className="details">

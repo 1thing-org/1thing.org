@@ -30,7 +30,6 @@ ReactDOM.render(
 
   <BrowserRouter>
   <Switch>
-
   <Route path="/" exact render={props => <Welcome {...props} />} />
   <Route path="/actionpage" exact render={props => <ActionPage {...props} />} />
        <Redirect to="/" />

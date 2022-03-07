@@ -27,7 +27,7 @@ footer .subscribe {
     height: 32px;
     margin: 0px;
 
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -41,41 +41,41 @@ footer .subscribe {
     height: 56px;
 }
 .email > input {
-    width: 352px;
-    height: 56px;
+    width: 60vmin;
+    height: 8vmin;
     padding: 16px;
-    border: 0px;
+    border: 0;
     
     background: #FFFFFF;
     box-shadow: 0px 30px 50px rgba(180, 191, 221, 0.1);
     border-radius: 10px;
 
     /* text */
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 2.5vmin;
+    line-height: 3vmin;
     
     color: rgba(8, 13, 31, 0.6);
 }
 .email > button {
-    width: 176px;
-    height: 56px;
-    padding: 0px;
-    border: 0px;
-    margin-left: 32px;
+    width: 22vmin;
+    height: 8vmin;
+    padding: 0;
+    border: 0;
+    margin-left: 3vmin;
     
     background: #FFBD66;
     box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1);
     border-radius: 10px;
 
     /* text on button */
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 2.5vmin;
+    line-height: 3vmin;
     text-align: center;
     color: rgba(8, 13, 31, 0.9);
 }
@@ -88,6 +88,9 @@ footer .rightSide {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+
+    font-family: 'Quicksand';
+    font-style: normal;
 }
 
 footer .socialMedia {

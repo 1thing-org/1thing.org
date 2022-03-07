@@ -52,19 +52,23 @@
     color: rgba(8, 13, 31, 0.7);
 }
 
-.topSection > a {
+.topSection > p{
+    text-decoration: underline;
+}
+
+.topSection >p > a {
     // margin: 32px 0px 0px 736px;
     margin-left: 60%;
     // height: 2.4vmin;
     // width: 28vmin;
 
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
     font-size: 3vmin;
     line-height: 3.5vmin;
 
-    text-decoration-line: underline;
+    text-decoration: underline;
     
     color: rgba(8, 13, 31, 0.8);
 }
@@ -98,7 +102,7 @@
     border-radius: 1vmin;
 
     /* text */
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: normal;
     font-size: 2.5vmin;
@@ -118,7 +122,7 @@
     // border-radius: 1vmin;
 
     /* text on button */
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
     font-size: 2.5vmin;

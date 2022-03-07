@@ -24,26 +24,27 @@ width: 70%;
 .p1{
     margin-top: 1%;
     margin-bottom: 1%;
+    font-family: 'Quicksand';
+    font-style: normal;
 }
 
 .btn{
     margin-top: 1%;
     margin-bottom: 1%;
+    height: 8vmin;
+
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 2.5vmin;
+    line-height: 3vmin;
 }
 
-.vector{
+
+.vector i{
     color: rgba(8, 13, 31, 0.6);
-    transform: scale(2,1);
-    width: 100%;
+    transform: scale(3,2);
 }
-.down1{
-    width: 100%;
-}
-.down2{
-    margin-top: -2%;
-    width: 100%;
-}
-
 
 .box2{
     display: inline-block;
@@ -64,15 +65,13 @@ width: 70%;
     float: inline-end;
     float: right;
   
-    // font-family: Quicksand;
-font-style: normal;
-font-weight: 500;
-font-size: 1.8vmin;
-line-height: 3.2vmin;
-/* or 178% */
-
-
-color: rgba(8, 13, 31, 0.7);
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vmin;
+    line-height: 3.2vmin;
+    /* or 178% */
+    color: rgba(8, 13, 31, 0.7);
  
     }
 
@@ -86,7 +85,7 @@ color: rgba(8, 13, 31, 0.7);
 .word-left{ 
     float: inline-start;
     float: left;
-
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
     font-size: 1.8vmin;
@@ -94,8 +93,6 @@ color: rgba(8, 13, 31, 0.7);
 }
 
 .title2{
-    // font-family: Quicksand;
-    font-style: normal;
     font-weight: bold;
     font-size: 3.6vmin;
     line-height: 4.8vmin;
@@ -112,7 +109,6 @@ color: rgba(8, 13, 31, 0.7);
 .vm2{
      width: 11.3vmin;
      height: 2.3vmin;
-     // font-family: Quicksand;
      font-style: normal;
      font-size: 1.8vmin;
      // line-height: 22px;
@@ -125,3 +121,4 @@ color: rgba(8, 13, 31, 0.7);
     width: 40vmin;
     height: 40vmin;
 }
+

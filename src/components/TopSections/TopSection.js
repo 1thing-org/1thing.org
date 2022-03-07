@@ -17,7 +17,7 @@ export default class Header extends Component {
                     Improve racial equality
                 </h1>
                 <h4>Action, Share, Inspire! Together, we can make differences.</h4>
-                <a>Click 1 thing you can do &rarr;</a>
+                <p><a>Click 1 thing you can do &rarr;</a></p>
                 <section className={styles.subscribe}>
                     <p>Join mailing list and keep educating yourself. ✊</p>
                     <section className={styles.email}>
