@@ -1,35 +1,51 @@
 .ActionPageBody {
-    width: 1216px;
-    height: 1844px;
-    margin-top: 78px;
-    margin-left: 112px;
+    // width: 1216px;
+    width: 100%;
+    // height: 1844px;
+    
+    margin-bottom: 10%;
+    // margin-top: 78px;
+    // margin-left: 112px;
 }
 
 .ActionPageBody h1 {
     /* width: 372px; */
     height: 56px;
-    margin-left: 104px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    // margin-left: 104px;
+  
     
     font-family: Quicksand;
     font-style: normal;
     font-weight: bold;
-    font-size: 46px;
-    line-height: 56px;
+    font-size: 6vmin;
+    line-height: 9vmin;
+    // font-size: 46px;
+    // line-height: 56px;
     
     color: #080D1F;
 }
 
 .ActionPageBody ul {
-    margin: 24px auto 156px 104px;
+    // margin: 24px auto 156px 104px;
     padding: 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+
 }
 
 .ActionPageBody li {
     font-family: Quicksand;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 2.5vmin;
+    line-height: 4.5vmin;
+    width: 100%;
+    // font-size: 18px;
+    // line-height: 32px;
 
     color: rgba(8, 13, 31, 0.7);
 }
