@@ -24,7 +24,7 @@ class Actions extends React.Component {
             <img className="img1"  src={Smallactions} alt="SMALL ACTIONS BRING BIG CHANGES" />
             <p className="p1">Take small actions consistently. Achieve racial equality eventually</p>
             <Button className="btn" outline color="onething" type="button"> Share what you've done</Button>
-            <p className="p1">Get inspirations about what you can help. 👇</p>
+            <p className="p2">Get inspirations about what you can help. 👇</p>
            
             <div className="vector">
             <i className="fa fa-angle-double-down" ></i>
@@ -40,10 +40,10 @@ class Actions extends React.Component {
             </div>
               <div className="word-right">
                 <h3 className="title2">Raising Awareness</h3>
-                <p><li>Tell a friend or colleage that you are concerned about going on the street</li></p>
-                <p>nowadays because of anti-Asian hate crime incidents.</p>
-                <p><li>Having 1-on-1 with coworkers to talk about the issue.</li></p>
-                <p><li>In a team meeting, share with colleagues what you are doing to fight hate.</li></p>
+                <p className="p2"><li>Tell a friend or colleage that you are concerned about going on the street</li>
+                &thinsp;&emsp;  nowadays because of anti-Asian hate crime incidents.
+                <li>Having 1-on-1 with coworkers to talk about the issue.</li>
+                <li>In a team meeting, share with colleagues what you are doing to fight hate.</li></p>
                 <p className="link2"><a className="vm2">View More &rarr;</a></p>
               </div>
             </div>
@@ -54,10 +54,10 @@ class Actions extends React.Component {
               </div>
               <div className="word-left">
                 <h3 className="title2">Supporting anti-Asian hate victims</h3>
-                <p><li>Help effort to bring justice to victims.</li></p>
-                <p><li>Tell a hate incident/crime victim that you want to listen to their feelings. Tell a</li></p>
-                <p>  hate crime victim that you are here to help.</p>
-                <p><li>Donate to AAPI communities</li></p>
+                <p className="p2"><li>Help effort to bring justice to victims.</li>
+                <li>Tell a hate incident/crime victim that you want to listen to their feelings. Tell a</li>
+                &thinsp;&emsp; hate crime victim that you are here to help.
+                <li>Donate to AAPI communities</li></p>
                 <p className="link2"><a className="vm2">View More &rarr;</a></p>
               </div>
             </div>
@@ -68,10 +68,10 @@ class Actions extends React.Component {
               </div>
               <div className="word-right">
                 <h3 className="title2">Using your profession, expertise to help</h3>
-                <p><li>Make an art pice that reflects attitude to asian-hate and bias.</li></p>
-                <p><li>Propose or participate projects.</li></p>
-                <p><li>Create articles, arts, paintings, videos, music to advocate social equality. Or </li></p>
-                <p> simply share those artifacts you found helpful.</p>
+                <p className="p2"><li>Make an art pice that reflects attitude to asian-hate and bias.</li>
+                <li>Propose or participate projects.</li>
+                <li>Create articles, arts, paintings, videos, music to advocate social equality. Or </li>
+                &thinsp;&emsp; simply share those artifacts you found helpful.</p>
                 <p className="link2"><a className="vm2">View More &rarr;</a></p>       
               </div>
             </div>
@@ -82,11 +82,11 @@ class Actions extends React.Component {
               </div>
               <div className="word-left">
                 <h3 className="title2">Promote cross racial understanding</h3>
-                <p><li>Ask a black/latinex/...friend about challenges they experienced while growing </li></p>
-                <p>up and living in the US. Try to relate to them and perhaps share your</p>
-                <p> chanllenge with what the AAPI community is facing.</p>
-                <p><li>Invite friends from different ethnic groups to join your own ethnic group</li> </p>
-                <p>or team to tell their stories.</p>
+                <p className="p2"><li>Ask a black/latinex/...friend about challenges they experienced while growing </li>
+                &thinsp;&emsp; up and living in the US. Try to relate to them and perhaps share your<br />
+                &thinsp;&emsp; chanllenge with what the AAPI community is facing.
+                <li>Invite friends from different ethnic groups to join your own ethnic group</li>
+                &thinsp;&emsp; or team to tell their stories.</p>
                 <p className="link2"><a className="vm2">View More &rarr;</a></p>          
               </div>
             </div>

@@ -1,9 +1,9 @@
 footer {
     /* position: relative; */
     width: 100%;
-    height: auto;
+    // height: auto;
     // width: 1440px;
-    // height: 264px;
+    height: 264px;
     background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
 
     display: flex;
@@ -15,7 +15,8 @@ footer {
 footer .subscribe {
     width: 592px;
     height: 112px;
-    margin: 72px 0px 80px 112px;
+    // margin: 72px 0px 80px 112px;
+    margin-left: 10%;
 
     display: flex;
     flex-direction: column;
@@ -30,8 +31,10 @@ footer .subscribe {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 3.5vmin;
+    line-height: 4.5vmin;
+    // font-size: 24px;
+    // line-height: 32px;
     
     color: #080D1F;
 }
@@ -82,7 +85,8 @@ footer .subscribe {
 
 footer .rightSide {
     height: 72px;
-    margin: 112px 72px 80px 0px;
+    // margin: 112px 72px 80px 0px;
+    margin-right: 10%;
 
     display: flex;
     flex-direction: column;
@@ -91,11 +95,17 @@ footer .rightSide {
 
     font-family: 'Quicksand';
     font-style: normal;
+    font-weight: 500;
+    font-size: 2.5vmin;
+    line-height: 3.5vmin;
+
+    color: rgba(8, 13, 31, 0.9);
 }
 
 footer .socialMedia {
-    width: 177px;
-    height: 24px;
+    width: 15vw;
+    // width: 150px;
+    // height: 24px;
 
     display: flex;
     flex-direction: row;

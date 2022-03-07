@@ -1,6 +1,7 @@
 .box{
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 10%;
 }
 
 
@@ -24,8 +25,20 @@ width: 70%;
 .p1{
     margin-top: 1%;
     margin-bottom: 1%;
+    font-size: 3vmin;
+    line-height: 3.5vmin;
     font-family: 'Quicksand';
     font-style: normal;
+    font-weight: 500;
+}
+
+.p2{
+    margin-top: 5%;
+    font-size: 2.5vmin;
+    line-height: 4.5vmin;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
 }
 
 .btn{
@@ -65,11 +78,11 @@ width: 70%;
     float: inline-end;
     float: right;
   
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.8vmin;
-    line-height: 3.2vmin;
+    // font-family: 'Quicksand';
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 1.8vmin;
+    // line-height: 3.2vmin;
     /* or 178% */
     color: rgba(8, 13, 31, 0.7);
  
@@ -85,17 +98,19 @@ width: 70%;
 .word-left{ 
     float: inline-start;
     float: left;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.8vmin;
-    line-height: 3.2vmin;
+    // font-family: 'Quicksand';
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 1.8vmin;
+    // line-height: 3.2vmin;
 }
 
 .title2{
     font-weight: bold;
-    font-size: 3.6vmin;
-    line-height: 4.8vmin;
+    font-size: 5vmin;
+    line-height: 7vmin;
+    font-family: 'Quicksand';
+    font-style: normal;
 /* identical to box height, or 133% */
 
 
@@ -106,11 +121,13 @@ width: 70%;
     text-decoration: underline;
     text-align: left;
 }
+
 .vm2{
-     width: 11.3vmin;
-     height: 2.3vmin;
+    //  width: 11.3vmin;
+    //  height: 2.3vmin;
      font-style: normal;
-     font-size: 1.8vmin;
+     font-size: 2.5vmin;
+     line-height: 3vmin;
      // line-height: 22px;
  /* identical to box height */
       color: #080D1F;

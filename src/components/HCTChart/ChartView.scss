@@ -1,6 +1,8 @@
 .hcr{
     width: 80%;
     margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .word{
@@ -8,7 +10,7 @@
     margin-left: 5%;
     height: auto;
     margin-bottom: 5%;
-    margin-top: 5%;
+    
     font-family: 'Quicksand';
     font-style: normal;
 }
@@ -21,22 +23,22 @@
 }
 
 .t1{
-    // font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
-    font-size: 2.4vmin;
-    line-height: 3.2vmin;
+    font-size: 3.5vmin;
+    line-height: 4.5vmin;
     /* or 133% */
     text-align: center;
     color: #080D1F;
 }
 
 .t2{
-    // font-family:Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
-    font-size: 4.8vmin;
-    line-height: 6.4vmin;
+    font-size: 7vmin;
+    line-height: 9vmin;
     /* identical to box height, or 133% */
     text-align: center;
     color: #CC0B25;
@@ -46,10 +48,14 @@
     // font-family: Quicksand;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.4vmin;
-    line-height: 2.4vmin;
+    font-size: 2vmin;
+    line-height: 3.5vmin;
     /* identical to box height, or 171% */
     color: rgba(8, 13, 31, 0.7);
+    float: left;
+    margin-left: 5%;
+    clear: both;
+    margin-bottom: 5%;
 }
 
 .chart{
@@ -70,7 +76,6 @@
     text-align: right;
     margin-right: 8%;
     text-decoration: underline;
-    margin-bottom: 5%;
 }
 
 
@@ -81,7 +86,8 @@
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: bold;
-    font-size: 1.8vmin;
+    font-size: 3vmin;
+    line-height: 3.5vmin;
     // line-height: 22px;
 /* identical to box height */
     //  text-align: center;

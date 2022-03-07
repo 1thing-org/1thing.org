@@ -136,8 +136,8 @@ const ChartView = () => {
               <p className="t1">*Anti-Asian hate crimes</p>
               <p className="t1">have increased</p>
               <h2 className="t2">By 150%</h2>
-              <p className="t3">*Note: data from 1 thing team</p>
             </div>
+           
 
             <div className="childword">
               <p className="t1">*Anti-Asian hate crimes</p>
@@ -150,12 +150,14 @@ const ChartView = () => {
               <p className="t1">been reported since Jan</p>
               <h2 className="t2">Over 3000</h2>
             </div>
+
+            <p className="t3">*Note: data from 1 thing team</p>
           </div>
+          
 
           <div className="chart">
             <IncidentChart
               className="behind-relative"
-              // color="onething"
               chart_data={incidentTimeSeries}
               state={selectedState}
               isFirstLoadData={isFirstLoadData}

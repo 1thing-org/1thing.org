@@ -40,16 +40,19 @@ header {
 }
 
 .header nav h4 {
+    
     width: 57px;
     height: 24px;
     /* width: 11.68%; */
     /* height: 100%; */
 
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 3vmin;
+    line-height: 3.5vmin;
+    // font-size: 20px;
+    // line-height: 24px;
     
     display: flex;
     align-items: center;
