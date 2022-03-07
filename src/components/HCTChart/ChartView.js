@@ -127,10 +127,9 @@ const ChartView = () => {
 
 
   return (
-    <>
-      <Row>
-
-        <Col>
+    <div className="hcr">
+    
+        
           <div className="word">
 
             <div className="childword">
@@ -152,11 +151,8 @@ const ChartView = () => {
               <h2 className="t2">Over 3000</h2>
             </div>
           </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col >
-            <div className="chart">
+
+          <div className="chart">
             <IncidentChart
               className="behind-relative"
               // color="onething"
@@ -165,14 +161,12 @@ const ChartView = () => {
               isFirstLoadData={isFirstLoadData}
             />
           </div>
-        </Col>
-      </Row>
-    
+          
       <div className="link1">
-        <a className="vm1" href="https://hatecrimetracker.1thing.org/home?from=2021-02-27&to=2022-02-27&lang=en">View More &rarr;</a></div>
+        <a className="vm1" href="https://hatecrimetracker.1thing.org/">View More &rarr;</a>
+      </div>
 
-
-    </>
+    </div>
   );
 }
 

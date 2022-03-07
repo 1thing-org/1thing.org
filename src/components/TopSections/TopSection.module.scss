@@ -1,0 +1,128 @@
+.bg{
+    margin-top: 5%;
+    background: url('../../assets/imag/Hero.png')  no-repeat;
+    width: 100%;
+    height: 39.45vw;
+    background-size:100% 100%;
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.topSection {
+  
+   width: 100%;
+
+
+    // width: 1440px;
+    // height: 568px;
+ 
+    // display: flex;
+    // flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.topSection > h1 {
+    // margin: 9.6vmin 0vmin 0vmin 73.6vmin;
+    margin-left: 60%;
+    // height: 22.4vmin;
+    // width: 118.4vmin;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7vmin;
+    // line-height: 11.2vmin;
+    color: #080D1F;
+}
+
+.topSection > h4 {
+    // margin: 1.6vmin 0vmin 0vmin 73.6vmin;
+    margin-left: 60%;
+    // height: 2.4vmin;
+    // width: 59.2vmin;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vmin;
+    line-height: 3.5vmin;
+    
+    color: rgba(8, 13, 31, 0.7);
+}
+
+.topSection > a {
+    // margin: 32px 0px 0px 736px;
+    margin-left: 60%;
+    // height: 2.4vmin;
+    // width: 28vmin;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vmin;
+    line-height: 3.5vmin;
+
+    text-decoration-line: underline;
+    
+    color: rgba(8, 13, 31, 0.8);
+}
+
+.topSection .subscribe > p {
+    // margin: 88px 0px 0px 736px;
+    margin-left: 60%;
+    // height: 3.2vmin;
+    // width: 48.8vmin;
+    margin-top: 10%;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5vmin;
+    line-height: 3vmin;
+
+    color: rgba(8, 13, 31, 0.7);
+}
+
+.topSection .subscribe .email Input {
+    // margin: 8px 0px 0px 736px;
+    margin-left: 60%;
+    height: 8vmin;
+    width: 45vmin;
+    border: 0;
+    padding: 2vmin 1.6vmin;
+
+    background: #FFFFFF;
+    // box-shadow: 0px 30px 50px rgba(160, 170, 196, 0.1);
+    border-radius: 1vmin;
+
+    /* text */
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vmin;
+    line-height: 3vmin;    
+    color: rgba(8, 13, 31, 0.6);
+}
+.email > button {
+    width: 22vmin;
+    height: 8vmin;
+    // padding: 0px;
+    // border: 0px;
+    margin-left: 3vmin;
+    // margin-left: 32px;
+    
+    /* background: #FFBD66;
+    box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1); */
+    // border-radius: 1vmin;
+
+    /* text on button */
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5vmin;
+    line-height: 3vmin;
+    text-align: center;
+    color: #000;
+}

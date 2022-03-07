@@ -1,12 +1,7 @@
 .box{
-    width: 100%;
-    height: auto;
+    width: 80%;
+    margin-left: 10%;
 }
-
-// .details{
-
-// }
-
 
 
 .title{
@@ -23,7 +18,7 @@ width: 100%;
 }
 
 .img1{
-width: 74%;
+width: 70%;
 }
 
 .p1{
@@ -39,16 +34,22 @@ width: 74%;
 .vector{
     color: rgba(8, 13, 31, 0.6);
     transform: scale(2,1);
+    width: 100%;
+}
+.down1{
+    width: 100%;
 }
 .down2{
     margin-top: -2%;
+    width: 100%;
 }
+
 
 .box2{
     display: inline-block;
     margin-top: 10%;
-    margin-left: 10%;
-    width: 80%;
+    width: 86%;
+    margin-left: 8%;
 }
 
 .img2-left{
@@ -66,8 +67,8 @@ width: 74%;
     // font-family: Quicksand;
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 32px;
+font-size: 1.8vmin;
+line-height: 3.2vmin;
 /* or 178% */
 
 
@@ -87,21 +88,21 @@ color: rgba(8, 13, 31, 0.7);
     float: left;
 
     font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 32px;
+    font-weight: 500;
+    font-size: 1.8vmin;
+    line-height: 3.2vmin;
 }
 
 .title2{
     // font-family: Quicksand;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.6vmin;
+    line-height: 4.8vmin;
 /* identical to box height, or 133% */
 
 
-color: #080D1F;
+    color: #080D1F;
 }
 
 .link2{
@@ -109,13 +110,18 @@ color: #080D1F;
     text-align: left;
 }
 .vm2{
-     width: 113px;
-     height: 23px;
+     width: 11.3vmin;
+     height: 2.3vmin;
      // font-family: Quicksand;
      font-style: normal;
-     font-size: 18px;
+     font-size: 1.8vmin;
      // line-height: 22px;
  /* identical to box height */
       color: #080D1F;
     
+}
+
+.details img{
+    width: 40vmin;
+    height: 40vmin;
 }

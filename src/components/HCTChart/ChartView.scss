@@ -1,28 +1,30 @@
-
+.hcr{
+    width: 80%;
+    margin-left: 10%;
+}
 
 .word{
     // zoom: 1;
     width: 90%;
     margin-left: 5%;
     height: auto;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .childword{
     float: left;
     width: 33.3%;
     text-align: center;
-    margin-bottom: 10%;
-
+    margin-bottom: 5%;
 }
 
 .t1{
     // font-family: Quicksand;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 2.4vmin;
+    line-height: 3.2vmin;
     /* or 133% */
     text-align: center;
     color: #080D1F;
@@ -32,8 +34,8 @@
     // font-family:Quicksand;
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 64px;
+    font-size: 4.8vmin;
+    line-height: 6.4vmin;
     /* identical to box height, or 133% */
     text-align: center;
     color: #CC0B25;
@@ -43,32 +45,18 @@
     // font-family: Quicksand;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.4vmin;
+    line-height: 2.4vmin;
     /* identical to box height, or 171% */
     color: rgba(8, 13, 31, 0.7);
 }
 
-.link1{
-    text-align: right;
-    margin-right: 8%;
-    text-decoration: underline;
-    margin-bottom: 10%;
-}
-
-
-.vm1{
-    width: 113px;
-    height: 23px;
-    // font-family: Quicksand;
-    font-style: normal;
-    // font-weight: bold;
-    font-size: 18px;
-    // line-height: 22px;
-/* identical to box height */
-    //  text-align: center;
-     color: #080D1F;
-}
+.chart{
+    width: 86%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    clear: both;
+   }
 
 .behind-relative {
     position: relative;
@@ -76,9 +64,28 @@
     text-align: center;
 }
 
-.chart{
- width: 90%;
- margin-bottom: 10%;
- margin-left: 5%;
+
+.link1{
+    text-align: right;
+    margin-right: 8%;
+    text-decoration: underline;
+    margin-bottom: 5%;
 }
+
+
+.vm1{
+   
+    width: 11.3vmin;
+    height: 2.3vmin;
+    // font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8vmin;
+    // line-height: 22px;
+/* identical to box height */
+    //  text-align: center;
+     color: #080D1F;
+}
+
+
 

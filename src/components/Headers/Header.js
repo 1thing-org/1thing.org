@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Link, Switch, Route } from "react-router-dom";
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 import logo3 from '../../assets/imag/logo.png';
 
 export default class Header extends Component {

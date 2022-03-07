@@ -94,9 +94,9 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
               <YAxis yAxisId="right" orientation="right" allowDecimals={false} interval="preserveStartEnd"
                 label={{ value: t("monthly_count"), angle: 90, position: 'insideRight' }} />
               <Tooltip content={<CustomTooltip />} />
-              <Area name={t("monthly_count")} type="monotone" dataKey="monthly_cases" fill="#8884d8" stroke="#8884d8" yAxisId="right"
+              <Area name={t("monthly_count")} type="monotone" dataKey="monthly_cases" fill="rgba(155, 161, 225, 0.5)" stroke="rgba(155, 161, 225, 0.5)" yAxisId="right"
                 onMouseOver={() => setTooltip('monthly')} />
-              <Bar name={t("daily_count")} dataKey='value' stroke={chart_data.length > 60 ? color : undefined} fill={color} strokeWidth={3}
+              <Bar name={t("daily_count")} dataKey='value' stroke={chart_data.length > 60 ? color : undefined} fill="#107E8D" strokeWidth={3}
                 onMouseOver={() => setTooltip('daily')} />
               <Legend wrapperStyle={{ position: 'relative', marginTop: '4px' }} />
             </ComposedChart>

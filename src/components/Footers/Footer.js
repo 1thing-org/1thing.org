@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Button, Input } from "reactstrap";
 import { Link, Switch, Route } from "react-router-dom";
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 
 export default class Footer extends Component {
     render() {
