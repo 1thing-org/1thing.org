@@ -20,7 +20,6 @@ export default class Header extends Component {
                     <section className={styles.email}>
                         <input placeholder='Email address'></input>
                         <Button color="onething" type="button"> Subscribe</Button>
-                        {/* <button>Subscribe</button> */}
                     </section>
                 </section>
             </section >

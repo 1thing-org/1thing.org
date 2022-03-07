@@ -8,7 +8,8 @@ export default class ActionPageTop extends Component {
         return (
             <div className={styles.ActionPageTop}>
                 <h1>Do 1 thing to mitigate social inequality.</h1>
-                <button>Share what you’ve done</button>
+                <Button color="onething" type="button"> Share what you’ve done </Button>
+                {/* <button>Share what you’ve done</button> */}
             </div>
         )
     }

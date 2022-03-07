@@ -1,7 +1,10 @@
 .topSection {
+    margin-top: 5%;
+    /* width: 100%; */
     width: 1440px;
     height: 568px;
-    background: url('../../assets/img/brand/blue.png');
+    background: url('../../assets/imag/Hero.png');
+    background-size: contain;
     /* background: linear-gradient(0deg, #FFF3D9, #FFF3D9); */
 
     display: flex;
