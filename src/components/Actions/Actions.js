@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "reactstrap";
-
+import { Link } from "react-router-dom";
 // import "../../assets/vendor/nucleo/css/nucleo.css"
 // import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
 // import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
@@ -44,7 +44,7 @@ class Actions extends React.Component {
                 &thinsp;&emsp;  nowadays because of anti-Asian hate crime incidents.
                 <li>Having 1-on-1 with coworkers to talk about the issue.</li>
                 <li>In a team meeting, share with colleagues what you are doing to fight hate.</li></p>
-                <p className="link2"><a className="vm2">View More &rarr;</a></p>
+                <p className="link2"><Link to="/actionpage" className="vm2">View More &rarr;</Link></p>
               </div>
             </div>
 
@@ -58,7 +58,7 @@ class Actions extends React.Component {
                 <li>Tell a hate incident/crime victim that you want to listen to their feelings. Tell a</li>
                 &thinsp;&emsp; hate crime victim that you are here to help.
                 <li>Donate to AAPI communities</li></p>
-                <p className="link2"><a className="vm2">View More &rarr;</a></p>
+                <p className="link2"><a className="vm2"><Link to="/actionpage">View More &rarr;</Link></a></p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ class Actions extends React.Component {
                 <li>Propose or participate projects.</li>
                 <li>Create articles, arts, paintings, videos, music to advocate social equality. Or </li>
                 &thinsp;&emsp; simply share those artifacts you found helpful.</p>
-                <p className="link2"><a className="vm2">View More &rarr;</a></p>       
+                <p className="link2"><a className="vm2"><Link to="/actionpage">View More &rarr;</Link></a></p>       
               </div>
             </div>
 
@@ -87,7 +87,7 @@ class Actions extends React.Component {
                 &thinsp;&emsp; chanllenge with what the AAPI community is facing.
                 <li>Invite friends from different ethnic groups to join your own ethnic group</li>
                 &thinsp;&emsp; or team to tell their stories.</p>
-                <p className="link2"><a className="vm2">View More &rarr;</a></p>          
+                <p className="link2"><a className="vm2"><Link to="/actionpage">View More &rarr;</Link></a></p>          
               </div>
             </div>
 

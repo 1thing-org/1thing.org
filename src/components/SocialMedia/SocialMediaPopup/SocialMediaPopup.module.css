@@ -1,0 +1,10 @@
+.SocialMediaPopup {
+    position: absolute;
+    width: 640px;
+    height: 450px;
+    left: 400px;
+    top: 287px;
+
+    background: #FFFFFF;
+    border-radius: 24px;
+}

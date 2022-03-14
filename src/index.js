@@ -25,15 +25,17 @@ import "assets/vendor/font-awesome/css/font-awesome.min.css";
 
 import Welcome from "components/Welcome.js";
 import ActionPage from "components/ActionPage/ActionPage";
+import ScrollToTop from "components/ScrollToTop/ScrollToTop";
 
 ReactDOM.render(
 
   <BrowserRouter>
-  <Switch>
-  <Route path="/" exact render={props => <Welcome {...props} />} />
-  <Route path="/actionpage" exact render={props => <ActionPage {...props} />} />
-       <Redirect to="/" />
-       </Switch>
+    <ScrollToTop/>
+    <Switch>
+      <Route path="/" exact render={props => <Welcome {...props} />} />
+      <Route path="/actionpage" exact render={props => <ActionPage {...props} />} />
+      <Redirect to="/" />
+    </Switch>
    </BrowserRouter>,
 
   document.getElementById("root")
