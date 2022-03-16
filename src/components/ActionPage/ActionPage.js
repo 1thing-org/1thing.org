@@ -10,14 +10,16 @@ class ActionPage extends Component {
     render() {
 
         return (
-            <Router>
+            // <Router>
+            <>
                 <div>
                     <Header />
                     <ActionPageTop />
                     <ActionPageBody />
                     <Footer />
                 </div>
-            </Router>
+            </>
+            //</Router>
         )
 
     }

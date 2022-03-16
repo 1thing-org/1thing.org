@@ -16,15 +16,17 @@ class Welcome extends Component {
     render() {
   
       return (
-        <Router>
-          <div>
+        // <Router>
+        <>
+        <div>
           <Header />
           <TopSection />
           <ChartView />
           <Action/>
           <Footer />
           </div>
-        </Router>
+        </>
+        // </Router>
       )
   
     }

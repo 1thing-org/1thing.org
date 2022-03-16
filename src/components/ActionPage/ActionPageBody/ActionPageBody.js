@@ -8,7 +8,7 @@ export default class ActionPageBody extends Component {
         return (
             <div className={styles.ActionPageBody}>
                 <div>
-                    <h1>ActionPageBody</h1>
+                    <h1>Raise awareness</h1>
                     <ul>
                         <li>
                             Tell a friend or colleague that you are concerned about going on the street nowadays because of anti-Asian hate crime incidents.
@@ -63,7 +63,7 @@ export default class ActionPageBody extends Component {
                     </ul>
                 </div>
                 <div>
-                    <h1>ActionPageBody</h1>
+                    <h1>Use your profession & expertise to help</h1>
                     <ul>
                         <li>
                             Make an art piece that reflects your attitude to asian-hate and bias
