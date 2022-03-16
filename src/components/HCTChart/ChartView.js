@@ -5,43 +5,21 @@ import './ChartView.scss'
 import moment from 'moment';
 import { useContext, useEffect, useState } from 'react';
 import { Row, Col } from 'reactstrap';
-import "../../assets/vendor/nucleo/css/nucleo.css"
 import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
 import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 import IncidentChart from './IncidentChart';
 
-import { useCookies } from 'react-cookie';
 import * as incidentsService from '../../services/incidents';
-import { getBrowserLang, SUPPORTED_LANGUAGES } from '../../utility/Languages';
 import { useRouter } from '../../utility/hooks/useRouter';
-
-import { isObjEmpty } from '../../utility/Utils';
-import { getValidState } from '../../utility/Utils';
-import { useTranslation } from 'react-i18next';
-import '../../i18n';
 
 const ChartView = () => {
   const router = useRouter();
-  const { t, i18n } = useTranslation();
 
-  const [cookies, setCookie] = useCookies(['lang']);
-  const lang_code = router.query.lang || cookies.lang || getBrowserLang();
-  const [selectedLangCode, setSelectedLangCode] = useState(lang_code);
-  const support_languages = [];
-
-  Object.entries(SUPPORTED_LANGUAGES).forEach(([lang_code, lang_name]) => {
-    support_languages.push({
-      value: lang_code,
-      label: lang_name,
-    });
-  });
-
-  // const isMobile = (window.innerWidth <= 786)
-  const [isShowPer10kAsian, setIsShowPer10kAsian] = useState(false)
-  const [incidents, setIncidents] = useState([]);
-  const [selectedState, setSelectedState] = useState();
   const [dateRange, setDateRange] = useState([moment().subtract(1, 'year'), moment()]);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true)
+  const [totalAnnualCases, setTotalCases] = useState(0);
+  const [totalLastMonthCases, setTotalLastMonthCases] = useState(0);
+  const [lastMonthName, setLastMonthName] = useState("");
   const [incidentTimeSeries, setIncidentTimeSeries] = useState([
     {
       monthly_cases: 0,
@@ -49,13 +27,8 @@ const ChartView = () => {
       value: 0,
     },
   ]);
-  const [incidentAggregated, setIncidentAggregated] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const setSelectedLang = (lang_code) => {
-    setCookie('lang', lang_code);
-    setSelectedLangCode(lang_code);
-  };
   // stats [{'2021-01-02:1}, {'2021-01-01:1}...]  dates descending
   // Remove date out of the range, and insert days that does not have data
   // start_date, end_date: Date
@@ -92,37 +65,47 @@ const ChartView = () => {
     }
     return new_stats;
   };
-  const loadData = (updateMap = false) => {
+  const calculateTotalCases = (stats) => {
+    let total = 0;
+    stats.forEach(stat => {
+      total += stat.value;
+    });
+    return total;
+  };
+  const calculateTotalCasesOfMonth = (stats, month /* string 2022-01 */) => {
+    let total = 0;
+    stats.forEach(stat => {
+      if (stat.key.substring(0, 7) == month) {
+        total += stat.value;
+      }
+    });
+    return total;
+  };
+  const loadData = () => {
 
     setLoading(true);
     incidentsService
-      .getStats(dateRange[0], dateRange[1], selectedState)
+      .getStats(dateRange[0], dateRange[1])
       .then((stats) => {
-        setIncidentTimeSeries(
-          mergeDate(
-            stats.stats,
-            dateRange[0],
-            dateRange[1],
-            stats.monthly_stats
-          )
+        const mergedData =  mergeDate(
+          stats.stats,
+          dateRange[0],
+          dateRange[1],
+          stats.monthly_stats
         );
-        if (updateMap) {
-          setIncidentAggregated(stats.total);
-        }
+        setIncidentTimeSeries( mergedData );
+        setTotalCases(calculateTotalCases(mergedData));
+        const lastMonthName = moment().subtract(1, 'month').format('MMMM');
+        const lastMonth = moment().subtract(1, 'month').format('YYYY-MM');
+        setTotalLastMonthCases(calculateTotalCasesOfMonth(mergedData, lastMonth));
+        setLastMonthName(lastMonthName);
         setLoading(false);
         setIsFirstLoadData(false)
       });
   };
 
-  const generateUrl = (from, to, state, lang) => {
-    return `/home?from=${moment(from).format('YYYY-MM-DD')}&to=${moment(
-      to
-    ).format('YYYY-MM-DD')}${state ? '&state=' + state.toUpperCase() : ''}${lang ? '&lang=' + lang : ''
-      }`;
-  };
-
   useEffect(() => {
-    loadData(true);
+    loadData();
   }, []);
 
 
@@ -131,26 +114,18 @@ const ChartView = () => {
     
         
           <div className="word">
-
+            <h2 className="t1">Anti-Asian hate crimes are happening everyday!</h2>
+          
             <div className="childword">
-              <p className="t1">*Anti-Asian hate crimes</p>
-              <p className="t1">have increased</p>
-              <h2 className="t2">By 150%</h2>
+            <h2 className="t2">{totalLastMonthCases} Cases</h2>
+            <p className="t1">in {lastMonthName}</p>              
             </div>
            
-
             <div className="childword">
-              <p className="t1">*Anti-Asian hate crimes</p>
-              <p className="t1"> happen</p>
-              <h2 className="t2">Every Day</h2>
+            <h2 className="t2">{totalAnnualCases} Cases</h2>
+            <p className="t1">last year</p>              
             </div>
-
-            <div className="childword">
-              <p className="t1">*Anti-Asian attacks have </p>
-              <p className="t1">been reported since Jan</p>
-              <h2 className="t2">Over 3000</h2>
-            </div>
-
+           
             <p className="t3">*Note: data from 1 thing team</p>
           </div>
           
@@ -159,7 +134,6 @@ const ChartView = () => {
             <IncidentChart
               className="behind-relative"
               chart_data={incidentTimeSeries}
-              state={selectedState}
               isFirstLoadData={isFirstLoadData}
             />
           </div>
