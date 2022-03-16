@@ -5,41 +5,16 @@ import './ChartView.scss'
 import moment from 'moment';
 import { useContext, useEffect, useState } from 'react';
 import { Row, Col } from 'reactstrap';
-import "../../assets/vendor/nucleo/css/nucleo.css"
 import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
 import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 import IncidentChart from './IncidentChart';
 
-import { useCookies } from 'react-cookie';
 import * as incidentsService from '../../services/incidents';
-import { getBrowserLang, SUPPORTED_LANGUAGES } from '../../utility/Languages';
 import { useRouter } from '../../utility/hooks/useRouter';
-
-import { isObjEmpty } from '../../utility/Utils';
-import { getValidState } from '../../utility/Utils';
-import { useTranslation } from 'react-i18next';
-import '../../i18n';
 
 const ChartView = () => {
   const router = useRouter();
-  const { t, i18n } = useTranslation();
 
-  const [cookies, setCookie] = useCookies(['lang']);
-  const lang_code = router.query.lang || cookies.lang || getBrowserLang();
-  const [selectedLangCode, setSelectedLangCode] = useState(lang_code);
-  const support_languages = [];
-
-  Object.entries(SUPPORTED_LANGUAGES).forEach(([lang_code, lang_name]) => {
-    support_languages.push({
-      value: lang_code,
-      label: lang_name,
-    });
-  });
-
-  // const isMobile = (window.innerWidth <= 786)
-  const [isShowPer10kAsian, setIsShowPer10kAsian] = useState(false)
-  const [incidents, setIncidents] = useState([]);
-  const [selectedState, setSelectedState] = useState();
   const [dateRange, setDateRange] = useState([moment().subtract(1, 'year'), moment()]);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true)
   const [incidentTimeSeries, setIncidentTimeSeries] = useState([
@@ -49,13 +24,8 @@ const ChartView = () => {
       value: 0,
     },
   ]);
-  const [incidentAggregated, setIncidentAggregated] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const setSelectedLang = (lang_code) => {
-    setCookie('lang', lang_code);
-    setSelectedLangCode(lang_code);
-  };
   // stats [{'2021-01-02:1}, {'2021-01-01:1}...]  dates descending
   // Remove date out of the range, and insert days that does not have data
   // start_date, end_date: Date
@@ -92,11 +62,11 @@ const ChartView = () => {
     }
     return new_stats;
   };
-  const loadData = (updateMap = false) => {
+  const loadData = () => {
 
     setLoading(true);
     incidentsService
-      .getStats(dateRange[0], dateRange[1], selectedState)
+      .getStats(dateRange[0], dateRange[1])
       .then((stats) => {
         setIncidentTimeSeries(
           mergeDate(
@@ -106,9 +76,6 @@ const ChartView = () => {
             stats.monthly_stats
           )
         );
-        if (updateMap) {
-          setIncidentAggregated(stats.total);
-        }
         setLoading(false);
         setIsFirstLoadData(false)
       });
@@ -122,7 +89,7 @@ const ChartView = () => {
   };
 
   useEffect(() => {
-    loadData(true);
+    loadData();
   }, []);
 
 
@@ -159,7 +126,6 @@ const ChartView = () => {
             <IncidentChart
               className="behind-relative"
               chart_data={incidentTimeSeries}
-              state={selectedState}
               isFirstLoadData={isFirstLoadData}
             />
           </div>
