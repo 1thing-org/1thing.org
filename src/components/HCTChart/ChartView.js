@@ -17,6 +17,9 @@ const ChartView = () => {
 
   const [dateRange, setDateRange] = useState([moment().subtract(1, 'year'), moment()]);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true)
+  const [totalAnnualCases, setTotalCases] = useState(0);
+  const [totalLastMonthCases, setTotalLastMonthCases] = useState(0);
+  const [lastMonthName, setLastMonthName] = useState("");
   const [incidentTimeSeries, setIncidentTimeSeries] = useState([
     {
       monthly_cases: 0,
@@ -62,20 +65,40 @@ const ChartView = () => {
     }
     return new_stats;
   };
+  const calculateTotalCases = (stats) => {
+    let total = 0;
+    stats.forEach(stat => {
+      total += stat.value;
+    });
+    return total;
+  };
+  const calculateTotalCasesOfMonth = (stats, month /* string 2022-01 */) => {
+    let total = 0;
+    stats.forEach(stat => {
+      if (stat.key.substring(0, 7) == month) {
+        total += stat.value;
+      }
+    });
+    return total;
+  };
   const loadData = () => {
 
     setLoading(true);
     incidentsService
       .getStats(dateRange[0], dateRange[1])
       .then((stats) => {
-        setIncidentTimeSeries(
-          mergeDate(
-            stats.stats,
-            dateRange[0],
-            dateRange[1],
-            stats.monthly_stats
-          )
+        const mergedData =  mergeDate(
+          stats.stats,
+          dateRange[0],
+          dateRange[1],
+          stats.monthly_stats
         );
+        setIncidentTimeSeries( mergedData );
+        setTotalCases(calculateTotalCases(mergedData));
+        const lastMonthName = moment().subtract(1, 'month').format('MMMM');
+        const lastMonth = moment().subtract(1, 'month').format('YYYY-MM');
+        setTotalLastMonthCases(calculateTotalCasesOfMonth(mergedData, lastMonth));
+        setLastMonthName(lastMonthName);
         setLoading(false);
         setIsFirstLoadData(false)
       });
@@ -91,26 +114,18 @@ const ChartView = () => {
     
         
           <div className="word">
-
+            <h2 className="t1">Anti-Asian hate crimes are happening everyday!</h2>
+          
             <div className="childword">
-              <p className="t1">*Anti-Asian hate crimes</p>
-              <p className="t1">have increased</p>
-              <h2 className="t2">By 150%</h2>
+            <h2 className="t2">{totalLastMonthCases} Cases</h2>
+            <p className="t1">in {lastMonthName}</p>              
             </div>
            
-
             <div className="childword">
-              <p className="t1">*Anti-Asian hate crimes</p>
-              <p className="t1"> happen</p>
-              <h2 className="t2">Every Day</h2>
+            <h2 className="t2">{totalAnnualCases} Cases</h2>
+            <p className="t1">last year</p>              
             </div>
-
-            <div className="childword">
-              <p className="t1">*Anti-Asian attacks have </p>
-              <p className="t1">been reported since Jan</p>
-              <h2 className="t2">Over 3000</h2>
-            </div>
-
+           
             <p className="t3">*Note: data from 1 thing team</p>
           </div>
           
