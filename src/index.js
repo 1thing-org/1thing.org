@@ -30,9 +30,9 @@ ReactDOM.render(
 
   <BrowserRouter>
   <Switch>
-  <Route path="/" exact render={props => <Welcome {...props} />} />
-  <Route path="/actionpage" exact render={props => <ActionPage {...props} />} />
-       <Redirect to="/" />
+  <Route exact path="/"  render={props => <Welcome {...props} />} />
+  <Route exact path="/actionpage" render={props => <ActionPage {...props} />} />
+       {/* <Redirect to="/" /> */}
        </Switch>
    </BrowserRouter>,
 
