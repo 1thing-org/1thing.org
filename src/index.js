@@ -29,19 +29,11 @@ import ActionPage from "components/ActionPage/ActionPage";
 ReactDOM.render(
 
   <BrowserRouter>
-<<<<<<< HEAD
-  <Switch>
-  <Route exact path="/"  render={props => <Welcome {...props} />} />
-  <Route exact path="/actionpage" render={props => <ActionPage {...props} />} />
-       {/* <Redirect to="/" /> */}
-       </Switch>
-=======
     <Switch>
       <Route path="/" exact render={props => <Welcome {...props} />} />
       <Route path="/actionpage" exact render={props => <ActionPage {...props} />} />
       <Redirect to="/" />
     </Switch>
->>>>>>> 4eeea2eb9adf5df73a50135d5cd068921857d8a9
    </BrowserRouter>,
 
   document.getElementById("root")
