@@ -1,145 +1,256 @@
-.bg{
-    margin-top: 11%;
-    background: url('../../assets/imag/Hero.png')  no-repeat;
-    width: 100%;
-    height: 39.45vw;
-    background-size:100% 100%;
-    
-    padding-top: 5%;
-    padding-bottom: 5%;
+.bg {
+  margin-top: 11%;
+  background: url("../../assets/imag/Hero.png") no-repeat;
+  width: 100%;
+  height: 39.45vw;
+  background-size: 100% 100%;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .topSection {
-  
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    // width: 1440px;
-    // height: 568px;
- 
-    // display: flex;
-    // flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+  // width: 1440px;
+  // height: 568px;
+
+  // display: flex;
+  // flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .topSection > h1 {
-    // margin: 9.6vmin 0vmin 0vmin 73.6vmin;
-    margin-left: 60%;
-    // height: 22.4vmin;
-    // width: 118.4vmin;
+  // margin: 9.6vmin 0vmin 0vmin 73.6vmin;
+  margin-left: 60%;
+  // height: 22.4vmin;
+  // width: 118.4vmin;
 
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: bold;
-    // font-size: 6vmin;
-    font-size: 2.875em;
-    line-height: 9vmin;
-    color: #080D1F;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: bold;
+//   font-size: 6vmin;
+    font-size: 3.2vw;
+//   line-height: 9vmin;
+    line-height: 3.89vw;
+  color: #080d1f;
 }
 
 .topSection > h4 {
-    // margin: 1.6vmin 0vmin 0vmin 73.6vmin;
-    margin-left: 60%;
-    // height: 2.4vmin;
-    // width: 59.2vmin;
+  // margin: 1.6vmin 0vmin 0vmin 73.6vmin;
+  margin-left: 60%;
+  // height: 2.4vmin;
+  // width: 59.2vmin;
 
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3vmin;
-    line-height: 3.5vmin;
-    
-    color: rgba(8, 13, 31, 0.7);
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+//   font-size: 3vmin;
+    font-size: 1.39vw;
+//   line-height: 3.5vmin;
+    line-height: 1.66vw;
+
+  color: rgba(8, 13, 31, 0.7);
 }
 
-.topSection > p{
-    text-decoration: underline;
-    margin-top: 3%;
+.topSection > p {
+  text-decoration: underline;
+  margin-top: 3%;
 }
 
-.topSection >p > a {
-    // margin: 32px 0px 0px 736px;
-    margin-left: 60%;
-    // height: 2.4vmin;
-    // width: 28vmin;
+.topSection > p > a {
+  // margin: 32px 0px 0px 736px;
+  margin-left: 60%;
+  // height: 2.4vmin;
+  // width: 28vmin;
 
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3vmin;
-    line-height: 3.5vmin;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+//   font-size: 3vmin;
+font-size: 1.39vw;
+//   line-height: 3.5vmin;
+    line-height: 1.66vw;
 
-    text-decoration: underline;
-    
-    color: rgba(8, 13, 31, 0.8);
+  text-decoration: underline;
+
+  color: rgba(8, 13, 31, 0.8);
 }
 
 .topSection .subscribe > p {
-    // margin: 88px 0px 0px 736px;
-    margin-left: 60%;
-    // height: 3.2vmin;
-    // width: 48.8vmin;
-    margin-top: 5%;
+  // margin: 88px 0px 0px 736px;
+  margin-left: 60%;
+  // height: 3.2vmin;
+  // width: 48.8vmin;
+  margin-top: 5%;
 
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.5vmin;
-    line-height: 4.5vmin;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+//   font-size: 2.5vmin;
+//   line-height: 4.5vmin;
+    font-size: 1.25vw;
+    line-height: 2.22vw;
 
-    color: rgba(8, 13, 31, 0.7);
+  color: rgba(8, 13, 31, 0.7);
 }
 
 .topSection .subscribe .email Input {
-    // margin: 8px 0px 0px 736px;
-    margin-left: 60%;
-    height: 8vmin;
-    width: 45vmin;
-    border: 0;
-    padding: 2vmin 1.6vmin;
+  // margin: 8px 0px 0px 736px;
+  margin-left: 60%;
+//   height: 8vmin;
+    height: 4.45vw;
+//   width: 45vmin;
+    width: 21.7vw;
+  border: 0;
+//   padding: 2vmin 1.6vmin;
+    padding: 1.39vw 1.11vw;
 
-    background: #FFFFFF;
-    // box-shadow: 0px 30px 50px rgba(160, 170, 196, 0.1);
-    border-radius: 1vmin;
+  background: #ffffff;
+  // box-shadow: 0px 30px 50px rgba(160, 170, 196, 0.1);
+//   border-radius: 1vmin;
+  border-radius: 0.67vw;
 
-    /* text */
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.5vmin;
-    line-height: 3vmin;    
-    color: rgba(8, 13, 31, 0.6);
+  /* text */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: normal;
+//   font-size: 2.5vmin;
+//   line-height: 3vmin;
+    font-size: 1.25vw;
+    line-height: 1.39vw;
+  color: rgba(8, 13, 31, 0.6);
 }
 .email > button {
-    width: 22vmin;
-    height: 8vmin;
-    // padding: 0px;
-    // border: 0px;
-    margin-left: 3vmin;
-    // margin-left: 32px;
-    
-    /* background: #FFBD66;
-    box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1); */
-    // border-radius: 1vmin;
+//   width: 22vmin;
+//   height: 8vmin;
+    width: 11.96vw;
+    height: 3.89vw;
+//   padding: 0px;
+  // border: 0px;
+  margin-left: 3vmin;
+  // margin-left: 32px;
 
-    /* text on button */
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.5vmin;
-    line-height: 3vmin;
-    text-align: center;
-    color: #000;
+  /* background: #FFBD66;
+    box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1); */
+  // border-radius: 1vmin;
+
+  /* text on button */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+//   font-size: 2.5vmin;
+//   line-height: 3vmin;
+    font-size: 1.25vw;
+    line-height: 1.67vw;
+  text-align: center;
+  color: #000;
 }
 
-// @media (min-width: 390px) {
-//     .bg {
-//         height: 248px;
-//     }
-//     .topSection {
-//         height: 300px;
-//         margin-top: 20%;
-//         font-size: 10px;
-//     }
-// }
+@media (min-width: 0px) {
+  .bg {
+    margin-top: 12%;
+    display: none;
+  }
+
+  .bgMobile {
+    margin-top: 11%;
+    background: url("../../assets/imag/Hero.png") no-repeat;
+    width: 100%;
+    height: 39.45vw;
+    background-size: 100% 100%;
+  
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .topSectionMobile {
+    //   padding-left: 16px;
+    h1 {
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      color: #080d1f;
+        margin: 0px;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    h4 {
+        width: 358px;
+        margin: 0px;
+        margin-top: 16px;
+        margin-left: 16px;
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: rgba(8, 13, 31, 0.7);
+    }
+    p {
+        margin: 0px;
+        margin-top: 16px;
+        margin-left: 16px;
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      a {
+        text-decoration-line: underline;
+        color: rgba(8, 13, 31, 0.8);
+      }
+    }
+    .subscribe {
+        width: 358px;
+        margin: 0px;
+        margin-top: 48px;
+        margin-left: 16px;
+      p {
+        margin: 0px;
+        width: 358px;
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(8, 13, 31, 0.7);
+      }
+
+      .email {
+          margin-top: 8px;
+          display: flex;
+          flex-direction: column;
+          input {
+              width: 358px;
+          }
+          Button{
+            width: 358px;
+            height: 48px;
+            margin: 0px;
+            margin-top: 16px;
+          }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 690px) {
+    .bg {
+        display: block;
+    }
+    .bgMobile {
+        display: none;
+    }
+    .topSectionMobile{
+        display: none;
+    }
+    .topSection .subscribe .email Button {
+        padding: 0px;
+    }
+}

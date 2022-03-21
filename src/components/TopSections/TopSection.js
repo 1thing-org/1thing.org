@@ -11,8 +11,25 @@ export default class Header extends Component {
 
     render() {
         return (
+            <>
             <div className={styles.bg}>
-            <section className={styles.topSection}>
+                <section className={styles.topSection}>
+                    <h1>Make small contributions<br />
+                        Improve racial equality
+                    </h1>
+                    <h4>Action, Share, Inspire! Together, we can make differences.</h4>
+                    <p><Link to="/actionpage">Click 1 thing you can do &rarr;</Link></p>
+                    <section className={styles.subscribe}>
+                        <p>Join mailing list and keep educating yourself. ✊</p>
+                        <section className={styles.email}>
+                            <input placeholder='Email address'></input>
+                            <Button color="onething" type="button"> Subscribe</Button>
+                        </section>
+                    </section>
+                </section >
+            </div>
+            <div className={styles.bgMobile}></div>
+            <section className={styles.topSectionMobile}>
                 <h1>Make small contributions<br />
                     Improve racial equality
                 </h1>
@@ -21,12 +38,12 @@ export default class Header extends Component {
                 <section className={styles.subscribe}>
                     <p>Join mailing list and keep educating yourself. ✊</p>
                     <section className={styles.email}>
-                        <input placeholder='Email address'></input>
+                        <Input placeholder='Email address'></Input>
                         <Button color="onething" type="button"> Subscribe</Button>
                     </section>
                 </section>
             </section >
-            </div>
+            </>
         )
     }
 }
