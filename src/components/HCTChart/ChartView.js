@@ -3,8 +3,8 @@ import React from "react";
 import './ChartView.scss'
 
 import moment from 'moment';
-import { useContext, useEffect, useState } from 'react';
-import { Row, Col } from 'reactstrap';
+import { useEffect, useState } from 'react';
+import { Row, Col, Container } from 'reactstrap';
 import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
 import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 import IncidentChart from './IncidentChart';
@@ -111,10 +111,11 @@ const ChartView = () => {
 
   return (
     <div className="hcr">
-    
-        
-          <div className="word">
-            <h2 className="t1">Anti-Asian hate crimes are happening everyday!</h2>
+          {/* <div className="word">
+            <div className="childword">
+            <h2 className="t2">Everyday</h2>
+            <h2 className="t1">Anti-Asian hate crimes are happening!</h2>
+            </div>
           
             <div className="childword">
             <h2 className="t2">{totalLastMonthCases} Cases</h2>
@@ -127,20 +128,57 @@ const ChartView = () => {
             </div>
            
             <p className="t3">*Note: data from 1 thing team</p>
-          </div>
+          </div> */}
+          <Container className="word">
+            <Row className="childword">
+              <Col>
+              <h2 className="t2">Everyday</h2>
+              <h2 className="t1">Anti-Asian hate crimes are happening!</h2>
+              </Col>
+
+              <Col>
+              <h2 className="t2">{totalLastMonthCases} Cases</h2>
+              <p className="t1">in {lastMonthName}</p> 
+              </Col>
+
+              <Col>
+              <h2 className="t2">{totalAnnualCases} Cases</h2>
+              <p className="t1">last year</p> 
+              </Col>
+            </Row>
+            <Row>
+            <p className="t3">*Note: data from 1 thing team</p>
+            </Row>
+          </Container>
           
 
-          <div className="chart">
+          {/* <div className="chart">
             <IncidentChart
               className="behind-relative"
               chart_data={incidentTimeSeries}
               isFirstLoadData={isFirstLoadData}
             />
-          </div>
+          </div> */}
+          <Container className ="chart">
+          <Row>
+            <Col>
+            <IncidentChart
+              className="behind-relative"
+              chart_data={incidentTimeSeries}
+              isFirstLoadData={isFirstLoadData}
+            />
+            </Col>
+          </Row>
+          </Container> 
           
-      <div className="link1">
+      {/* <div className="link1">
         <a className="vm1" href="https://hatecrimetracker.1thing.org/">View More &rarr;</a>
-      </div>
+      </div> */}
+      <Row className="link1">
+        <Col lg={{offset:10}}>
+        <a className="vm1" href="https://hatecrimetracker.1thing.org/">View More &rarr;</a>
+        </Col>
+      </Row>
 
     </div>
   );
