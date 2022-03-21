@@ -9,7 +9,9 @@ import Action from "components/Actions/Actions.js";
 import Header from "components/Headers/Header.js";
 import TopSection from "components/TopSections/TopSection.js";
 import Footer from "components/Footers/Footer.js";
-
+import HeaderIpad from "components/Headers/ipadMini";
+import OneThingNavbar from './Headers/index';
+import OneThingFooter from './Footers';
 
 
 class Welcome extends Component {
@@ -19,11 +21,13 @@ class Welcome extends Component {
         // <Router>
         <>
         <div>
-          <Header />
+          {/* <Header /> */}
+          <OneThingNavbar/>
           <TopSection />
           <ChartView />
           <Action/>
-          <Footer />
+          {/* <Footer /> */}
+          <OneThingFooter/>
           </div>
         </>
         // </Router>

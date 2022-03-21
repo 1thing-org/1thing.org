@@ -1,0 +1,79 @@
+// .navbar-main {
+//     width: 84.44%;
+//     margin-left: 7.78%;
+//     margin-right: 8.19%;
+// }
+.navbar {
+    padding: 0px;
+}
+#navbar-main {
+    padding-top: 2.78%;
+    padding-bottom: 2.78%;
+    padding-left: 7.78%;
+    padding-right: 8.19%;
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
+}
+
+// .logo {
+//     margin-right: 17.06%;
+// }
+
+// .navbar-collapse {
+//     width: 50%;
+//     position: absolute;
+//     top: 0;
+//     left: auto;
+//     right: 0;
+//     z-index: 1050;
+//     margin: 0.7rem;
+//     overflow-y: auto;
+//     height: auto !important;
+//     opacity: 0;
+// }
+
+.nav-link-inner--text {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.nav-link-icon {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#navbar_global {
+    padding-right: 0px;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1040px; } } 
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1440px; } } 
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.78rem;
+        padding-left: 1.78rem; 
+    }
+    .mr-lg-5, .mx-lg-5 {
+        margin-right: 17.06% !important; 
+    }
+}

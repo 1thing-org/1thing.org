@@ -27,15 +27,19 @@
     text-transform: uppercase;
     font-size: .875rem;
     letter-spacing: .05px;
-
+    width: 6.58%;
+    height: auto;
     img {
-        height: 30px;
+        // height: 30px;
+        width: 100%;
     }
+    margin-right: 17.06%;
 }
 
 .navbar-dark {
     .navbar-brand {
-        color: $white;
+        // color: $white;
+        color: rgba(8, 13, 31, 0.9);
     }
 }
 
@@ -56,6 +60,7 @@
 @include media-breakpoint-up(lg) {
     // .navbar-main {
     //     padding: 1rem 0;
+    //     width: 84.44%;
     // }
 
     .navbar-nav {
@@ -83,8 +88,10 @@
         }
 
         .nav-link-icon {
-            padding-left: .5rem !important;
-            padding-right: .5rem !important;
+            // padding-left: .5rem !important;
+            // padding-right: .5rem !important;
+            padding-left: 16px !important;
+            padding-right: 16px !important;
             font-size: 1rem;
             border-radius: $navbar-nav-link-border-radius;
 
@@ -195,11 +202,13 @@
   box-shadow: none;
 
   .navbar-brand {
-    color: rgba(255, 255, 255, 1);
+    // color: rgba(255, 255, 255, 1);
+    color: rgba(8, 13, 31, 0.9);;
   }
 
   .navbar-toggler {
-    color: rgba(255, 255, 255, 1);
+    // color: rgba(255, 255, 255, 1);
+    color: rgba(8, 13, 31, 0.9);;
   }
 
   .navbar-toggler-icon {
@@ -257,7 +266,8 @@
     .navbar-nav {
         .nav-link {
             padding: .625rem 0;
-            color: theme-color("default") !important;
+            // color: theme-color("default") !important;
+            color: #080D1F !important;
         }
 
         .dropdown-menu {
@@ -316,6 +326,24 @@
             padding-bottom: 1rem;
             margin-bottom: 1rem;
             border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        .navbar-nav {
+            align-items: center;
+            .nav-link {
+                // width: 358px;
+                // margin: auto;
+                // align-self: center;
+                // border-bottom: 2px solid #E9E9E9;
+                // display: flex;
+                // flex-direction: column;
+                .nav-link-inner--text {
+                    // // text-align: center; 
+                    // margin: auto;
+                    // width: 100px;
+                    align-self: center;
+                }
+            }
         }
 
         .collapse-brand {

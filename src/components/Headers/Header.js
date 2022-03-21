@@ -14,9 +14,9 @@ export default class Header extends Component {
                     <img className={styles.logo} src={logo}></img>
                     <nav>
                         <h4><Link to="/">Home</Link></h4>
-                        <h4>About</h4>
+                        {/* <h4>About</h4>
                         <h4>Donate</h4>
-                        <h4>News</h4>
+                        <h4>News</h4> */}
                         <h4><a target="_blank" href='https://docs.google.com/forms/d/1pWp89Y6EThMHml1jYGkDj5J0YFO74K_37sIlOHKkWo0/viewform?edit_requested=true'>Contact</a></h4>
                     </nav>
                     <section className={styles.socialMedia}>
