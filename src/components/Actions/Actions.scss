@@ -4,22 +4,14 @@
     margin-bottom: 10%;
 }
 
-
 .title{
-// position: absolute;
-// left: 290px;
-// top: 1816px;
-// margin-left: 10%;
-// margin-right: 10%;
-// width: 95%;
 height: auto;
 text-align: center;
 width: 100%;
-
 }
 
 .img1{
-width: 70%;
+width: 78%;
 }
 
 .p1{
@@ -53,56 +45,15 @@ width: 70%;
     line-height: 3vmin;
 }
 
-
 .vector i{
     color: rgba(8, 13, 31, 0.6);
     transform: scale(3,2);
 }
 
 .box2{
-    display: inline-block;
     margin-top: 10%;
     width: 86%;
     margin-left: 8%;
-}
-
-.img2-left{
-    float: inline-start; 
-    float: left; 
-    vertical-align: middle;
-    // display: inline-block;
-
-}
-.word-right{
-
-    float: inline-end;
-    float: right;
-  
-    // font-family: 'Quicksand';
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 1.8vmin;
-    // line-height: 3.2vmin;
-    /* or 178% */
-    color: rgba(8, 13, 31, 0.7);
- 
-    }
-
-.img2-right{
-    float: inline-end;
-    vertical-align: middle;
-    float: right;
-}
-
-
-.word-left{ 
-    float: inline-start;
-    float: left;
-    // font-family: 'Quicksand';
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 1.8vmin;
-    // line-height: 3.2vmin;
 }
 
 .title2{
@@ -111,9 +62,6 @@ width: 70%;
     line-height: 7vmin;
     font-family: 'Quicksand';
     font-style: normal;
-/* identical to box height, or 133% */
-
-
     color: #080D1F;
 }
 
@@ -123,19 +71,37 @@ width: 70%;
 }
 
 .vm2{
-    //  width: 11.3vmin;
-    //  height: 2.3vmin;
      font-style: normal;
      font-size: 2.5vmin;
      line-height: 3vmin;
-     // line-height: 22px;
- /* identical to box height */
       color: #080D1F;
-    
 }
 
 .details img{
-    width: 40vmin;
-    height: 40vmin;
+    width: 35vmin;
+    height: 35vmin;
 }
 
+// .img2-left{
+    //     float: inline-start; 
+    //     float: left; 
+    //     vertical-align: middle;
+    // }
+    // .word-right{
+    
+    //     float: inline-end;
+    //     float: right;
+    //     color: rgba(8, 13, 31, 0.7);
+    //     }
+    
+    // .img2-right{
+    //     float: inline-end;
+    //     vertical-align: middle;
+    //     float: right;
+    // }
+    
+    
+    // .word-left{ 
+    //     float: inline-start;
+    //     float: left;
+    // }

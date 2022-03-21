@@ -16,41 +16,29 @@
 }
 
 .childword{
-    float: left;
-    width: 33.3%;
-    text-align: center;
     margin-bottom: 5%;
 }
 
 .t1{
-    font-family: 'Quicksand';
-    font-style: normal;
     font-weight: 500;
     font-size: 3.5vmin;
     line-height: 4.5vmin;
-    /* or 133% */
     text-align: center;
     color: #080D1F;
 }
 
 .t2{
-    font-family: 'Quicksand';
-    font-style: normal;
     font-weight: 600;
     font-size: 7vmin;
     line-height: 9vmin;
-    /* identical to box height, or 133% */
     text-align: center;
     color: #CC0B25;
 }
 
 .t3{
-    // font-family: Quicksand;
-    font-style: normal;
     font-weight: 500;
     font-size: 2vmin;
     line-height: 3.5vmin;
-    /* identical to box height, or 171% */
     color: rgba(8, 13, 31, 0.7);
     float: left;
     margin-left: 5%;
@@ -59,10 +47,10 @@
 }
 
 .chart{
-    width: 86%;
-    margin-left: 7%;
+    width: 92%;
+    margin-left: 4%;
+    // margin-right: 4%;
     margin-bottom: 5%;
-    clear: both;
    }
 
 .behind-relative {
@@ -73,14 +61,13 @@
 
 
 .link1{
-    text-align: right;
-    margin-right: 8%;
+    // text-align: right;
+    // margin-right: 8%;
     text-decoration: underline;
 }
 
 
 .vm1{
-   
     width: 11.3vmin;
     height: 2.3vmin;
     font-family: 'Quicksand';
@@ -88,9 +75,6 @@
     font-weight: bold;
     font-size: 3vmin;
     line-height: 3.5vmin;
-    // line-height: 22px;
-/* identical to box height */
-    //  text-align: center;
      color: #080D1F;
 }
 
