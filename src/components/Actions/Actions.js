@@ -1,6 +1,9 @@
 import React from "react";
-import { Button, Row, Col, Container } from "reactstrap";
+import { Button, Row, Col, Container, UncontrolledCarousel, Card, CardBody, CardTitle, CardText, CardGroup } from "reactstrap";
 import { Link } from "react-router-dom";
+import {Carousel} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+// import HorizontalScroll from 'react-scroll-horizontal'
 
 import './Actions.scss'
 import Smallactions from '../../assets/imag/Smallactions.png';
@@ -8,12 +11,59 @@ import Awareness from '../../assets/imag/Icon-raising awareness.png';
 import Support from '../../assets/imag/Icon-support.png';
 import Expertise from '../../assets/imag/Icon-expertise.png';
 import Culture from '../../assets/imag/Icon-culture.png';
+import CardImg from "reactstrap/lib/CardImg";
 
 
-class Actions extends React.Component {
+
+const Actions =() =>{
+// class Actions extends React.Component {
+//responsive
+const [dimensions, setDimensions] = React.useState({
+  height: window.innerHeight,
+  width: window.innerWidth
+})
+const handleResize = () => {
+  setDimensions({
+    height: window.innerHeight,
+    width: window.innerWidth
+  });
+}
+React.useEffect(() => {
+  window.addEventListener('resize', handleResize)
+  return () => { window.removeEventListener('resize', handleResize) }
+});
+
+const items = [
+  {
+    src: Awareness ,
+    altText: 'Slide 1',
+    caption: 'Slide 1',
+    header: 'Slide 1 Header'
+  },
+  {
+    src: Support,
+    altText: 'Slide 2',
+    caption: 'Slide 2',
+    header: 'Slide 2 Header'
+  },
+  {
+    src: Expertise,
+    altText: 'Slide 3',
+    caption: 'Slide 3',
+    header: 'Slide 3 Header'
+  },
+
+  {
+    src: Culture ,
+    altText: 'Slide 3',
+    caption: 'Slide 3',
+    header: 'Slide 3 Header'
+  }
+];
+
   
     
-    render() {
+    // render() {
       return (
         <div className="box">
           <Container className="title">
@@ -30,11 +80,11 @@ class Actions extends React.Component {
             </Row>
             
             {/* hide button now and may use it in the future */}
-            {/* <Row>
+            <Row>
             <Col>
             <Button className="btn" outline color="onething" type="button"> Share what you've done</Button>
             </Col>
-            </Row> */}
+            </Row>
 
             <Row>
             <Col>
@@ -49,7 +99,95 @@ class Actions extends React.Component {
             </Row>
           </Container>
 
-          <Container className="details">
+           { dimensions.width<768?
+
+            <div>
+                <Row>
+                  <Carousel>
+                  <Carousel.Item>
+                  <Card >
+                  <img className="carimag" src={Awareness} alt="AWARENESS"/>
+                  {/* <CardImg src={Awareness} /> */}
+                  <CardBody>
+                    <CardTitle className="title2">
+                    Raising Awareness
+                    </CardTitle>
+                    <CardText >
+                    <p className="p2"><li>Tell a friend or colleage that you are concerned about going on the street
+                   nowadays because of anti-Asian hate crime incidents.</li>
+                    <li>Having 1-on-1 with coworkers to talk about the issue.</li>
+                   <li>In a team meeting, share with colleagues what you are doing to fight hate.</li></p>
+                   <p className="link2"><Link to="/actionpage" className="vm2">View More &rarr;</Link></p>
+                    </CardText>
+                  </CardBody>
+                </Card>
+                  </Carousel.Item>
+
+
+                  <Carousel.Item>
+                  <Card className="card">
+                  <img className="carimag" src={Support} alt="SUPPORT"/> 
+                  <CardBody>
+                    <CardTitle className="title2">
+                    Supporting anti-Asian hate victims
+                    </CardTitle>
+                    <CardText>
+                    <p className="p2"><li>Help effort to bring justice to victims.</li>
+                <li>Tell a hate incident/crime victim that you want to listen to their feelings. Tell a
+                hate crime victim that you are here to help.</li>
+                <li>Donate to AAPI communities</li></p>
+                   <p className="link2"><Link to="/actionpage" className="vm2">View More &rarr;</Link></p>
+                    </CardText>
+                  </CardBody>
+                </Card>
+                  </Carousel.Item>
+
+
+                  <Carousel.Item>
+                  <Card className="card">
+                  <img className="carimag" src={Expertise} alt="USE EXPERTISE" />
+                  <CardBody>
+                    <CardTitle className="title2">
+                    Using your profession, expertise to help
+                    </CardTitle>
+                    <CardText>
+                    <p className="p2"><li>Make an art pice that reflects attitude to asian-hate and bias.</li>
+                <li>Propose or participate projects.</li>
+                <li>Create articles, arts, paintings, videos, music to advocate social equality. Or 
+                simply share those artifacts you found helpful.</li></p>
+                   <p className="link2"><Link to="/actionpage" className="vm2">View More &rarr;</Link></p>
+                    </CardText>
+                  </CardBody>
+                </Card>
+                  </Carousel.Item>
+
+                   <Carousel.Item>
+                   <Card className="card">
+                   <img className="carimag" src={Culture} alt="CROSS-CULTURAL UNDERSTANDING"/>
+                  <CardBody>
+                    <CardTitle className="title2">
+                    Promote cross racial understanding
+                    </CardTitle>
+                    <CardText>
+                    <p className="p2"><li>Ask a black/latinex/...friend about challenges they experienced while growing 
+                up and living in the US. Try to relate to them and perhaps share your chanllenge with what the AAPI community is facing.</li>
+                <li>Invite friends from different ethnic groups to join your own ethnic group
+                or team to tell their stories. </li></p>
+                   <p className="link2"><Link to="/actionpage" className="vm2">View More &rarr;</Link></p>
+                    </CardText>
+                  </CardBody>
+                </Card>
+                  </Carousel.Item>
+                  </Carousel>
+                </Row>
+              
+            {/* <UncontrolledCarousel items={items} /> */}
+            </div>
+
+
+
+            :
+           <Container className="details">
           <Row className="box2">
             <Col lg={4}> <img src={Awareness} alt="AWARENESS"/></Col>
             <Col lg={8}>
@@ -62,7 +200,7 @@ class Actions extends React.Component {
             </Col>
           </Row>
 
-          <Row className="box2">
+           <Row className="box2">
             <Col lg={8}>
                 <h3 className="title2">Supporting anti-Asian hate victims</h3>
                 <p className="p2"><li>Help effort to bring justice to victims.</li>
@@ -99,10 +237,13 @@ class Actions extends React.Component {
             <Col lg={4}> <img src={Culture} alt="CROSS-CULTURAL UNDERSTANDING"/> </Col>
           </Row>
           </Container>
+
+          }
+
+          
+          
         </div>
       );
-    }
-  }
-  
+    }  
   export default Actions;
   
