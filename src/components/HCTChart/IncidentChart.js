@@ -1,9 +1,8 @@
 import moment from 'moment';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Card, CardBody, CardHeader, CardTitle } from 'reactstrap';
+import { Card, CardBody, CardHeader, CardTitle, Container } from 'reactstrap';
 import { ComposedChart, Area, Bar, Legend, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import { stateFullName } from '../../utility/Utils';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 import './IncidentChart.scss'
@@ -53,23 +52,23 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
       const daily = payload[0].payload.value ? payload[0].payload.value : 0;
       return tooltip !== 'daily' ? (
         <div className='recharts-custom-tooltip'>
-          <p>{d.format("MMM YYYY")}</p>
-          <p><strong>{t("incident_chart.total_monthly_cases", { count: monthly })}</strong></p>
+          <p className='date'>{d.format("MMM YYYY")}</p>
+          <p className='cases'><strong>{t("incident_chart.total_monthly_cases", { count: monthly })}</strong></p>
         </div>
       ) :
         (
           <div className='recharts-custom-tooltip'>
-            <p>{d.format("M/D/YYYY")}</p>
-            <p><strong>{t("incident_chart.total_daily_cases", { count: daily })}</strong></p>
-            <p><strong>{t("incident_chart.total_monthly_cases", { count: monthly })}</strong></p>
+            <p className='date'>{d.format("M/D/YYYY")}</p>
+            <p className='cases'><strong>{t("incident_chart.total_daily_cases", { count: daily })}</strong></p>
+            <p className='cases'><strong>{t("incident_chart.total_monthly_cases", { count: monthly })}</strong></p>
           </div>
         )
     }
     return null
   }
   return (
-    <Card>
-      <CardBody>
+    // <Card>
+    //   <CardBody>
         <div className='recharts-wrapper'>
           {(totalCases === 0 && !isFirstLoadData) ?  (
             <>
@@ -102,8 +101,8 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             </ComposedChart>
           </ResponsiveContainer>
         </div>
-      </CardBody>
-    </Card>
+    //    </CardBody>
+    //  </Card> 
   )
 }
 export default IncidentChart

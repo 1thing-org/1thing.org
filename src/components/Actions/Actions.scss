@@ -31,19 +31,20 @@ width: 78%;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
+    margin-bottom: 5%;
 }
 
-.btn{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height: 8vmin;
+// .btn{
+//     margin-top: 1%;
+//     margin-bottom: 1%;
+//     height: 8vmin;
 
 
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-size: 2.5vmin;
-    line-height: 3vmin;
-}
+//     font-family: 'Quicksand';
+//     font-style: normal;
+//     font-size: 2.5vmin;
+//     line-height: 3vmin;
+// }
 
 .vector i{
     color: rgba(8, 13, 31, 0.6);
@@ -68,13 +69,15 @@ width: 78%;
 .link2{
     text-decoration: underline;
     text-align: left;
+    margin-top: 10%;
 }
 
 .vm2{
      font-style: normal;
      font-size: 2.5vmin;
      line-height: 3vmin;
-      color: #080D1F;
+     color: #080D1F;
+     font-weight: 600;
 }
 
 .details img{
@@ -82,7 +85,84 @@ width: 78%;
     height: 35vmin;
 }
 
-// .img2-left{
+.card{
+    margin-top: 5%;
+    width: 320px;
+    height: 720px;
+}
+
+.carimag{
+    width: 160px;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 24px;
+}
+
+    @media only screen and (max-width: 768px) {
+        .box {
+          width: 100%;
+        }
+
+        .title{
+            width: 100%;
+            text-align: center;
+        }
+
+
+        .img1{
+            width: 100%;
+        }
+
+        .p1{
+            margin-top: 1%;
+            margin-bottom: 1%;
+            font-size: 18px;
+            line-height: 150%;
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+        }
+        
+        .p2{
+            margin-top: 5%;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+
+            margin-left: 16px;
+            margin-top: 5%;
+        }
+
+        .title2{
+            margin-left: 43px;
+            margin-top: 32px;
+
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 32px;
+            font-family: 'Quicksand';
+            font-style: normal;
+            color: #080D1F;
+        }
+
+        .link2{
+            text-decoration: underline;
+            text-align: center;
+        }
+        
+        .vm2{
+             font-style: normal;
+             font-weight: 600;
+             font-size: 18px;
+             line-height: 24px;
+              color: #080D1F;
+        }
+      }
+
+
+      // .img2-left{
     //     float: inline-start; 
     //     float: left; 
     //     vertical-align: middle;

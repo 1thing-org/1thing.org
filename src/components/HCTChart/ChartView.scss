@@ -36,21 +36,33 @@
 }
 
 .t3{
+    font-weight: 700;
+    font-size: 5vmin;
+    line-height: 7vmin;
+    text-align: center;
+    color: #080D1F;
+}
+
+.t4{
     font-weight: 500;
     font-size: 2vmin;
     line-height: 3.5vmin;
+    text-align: center;
     color: rgba(8, 13, 31, 0.7);
-    float: left;
-    margin-left: 5%;
-    clear: both;
     margin-bottom: 5%;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Quicksand';
+    font-style: normal;
 }
 
 .chart{
     width: 92%;
+    height: 500px;
     margin-left: 4%;
-    // margin-right: 4%;
-    margin-bottom: 5%;
+    // margin-bottom: 5%;
    }
 
 .behind-relative {
@@ -61,8 +73,6 @@
 
 
 .link1{
-    // text-align: right;
-    // margin-right: 8%;
     text-decoration: underline;
 }
 
@@ -72,11 +82,72 @@
     height: 2.3vmin;
     font-family: 'Quicksand';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 3vmin;
     line-height: 3.5vmin;
      color: #080D1F;
 }
 
+@media only screen and (max-width: 768px){
+    .hcr{
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .chart{
+        width: 100%;
+        margin-bottom: -20%;
+        margin-top: 5%;
+       }
+
+       .vm1{
+        width: 11.3vmin;
+        height: 2.3vmin;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+         color: #080D1F;
+         margin-bottom: 20%;
+    }
+
+    .t1{
+        font-weight: 500;
+        font-size: 18px;
+         line-height: 24px;
+        text-align: center;
+        color: #080D1F;
+    }
+    
+    .t2{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #CC0B25;
+    }
+
+    .t3{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        color: #080D1F;
+    }
+    
+    .t4{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: rgba(8, 13, 31, 0.7);
+        margin-bottom: 5%;
+    }
+
+
+
+}
 
 

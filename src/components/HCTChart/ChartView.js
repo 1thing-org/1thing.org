@@ -4,7 +4,8 @@ import './ChartView.scss'
 
 import moment from 'moment';
 import { useEffect, useState } from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col, Container} from 'reactstrap';
+
 import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
 import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 import IncidentChart from './IncidentChart';
@@ -108,77 +109,81 @@ const ChartView = () => {
     loadData();
   }, []);
 
+  //responsive
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+  const handleResize = () => {
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth
+    });
+  }
+  React.useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    return () => { window.removeEventListener('resize', handleResize) }
+  });
+
 
   return (
     <div className="hcr">
-          {/* <div className="word">
-            <div className="childword">
-            <h2 className="t2">Everyday</h2>
-            <h2 className="t1">Anti-Asian hate crimes are happening!</h2>
-            </div>
-          
-            <div className="childword">
-            <h2 className="t2">{totalLastMonthCases} Cases</h2>
-            <p className="t1">in {lastMonthName}</p>              
-            </div>
-           
-            <div className="childword">
-            <h2 className="t2">{totalAnnualCases} Cases</h2>
-            <p className="t1">last year</p>              
-            </div>
-           
-            <p className="t3">*Note: data from 1 thing team</p>
-          </div> */}
-          <Container className="word">
-            <Row className="childword">
-              <Col>
-              <h2 className="t2">Everyday</h2>
-              <h2 className="t1">Anti-Asian hate crimes are happening!</h2>
-              </Col>
 
-              <Col>
-              <h2 className="t2">{totalLastMonthCases} Cases</h2>
-              <p className="t1">in {lastMonthName}</p> 
-              </Col>
+  <div className="title">
+  <p className="t3" >Anti-Asian hate crimes are happening everyday!</p>
+  <p className="t4">Based on incidents reported by major media in the US</p>
+  </div>
 
-              <Col>
-              <h2 className="t2">{totalAnnualCases} Cases</h2>
-              <p className="t1">last year</p> 
-              </Col>
-            </Row>
-            <Row>
-            <p className="t3">*Note: data from 1 thing team</p>
-            </Row>
-          </Container>
-          
+{ dimensions.width<768?
+  <div>
+<Container className="word">
 
-          {/* <div className="chart">
-            <IncidentChart
+<div className="childword">
+  <p className="t2">{totalLastMonthCases} Cases</p>
+  <p className="t1">was reported in {lastMonthName}</p> 
+</div>
+
+<div>
+  <p className="t2">{totalAnnualCases} Cases</p>
+  <p className="t1">was reported in 2021</p>   
+</div>
+</Container>
+  </div>
+:
+<div>
+<Container className="word">
+
+<Row className="childword">
+  <Col>
+  <h2 className="t2">{totalLastMonthCases} Cases</h2>
+  <p className="t1">was reported in {lastMonthName}</p> 
+  </Col>
+
+  <Col>
+  <h2 className="t2">{totalAnnualCases} Cases</h2>
+  <p className="t1">was reported in 2021</p> 
+  </Col>
+</Row>
+</Container>
+</div>
+}
+      <Row> 
+     <div className="chart">
+     <IncidentChart
               className="behind-relative"
               chart_data={incidentTimeSeries}
               isFirstLoadData={isFirstLoadData}
             />
-          </div> */}
-          <Container className ="chart">
-          <Row>
-            <Col>
-            <IncidentChart
-              className="behind-relative"
-              chart_data={incidentTimeSeries}
-              isFirstLoadData={isFirstLoadData}
-            />
-            </Col>
-          </Row>
-          </Container> 
-          
-      {/* <div className="link1">
-        <a className="vm1" href="https://hatecrimetracker.1thing.org/">View More &rarr;</a>
-      </div> */}
+      </div>
+      </Row> 
+      
+      <div>         
       <Row className="link1">
-        <Col lg={{offset:10}}>
+        <Col lg={{offset:10}} sm={{offset:5}} xs={{offset:5}}>
         <a className="vm1" href="https://hatecrimetracker.1thing.org/">View More &rarr;</a>
         </Col>
       </Row>
+      </div> 
 
     </div>
   );
