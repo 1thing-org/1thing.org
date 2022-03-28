@@ -5,6 +5,7 @@ import Headroom from "headroom.js";
 // reactstrap components
 import {
   UncontrolledCollapse,
+  Button,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -51,9 +52,9 @@ class OneThingNavbar extends React.Component {
             expand="lg"
             id="navbar-main"
           >
-            <Container>
+            <Container className="onething-header-container">
               <NavbarBrand className="mr-lg-5 logo" to="/" tag={Link}>
-                <img className="logo" alt="..." src={require("assets/imag/Logo.svg")} />
+                <img className="" alt="..." src={require("assets/imag/Logo.svg")} />
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -81,11 +82,11 @@ class OneThingNavbar extends React.Component {
                   </Row>
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <NavLink>
-                    <Link to="/"><span className="nav-link-inner--text">Home</span></Link>
+                  <NavLink className="nav-link">
+                    <Link className="header-router-link" to="/"><span className="nav-link-inner--text">Home</span></Link>
                   </NavLink>
                   <NavLink>
-                    <Link to="/actionPage"><span className="nav-link-inner--text">Action</span></Link>
+                    <Link className="header-router-link" to="/actionPage"><span className="nav-link-inner--text">Action</span></Link>
                   </NavLink>
                   <NavLink
                     href="https://docs.google.com/forms/d/1pWp89Y6EThMHml1jYGkDj5J0YFO74K_37sIlOHKkWo0/viewform?edit_requested=true"
@@ -94,7 +95,7 @@ class OneThingNavbar extends React.Component {
                     <span className="nav-link-inner--text">Contact</span>
                   </NavLink>
                 </Nav>
-                <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                <Nav className="align-items-lg-center ml-lg-auto onething-header-social-media" navbar>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
@@ -160,19 +161,12 @@ class OneThingNavbar extends React.Component {
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      id="tooltip112445449"
-                      target="_blank"
-                    >
-                      <i className="fa fa-share" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Share
+                      <span className="btn-inner--icon">
+                        <i className="fa fa-share ml-2" />
                       </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip112445449">
-                      Share
-                    </UncontrolledTooltip>
+                      {/* <span className="nav-link-inner--text ml-1">
+                        Share
+                      </span> */}
                   </NavItem>
                 </Nav>
               </UncontrolledCollapse>

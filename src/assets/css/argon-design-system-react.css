@@ -8673,7 +8673,8 @@ button.bg-darker:focus {
     margin-top: 3rem !important; }
   .mr-lg-5,
   .mx-lg-5 {
-    margin-right: 3rem !important; }
+    /* margin-right: 3rem !important;  */
+  }
   .mb-lg-5,
   .my-lg-5 {
     margin-bottom: 3rem !important; }
