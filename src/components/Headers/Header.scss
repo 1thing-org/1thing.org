@@ -1,8 +1,3 @@
-// .navbar-main {
-//     width: 84.44%;
-//     margin-left: 7.78%;
-//     margin-right: 8.19%;
-// }
 .navbar {
     padding: 0px;
 }
@@ -18,24 +13,15 @@
     margin: 0px;
 }
 
-// .logo {
-//     margin-right: 17.06%;
-// }
-
-// .navbar-collapse {
-//     width: 50%;
-//     position: absolute;
-//     top: 0;
-//     left: auto;
-//     right: 0;
-//     z-index: 1050;
-//     margin: 0.7rem;
-//     overflow-y: auto;
-//     height: auto !important;
-//     opacity: 0;
-// }
+a {
+    
+}
+a:hover {
+    text-decoration: none;
+}
 
 .nav-link-inner--text {
+    color: rgba(8, 13, 31, 0.9);
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;

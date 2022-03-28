@@ -81,8 +81,11 @@ class OneThingNavbar extends React.Component {
                   </Row>
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <NavLink href="http://localhost:3000/">
-                    <span className="nav-link-inner--text">Home</span>
+                  <NavLink>
+                    <Link to="/"><span className="nav-link-inner--text">Home</span></Link>
+                  </NavLink>
+                  <NavLink>
+                    <Link to="/actionPage"><span className="nav-link-inner--text">Action</span></Link>
                   </NavLink>
                   <NavLink
                     href="https://docs.google.com/forms/d/1pWp89Y6EThMHml1jYGkDj5J0YFO74K_37sIlOHKkWo0/viewform?edit_requested=true"
@@ -154,6 +157,21 @@ class OneThingNavbar extends React.Component {
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip112445449">
                       Like us on Facebook
+                    </UncontrolledTooltip>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      className="nav-link-icon"
+                      id="tooltip112445449"
+                      target="_blank"
+                    >
+                      <i className="fa fa-share" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Share
+                      </span>
+                    </NavLink>
+                    <UncontrolledTooltip delay={0} target="tooltip112445449">
+                      Share
                     </UncontrolledTooltip>
                   </NavItem>
                 </Nav>

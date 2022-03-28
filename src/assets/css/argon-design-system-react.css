@@ -10397,7 +10397,9 @@ a.text-darker:hover, a.text-darker:focus {
     text-shadow: none !important;
     box-shadow: none !important; }
   a:not(.btn) {
-    text-decoration: underline; }
+    /* text-decoration: underline;  */
+    text-decoration: none;
+  }
   abbr[title]::after {
     content: " (" attr(title) ")"; }
   pre {
