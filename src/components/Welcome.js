@@ -26,7 +26,7 @@ class Welcome extends Component {
           <ChartView />
           <Action/>
           {/* <Footer /> */}
-          <OneThingFooter/>
+          {/* <OneThingFooter/> */}
           </div>
         </>
         // </Router>
