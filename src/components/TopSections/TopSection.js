@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from "react"
 // import { ImageBackground } from "react-native";
-import { Link, Switch, Route } from "react-router-dom";
-import styles from './TopSection.module.scss';
-import hero from '../../assets/img/brand/blue.png'
-import { Button, Input } from "reactstrap";
-
+import { Link, Switch, Route } from "react-router-dom"
+import styles from "./TopSection.module.scss"
+import hero from "../../assets/img/brand/blue.png"
+import { Button, Input } from "reactstrap"
+import Mailchimp from "../../utility/mailchimp"
 
 export default class Header extends Component {
 
@@ -22,8 +22,9 @@ export default class Header extends Component {
                     <section className={styles.subscribe}>
                         <p>Join mailing list and keep educating yourself. ✊</p>
                         <section className={styles.email}>
-                            <input placeholder='Email address'></input>
-                            <Button color="onething" type="button"> Subscribe</Button>
+                        <Mailchimp />
+                            {/* <input placeholder='Email address'></input>
+                            <Button color="onething" type="button"> Subscribe</Button> */}
                         </section>
                     </section>
                 </section >
@@ -38,12 +39,14 @@ export default class Header extends Component {
                 <section className={styles.subscribe}>
                     <p>Join mailing list and keep educating yourself. ✊</p>
                     <section className={styles.email}>
-                        <Input placeholder='Email address'></Input>
-                        <Button color="onething" type="button"> Subscribe</Button>
+                    <Mailchimp />
+                        {/* <Input placeholder='Email address'></Input>
+                        <Button color="onething" type="button"> Subscribe</Button> */}
                     </section>
                 </section>
             </section >
             </>
         )
     }
+
 }
