@@ -82,11 +82,13 @@ class OneThingNavbar extends React.Component {
                   </Row>
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <NavLink className="nav-link">
-                    <Link className="header-router-link" to="/"><span className="nav-link-inner--text">Home</span></Link>
+                  <NavLink tag={Link} className="nav-link" to="/">
+                    <span className="nav-link-inner--text">Home</span>
+                    {/* <Link className="header-router-link" to="/"><span className="nav-link-inner--text">Home</span></Link> */}
                   </NavLink>
-                  <NavLink>
-                    <Link className="header-router-link" to="/actionPage"><span className="nav-link-inner--text">Action</span></Link>
+                  <NavLink tag={Link} to="/actionPage">
+                    <span className="nav-link-inner--text">Action</span>
+                    {/* <Link className="header-router-link" to="/actionPage"><span className="nav-link-inner--text">Action</span></Link> */}
                   </NavLink>
                   <NavLink
                     href="https://docs.google.com/forms/d/1pWp89Y6EThMHml1jYGkDj5J0YFO74K_37sIlOHKkWo0/viewform?edit_requested=true"

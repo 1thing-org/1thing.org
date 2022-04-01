@@ -25,7 +25,7 @@ class Welcome extends Component {
           <TopSection />
           <ChartView />
           <Action/>
-          {/* <Footer /> */}
+          <Footer />
           {/* <OneThingFooter/> */}
           </div>
         </>
