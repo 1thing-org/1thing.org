@@ -3,6 +3,7 @@ import React, { Component, Fragment } from "react"
 import { Link, Switch, Route } from "react-router-dom";
 import './TopSection.module.scss';
 import styles from './TopSection.module.scss';
+import Mailchimp from "../../utility/mailchimp";
 import hero from '../../assets/img/brand/blue.png'
 import { Button, Input } from "reactstrap";
 
