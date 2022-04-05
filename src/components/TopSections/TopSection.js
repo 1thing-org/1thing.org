@@ -39,7 +39,7 @@ export default class Header extends Component {
                 <section className={styles.subscribe}>
                     <p>Join mailing list and keep educating yourself. ✊</p>
                     <section className={styles.email}>
-                    <Mailchimp />
+                    <Mailchimp className={styles.email}/>
                         {/* <Input placeholder='Email address'></Input>
                         <Button color="onething" type="button"> Subscribe</Button> */}
                     </section>
