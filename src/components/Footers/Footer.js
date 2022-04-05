@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import styles from "./Footer.module.scss"
-import Mailchimp from "../../utility/mailchimp"
+import { Button, Input } from "reactstrap";
+import styles from "./Footer.module.scss";
+import Mailchimp from "../../utility/mailchimp";
 
 export default class Footer extends Component {
     render() {
