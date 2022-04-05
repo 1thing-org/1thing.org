@@ -2390,7 +2390,8 @@ input[type="button"].btn-block {
   position: relative;
   height: 0;
   overflow: hidden;
-  transition: height 0.35s ease; }
+  transition: height 0.35s ease; 
+}
   @media (prefers-reduced-motion: reduce) {
     .collapsing {
       transition: none; } }
@@ -13097,9 +13098,12 @@ textarea[resize="horizontal"] {
     border-radius: 0.25rem;
     background: #FFF;
     box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-    animation: show-navbar-collapse .2s ease forwards; }
+    animation: show-navbar-collapse .2s ease forwards; 
+  }
   .navbar-collapse.collapsing-out {
-    animation: hide-navbar-collapse .2s ease forwards; } }
+    animation: hide-navbar-collapse .2s ease forwards; 
+  } 
+}
 
 @keyframes show-navbar-collapse {
   0% {
