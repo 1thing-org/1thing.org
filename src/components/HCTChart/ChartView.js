@@ -134,7 +134,7 @@ const ChartView = () => {
   <p className="t4">Based on incidents reported by major media in the US</p>
   </div>
 
-{ dimensions.width<768?
+{ dimensions.width<576?
   <div>
 <Container className="word">
 
@@ -179,7 +179,7 @@ const ChartView = () => {
       
       <div>         
       <Row className="link1">
-        <Col lg={{offset:10}} sm={{offset:5}} xs={{offset:5}}>
+        <Col lg={{offset:10}} md={{offset:8}} sm={{offset:5}} xs={{offset:5}}>
         <a className="vm1" href="https://hatecrimetracker.1thing.org/">View More &rarr;</a>
         </Col>
       </Row>

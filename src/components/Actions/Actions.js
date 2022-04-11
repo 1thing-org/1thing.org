@@ -62,13 +62,12 @@ React.useEffect(() => {
             </Row>
           </Container>
 
-           { dimensions.width<992?
+           { dimensions.width<576?
 
-            <Container className="details1">
-          <Row className="justify-content-center">
+        <Container className="details1">
           <Row className="justify-content-center"> 
           <img src={Awareness} alt="AWARENESS"/></Row>
-          <Col sm={12} md={12}>
+          <Col xs={12}>
             <h3 className="title2">Raising Awareness</h3>
             <p className="p2"><li>Tell a friend or colleage that you are concerned about going on the street
              nowadays because of anti-Asian hate crime incidents.</li>
@@ -76,12 +75,10 @@ React.useEffect(() => {
             <li>In a team meeting, share with colleagues what you are doing to fight hate.</li></p>
             <p className="link2"><Link to="/actionpage" className="vm2">View More &rarr;</Link></p>
           </Col>
-          </Row>
 
-          <Row className="justify-content-center">
           <Row className="justify-content-center"> 
           <img src={Support} alt="SUPPORT"/> </Row>
-          <Col sm={12} md={12}>
+          <Col xs={12}>
             <h3 className="title2">Supporting anti-Asian hate victims</h3>
             <p className="p2"><li>Help effort to bring justice to victims.</li>
             <li>Tell a hate incident/crime victim that you want to listen to their feelings. Tell a
@@ -90,12 +87,9 @@ React.useEffect(() => {
             <p className="link2"><a className="vm2"><Link to="/actionpage">View More &rarr;</Link></a></p>
            </Col>
           
-          </Row>
-
-           <Row className="justify-content-center">
            <Row className="justify-content-center"> 
            <img src={Expertise} alt="USE EXPERTISE" /></Row>
-            <Col sm={12} md={12}>
+            <Col xs={12}>
               <h3 className="title2">Using your profession, expertise to help</h3>
               <p className="p2"><li>Make an art pice that reflects attitude to asian-hate and bias.</li>
               <li>Propose or participate projects.</li>
@@ -103,12 +97,10 @@ React.useEffect(() => {
                simply share those artifacts you found helpful.</li></p>
               <p className="link2"><a className="vm2"><Link to="/actionpage">View More &rarr;</Link></a></p>
              </Col>
-           </Row>
 
-          <Row className="justify-content-center">
           <Row className="justify-content-center">  
           <img src={Culture} alt="CROSS-CULTURAL UNDERSTANDING"/> </Row>
-           <Col sm={12} md={12}>
+           <Col xs={12}>
               <h3 className="title2">Promote cross racial understanding</h3>
               <p className="p2"><li>Ask a black/latinex/...friend about challenges they experienced while growing 
                up and living in the US. Try to relate to them and perhaps share your
@@ -117,14 +109,13 @@ React.useEffect(() => {
               or team to tell their stories.</li></p>
              <p className="link2"><a className="vm2"><Link to="/actionpage">View More &rarr;</Link></a></p>
            </Col>
-          </Row>
          </Container>
 
             :
            <Container className="details">
-          <Row className="box2">
-            <Col lg={4}> <img src={Awareness} alt="AWARENESS"/></Col>
-            <Col lg={8}>
+          <Row className="box2 align-items-center">
+            <Col lg={4} md={4} sm={4}> <img src={Awareness} alt="AWARENESS"/></Col>
+            <Col lg={8} md={8} sm={8}>
                 <h3 className="title2">Raising Awareness</h3>
                 <p className="p2"><li>Tell a friend or colleage that you are concerned about going on the street</li>
                 &thinsp;&emsp;  nowadays because of anti-Asian hate crime incidents.
@@ -134,8 +125,8 @@ React.useEffect(() => {
             </Col>
           </Row>
 
-           <Row className="box2">
-            <Col lg={8}>
+           <Row className="box2 align-items-center">
+            <Col lg={8} md={8} sm={8}>
                 <h3 className="title2">Supporting anti-Asian hate victims</h3>
                 <p className="p2"><li>Help effort to bring justice to victims.</li>
                 <li>Tell a hate incident/crime victim that you want to listen to their feelings. Tell a</li>
@@ -143,12 +134,12 @@ React.useEffect(() => {
                 <li>Donate to AAPI communities</li></p>
                 <p className="link2"><a className="vm2"><Link to="/actionpage">View More &rarr;</Link></a></p>
             </Col>
-            <Col lg ={4}> <img src={Support} alt="SUPPORT"/> </Col>
+            <Col lg={4} md={4} sm={4}> <img src={Support} alt="SUPPORT"/> </Col>
           </Row>
 
-          <Row className="box2">
-            <Col lg={4}><img src={Expertise} alt="USE EXPERTISE" /></Col>
-            <Col lg={8}>
+          <Row className="box2 align-items-center">
+            <Col lg={4} md={4} sm={4}><img src={Expertise} alt="USE EXPERTISE" /></Col>
+            <Col lg={8} md={8} sm={8}>
             <h3 className="title2">Using your profession, expertise to help</h3>
                 <p className="p2"><li>Make an art pice that reflects attitude to asian-hate and bias.</li>
                 <li>Propose or participate projects.</li>
@@ -158,8 +149,8 @@ React.useEffect(() => {
             </Col>
           </Row>
 
-          <Row className="box2">
-            <Col lg={8}>
+          <Row className="box2 align-items-center">
+            <Col lg={8} md={8} sm={8}>
             <h3 className="title2">Promote cross racial understanding</h3>
                 <p className="p2"><li>Ask a black/latinex/...friend about challenges they experienced while growing </li>
                 &thinsp;&emsp; up and living in the US. Try to relate to them and perhaps share your<br />
@@ -168,7 +159,7 @@ React.useEffect(() => {
                 &thinsp;&emsp; or team to tell their stories.</p>
                 <p className="link2"><a className="vm2"><Link to="/actionpage">View More &rarr;</Link></a></p>
             </Col>
-            <Col lg={4}> <img src={Culture} alt="CROSS-CULTURAL UNDERSTANDING"/> </Col>
+            <Col lg={4} md={4} sm={4}> <img src={Culture} alt="CROSS-CULTURAL UNDERSTANDING"/> </Col>
           </Row>
           </Container>
 
