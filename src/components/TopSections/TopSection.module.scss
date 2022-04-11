@@ -14,7 +14,6 @@
   height: auto;
   // height: 27.78%;
 }
-
 @media (min-width: 0px) {
   .bg {
     // margin-top: 12%;
@@ -98,7 +97,7 @@
           font-size: 4.61vw;
           line-height: 6.15vw;
           text-align: center;
-          color: rgba(8, 13, 31, 0.9);          
+          color: rgba(8, 13, 31, 0.9);  
         }
       }
     }
@@ -255,7 +254,7 @@
     .subscribe {
       width: 488px;
       height: 104px;
-      // margin-left: 61.11%;
+      margin-left: 61.11%;
       p {
         margin: 0px;
         margin-bottom: 8px;
@@ -296,3 +295,5 @@
     }
   }
 }
+
+  

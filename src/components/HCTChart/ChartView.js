@@ -130,7 +130,7 @@ const ChartView = () => {
     <div className="hcr">
 
   <div className="title">
-  <p className="t3" >Anti-Asian hate crimes are happening everyday!</p>
+  <p className="t3" id="chart">Anti-Asian hate crimes are happening everyday!</p>
   <p className="t4">Based on incidents reported by major media in the US</p>
   </div>
 

@@ -5,13 +5,15 @@ import './TopSection.module.scss';
 import styles from './TopSection.module.scss';
 import Mailchimp from "../../utility/mailchimp";
 import hero from '../../assets/img/brand/blue.png'
-import { Button, Input } from "reactstrap";
+import {Button, NavItem, NavLink} from "reactstrap";
 
 
 export default class Header extends Component {
     render() {
         return (
             <>
+            {/* <Button color="warning" >
+            <NavLink href="#chart" className="fa fa-angle-double-down"></NavLink></Button> */}
             <div className={styles.bg}>
                 <section className={styles.topSection}>
                     <h1>Make small contributions<br />
@@ -35,6 +37,7 @@ export default class Header extends Component {
                     Improve racial equality
                 </h1>
                 <h4>Action, Share, Inspire! Together, we can make differences.</h4>
+               
                 <p><Link to="/actionpage">Click 1 thing you can do &rarr;</Link></p>
                 <section className={styles.subscribe}>
                     <p>Join mailing list and keep educating yourself. ✊</p>

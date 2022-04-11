@@ -1,13 +1,11 @@
-import React, { Component, Fragment } from 'react'
-import { Button, Input } from "reactstrap";
-import { Link, Switch, Route } from "react-router-dom";
+import React, { Component, Fragment } from 'react';
 import styles from './ActionPageBody.module.scss';
 
 export default class ActionPageBody extends Component {
     render() {
         return (
             <div className={styles.ActionPageBody}>
-                <div>
+                <div id='awareness'>
                     <h1>Raise awareness</h1>
                     <ul>
                         <li>
@@ -42,8 +40,8 @@ export default class ActionPageBody extends Component {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h1>Support anti-Asian hate victims</h1>
+                <div id='support'>
+               <h1>Support anti-Asian hate victims</h1>
                     <ul>
                         <li>
                             Donate
@@ -62,8 +60,8 @@ export default class ActionPageBody extends Component {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h1>Use your profession & expertise to help</h1>
+                <div id='expertise'>
+               <h1>Use your profession & expertise to help</h1>
                     <ul>
                         <li>
                             Make an art piece that reflects your attitude to asian-hate and bias
@@ -89,7 +87,7 @@ export default class ActionPageBody extends Component {
                     </ul>
                 </div>
                 <div>
-                    <h1>Promote cross racial understanding</h1>
+               <h1 id='culture'>Promote cross racial understanding</h1>
                     <ul>
                         <li>
                             Ask a black/latinx/... friend about challenges they experienced while growing up and living in the US. Try to relate to them and perhaps share your challenges with what the AAPI community is facing.
