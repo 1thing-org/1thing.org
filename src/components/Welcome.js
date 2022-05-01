@@ -12,7 +12,6 @@ import Footer from "components/Footers/Footer.js";
 import OneThingNavbar from './Headers/index';
 import OneThingFooter from './Footers';
 
-
 class Welcome extends Component {
     render() {
   

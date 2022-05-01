@@ -12,8 +12,6 @@ export default class Header extends Component {
     render() {
         return (
             <>
-            {/* <Button color="warning" >
-            <NavLink href="#chart" className="fa fa-angle-double-down"></NavLink></Button> */}
             <div className={styles.bg}>
                 <section className={styles.topSection}>
                     <h1>Make small contributions<br />

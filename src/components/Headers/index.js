@@ -1,4 +1,5 @@
 import React from "react";
+import { useContext, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
@@ -19,8 +20,12 @@ import {
 
 import logo from "../../assets/imag/Logo.svg";
 import "./Header.scss";
+import Share from "../Share/Share";
+
+
 
 class OneThingNavbar extends React.Component {
+
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -162,10 +167,12 @@ class OneThingNavbar extends React.Component {
                       Like us on Facebook
                     </UncontrolledTooltip>
                   </NavItem>
+
                   <NavItem>
-                      <span className="btn-inner--icon">
+                    <Share/>
+                      {/* <span className="btn-inner--icon">
                         <i className="fa fa-share ml-2" />
-                      </span>
+                      </span> */}
                       {/* <span className="nav-link-inner--text ml-1">
                         Share
                       </span> */}
