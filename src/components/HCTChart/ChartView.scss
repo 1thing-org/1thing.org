@@ -10,7 +10,6 @@
     margin-left: 5%;
     height: auto;
     margin-bottom: 5%;
-    
     font-family: 'Quicksand';
     font-style: normal;
 }
@@ -21,35 +20,53 @@
 
 .t1{
     font-weight: 500;
-    font-size: 3.5vmin;
-    line-height: 4.5vmin;
+    // font-size: 3.5vmin;
+    // line-height: 4.5vmin;
     text-align: center;
     color: #080D1F;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .t2{
     font-weight: 600;
-    font-size: 7vmin;
-    line-height: 9vmin;
+    // font-size: 7vmin;
+    // line-height: 9vmin;
     text-align: center;
     color: #CC0B25;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
 }
 
 .t3{
-    font-weight: 700;
-    font-size: 5vmin;
-    line-height: 7vmin;
+    // font-size: 5vmin;
+    // line-height: 7vmin;
     text-align: center;
     color: #080D1F;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 .t4{
     font-weight: 500;
-    font-size: 2vmin;
-    line-height: 3.5vmin;
+    // font-size: 2vmin;
+    // line-height: 3.5vmin;
     text-align: center;
     color: rgba(8, 13, 31, 0.7);
     margin-bottom: 5%;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+
 }
 
 .title{
@@ -74,18 +91,22 @@
 
 .link1{
     text-decoration: underline;
+    text-align: right;
 }
 
 
 .vm1{
-    width: 11.3vmin;
-    height: 2.3vmin;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3vmin;
-    line-height: 3.5vmin;
+    // width: 11.3vmin;
+    // height: 2.3vmin;
+    // font-size: 3vmin;
+    // line-height: 3.5vmin;
      color: #080D1F;
+     font-family: 'Quicksand';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 24px;     
+    //  text-align: right;
 }
 
 @media only screen and (max-width: 576px){
@@ -147,8 +168,21 @@
         color: rgba(8, 13, 31, 0.7);
         margin-bottom: 5%;
     }
+}
 
+@media only screen and (min-width: 1400px){
+    .hcr{
+        width: 1008px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .chart{
+        width: 100%;
+        margin-top: 5%;
+       }
 
 }
 

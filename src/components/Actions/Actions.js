@@ -111,7 +111,6 @@ React.useEffect(() => {
              <p className="link2"><a className="vm2"><Link to="/actionpage#culture">View More &rarr;</Link></a></p>
            </Col>
          </Container>
-
             :
            <Container className="details" id="actions">
           <Row className="box2 align-items-center">
