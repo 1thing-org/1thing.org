@@ -2,7 +2,7 @@ import React, { Component, Fragment, useState } from 'react'
 import { Link, Switch, Route } from "react-router-dom";
 import styles from './Header.module.scss';
 import logo from '../../assets/imag/Logo.svg';
-import SocialMediaPopup from "../SocialMedia/SocialMediaPopup/SocialMediaPopup";
+// import SocialMediaPopup from "../SocialMedia/SocialMediaPopup/SocialMediaPopup";
 
 export default class Header extends Component {
     state = {isShare : false}

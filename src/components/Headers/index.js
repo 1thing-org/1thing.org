@@ -167,9 +167,14 @@ class OneThingNavbar extends React.Component {
                       Like us on Facebook
                     </UncontrolledTooltip>
                   </NavItem>
-
-                  <NavItem>
-                    <Share/>
+                  <NavItem id='tooltipshare' >
+                  <Share/>
+                  <span className="nav-link-inner--text d-lg-none ml-2">
+                   Share
+                  </span>
+                  <UncontrolledTooltip delay={0} target="tooltipshare">
+                      Share our homepage
+                    </UncontrolledTooltip>
                       {/* <span className="btn-inner--icon">
                         <i className="fa fa-share ml-2" />
                       </span> */}

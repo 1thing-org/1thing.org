@@ -3,6 +3,7 @@
   background: url("../../assets/imag/Hero.png") no-repeat;
   width: 100%;
   height: 39.45vw;
+  // height: auto;
   background-size: 100% 100%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -87,9 +88,11 @@
           line-height: 150%;
           color: rgba(8, 13, 31, 0.6);
         }
-        Button{
+        button{
           width: 100%;
           height: 12.3vw;
+          border: 0;
+          border-radius: 10px;
           font-family: 'Quicksand';
           background: #FFBD66;
           font-style: normal;
@@ -196,10 +199,11 @@
           border-radius: 10px;
           border: none;
         }
-        Button {
+        button {
           margin: 0px;
           width: 11.94vw;
           height: 4.44vw;
+          border:none;
           background: #FFBD66;
           border-radius: 0.69vw;
           font-size: 1.25vw;
@@ -293,13 +297,14 @@
           line-height: 24px;
           color: rgba(8, 13, 31, 0.6);
         }
-        Button {
+        button {
           margin: 0px;
           height: 64px;
           width: 180px;
           border-radius: 10px;
           font-size: 18px;
           line-height: 24px;
+          border: 0;
           background: #FFBD66;
         }
       }

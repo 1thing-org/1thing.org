@@ -5,10 +5,9 @@ import { Trans } from 'react-i18next';
 import SocialMedia from './social-media'
 import SocialMediaPopup from './social-media-pop-up'
 
-
 const Share = () => {
     const [isShare, setIsShare] = useState(false);
-    const { t, i18n } = useTranslation();
+    // const { t, i18n } = useTranslation();
     const [deviceSize, changeDeviceSize] = useState(window.innerWidth);
 
     return(
@@ -22,11 +21,13 @@ const Share = () => {
         </>
       } */}
       {isShare && <SocialMediaPopup setIsSharing={() => {setIsShare(false)}} deviceSize={deviceSize}/>}
-         <button className="button-no-background" onClick={() => setIsShare(true)}>
-         <span className="btn-inner--icon">
-             <i className="fa fa-share ml-2" />
-        </span>
-        </button>
+      
+         {/* <button className="button-no-background" onClick={() => setIsShare(true)}> */}
+         {/* <span className="btn-inner--icon"> */}
+             <i className="fa fa-share ml-2" onClick={() => setIsShare(true)}/>
+        {/* </span> */}
+        {/* </button> */}
+        
         </>
     );
 }

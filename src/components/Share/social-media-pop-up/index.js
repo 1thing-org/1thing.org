@@ -33,17 +33,17 @@ const ModalOverlay = (props) => {
   };
 
   
-const ModalPhoneOverlay = (props) => {
-  const { t } = useTranslation();
-  return (
-    <div className="modalPhone">
-      <p className='modal-title'>{t("social.follow_us")}</p>
-      <div className="modal-media">
-          <SocialMedia size={47}  bgStyle={{fill: "white"}} iconFillColor={"black"}/>
-        </div>
-    </div>
-  );
-};
+// const ModalPhoneOverlay = (props) => {
+//   const { t } = useTranslation();
+//   return (
+//     <div className="modalPhone">
+//       <p className='modal-title'>{t("social.follow_us")}</p>
+//       <div className="modal-media">
+//           <SocialMedia size={47}  bgStyle={{fill: "white"}} iconFillColor={"black"}/>
+//         </div>
+//     </div>
+//   );
+// };
 
 const SocialMediaPopup = ({setIsSharing, deviceSize}) => {
   // console.log(deviceSize)
@@ -54,7 +54,10 @@ const SocialMediaPopup = ({setIsSharing, deviceSize}) => {
         document.getElementById('backdrop-root')
       )}
       {
-        ReactDOM.createPortal( deviceSize > 786 ? <ModalOverlay /> : <ModalPhoneOverlay />, document.getElementById('overlay-root')) 
+        ReactDOM.createPortal( deviceSize > 786 ? <ModalOverlay /> : 
+        // <ModalPhoneOverlay />
+        null
+        , document.getElementById('overlay-root')) 
       }
     </React.Fragment>
   );
