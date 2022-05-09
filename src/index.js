@@ -23,14 +23,8 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss?v1.1.0";
 
-import Index from "views/Index.js";
-import Landing from "views/examples/Landing.js";
-import Login from "views/examples/Login.js";
-import Profile from "views/examples/Profile.js";
-import Register from "views/examples/Register.js";
-
-import * as serviceWorker from './serviceWorker'
-import './i18n';
+import * as serviceWorker from "./serviceWorker";
+import "./i18n";
 
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
 
@@ -38,39 +32,19 @@ import Welcome from "components/Welcome.js";
 import ActionPage from "components/ActionPage/ActionPage";
 
 ReactDOM.render(
+	<BrowserRouter>
+		<Switch>
+			<Route path="/" exact render={props => <Welcome {...props} />} />
+			<Route
+				path="/actionpage"
+				exact
+				render={props => <ActionPage {...props} />}
+			/>
+			<Redirect to="/" />
+		</Switch>
+	</BrowserRouter>,
 
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" exact render={props => <Welcome {...props} />} />
-      <Route path="/actionpage" exact render={props => <ActionPage {...props} />} />
-      <Redirect to="/" />
-    </Switch>
-  </BrowserRouter>,
-
-  // <BrowserRouter>
-  //   <Switch>
-  //     <Route path="/" exact render={props => <Index {...props} />} />
-  //     <Route
-  //       path="/landing-page"
-  //       exact
-  //       render={props => <Landing {...props} />}
-  //     />
-  //     <Route path="/login-page" exact render={props => <Login {...props} />} />
-  //     <Route
-  //       path="/profile-page"
-  //       exact
-  //       render={props => <Profile {...props} />}
-  //     />
-  //     <Route
-  //       path="/register-page"
-  //       exact
-  //       render={props => <Register {...props} />}
-  //     />
-  //     <Redirect to="/" />
-  //   </Switch>
-  // </BrowserRouter>,
-
-  document.getElementById('root')
+	document.getElementById("root")
 );
 
-serviceWorker.unregister()
+serviceWorker.unregister();

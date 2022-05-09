@@ -256,12 +256,12 @@ cursor: pointer;
     
 }
 
+// pad-screen
 @media (min-width: 768px) {
     #navbar-main {
         .container {
             .navbar-collapse.show {
-                left: 50%;
-                width: 50%;
+                
             }
         }
     }
