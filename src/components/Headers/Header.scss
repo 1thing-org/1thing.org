@@ -55,6 +55,7 @@ cursor: pointer;
             .navbar-collapse.show {
                 width: 100%;
                 height: calc(100vh) !important;
+                // height: 100%;
                 padding-left: 1rem;
                 padding-right: 1rem;
                 padding-top: 1.5rem;
@@ -114,6 +115,12 @@ cursor: pointer;
             .navbar-collapse.collapsing-out {
                 animation: none;
             }
+        }
+    }
+
+    .headroom--unpinned {
+        .navbar-collapse.show {
+            // top: 24.62vw;
         }
     }
 

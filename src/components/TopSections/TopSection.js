@@ -20,7 +20,12 @@ export default class Header extends Component {
 							<Link to="/actionpage">Click 1 thing you can do &rarr;</Link>
 						</p>
 						<section className={styles.subscribe}>
-							<p>Join mailing list and keep educating yourself. ✊</p>
+							<p>
+								Join mailing list and keep educating yourself.{" "}
+								<span role="img" aria-label="come on">
+									✊
+								</span>
+							</p>
 							<section className={styles.email}>
 								<Mailchimp />
 							</section>
@@ -39,7 +44,12 @@ export default class Header extends Component {
 						<Link to="/actionpage">Click 1 thing you can do &rarr;</Link>
 					</p>
 					<section className={styles.subscribe}>
-						<p>Join mailing list and keep educating yourself. ✊</p>
+						<p>
+							Join mailing list and keep educating yourself.{" "}
+							<span role="img" aria-label="come on">
+								✊
+							</span>
+						</p>
 						<section className={styles.email}>
 							<Mailchimp className={styles.email} />
 						</section>

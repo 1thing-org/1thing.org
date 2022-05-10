@@ -1,12 +1,10 @@
 import React from "react";
-import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
 // reactstrap components
 import {
 	UncontrolledCollapse,
-	Button,
 	NavbarBrand,
 	Navbar,
 	NavItem,
@@ -17,7 +15,6 @@ import {
 	Col,
 	UncontrolledTooltip,
 } from "reactstrap";
-import logo from "../../assets/imag/Logo.svg";
 import "./Header.scss";
 import Share from "../Share/Share";
 
@@ -93,7 +90,7 @@ class OneThingNavbar extends React.Component {
 										<span className="nav-link-inner--text">Action</span>
 									</NavLink>
 									<NavLink
-										href="https://docs.google.com/forms/d/1pWp89Y6EThMHml1jYGkDj5J0YFO74K_37sIlOHKkWo0/viewform?edit_requested=true"
+										href="https://docs.google.com/forms/d/e/1FAIpQLSc3Fszd3ymDi7hQKpLC6jsdQGmqkE9cGlZ5RAOq5SAgWKiW3A/viewform"
 										target="_blank">
 										<span className="nav-link-inner--text">Contact</span>
 									</NavLink>
