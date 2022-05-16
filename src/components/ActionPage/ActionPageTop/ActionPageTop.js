@@ -7,10 +7,10 @@ export default class ActionPageTop extends Component {
 		return (
 			<div className={styles.ActionPageTop}>
 				<h1>Do 1 thing to mitigate social inequality.</h1>
-				<Button color="onething" type="button">
+				{/* <Button color="onething" type="button">
 					{" "}
 					Share what you’ve done{" "}
-				</Button>
+				</Button> */}
 			</div>
 		);
 	}

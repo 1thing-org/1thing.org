@@ -1,6 +1,7 @@
 .ActionPageTop {
     width: 100%;
-    height: 314px;
+    height: auto;
+    // height: 314px;
     margin-top: 5%;
     background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
 
@@ -12,7 +13,7 @@
 .ActionPageTop > h1 {
     height: 56px;
     margin-top: 80px;
-    
+    margin-bottom: 80px;
     font-family: Quicksand;
     font-style: normal;
     font-weight: bold;
