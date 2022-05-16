@@ -21,7 +21,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #5e72e4;
   --indigo: #5603ad;
   --purple: #8965e0;
@@ -49,6 +49,7 @@
   --white: #fff;
   --neutral: #fff;
   --darker: black;
+  --onething: #FFBD66;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -487,7 +488,7 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1040px; } }
+      max-width: 1040px; } } 
 
 .container-fluid {
   width: 100%;
@@ -2389,7 +2390,8 @@ input[type="button"].btn-block {
   position: relative;
   height: 0;
   overflow: hidden;
-  transition: height 0.35s ease; }
+  transition: height 0.35s ease; 
+}
   @media (prefers-reduced-motion: reduce) {
     .collapsing {
       transition: none; } }
@@ -8673,7 +8675,8 @@ button.bg-darker:focus {
     margin-top: 3rem !important; }
   .mr-lg-5,
   .mx-lg-5 {
-    margin-right: 3rem !important; }
+    /* margin-right: 3rem !important;  */
+  }
   .mb-lg-5,
   .my-lg-5 {
     margin-bottom: 3rem !important; }
@@ -10397,7 +10400,9 @@ a.text-darker:hover, a.text-darker:focus {
     text-shadow: none !important;
     box-shadow: none !important; }
   a:not(.btn) {
-    text-decoration: underline; }
+    /* text-decoration: underline;  */
+    text-decoration: none;
+  }
   abbr[title]::after {
     content: " (" attr(title) ")"; }
   pre {
@@ -12460,7 +12465,7 @@ textarea[resize="horizontal"] {
     font-size: 4.25rem; }
 
 .icon-xl + .icon-text {
-  width: calc(100% - $icon-size-xl - 1); }
+  width: calc(100% - 5rem - 1); }
 
 .icon-lg {
   width: 4rem;
@@ -12469,7 +12474,7 @@ textarea[resize="horizontal"] {
     font-size: 3.25rem; }
 
 .icon-lg + .icon-text {
-  width: calc(100% - $icon-size-lg - 1); }
+  width: calc(100% - 4rem - 1); }
 
 .icon-sm {
   width: 2rem;
@@ -12478,7 +12483,7 @@ textarea[resize="horizontal"] {
     font-size: 1.25rem; }
 
 .icon-sm + .icon-text {
-  width: calc(100% - $icon-size-sm - 1); }
+  width: calc(100% - 2rem - 1); }
 
 .icon-xs {
   width: 1.25rem;
@@ -12486,7 +12491,7 @@ textarea[resize="horizontal"] {
   .icon-xs i, .icon-xs svg {
     font-size: 0.5rem !important; }
   .icon-xs + .icon-text {
-    width: calc(100% - $icon-size-xs - 1); }
+    width: calc(100% - 1.25rem - 1); }
 
 .icon-shape {
   padding: 12px;
@@ -13093,9 +13098,12 @@ textarea[resize="horizontal"] {
     border-radius: 0.25rem;
     background: #FFF;
     box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-    animation: show-navbar-collapse .2s ease forwards; }
+    animation: show-navbar-collapse .2s ease forwards; 
+  }
   .navbar-collapse.collapsing-out {
-    animation: hide-navbar-collapse .2s ease forwards; } }
+    animation: hide-navbar-collapse .2s ease forwards; 
+  } 
+}
 
 @keyframes show-navbar-collapse {
   0% {

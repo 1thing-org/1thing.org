@@ -17,26 +17,34 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import * as serviceWorker from './serviceWorker'
-import './i18n';
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import "assets/vendor/nucleo/css/nucleo.css";
+import "assets/vendor/font-awesome/css/font-awesome.min.css";
+import "assets/scss/argon-design-system-react.scss?v1.1.0";
+
+import * as serviceWorker from "./serviceWorker";
+import "./i18n";
+
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
 
 import Welcome from "components/Welcome.js";
 import ActionPage from "components/ActionPage/ActionPage";
 
 ReactDOM.render(
+	<BrowserRouter>
+		<Switch>
+			<Route path="/" exact render={props => <Welcome {...props} />} />
+			<Route
+				path="/actionpage"
+				exact
+				render={props => <ActionPage {...props} />}
+			/>
+			<Redirect to="/" />
+		</Switch>
+	</BrowserRouter>,
 
-  <BrowserRouter>
-  <Switch>
-  <Route path="/" exact render={props => <Welcome {...props} />} />
-  <Route path="/actionpage" exact render={props => <ActionPage {...props} />} />
-       <Redirect to="/" />
-       </Switch>
-   </BrowserRouter>,
-
-  document.getElementById("root")
+	document.getElementById("root")
 );
 
-serviceWorker.unregister()
+serviceWorker.unregister();

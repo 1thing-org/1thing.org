@@ -3,17 +3,18 @@ import React from "react";
 import './ChartView.scss'
 
 import moment from 'moment';
-import { useContext, useEffect, useState } from 'react';
-import { Row, Col } from 'reactstrap';
+import { useEffect, useState } from 'react';
+import { Row, Col, Container} from 'reactstrap';
+
 import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
 import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 import IncidentChart from './IncidentChart';
 
 import * as incidentsService from '../../services/incidents';
-import { useRouter } from '../../utility/hooks/useRouter';
+// import { useRouter } from '../../utility/hooks/useRouter';
 
 const ChartView = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
   const [dateRange, setDateRange] = useState([moment().subtract(1, 'year'), moment()]);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true)
@@ -50,7 +51,7 @@ const ChartView = () => {
           stats.pop();
           continue; //skip data that is out of range
         }
-        if (stats[stats.length - 1].key == strDate) {
+        if (stats[stats.length - 1].key === strDate) {
           //found the date in stats, use it
           new_stats.push({
             monthly_cases: monthlyData,
@@ -75,7 +76,7 @@ const ChartView = () => {
   const calculateTotalCasesOfMonth = (stats, month /* string 2022-01 */) => {
     let total = 0;
     stats.forEach(stat => {
-      if (stat.key.substring(0, 7) == month) {
+      if (stat.key.substring(0, 7) === month) {
         total += stat.value;
       }
     });
@@ -108,39 +109,79 @@ const ChartView = () => {
     loadData();
   }, []);
 
+  //responsive
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+  const handleResize = () => {
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth
+    });
+  }
+  React.useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    return () => { window.removeEventListener('resize', handleResize) }
+  });
+
 
   return (
     <div className="hcr">
-    
-        
-          <div className="word">
-            <h2 className="t1">Anti-Asian hate crimes are happening everyday!</h2>
-          
-            <div className="childword">
-            <h2 className="t2">{totalLastMonthCases} Cases</h2>
-            <p className="t1">in {lastMonthName}</p>              
-            </div>
-           
-            <div className="childword">
-            <h2 className="t2">{totalAnnualCases} Cases</h2>
-            <p className="t1">last year</p>              
-            </div>
-           
-            <p className="t3">*Note: data from 1 thing team</p>
-          </div>
-          
 
-          <div className="chart">
-            <IncidentChart
+  <div className="title">
+  <p className="t3">Anti-Asian hate crimes are happening everyday!</p>
+  <p className="t4">Based on incidents reported by major media in the US</p>
+  </div>
+
+{ dimensions.width<576?
+  <div>
+<Container className="word">
+
+<div className="childword">
+  <p className="t2">{totalLastMonthCases} Cases</p>
+  <p className="t1">was reported in {lastMonthName}</p> 
+</div>
+
+<div>
+  <p className="t2">{totalAnnualCases} Cases</p>
+  <p className="t1">was reported in 2021</p>   
+</div>
+</Container>
+  </div>
+:
+<div>
+<Container className="word">
+
+<Row className="childword">
+  <Col>
+  <h2 className="t2">{totalLastMonthCases} Cases</h2>
+  <p className="t1">was reported in {lastMonthName}</p> 
+  </Col>
+
+  <Col>
+  <h2 className="t2">{totalAnnualCases} Cases</h2>
+  <p className="t1">was reported in 2021</p> 
+  </Col>
+</Row>
+</Container>
+</div>
+}
+     <div className="chart">
+     <IncidentChart
               className="behind-relative"
               chart_data={incidentTimeSeries}
               isFirstLoadData={isFirstLoadData}
             />
-          </div>
-          
-      <div className="link1">
-        <a className="vm1" href="https://hatecrimetracker.1thing.org/">View More &rarr;</a>
       </div>
+      
+      <div>         
+      <Row className="link1">
+        <Col lg={{offset:10}} md={{offset:8}} sm={{offset:5}} xs={{offset:5}}>
+        <a className="vm1" href="https://hatecrimetracker.1thing.org/" target='_blank' rel="noopener noreferrer">View More &rarr;</a>
+        </Col>
+      </Row>
+      </div> 
 
     </div>
   );

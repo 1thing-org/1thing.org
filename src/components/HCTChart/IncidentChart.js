@@ -1,9 +1,7 @@
 import moment from 'moment';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Card, CardBody, CardHeader, CardTitle } from 'reactstrap';
 import { ComposedChart, Area, Bar, Legend, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import { stateFullName } from '../../utility/Utils';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 import './IncidentChart.scss'
@@ -53,30 +51,28 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
       const daily = payload[0].payload.value ? payload[0].payload.value : 0;
       return tooltip !== 'daily' ? (
         <div className='recharts-custom-tooltip'>
-          <p>{d.format("MMM YYYY")}</p>
-          <p><strong>{t("incident_chart.total_monthly_cases", { count: monthly })}</strong></p>
+          <p className='date'>{d.format("MMM YYYY")}</p>
+          <p className='cases'><strong>{t("incident_chart.total_monthly_cases", { count: monthly })}</strong></p>
         </div>
       ) :
         (
           <div className='recharts-custom-tooltip'>
-            <p>{d.format("M/D/YYYY")}</p>
-            <p><strong>{t("incident_chart.total_daily_cases", { count: daily })}</strong></p>
-            <p><strong>{t("incident_chart.total_monthly_cases", { count: monthly })}</strong></p>
+            <p className='date'>{d.format("M/D/YYYY")}</p>
+            <p className='cases'><strong>{t("incident_chart.total_daily_cases", { count: daily })}</strong></p>
+            <p className='cases'><strong>{t("incident_chart.total_monthly_cases", { count: monthly })}</strong></p>
           </div>
         )
     }
     return null
   }
   return (
-    <Card>
-      <CardBody>
         <div className='recharts-wrapper'>
           {(totalCases === 0 && !isFirstLoadData) ?  (
             <>
               <p className='add-data-button'>
                 <Trans i18nKey='no_data_please_report'>
                   There is no data collected in the selected location and date range yet. Please click 
-                    <a href='https://forms.gle/HRkVKW2Sfp7BytXj8' target='_blank'>here</a>
+                    <a href='https://forms.gle/HRkVKW2Sfp7BytXj8' target='_blank' rel="noopener noreferrer">here</a>
                     to report incidents to us.
                 </Trans>
               </p>
@@ -96,14 +92,12 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
               <Tooltip content={<CustomTooltip />} />
               <Area name={t("monthly_count")} type="monotone" dataKey="monthly_cases" fill="rgba(155, 161, 225, 0.5)" stroke="rgba(155, 161, 225, 0.5)" yAxisId="right"
                 onMouseOver={() => setTooltip('monthly')} />
-              <Bar name={t("daily_count")} dataKey='value' stroke={chart_data.length > 60 ? color : undefined} fill="#107E8D" strokeWidth={3}
+              <Bar name={t("daily_count")} dataKey='value' stroke={chart_data.length > 60 ? "#107E8D" : undefined} fill="#107E8D" strokeWidth={3}
                 onMouseOver={() => setTooltip('daily')} />
               <Legend wrapperStyle={{ position: 'relative', marginTop: '4px' }} />
             </ComposedChart>
           </ResponsiveContainer>
         </div>
-      </CardBody>
-    </Card>
   )
 }
 export default IncidentChart

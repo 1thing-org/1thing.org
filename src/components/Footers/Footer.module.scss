@@ -1,114 +1,486 @@
-footer {
-    /* position: relative; */
-    width: 100%;
-    // height: auto;
-    // width: 1440px;
-    height: 264px;
-    background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
+@media (min-width: 300px) {
+    footer {
+        width: 100%;
+        height: 90.26vw;
+        padding: 0;
+        padding-top: 8.2vw;
+        background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .subscribe {
-    width: 592px;
-    height: 112px;
-    // margin: 72px 0px 80px 112px;
-    margin-left: 10%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.subscribe > h3 {
-    width: 488px;
-    height: 32px;
-    margin: 0px;
-
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3.5vmin;
-    line-height: 4.5vmin;
-    // font-size: 24px;
-    // line-height: 32px;
+        .footerContainer {
+            .subscribe {
+                margin: 0;
+                margin-left: 4.1vw;
+                margin-right: 4.1vw;
+                height: 43.07vw;
+                padding: 0;
     
-    color: #080D1F;
-}
-
-.email {
-    width: 592px;
-    height: 56px;
-}
-.email > input {
-    width: 60vmin;
-    height: 8vmin;
-    padding: 16px;
-    border: 0;
+                h3 {
+                    width: 100%;
+                    height: 6.15vw;
+                    margin: 0 auto;
+                    margin-bottom: 6.15vw;
+                    padding: 0;
+                
+                    font-family: 'Quicksand';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 4.61vw;
+                    line-height: 6.1538vw;
+                    text-align: center;
+                    color: #080D1F;
+                }
     
-    background: #FFFFFF;
-    box-shadow: 0px 30px 50px rgba(180, 191, 221, 0.1);
-    border-radius: 10px;
-
-    /* text */
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.5vmin;
-    line-height: 3vmin;
+                .email {
+                    width: 100%;
+                    margin: auto;
+                    // margin-top: 3.125vw;
+                    height: 30.75vw;
+                    
+                    input {
+                        width: 100%;
+                        height: 12.3vw;
+                        padding: 0;
+                        padding-top: 3.07vw;
+                        padding-bottom: 3.07vw;
+                        margin-bottom: 6.15vw;
+                        border: none;
+                        
+                        background: #FFFFFF;
+                        border-radius: 2.56vw;
+                        text-align: center;
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 4.61vw;
+                        line-height: 6.15vw;
+                        color: rgba(8, 13, 31, 0.6);
+                    }
+        
+                    button {
+                        width: 100%;
+                        height: 12.3vw;
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        
+                        background: #FFBD66;
+                        border-radius: 2.56vw;
+                    
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 4.61vw;
+                        line-height: 6.15vw;
+                        text-align: center;
+                        color: rgba(8, 13, 31, 0.9);
+                    }
+                }
+            }
     
-    color: rgba(8, 13, 31, 0.6);
+            .rightSide {
+                width: 59.49vw;
+                height: 16.41vw;
+                margin: 0 auto;
+                margin-top: 10.256vw;
+            
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 3.58vw;
+                line-height: 4.1vw;
+                color: rgba(8, 13, 31, 0.9);
+
+                article {
+                    text-align: center;
+                }
+
+                .socialMedia {
+                    margin: 0;
+                    margin-bottom: 4.1vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    a {
+                        
+                        color: rgba(8, 13, 31, 0.9);
+                        i {
+                            font-size: 6.15vw;
+                        }
+                    }
+                }
+            }
+        }        
+    }
 }
-.email > button {
-    width: 22vmin;
-    height: 8vmin;
-    padding: 0;
-    border: 0;
-    margin-left: 3vmin;
+
+@media (min-width: 768px) {
+    footer {
+        width: 100%;
+        height: 36.2vw;
+        margin: 0;
+        padding: 0;
+        padding-top: 5.2vw;
+        background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
+
+        .footerContainer {
+            .subscribe {
+                margin: 0;
+                padding: 0;
+                height: auto;
     
-    background: #FFBD66;
-    box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1);
-    border-radius: 10px;
+                h3 {
+                    width: 43.22vw;
+                    height: 3.125vw;
+                    margin: 0 auto;
+                    padding: 0;
 
-    /* text on button */
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.5vmin;
-    line-height: 3vmin;
-    text-align: center;
-    color: rgba(8, 13, 31, 0.9);
+                    font-family: 'Quicksand';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 2.34vw;
+                    line-height: 3.125vw;
+                    
+                    color: #080D1F;
+                }
+    
+                .email {
+                    width: 56.515vw;
+                    height: 6.25vw;
+                    margin: 0 auto;
+                    margin-top: 3.125vw;
+                    padding: 0;
+                    
+                    input {
+                        width: 33.07vw;
+                        height: 100%;
+                        margin: 0;
+                        padding: 1.56vw 2.08vw;
+                        margin-right: 2.08vw;
+                        border: none;
+                        
+                        background: #FFFFFF;
+                        box-shadow: 0px 3.9vw 6.5vw rgba(180, 191, 221, 0.1);
+                        border-radius: 1.3vw;
+                        
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2.08vw;
+                        line-height: 3.125vw;
+                        color: rgba(8, 13, 31, 0.6);
+                    }
+        
+                    button {
+                        width: 21.35vw;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        
+                        background: #FFBD66;
+                        box-shadow: 0px 3.9vw 6.5vw  rgba(143, 157, 196, 0.1);
+                        border-radius: 1.3vw;
+                    
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 2.08vw;
+                        line-height: 3.125vw;
+                        text-align: center;
+                        color: rgba(8, 13, 31, 0.9);
+                    }
+                }
+            }
+    
+            .rightSide {
+                width: 30.2vw;
+                height: 8.6vw;
+                margin: 0 auto;
+                margin-top: 6.25vw;
+                padding: 0;
+            
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.82vw;
+                line-height: 2.08vw;
+                color: rgba(8, 13, 31, 0.9);
+    
+                .socialMedia {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    a {
+                        color: rgba(8, 13, 31, 0.9);
+                        i {
+                            font-size: 3.25vw;
+                        }
+                    }
+                }
+            }
+        }        
+    }
 }
 
-footer .rightSide {
-    height: 72px;
-    // margin: 112px 72px 80px 0px;
-    margin-right: 10%;
+@media (min-width: 992px) {
+    footer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+        .footerContainer {
+            margin: 0 auto;
+            padding: 0;
+            width: 84.44vw;
+            height: 18.33vw;
 
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.5vmin;
-    line-height: 3.5vmin;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
 
-    color: rgba(8, 13, 31, 0.9);
+            .subscribe {
+                width: 41.11vw;
+                height: 7.77vw;
+                margin: 0;
+                padding: 0;
+            
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                h3 {
+                    width: 33.88vw;
+                    height: 2.22vw;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 1.66vw;
+                
+                    font-family: 'Quicksand';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.66vw;
+                    line-height: 2.22vw;
+                    
+                    color: #080D1F;
+                }
+    
+                .email {
+                    width: 41.11vw;
+                    height: 3.88vw;
+                    margin: 0;
+                    padding: 0;
+                    input {
+                        width: 26.66vw;
+                        height: 3.88vw;
+                        margin: 0;
+                        padding: 1.11vw;
+                        border: 0;
+                        
+                        background: #FFFFFF;
+                        box-shadow: 0px 2.08vw 3.47vw rgba(180, 191, 221, 0.1);
+                        border-radius: 0.69vw;
+                        
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 1.25vw;
+                        line-height: 1.52vw;
+                        color: rgba(8, 13, 31, 0.6);
+                    }
+        
+                    button {
+                        width: 12.22vw;
+                        height: 3.88vw;
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        margin-left: 2.22vw;
+                        
+                        background: #FFBD66;
+                        box-shadow: 0px 2.08vw 3.47vw  rgba(143, 157, 196, 0.1);
+                        border-radius: 0.69vw;
+
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25vw;
+                        line-height: 1.52vw;
+                        text-align: center;
+                        color: rgba(8, 13, 31, 0.9);
+                    }
+                }
+            }
+    
+            .rightSide {
+                height: 5vw;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+            
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.97vw;
+                line-height: 1.66vw;
+                color: rgba(8, 13, 31, 0.9);
+    
+                .socialMedia {
+                    width: 12.5vw;
+                    margin: 0;
+                    padding: 0;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    a {
+                        color: rgba(8, 13, 31, 0.9);
+                        i {
+                            font-size: 1.66vw;
+                        }
+                    }
+                }
+            }
+        }        
+    }
 }
 
-footer .socialMedia {
-    width: 15vw;
-    // width: 150px;
-    // height: 24px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+@media (min-width: 1440px) {
+    footer {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 auto;
+        background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
+
+        .footerContainer {
+            margin: 0 auto;
+            padding: 0;
+            width: 1216px;
+            height: 264px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .subscribe {
+                width: 592px;
+                height: 112px;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                h3 {
+                    width: 488px;
+                    height: 32px;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 24px;
+                
+                    font-family: 'Quicksand';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    
+                    color: #080D1F;
+                }
+    
+                .email {
+                    width: 592px;
+                    height: 56px;
+                    margin: 0;
+                    padding: 0;
+                    input {
+                        width: 384px;
+                        height: 56px;
+                        margin: 0;
+                        padding: 0;
+                        padding: 16px;
+                        border: 0;
+                        
+                        background: #FFFFFF;
+                        box-shadow: 0px 30px 50px rgba(180, 191, 221, 0.1);
+                        border-radius: 10px;
+                        
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height:22px;
+                        color: rgba(8, 13, 31, 0.6);
+                    }
+        
+                    button {
+                        width: 176px;
+                        height: 56px;
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        margin-left: 32px;
+                        
+                        background: #FFBD66;
+                        box-shadow: 0px 30px 50px rgba(143, 157, 196, 0.1);
+                        border-radius: 10px;
+                    
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: rgba(8, 13, 31, 0.9);
+                    }
+                }
+            }
+    
+            .rightSide {
+                height: 72px;
+                margin: 0;
+                padding: 0;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+            
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(8, 13, 31, 0.9);
+    
+                .socialMedia {
+                    width: 180px;
+                    margin: 0;
+                    padding: 0;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    a {
+                        color: rgba(8, 13, 31, 0.9);
+                        i {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }        
+    }
 }
+
