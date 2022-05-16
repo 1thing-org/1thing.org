@@ -86,7 +86,7 @@ class OneThingNavbar extends React.Component {
 									<NavLink tag={Link} className="nav-link" to="/">
 										<span className="nav-link-inner--text">Home</span>
 									</NavLink>
-									<NavLink tag={Link} to="/actionPage">
+									<NavLink tag={Link} to="/actionPage" target="_blank">
 										<span className="nav-link-inner--text">Action</span>
 									</NavLink>
 									<NavLink

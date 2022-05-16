@@ -106,6 +106,7 @@
 @media (min-width: 768px) {
     .bg {
       display: block;
+      width: 100%;
     }
     .bgMobile {
       display: none;
@@ -166,7 +167,6 @@
         margin: 0px;
         margin-bottom: 0.55vw;
         padding: 0px;
-        width: 100vw;
         height: 2.22vw;
         font-family: 'Quicksand';
         font-style: normal;

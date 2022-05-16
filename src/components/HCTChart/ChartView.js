@@ -180,7 +180,7 @@ const ChartView = () => {
       <div>         
       <Row className="link1">
         <Col lg={{offset:10}} md={{offset:8}} sm={{offset:5}} xs={{offset:5}}>
-        <a className="vm1" href="https://hatecrimetracker.1thing.org/">View More &rarr;</a>
+        <a className="vm1" href="https://hatecrimetracker.1thing.org/" target='_blank'>View More &rarr;</a>
         </Col>
       </Row>
       </div> 

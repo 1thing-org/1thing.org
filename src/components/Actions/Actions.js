@@ -92,7 +92,7 @@ const Actions = () => {
 							</li>
 						</p>
 						<p className="link2">
-							<Link to="/actionpage#awareness" className="vm2">
+							<Link to="/actionpage#awareness" target="_blank" className="vm2">
 								View More &rarr;
 							</Link>
 						</p>
@@ -114,7 +114,7 @@ const Actions = () => {
 						</p>
 						<p className="link2">
 							<a className="vm2">
-								<Link to="/actionpage#support">View More &rarr;</Link>
+								<Link to="/actionpage#support" target="_blank">View More &rarr;</Link>
 							</a>
 						</p>
 					</Col>
@@ -137,7 +137,7 @@ const Actions = () => {
 						</p>
 						<p className="link2">
 							<a className="vm2">
-								<Link to="/actionpage#expertise">View More &rarr;</Link>
+								<Link to="/actionpage#expertise" target="_blank">View More &rarr;</Link>
 							</a>
 						</p>
 					</Col>
@@ -161,7 +161,7 @@ const Actions = () => {
 						</p>
 						<p className="link2">
 							<a className="vm2">
-								<Link to="/actionpage#culture">View More &rarr;</Link>
+								<Link to="/actionpage#culture" target="_blank">View More &rarr;</Link>
 							</a>
 						</p>
 					</Col>
@@ -188,7 +188,7 @@ const Actions = () => {
 								</li>
 							</p>
 							<p className="link2">
-								<Link to="/actionpage#awareness" className="vm2">
+								<Link to="/actionpage#awareness" className="vm2" target="_blank">
 									View More &rarr;
 								</Link>
 							</p>
@@ -209,7 +209,7 @@ const Actions = () => {
 							</p>
 							<p className="link2">
 								<a className="vm2">
-									<Link to="/actionpage#support">View More &rarr;</Link>
+									<Link to="/actionpage#support" target="_blank">View More &rarr;</Link>
 								</a>
 							</p>
 						</Col>
@@ -241,7 +241,7 @@ const Actions = () => {
 							</p>
 							<p className="link2">
 								<a className="vm2">
-									<Link to="/actionpage#expertise">View More &rarr;</Link>
+									<Link to="/actionpage#expertise" target="_blank">View More &rarr;</Link>
 								</a>
 							</p>
 						</Col>
@@ -264,7 +264,7 @@ const Actions = () => {
 							</p>
 							<p className="link2">
 								<a className="vm2">
-									<Link to="/actionpage#culture">View More &rarr;</Link>
+									<Link to="/actionpage#culture" target="_blank">View More &rarr;</Link>
 								</a>
 							</p>
 						</Col>
