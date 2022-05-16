@@ -167,7 +167,6 @@ const ChartView = () => {
 </Container>
 </div>
 }
-      <Row> 
      <div className="chart">
      <IncidentChart
               className="behind-relative"
@@ -175,7 +174,6 @@ const ChartView = () => {
               isFirstLoadData={isFirstLoadData}
             />
       </div>
-      </Row> 
       
       <div>         
       <Row className="link1">

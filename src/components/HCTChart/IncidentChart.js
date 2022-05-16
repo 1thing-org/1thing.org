@@ -67,8 +67,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
     return null
   }
   return (
-    // <Card>
-    //   <CardBody>
         <div className='recharts-wrapper'>
           {(totalCases === 0 && !isFirstLoadData) ?  (
             <>
@@ -101,8 +99,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             </ComposedChart>
           </ResponsiveContainer>
         </div>
-    //    </CardBody>
-    //  </Card> 
   )
 }
 export default IncidentChart

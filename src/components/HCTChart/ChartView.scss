@@ -20,8 +20,6 @@
 
 .t1{
     font-weight: 500;
-    // font-size: 3.5vmin;
-    // line-height: 4.5vmin;
     text-align: center;
     color: #080D1F;
     font-family: 'Quicksand';
@@ -32,8 +30,6 @@
 
 .t2{
     font-weight: 600;
-    // font-size: 7vmin;
-    // line-height: 9vmin;
     text-align: center;
     color: #CC0B25;
     font-family: 'Quicksand';
@@ -44,8 +40,6 @@
 }
 
 .t3{
-    // font-size: 5vmin;
-    // line-height: 7vmin;
     text-align: center;
     color: #080D1F;
     font-family: 'Quicksand';
@@ -57,8 +51,6 @@
 
 .t4{
     font-weight: 500;
-    // font-size: 2vmin;
-    // line-height: 3.5vmin;
     text-align: center;
     color: rgba(8, 13, 31, 0.7);
     margin-bottom: 5%;
@@ -78,8 +70,8 @@
 .chart{
     width: 92%;
     height: 500px;
-    margin-left: 4%;
-    // margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
    }
 
 .behind-relative {
@@ -96,17 +88,13 @@
 
 
 .vm1{
-    // width: 11.3vmin;
-    // height: 2.3vmin;
-    // font-size: 3vmin;
-    // line-height: 3.5vmin;
      color: #080D1F;
      font-family: 'Quicksand';
      font-style: normal;
      font-weight: 600;
      font-size: 20px;
      line-height: 24px;     
-    //  text-align: right;
+
 }
 
 @media only screen and (max-width: 576px){

@@ -31,15 +31,13 @@ const Actions = () => {
 
 	return (
 		<div className="box">
-			<Container className="title">
-				<Row>
-					<Col>
+			<Container fluid className="title">
+				<Row fluid>
 						<img
 							className="img1"
 							src={Smallactions}
 							alt="SMALL ACTIONS BRING BIG CHANGES"
 						/>
-					</Col>
 				</Row>
 
 				<Row>
@@ -74,12 +72,14 @@ const Actions = () => {
 			</Container>
 
 			{dimensions.width < 576 ? (
-				<Container className="details1" id="actions">
+				<Container fluid className="details1" id="actions">
+
 					<Row className="justify-content-center">
 						<img src={Awareness} alt="AWARENESSawareness" />
 					</Row>
-					<Col xs={12}>
-						<h3 className="title2">Raising Awareness</h3>
+					
+						<Row className="title2 justify-content-center">Raising Awareness</Row>
+						<Container>
 						<p className="p2">
 							<li>
 								Tell a friend or colleage that you are concerned about going on
@@ -96,13 +96,15 @@ const Actions = () => {
 								View More &rarr;
 							</Link>
 						</p>
-					</Col>
+						</Container>
+				
 
 					<Row className="justify-content-center">
-						<img src={Support} alt="SUPPORT" />{" "}
+						<img src={Support} alt="SUPPORT" />
 					</Row>
-					<Col xs={12}>
-						<h3 className="title2">Supporting anti-Asian hate victims</h3>
+					
+					<Row className="title2 justify-content-center">Supporting anti-Asian hate victims</Row>
+					<Container>
 						<p className="p2">
 							<li>Help effort to bring justice to victims.</li>
 							<li>
@@ -117,13 +119,14 @@ const Actions = () => {
 								<Link to="/actionpage#support" target="_blank">View More &rarr;</Link>
 							</a>
 						</p>
-					</Col>
+					</Container>
 
 					<Row className="justify-content-center">
 						<img src={Expertise} alt="USE EXPERTISE" />
 					</Row>
-					<Col xs={12}>
-						<h3 className="title2">Using your profession, expertise to help</h3>
+					
+						<Row className="title2 justify-content-center">Using your profession, expertise to help</Row>
+						<Container>
 						<p className="p2">
 							<li>
 								Make an art pice that reflects attitude to asian-hate and bias.
@@ -140,13 +143,15 @@ const Actions = () => {
 								<Link to="/actionpage#expertise" target="_blank">View More &rarr;</Link>
 							</a>
 						</p>
-					</Col>
+						</Container>
+				
 
 					<Row className="justify-content-center">
-						<img src={Culture} alt="CROSS-CULTURAL UNDERSTANDING" />{" "}
+						<img src={Culture} alt="CROSS-CULTURAL UNDERSTANDING" />
 					</Row>
-					<Col xs={12}>
-						<h3 className="title2">Promote cross racial understanding</h3>
+
+						<Row className="title2 justify-content-center">Promote cross racial understanding</Row>
+						<Container>
 						<p className="p2">
 							<li>
 								Ask a black/latinex/...friend about challenges they experienced
@@ -164,12 +169,12 @@ const Actions = () => {
 								<Link to="/actionpage#culture" target="_blank">View More &rarr;</Link>
 							</a>
 						</p>
-					</Col>
+						</Container>
 				</Container>
 			) : (
-				<Container className="details" id="actions">
+				<Container fluid className="details" id="actions">
 					<Row className="box2 align-items-center">
-						<Col lg={4} md={4} sm={4}>
+						<Col className="text-center" lg={4} md={4} sm={4}>
 							{" "}
 							<img src={Awareness} alt="AWARENESS" />
 						</Col>
@@ -213,14 +218,13 @@ const Actions = () => {
 								</a>
 							</p>
 						</Col>
-						<Col lg={4} md={4} sm={4}>
-							{" "}
-							<img src={Support} alt="SUPPORT" />{" "}
+						<Col className="text-center" lg={4} md={4} sm={4}>
+							<img src={Support} alt="SUPPORT" />
 						</Col>
 					</Row>
 
 					<Row className="box2 align-items-center">
-						<Col lg={4} md={4} sm={4}>
+						<Col className="text-center" lg={4} md={4} sm={4}>
 							<img src={Expertise} alt="USE EXPERTISE" />
 						</Col>
 						<Col lg={8} md={8} sm={8}>
@@ -268,9 +272,8 @@ const Actions = () => {
 								</a>
 							</p>
 						</Col>
-						<Col lg={4} md={4} sm={4}>
-							{" "}
-							<img src={Culture} alt="CROSS-CULTURAL UNDERSTANDING" />{" "}
+						<Col className="text-center" lg={4} md={4} sm={4}>
+							<img src={Culture} alt="CROSS-CULTURAL UNDERSTANDING" />
 						</Col>
 					</Row>
 				</Container>
