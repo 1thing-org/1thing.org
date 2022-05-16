@@ -1,7 +1,6 @@
 import moment from 'moment';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Card, CardBody, CardHeader, CardTitle, Container } from 'reactstrap';
 import { ComposedChart, Area, Bar, Legend, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
@@ -73,7 +72,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
               <p className='add-data-button'>
                 <Trans i18nKey='no_data_please_report'>
                   There is no data collected in the selected location and date range yet. Please click 
-                    <a href='https://forms.gle/HRkVKW2Sfp7BytXj8' target='_blank'>here</a>
+                    <a href='https://forms.gle/HRkVKW2Sfp7BytXj8' target='_blank' rel="noopener noreferrer">here</a>
                     to report incidents to us.
                 </Trans>
               </p>

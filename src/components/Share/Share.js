@@ -1,8 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Trans } from "react-i18next";
-import SocialMedia from "./social-media";
 import SocialMediaPopup from "./social-media-pop-up";
 
 const Share = () => {

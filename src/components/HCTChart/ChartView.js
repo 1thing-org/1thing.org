@@ -11,10 +11,10 @@ import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 import IncidentChart from './IncidentChart';
 
 import * as incidentsService from '../../services/incidents';
-import { useRouter } from '../../utility/hooks/useRouter';
+// import { useRouter } from '../../utility/hooks/useRouter';
 
 const ChartView = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
   const [dateRange, setDateRange] = useState([moment().subtract(1, 'year'), moment()]);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true)
@@ -51,7 +51,7 @@ const ChartView = () => {
           stats.pop();
           continue; //skip data that is out of range
         }
-        if (stats[stats.length - 1].key == strDate) {
+        if (stats[stats.length - 1].key === strDate) {
           //found the date in stats, use it
           new_stats.push({
             monthly_cases: monthlyData,
@@ -76,7 +76,7 @@ const ChartView = () => {
   const calculateTotalCasesOfMonth = (stats, month /* string 2022-01 */) => {
     let total = 0;
     stats.forEach(stat => {
-      if (stat.key.substring(0, 7) == month) {
+      if (stat.key.substring(0, 7) === month) {
         total += stat.value;
       }
     });
@@ -178,7 +178,7 @@ const ChartView = () => {
       <div>         
       <Row className="link1">
         <Col lg={{offset:10}} md={{offset:8}} sm={{offset:5}} xs={{offset:5}}>
-        <a className="vm1" href="https://hatecrimetracker.1thing.org/" target='_blank'>View More &rarr;</a>
+        <a className="vm1" href="https://hatecrimetracker.1thing.org/" target='_blank' rel="noopener noreferrer">View More &rarr;</a>
         </Col>
       </Row>
       </div> 

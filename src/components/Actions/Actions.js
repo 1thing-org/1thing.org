@@ -32,7 +32,7 @@ const Actions = () => {
 	return (
 		<div className="box">
 			<Container fluid className="title">
-				<Row fluid>
+				<Row>
 						<img
 							className="img1"
 							src={Smallactions}
@@ -58,7 +58,9 @@ const Actions = () => {
 
 				<Row>
 					<Col>
-						<p className="p2">Get inspirations about what you can help. 👇</p>
+						<p className="p2">Get inspirations about what you can help. 
+						<span role="img" aria-label="point down">👇</span>
+						</p>
 					</Col>
 				</Row>
 
@@ -115,9 +117,7 @@ const Actions = () => {
 							<li>Donate to AAPI communities</li>
 						</p>
 						<p className="link2">
-							<a className="vm2">
-								<Link to="/actionpage#support" target="_blank">View More &rarr;</Link>
-							</a>
+								<Link to="/actionpage#support" target="_blank" className="vm2">View More &rarr;</Link>
 						</p>
 					</Container>
 
@@ -139,9 +139,7 @@ const Actions = () => {
 							</li>
 						</p>
 						<p className="link2">
-							<a className="vm2">
-								<Link to="/actionpage#expertise" target="_blank">View More &rarr;</Link>
-							</a>
+								<Link to="/actionpage#expertise" target="_blank" className="vm2">View More &rarr;</Link>
 						</p>
 						</Container>
 				
@@ -165,9 +163,7 @@ const Actions = () => {
 							</li>
 						</p>
 						<p className="link2">
-							<a className="vm2">
-								<Link to="/actionpage#culture" target="_blank">View More &rarr;</Link>
-							</a>
+								<Link to="/actionpage#culture" target="_blank" className="vm2">View More &rarr;</Link>
 						</p>
 						</Container>
 				</Container>
@@ -175,7 +171,6 @@ const Actions = () => {
 				<Container fluid className="details" id="actions">
 					<Row className="box2 align-items-center">
 						<Col className="text-center" lg={4} md={4} sm={4}>
-							{" "}
 							<img src={Awareness} alt="AWARENESS" />
 						</Col>
 						<Col lg={8} md={8} sm={8}>
@@ -213,9 +208,7 @@ const Actions = () => {
 								<li>Donate to AAPI communities</li>
 							</p>
 							<p className="link2">
-								<a className="vm2">
-									<Link to="/actionpage#support" target="_blank">View More &rarr;</Link>
-								</a>
+									<Link to="/actionpage#support" className="vm2" target="_blank">View More &rarr;</Link>
 							</p>
 						</Col>
 						<Col className="text-center" lg={4} md={4} sm={4}>
@@ -243,10 +236,8 @@ const Actions = () => {
 									helpful.
 								</li>
 							</p>
-							<p className="link2">
-								<a className="vm2">
-									<Link to="/actionpage#expertise" target="_blank">View More &rarr;</Link>
-								</a>
+							<p className="link2">								
+									<Link to="/actionpage#expertise" className="vm2" target="_blank">View More &rarr;</Link>
 							</p>
 						</Col>
 					</Row>
@@ -267,9 +258,7 @@ const Actions = () => {
 								</li>
 							</p>
 							<p className="link2">
-								<a className="vm2">
-									<Link to="/actionpage#culture" target="_blank">View More &rarr;</Link>
-								</a>
+									<Link to="/actionpage#culture" className="vm2" target="_blank">View More &rarr;</Link>					
 							</p>
 						</Col>
 						<Col className="text-center" lg={4} md={4} sm={4}>
