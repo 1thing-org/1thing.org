@@ -67,7 +67,7 @@ export default class ActionPageBody extends Component {
 							bias
 						</li>
 						<li>
-							Create articles, arts, paintings, vidoes, music to advocate social
+							Create articles, arts, paintings, videos, music to advocate social
 							equality. Or simply share those artifacts you found helpful.
 						</li>
 						<li>Develop or share apps, websites.</li>
@@ -83,7 +83,7 @@ export default class ActionPageBody extends Component {
 					<h1 id="culture">Promote cross racial understanding</h1>
 					<ul>
 						<li>
-							Ask a black/latinx/... friend about challenges they experienced
+							Ask a minority friend about challenges they experienced
 							while growing up and living in the US. Try to relate to them and
 							perhaps share your challenges with what the AAPI community is
 							facing.

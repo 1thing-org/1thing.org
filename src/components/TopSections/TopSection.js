@@ -17,7 +17,7 @@ export default class Header extends Component {
 						</h1>
 						<h4>Action, Share, Inspire! Together, we can make differences.</h4>
 						<p>
-							<Link to="/actionpage">Click 1 thing you can do &rarr;</Link>
+							<Link to="/actionpage">Check 1 thing you can do &rarr;</Link>
 						</p>
 						<section className={styles.subscribe}>
 							<p>
@@ -41,7 +41,7 @@ export default class Header extends Component {
 					</h1>
 					<h4>Action, Share, Inspire! Together, we can make differences.</h4>
 					<p>
-						<Link to="/actionpage">Click 1 thing you can do &rarr;</Link>
+						<Link to="/actionpage">Check 1 thing you can do &rarr;</Link>
 					</p>
 					<section className={styles.subscribe}>
 						<p>
