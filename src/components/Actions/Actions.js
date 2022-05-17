@@ -84,7 +84,7 @@ const Actions = () => {
 						<Container>
 						<p className="p2">
 							<li>
-								Tell a friend or colleage that you are concerned about going on
+								Tell a friend or colleague that you are concerned about going on
 								the street nowadays because of anti-Asian hate crime incidents.
 							</li>
 							<li>Having 1-on-1 with coworkers to talk about the issue.</li>
@@ -152,9 +152,9 @@ const Actions = () => {
 						<Container>
 						<p className="p2">
 							<li>
-								Ask a black/latinex/...friend about challenges they experienced
+								Ask a minority friend about challenges they experienced
 								while growing up and living in the US. Try to relate to them and
-								perhaps share your chanllenge with what the AAPI community is
+								perhaps share your challenge with what the AAPI community is
 								facing.
 							</li>
 							<li>
@@ -177,7 +177,7 @@ const Actions = () => {
 							<h3 className="title2">Raising Awareness</h3>
 							<p className="p2">
 								<li>
-									Tell a friend or colleage that you are concerned about going
+									Tell a friend or colleague that you are concerned about going
 									on the street nowadays because of anti-Asian hate crime
 									incidents.
 								</li>
@@ -247,9 +247,9 @@ const Actions = () => {
 							<h3 className="title2">Promote cross racial understanding</h3>
 							<p className="p2">
 								<li>
-									Ask a black/latinex/...friend about challenges they
+									Ask a minority friend about challenges they
 									experienced while growing up and living in the US. Try to
-									relate to them and perhaps share your chanllenge with what the
+									relate to them and perhaps share your challenge with what the
 									AAPI community is facing.
 								</li>
 								<li>

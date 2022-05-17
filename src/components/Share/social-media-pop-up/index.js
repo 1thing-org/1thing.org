@@ -20,10 +20,10 @@ const ModalOverlay = (props) => {
         </div>
         <p>{t("social.copy_link")}</p>
         <div className='modal-link'>
-          <input className='modal-input' type="text" name={"link_input"} defaultValue={'https://hatecrimetracker.1thing.org'}/>
+          <input className='modal-input' type="text" name={"link_input"} defaultValue={'https://www.1thing.org'}/>
           
           <IconContext.Provider value={{ size:"25", color: "#FFBD66"}}>
-            <button className="copy-button" onClick={() => {navigator.clipboard.writeText('https://hatecrimetracker.1thing.org')}}>
+            <button className="copy-button" onClick={() => {navigator.clipboard.writeText('https://www.1thing.org')}}>
               <MdOutlineContentCopy/>
             </button>
           </IconContext.Provider>

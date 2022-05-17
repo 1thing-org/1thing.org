@@ -1,29 +1,29 @@
 import React  from 'react';
 import { FacebookShareButton, FacebookIcon,  LinkedinShareButton,LinkedinIcon ,TwitterShareButton, TwitterIcon } from "react-share";
-const SocialMediaShareSummary = "Even though the anti-Asian hate is not under the spotlight in today’s news, the violence and hate is still happening on a daily basis. hatecrimetracker.1thing.org collects and visualizes all anti-Asian hate incidents reported by the media. Due to lack of media coverage and under reports, data on the website can only represent a small portion of the big picture.";
-const SocialMediaShareSummaryShort = "Even though the anti-Asian hate is not under the spotlight in today’s news, the violence and hate is still happening on a daily basis. hatecrimetracker.1thing.org collects and visualizes all anti-Asian hate incidents reported by the media.";
+const SocialMediaShareSummary = "We all can make small contributions to improve racial equality. Share what you did and inspire more to join the force. Together we can create bigger changes.";
+const SocialMediaShareSummaryShort = "We all can make small contributions to improve racial equality. Share what you did and inspire more to join the force. Together we can create bigger changes.";
 const SocialMediaSharing = ({size, bgStyle, iconFillColor}) => {
     return <>
             <TwitterShareButton
                 title={SocialMediaShareSummaryShort}
-                url={"https://hatecrimetracker.1thing.org/"}
+                url={"https://www.1thing.org/"}
                 hashtags={["1thing"]}>
             <TwitterIcon round size={size} bgStyle={bgStyle} iconFillColor={iconFillColor}/>
             </TwitterShareButton>
             &nbsp;
             <LinkedinShareButton
-                title={"Hate crime tracker"} //(string): Title of the shared page
+                title={"1 Thing Against Racism"} //(string): Title of the shared page
                 summary={SocialMediaShareSummary}
                 description={SocialMediaShareSummary}
                 //source={"Page source"} //(string): Source of the content (e.g. your website or application name)
-                url={"https://hatecrimetracker.1thing.org/"}
+                url={"https://www.1thing.org/"}
                 hashtags={["1thing"]}
             >
             <LinkedinIcon round size={size} bgStyle={bgStyle} iconFillColor={iconFillColor}/>
             </LinkedinShareButton>
             &nbsp;
             <FacebookShareButton
-                url={"https://hatecrimetracker.1thing.org/"}
+                url={"https://www.1thing.org/"}
                 quote={SocialMediaShareSummary}
                 hashtag={"1thing"}
                 >

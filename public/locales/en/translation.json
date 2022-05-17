@@ -1,6 +1,6 @@
 {
   "website": {
-    "name": "Anti-Asian Hate Crime Tracker"
+    "name": "1 Thing Against Racism"
   },
   "location": "Location",
   "date_range": "Date Range",
@@ -49,7 +49,7 @@
   "tips_needed_from_police": "Provide tips for police",
   "provide_addtional_support": "Provide additional support",
   "social": {
-    "share": "Share the Hate Crime Tracker with your social media community",
+    "share": "Share our website with your social media community",
     "copy_link": "or copy the url",
     "follow_us": "Follow us on social media"
   },
