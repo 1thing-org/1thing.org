@@ -153,13 +153,13 @@ const ChartView = () => {
 <div>
 <Container className="word">
 
-<Row className="childword">
-  <Col>
+<Row className="childword justify-content-center">
+  <Col className="col-4">
   <h2 className="t2">{totalLastMonthCases} Cases</h2>
   <p className="t1">was reported in {lastMonthName}</p> 
   </Col>
 
-  <Col>
+  <Col className="col-4">
   <h2 className="t2">{totalAnnualCases} Cases</h2>
   <p className="t1">was reported in 2021</p> 
   </Col>
