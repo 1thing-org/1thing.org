@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import styles from "./ActionPageBody.module.scss";
+import { Row, Container} from "reactstrap";
 
 export default class ActionPageBody extends Component {
 	render() {
 		return (
 			<div className={styles.ActionPageBody}>
-				<div id="awareness">
-					<h1>Raise awareness</h1>
+				<Container id="awareness">
+					<Row><h1>Raise awareness</h1></Row>
 					<ul>
 						<li>
 							Tell a friend or colleague that you are concerned about going on
@@ -43,9 +44,9 @@ export default class ActionPageBody extends Component {
 							communities) will encourage everyone to do something.
 						</li>
 					</ul>
-				</div>
-				<div id="support">
-					<h1>Support anti-Asian hate victims</h1>
+				</Container>
+				<Container id="support">
+					<Row><h1>Support anti-Asian hate victims</h1></Row>
 					<ul>
 						<li>Donate</li>
 						<li>Help capture suspects</li>
@@ -58,9 +59,9 @@ export default class ActionPageBody extends Component {
 							Tell a hate incident/crime victim that you are here to help.
 						</li>
 					</ul>
-				</div>
-				<div id="expertise">
-					<h1>Use your profession & expertise to help</h1>
+				</Container>
+				<Container id="expertise">
+					<Row><h1>Use your profession & expertise to help</h1></Row>
 					<ul>
 						<li>
 							Make an art piece that reflects your attitude to asian-hate and
@@ -78,9 +79,9 @@ export default class ActionPageBody extends Component {
 						</li>
 						<li>Propose or participate projects.</li>
 					</ul>
-				</div>
-				<div>
-					<h1 id="culture">Promote cross racial understanding</h1>
+				</Container>
+				<Container id="culture">
+					<Row><h1>Promote cross racial understanding</h1></Row>
 					<ul>
 						<li>
 							Ask a black/latinx/... friend about challenges they experienced
@@ -98,7 +99,7 @@ export default class ActionPageBody extends Component {
 						</li>
 						<li>Share something fun about Asian to your non-Asian friends.</li>
 					</ul>
-				</div>
+				</Container>
 			</div>
 		);
 	}

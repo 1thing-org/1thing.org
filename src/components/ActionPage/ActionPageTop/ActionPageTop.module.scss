@@ -1,40 +1,48 @@
 .ActionPageTop {
+    background: url("../../../assets/imag/HeroActionPage.png") no-repeat;
     width: 100%;
-    height: auto;
-    // height: 314px;
+    height: 31.1vw;
+    background-size: 100% 100%;
     margin-top: 5%;
-    background: linear-gradient(0deg, #FFF3D9, #FFF3D9);
-
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
 }
+
 .ActionPageTop > h1 {
-    height: 56px;
-    margin-top: 80px;
-    margin-bottom: 80px;
     font-family: Quicksand;
     font-style: normal;
-    font-weight: bold;
-    font-size: 6vmin;
-    line-height: 9vmin;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
     text-align: center;
-    
     color: #080D1F;
 }
 
-.ActionPageTop > button {
-    margin-bottom: 90px;
-    width: 280px;
-    height: 48px;
+// .ActionPageTop > button {
+//     margin-bottom: 90px;
+//     width: 280px;
+//     height: 48px;
     
-    background: #FFC466;
-    border-radius: 10px;
+//     background: #FFC466;
+//     border-radius: 10px;
 
-    text-align: center;
-    color: rgba(8, 13, 31, 0.9);
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: 600;
+//     text-align: center;
+//     color: rgba(8, 13, 31, 0.9);
+//     font-family: Quicksand;
+//     font-style: normal;
+//     font-weight: 600;
+// }
+
+@media only screen and (max-width: 576px){
+    .ActionPageTop {
+        padding-top: 5%;
+    }
+
+    .ActionPageTop > h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
 }
