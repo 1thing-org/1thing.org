@@ -5,18 +5,18 @@ import ActionPageTop from "./ActionPageTop/ActionPageTop";
 import ActionPageBody from "./ActionPageBody/ActionPageBody";
 
 class ActionPage extends Component {
-	render() {
-		return (
-			<>
-				<div>
-					<Header />
-					<ActionPageTop />
-					<ActionPageBody />
-					<Footer />
-				</div>
-			</>
-		);
-	}
+  render() {
+    return (
+      <>
+        <div>
+          <Header />
+          <ActionPageTop />
+          <ActionPageBody />
+          <Footer />
+        </div>
+      </>
+    );
+  }
 }
 
 export default ActionPage;

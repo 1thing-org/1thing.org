@@ -8,18 +8,18 @@ import Footer from "components/Footers/Footer.js";
 import OneThingNavbar from "./Headers/index";
 
 class Welcome extends Component {
-	render() {
-		return (
-			<>
-				<div>
-					<OneThingNavbar />
-					<TopSection />
-					<ChartView />
-					<Action />
-					<Footer />
-				</div>
-			</>
-		);
-	}
+  render() {
+    return (
+      <>
+        <div>
+          <OneThingNavbar />
+          <TopSection />
+          <ChartView />
+          <Action />
+          <Footer />
+        </div>
+      </>
+    );
+  }
 }
 export default Welcome;
