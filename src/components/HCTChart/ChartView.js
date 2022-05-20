@@ -15,7 +15,6 @@ import * as incidentsService from '../../services/incidents';
 
 const ChartView = () => {
   // const router = useRouter();
-
   const [dateRange, setDateRange] = useState([moment().subtract(1, 'year'), moment()]);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true)
   const [totalAnnualCases, setTotalCases] = useState(0);
