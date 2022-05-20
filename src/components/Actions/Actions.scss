@@ -1,42 +1,42 @@
-.box{
-    // width: 80%;
-    width: 100%;
-    // margin-left: 10%;
-    margin-bottom: 10%;
+.box {
+  // width: 80%;
+  width: 100%;
+  // margin-left: 10%;
+  margin-bottom: 10%;
 }
 
-.title{
-height: auto;
-text-align: center;
-width: 100%;
+.title {
+  height: auto;
+  text-align: center;
+  width: 100%;
 }
 
-.img1{
-width: 78%;
-margin-left: auto;
-margin-right: auto;
+.img1 {
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.p1{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgba(8, 13, 31, 0.8);
+.p1 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(8, 13, 31, 0.8);
 }
 
-.p2{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: rgba(8, 13, 31, 0.8);
+.p2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(8, 13, 31, 0.8);
 }
 
 // .btn{
@@ -44,184 +44,182 @@ margin-right: auto;
 //     margin-bottom: 1%;
 //     height: 8vmin;
 
-
 //     font-family: 'Quicksand';
 //     font-style: normal;
 //     font-size: 2.5vmin;
 //     line-height: 3vmin;
 // }
 
-.vector i{
-    color: rgba(8, 13, 31, 0.6);
-    transform: scale(3,2);
+.vector i {
+  color: rgba(8, 13, 31, 0.6);
+  transform: scale(3, 2);
 }
 
-.box2{
-    margin-top: 10%;
-    width: 86%;
-    margin-left: 8%;
+.box2 {
+  margin-top: 10%;
+  width: 86%;
+  margin-left: 8%;
 }
 
-.title2{
-    font-family: 'Quicksand';
-    font-style: normal;
-    color: #080D1F;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+.title2 {
+  font-family: "Quicksand";
+  font-style: normal;
+  color: #080d1f;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
 }
 
-.link2{
-    text-decoration: underline;
-    text-align: left;
-    margin-top: 10%;
+.link2 {
+  text-decoration: underline;
+  text-align: left;
+  margin-top: 10%;
 }
 
-.vm2{
-     font-style: normal;
-     font-weight: 600;
-     font-family: 'Quicksand';
-     font-size: 18px;
-     line-height: 24px;
-     color: rgba(8, 13, 31, 0.9);
+.vm2 {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Quicksand";
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(8, 13, 31, 0.9);
 }
 
-.details img{
-    width: 256px;
-    height: 256px;
+.details img {
+  width: 256px;
+  height: 256px;
 }
 
-.details1{
-    margin-top: 10%;
+.details1 {
+  margin-top: 10%;
 }
 
-.details1 img{
-    width: 120px;
-    height: 120px;
+.details1 img {
+  width: 120px;
+  height: 120px;
 }
 
 @media only screen and (max-width: 576px) {
-    .box {
-      width: 100%;
-      margin-left: 0px;
-    }
-
-    .title{
-        width: 100%;
-        text-align: center;
-    }
-
-
-    .img1{
-        width: 100%;
-    }
-
-    .p1{
-        margin-top: 1%;
-        margin-bottom: 1%;
-        font-size: 18px;
-        line-height: 150%;
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 500;
-    }
-    
-    .p2{
-        margin-top: 5%;
-        font-size: 18px;
-        line-height: 24px;
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 500;
-
-        margin-left: 16px;
-        margin-top: 5%;
-    }
-
-    .title2{
-        margin-top: 32px;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 32px;
-        font-family: 'Quicksand';
-        font-style: normal;
-        color: #080D1F;
-        text-align: center;
-    }
-
-    .link2{
-        text-decoration: underline;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 15%;
-    }
-    
-    .vm2{
-         font-style: normal;
-         font-weight: 600;
-         font-size: 18px;
-         line-height: 24px;
-          color: #080D1F;
-    }
+  .box {
+    width: 100%;
+    margin-left: 0px;
   }
 
-@media only screen and (min-width: 576px) and (max-width: 992px){
-    .box {
-        width: 100%;
-        height: auto;
-        margin-left:  0;
-      }
-    
-      .box2{
-        margin-top: 10%;
-        width: 100%;
-        margin-left: 0;
-    }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
 
-    .img1{
-        width: 100%;
-        height: auto;
-        }
-    
-    .details img{
-        width: 164px;
-        height: 164px;
-        }
+  .img1 {
+    width: 100%;
+  }
 
-    .title2{
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 32px;
-    }
+  .p1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+  }
 
-    .p2{
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-    }
+  .p2 {
+    margin-top: 5%;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+
+    margin-left: 16px;
+    margin-top: 5%;
+  }
+
+  .title2 {
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    font-family: "Quicksand";
+    font-style: normal;
+    color: #080d1f;
+    text-align: center;
+  }
+
+  .link2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15%;
+  }
+
+  .vm2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #080d1f;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .box {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .box2 {
+    margin-top: 10%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .details img {
+    width: 164px;
+    height: 164px;
+  }
+
+  .title2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .p2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
-    .box {
-        width: 1008px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5%;
-      }
-    
-      .box2{
-        margin-top: 5%;
-        width: 100%;
-        margin-left: 0;
-    }
+  .box {
+    width: 1008px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
 
-    .img1{
-        width: 100%;
-        height: 184px;
-        margin: 0;
-        }
+  .box2 {
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 184px;
+    margin: 0;
+  }
 }
