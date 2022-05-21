@@ -145,7 +145,7 @@ const ChartView = () => {
 
             <div>
               <p className="t2">{totalAnnualCases} Cases</p>
-              <p className="t1">was reported in 2021</p>
+              <p className="t1">was reported last year</p>
             </div>
           </Container>
         </div>
@@ -160,7 +160,7 @@ const ChartView = () => {
 
               <Col className="col-3">
                 <h2 className="t2">{totalAnnualCases} Cases</h2>
-                <p className="t1">was reported in 2021</p>
+                <p className="t1">was reported last year</p>
               </Col>
             </Row>
           </Container>
