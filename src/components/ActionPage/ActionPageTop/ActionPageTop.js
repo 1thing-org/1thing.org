@@ -5,7 +5,7 @@ export default class ActionPageTop extends Component {
   render() {
     return (
       <div className={styles.ActionPageTop}>
-        <h1>Do 1 thing to mitigate social inequality.</h1>
+        <h1>There are many small actions we can take to improve racial equality.</h1>
         {/* <Button color="onething" type="button">
 					Share what you’ve done{" "}
 				</Button> */}
