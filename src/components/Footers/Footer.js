@@ -47,7 +47,7 @@ export default class Footer extends Component {
               </a>
             </section>
 
-            <article>1 Thing Agaist Racism © 2021</article>
+            <article>1 Thing Against Racism © 2022</article>
           </section>
         </div>
       </footer>
