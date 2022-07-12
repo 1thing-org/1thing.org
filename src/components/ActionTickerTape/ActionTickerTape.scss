@@ -1,0 +1,70 @@
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    height: 4rem;
+    background-color: rgba(#FF972E, 0.9);
+    padding-left: 100%;
+    box-sizing: content-box;
+    display: flex;
+
+    .ticker {
+        // display: inline-block;
+        display: flex;
+        align-content: center;
+        top: 0px;
+        height: 4rem;
+        white-space: nowrap;
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-right: 100%;
+        box-sizing: content-box;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: ticker;
+        animation-name: ticker;
+        -webkit-animation-duration: 22s;
+        animation-duration: 22s;
+
+        &_item {
+            display: inline-block;
+            padding: 0 2rem;
+            font-size: 2rem;
+            color: black;
+            font-family: 'Quicksand', sans-serif;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 18px;
+        }
+
+    }
+
+}

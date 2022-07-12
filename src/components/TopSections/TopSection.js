@@ -9,7 +9,7 @@ export default class Header extends Component {
     return (
       <>
         <div className={styles.bg}>
-          <section className={styles.topSection}>
+          {/* <section className={styles.topSection}>
             <h1>
               Make small contributions
               <br />
@@ -30,10 +30,10 @@ export default class Header extends Component {
                 <Mailchimp />
               </section>
             </section>
-          </section>
+          </section> */}
         </div>
         <div className={styles.bgMobile}></div>
-        <section className={styles.topSectionMobile}>
+        {/* <section className={styles.topSectionMobile}>
           <h1>
             Make small contributions
             <br />
@@ -54,7 +54,7 @@ export default class Header extends Component {
               <Mailchimp className={styles.email} />
             </section>
           </section>
-        </section>
+        </section> */}
       </>
     );
   }
