@@ -1,15 +1,19 @@
 .bg {
-  background: url("../../assets/imag/Hero.png") no-repeat;
-  width: 100%;
+  background: url("../../assets/imag/Splash.png") no-repeat;
+  width: auto;
   height: 39.45vw;
   background-size: 100% 100%;
   padding-top: 5%;
   padding-bottom: 5%;
+  box-sizing: border-box;
 }
 
 .topSection {
   width: 100%;
-  height: auto;
+  height: 100%;
+  bottom: 0px;
+  display: flex;
+  align-content: flex-end;
 }
 @media (min-width: 0px) {
   .bg {
@@ -17,7 +21,7 @@
   }
 
   .bgMobile {
-    background: url("../../assets/imag/Hero.png") no-repeat;
+    background: url("../../assets/imag/Splash.png") no-repeat;
     width: 100%;
     height: 39.45vw;
     background-size: 100% 100%;
@@ -209,7 +213,7 @@
 
 @media (min-width: 1400px) {
   .bg {
-    width: 1600px;
+    width: 100%;
     height: 640px;
     margin-left: auto;
     margin-right: auto;
