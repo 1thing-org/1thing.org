@@ -13,17 +13,7 @@ export default class ActionPageBody extends Component {
           <ul>
             <li>
               Tell a friend or colleague that you are concerned about going on
-              the street nowadays because of anti-Asian hate crime incidents.
-            </li>
-            <li>Having 1-on-1 with coworkers to talk about the issue.</li>
-            <li>
-              In a team meeting, share with colleagues what you are doing to
-              fight hate.
-            </li>
-            <li>
-              Tell a friend or colleague that you are concerned about going on
-              the street nowadays because of anti-Asian hate crime and
-              incidents.
+              the street nowadays because of anti-Asian incidents.
             </li>
             <li>Having 1-on-1 with coworkers to talk about the issue.</li>
             <li>
