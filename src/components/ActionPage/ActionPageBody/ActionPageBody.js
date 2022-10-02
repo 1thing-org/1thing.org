@@ -16,7 +16,7 @@ export default class ActionPageBody extends Component {
 							out in the streets nowadays because of Anti-Asian hate crime
 							incidents.
 						</li>
-						<li>Talk about this issue with coworkers in 1-on-1 meetings.</li>
+						<li>Talk about this issue with coworkers.</li>
 						<li>In a team meeting, share what you are doing to fight hate.</li>
 						<li>Share anti-hate materials to your team or organization.</li>
 						<li>
@@ -40,9 +40,9 @@ export default class ActionPageBody extends Component {
 						<h1>Support anti-Asian hate victims</h1>
 					</Row>
 					<ul>
-						<li>Donate</li>
-						<li>Help capture suspects</li>
-						<li>Help effort to bring justice to victims</li>
+						<li>Donate to anti-Asian hate victims.</li>
+						<li>Help capture suspects.</li>
+						<li>Help effort to bring justice to victims.</li>
 						<li>
 							Tell a hate incident/crime victim that you want to listen to their
 							feelings.
@@ -59,31 +59,12 @@ export default class ActionPageBody extends Component {
 						</h1>
 					</Row>
 					<ul>
-						<li>
-							Create: paint, draw, or digitally make a piece of art that
-							reflects your attitude towards asian-hate, prejudice, and bias
-						</li>
-						<li>
-							Create articles, arts, paintings, videos, music to advocate social
-							equality. Or simply share those artifacts you found helpful.
-						</li>
-						<li>Share: art, websites, or books that inspire and help you</li>
-						<li>
-							Support: use your analytical skills to proofread articles, slide
-							decks, and other educational content
-						</li>
-						<li>
-							Research: fact-check news articles, perform data analysis, or
-							implement data crawling
-						</li>
-						<li>
-							Research: fact-check news articles, perform data analysis, or
-							implement data crawling
-						</li>
-						<li>
-							Collaborate: propose solutions, help with projects, or volunteer
-							out in the community
-						</li>
+						<li>Create: paint, draw, or digitally make a piece of art that reflects your attitude towards asian-hate, prejudice, and bias.</li>
+						<li>Share: art, websites, or books that inspire and help you.</li>
+						<li>Support: use your analytical skills to proofread articles, slide decks, and other educational content.</li>
+						<li>Research: fact-check news articles, perform data analysis, or implement data crawling.</li>
+						<li>Develop: create apps, websites, or online platforms.</li>
+						<li>Collaborate: propose solutions, help with projects, or volunteer out in the community.</li>
 					</ul>
 				</Container>
 				<Container id="culture">
@@ -91,26 +72,11 @@ export default class ActionPageBody extends Component {
 						<h1>Promote cross racial understanding</h1>
 					</Row>
 					<ul>
-						<li>
-							Communicate: as a minority friend about their experience living in
-							the US
-						</li>
-						<li>
-							Empathize: try to relate to others, share the challenges the APPI
-							community is facing
-						</li>
-						<li>
-							Connect: host inclusive gatherings to connect with friends from
-							different ethnic groups to
-						</li>
-						<li>
-							Recommend: Asian storytelling movies. Eg: Crazy Rich Asians, The
-							Joy Luck Club, to friends & colleagues
-						</li>
-						<li>
-							Invite: share something fun about Asian culture with non-Asian
-							friends
-						</li>
+						<li>Communicate: as a minority friend about their experience living in the US.</li>
+						<li>Empathize: try to relate to others, share the challenges the APPI community is facing.</li>
+						<li>Connect: host inclusive gatherings to connect with friends from different ethnic groups.</li>
+						<li>Recommend: Asian storytelling movies. Eg: Crazy Rich Asians, The Joy Luck Club, to friends &amp; colleagues.</li>
+						<li>Invite: share something fun about Asian culture with non-Asian friends.</li>
 					</ul>
 				</Container>
 			</div>
