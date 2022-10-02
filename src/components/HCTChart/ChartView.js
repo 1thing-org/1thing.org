@@ -132,7 +132,7 @@ const ChartView = () => {
 				<p className="t3">Anti-Asian hate crimes are happening everyday.</p>
 				<p className="t4">
 					The following numbers are based on incidents reported by major media
-					in the US
+					in the US:
 				</p>
 			</div>
 
@@ -155,13 +155,13 @@ const ChartView = () => {
 					<Container className="word">
 						<Row className="childword justify-content-center">
 							<Col className="col-3">
-								<h2 className="t2">{totalLastMonthCases} Cases</h2>
-								<p className="t1">was reported in {lastMonthName}</p>
+								<h3 className="t3">{totalLastMonthCases} Cases</h3>
+								<p className="t1">were reported in {lastMonthName}</p>
 							</Col>
 
 							<Col className="col-3">
-								<h2 className="t2">{totalAnnualCases} Cases</h2>
-								<p className="t1">was reported last year</p>
+								<h3 className="t3">{totalAnnualCases} Cases</h3>
+								<p className="t1">were reported in the past 12 months</p>
 							</Col>
 						</Row>
 					</Container>
