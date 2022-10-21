@@ -130,9 +130,7 @@ const Actions = () => {
 						<img src={Expertise} alt="USE EXPERTISE" />
 					</Row>
 
-					<Row className="title2 justify-content-center">
-						Use your professional skills &amp; expertise to make a difference
-					</Row>
+					<Row className="title2 justify-content-center">Use your skills</Row>
 					<Container>
 						<p className="p2">
 							<li>
@@ -161,9 +159,18 @@ const Actions = () => {
 					</Row>
 					<Container>
 						<p className="p2">
-							<li>Communicate: as a minority friend about their experience living in the US.</li>
-							<li>Empathize: try to relate to others, share the challenges the APPI community is facing.</li>
-							<li>Connect: host inclusive gatherings to connect with friends from different ethnic groups.</li>
+							<li>
+								Communicate: as a minority friend about their experience living
+								in the US.
+							</li>
+							<li>
+								Empathize: try to relate to others, share the challenges the
+								APPI community is facing.
+							</li>
+							<li>
+								Connect: host inclusive gatherings to connect with friends from
+								different ethnic groups.
+							</li>
 						</p>
 						<p className="link2">
 							<Link to="/actionpage#culture" target="_blank" className="vm2">
@@ -186,9 +193,7 @@ const Actions = () => {
 									safety out in the streets nowadays because of Anti-Asian hate
 									crime incidents.
 								</li>
-								<li>
-									Talk about this issue with coworkers.
-								</li>
+								<li>Talk about this issue with coworkers.</li>
 								<li>
 									In a team meeting, share what you are doing to fight hate.
 								</li>
@@ -232,13 +237,20 @@ const Actions = () => {
 							<img src={Expertise} alt="USE EXPERTISE" />
 						</Col>
 						<Col lg={8} md={8} sm={8}>
-							<h3 className="title2">
-								Use your professional skills &amp expertise to make a difference
-							</h3>
+							<h3 className="title2">Use your skills</h3>
 							<p className="p2">
-								<li>Create: paint, draw, or digitally make a piece of art that reflects your attitude towards asian-hate, prejudice, and bias.</li>
-								<li>Share: art, websites, or books that inspire and help you.</li>
-								<li>Support: use your analytical skills to proofread articles, slide decks, and other educational content.</li>
+								<li>
+									Create: paint, draw, or digitally make a piece of art that
+									reflects your attitude towards asian-hate, prejudice, and
+									bias.
+								</li>
+								<li>
+									Share: art, websites, or books that inspire and help you.
+								</li>
+								<li>
+									Support: use your analytical skills to proofread articles,
+									slide decks, and other educational content.
+								</li>
 							</p>
 
 							<p className="link2">
@@ -256,9 +268,18 @@ const Actions = () => {
 						<Col lg={8} md={8} sm={8}>
 							<h3 className="title2">Promote cross racial understanding</h3>
 							<p className="p2">
-								<li>Communicate: as a minority friend about their experience living in the US.</li>
-								<li>Empathize: try to relate to others, share the challenges the APPI community is facing.</li>
-								<li>Connect: host inclusive gatherings to connect with friends from different ethnic groups.</li>
+								<li>
+									Communicate: as a minority friend about their experience
+									living in the US.
+								</li>
+								<li>
+									Empathize: try to relate to others, share the challenges the
+									APPI community is facing.
+								</li>
+								<li>
+									Connect: host inclusive gatherings to connect with friends
+									from different ethnic groups.
+								</li>
 							</p>
 							<p className="link2">
 								<Link to="/actionpage#culture" className="vm2" target="_blank">

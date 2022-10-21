@@ -54,17 +54,27 @@ export default class ActionPageBody extends Component {
 				</Container>
 				<Container id="expertise">
 					<Row>
-						<h1>
-							Use your professional skills & expertise to make a difference
-						</h1>
+						<h1>Use your skills</h1>
 					</Row>
 					<ul>
-						<li>Create: paint, draw, or digitally make a piece of art that reflects your attitude towards asian-hate, prejudice, and bias.</li>
+						<li>
+							Create: paint, draw, or digitally make a piece of art that
+							reflects your attitude towards asian-hate, prejudice, and bias.
+						</li>
 						<li>Share: art, websites, or books that inspire and help you.</li>
-						<li>Support: use your analytical skills to proofread articles, slide decks, and other educational content.</li>
-						<li>Research: fact-check news articles, perform data analysis, or implement data crawling.</li>
+						<li>
+							Support: use your analytical skills to proofread articles, slide
+							decks, and other educational content.
+						</li>
+						<li>
+							Research: fact-check news articles, perform data analysis, or
+							implement data crawling.
+						</li>
 						<li>Develop: create apps, websites, or online platforms.</li>
-						<li>Collaborate: propose solutions, help with projects, or volunteer out in the community.</li>
+						<li>
+							Collaborate: propose solutions, help with projects, or volunteer
+							out in the community.
+						</li>
 					</ul>
 				</Container>
 				<Container id="culture">
@@ -72,11 +82,26 @@ export default class ActionPageBody extends Component {
 						<h1>Promote cross racial understanding</h1>
 					</Row>
 					<ul>
-						<li>Communicate: as a minority friend about their experience living in the US.</li>
-						<li>Empathize: try to relate to others, share the challenges the APPI community is facing.</li>
-						<li>Connect: host inclusive gatherings to connect with friends from different ethnic groups.</li>
-						<li>Recommend: Asian storytelling movies. Eg: Crazy Rich Asians, The Joy Luck Club, to friends &amp; colleagues.</li>
-						<li>Invite: share something fun about Asian culture with non-Asian friends.</li>
+						<li>
+							Communicate: as a minority friend about their experience living in
+							the US.
+						</li>
+						<li>
+							Empathize: try to relate to others, share the challenges the APPI
+							community is facing.
+						</li>
+						<li>
+							Connect: host inclusive gatherings to connect with friends from
+							different ethnic groups.
+						</li>
+						<li>
+							Recommend: Asian storytelling movies. Eg: Crazy Rich Asians, The
+							Joy Luck Club, to friends &amp; colleagues.
+						</li>
+						<li>
+							Invite: share something fun about Asian culture with non-Asian
+							friends.
+						</li>
 					</ul>
 				</Container>
 			</div>
