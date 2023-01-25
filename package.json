@@ -1,8 +1,9 @@
 {
   "name": "1-thing-org",
   "version": "1.0.0",
-  "description": "Web page of 1thing.org",
+  "description": "Official website for 1thing.org",
   "main": "index.js",
+  "website": "https://www.1thing.org",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
