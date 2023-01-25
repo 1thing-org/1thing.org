@@ -1,65 +1,60 @@
-import moment from "moment";
-import React from "react";
-import { useState, useEffect } from "react";
+import React from "react"
+import moment from "moment"
+import { useEffect, useState } from "react"
+import { Trans, useTranslation } from "react-i18next"
 import {
-  ComposedChart,
   Area,
-  Bar,
-  Legend,
-  CartesianGrid,
-  ResponsiveContainer,
+  Bar, CartesianGrid, ComposedChart, Legend, ResponsiveContainer,
   Tooltip,
   XAxis,
-  YAxis,
-} from "recharts";
-import { useTranslation } from "react-i18next";
-import { Trans } from "react-i18next";
-import "./IncidentChart.scss";
+  YAxis
+} from "recharts"
+import "./IncidentChart.scss"
 
 const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
   const formatXAxis = (tickVal) => {
     //yyyy-mm-dd to mm/dd/2021
-    const d = moment(tickVal, "YYYY-MM-DD");
-    return d.format("M/D/YY");
-  };
-  const { t } = useTranslation();
-  const [xticks, setXTicks] = useState([]);
-  const [totalCases, setTotalCases] = useState(0);
-  const [tooltip, setTooltip] = useState(); //decide which tooltip to show
+    const d = moment(tickVal, "YYYY-MM-DD")
+    return d.format("M/D/YY")
+  }
+  const { t } = useTranslation()
+  const [xticks, setXTicks] = useState([])
+  const [totalCases, setTotalCases] = useState(0)
+  const [tooltip, setTooltip] = useState() //decide which tooltip to show
   useEffect(() => {
-    const newXTicks = [];
-    let total = 0;
-    for (let i = 0; i < chart_data.length; i++) {
-      total += chart_data[i].value;
-      const d = moment(chart_data[i].key, "YYYY-MM-DD");
+    const newXTicks = []
+    let total = 0
+    for (let i = 0;i < chart_data.length;i++) {
+      total += chart_data[i].value
+      const d = moment(chart_data[i].key, "YYYY-MM-DD")
       //if total dates>6M, show ticks at first day of each month
       //if between 3M-6M show on 15th of each month too
       //if <3M, show 8th, 22nd too
       switch (d.date()) {
         case 1:
-          newXTicks.push(chart_data[i].key);
-          break;
+          newXTicks.push(chart_data[i].key)
+          break
         case 15:
           if (chart_data.length <= 180) {
-            newXTicks.push(chart_data[i].key);
+            newXTicks.push(chart_data[i].key)
           }
-          break;
+          break
         case 8:
         case 22:
           if (chart_data.length <= 90) {
-            newXTicks.push(chart_data[i].key);
+            newXTicks.push(chart_data[i].key)
           }
-          break;
+          break
       }
     }
-    setXTicks(newXTicks);
-    setTotalCases(total);
-  }, [chart_data]);
+    setXTicks(newXTicks)
+    setTotalCases(total)
+  }, [chart_data])
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload[0] && payload[0].value) {
-      const d = moment(payload[0].payload.key, "YYYY-MM-DD");
-      const monthly = payload[0].payload.monthly_cases;
-      const daily = payload[0].payload.value ? payload[0].payload.value : 0;
+      const d = moment(payload[0].payload.key, "YYYY-MM-DD")
+      const monthly = payload[0].payload.monthly_cases
+      const daily = payload[0].payload.value ? payload[0].payload.value : 0
       return tooltip !== "daily" ? (
         <div className="recharts-custom-tooltip">
           <p className="date">{d.format("MMM YYYY")}</p>
@@ -83,10 +78,10 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             </strong>
           </p>
         </div>
-      );
+      )
     }
-    return null;
-  };
+    return null
+  }
   return (
     <div className="recharts-wrapper">
       {totalCases === 0 && !isFirstLoadData ? (
@@ -162,6 +157,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
         </ComposedChart>
       </ResponsiveContainer>
     </div>
-  );
-};
-export default IncidentChart;
+  )
+}
+export default IncidentChart
