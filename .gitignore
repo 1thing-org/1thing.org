@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.github
 
 # testing
 /coverage
@@ -20,6 +21,7 @@
 .DS_Store
 *.pem
 yarn-*
+yarn.log
 yarn.lock
 package-lock.json
 
@@ -37,11 +39,7 @@ yarn-error.log*
 
 # vercel
 .vercel
-yarn.lock
 
 /__pycache__
 # remove any md files
 docker.md
-
-yarn.log
-package-lock.json
