@@ -10,35 +10,27 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 import React from "react"
-import ReactDOM from "react-dom"
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom"
-
-import "assets/scss/argon-design-system-react.scss?v1.1.0"
-import "assets/vendor/font-awesome/css/font-awesome.min.css"
-import "assets/vendor/nucleo/css/nucleo.css"
-
-import "./i18n"
-import * as serviceWorker from "./serviceWorker"
-
-import "assets/vendor/font-awesome/css/font-awesome.min.css"
-
 import ActionPage from "components/ActionPage/ActionPage"
 import Welcome from "components/Welcome.js"
+import ReactDOM from "react-dom"
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom"
+import * as serviceWorker from "./serviceWorker"
+import "./utility/i18n"
+
+// import "assets/scss/argon-design-system-react.scss?v1.1.0"
+// import "assets/vendor/font-awesome/css/font-awesome.min.css"
+// import "assets/vendor/nucleo/css/nucleo.css"
 
 ReactDOM.render(
-	<BrowserRouter>
-		<Switch>
-			<Route path="/" exact render={props => <Welcome {...props} />} />
-			<Route
-				path="/actionpage"
-				exact
-				render={props => <ActionPage {...props} />}
-			/>
-			<Redirect to="/" />
-		</Switch>
-	</BrowserRouter>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact render={(props) => <Welcome {...props} />} />
+      <Route path="/actionpage" exact render={(props) => <ActionPage {...props} />} />
+      <Redirect to="/" />
+    </Switch>
+  </BrowserRouter>,
 
-	document.getElementById("root")
+  document.getElementById("root")
 )
 
 serviceWorker.unregister()

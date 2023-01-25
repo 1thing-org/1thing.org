@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import styles from "./Footer.module.scss";
-import Mailchimp from "../../utility/mailchimp";
+import React, { Component } from "react"
+import styles from "./Footer.module.scss"
+import Mailchimp from "../../utility/mailchimp"
 
-export default class Footer extends Component {
+export default class FooterSection extends Component {
   render() {
     return (
       <footer>
@@ -24,18 +24,10 @@ export default class Footer extends Component {
               <a href="mailto:info@1thing.org">
                 <i className="fa fa-envelope" aria-hidden="true"></i>
               </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/1Thing_Org"
-              >
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/1Thing_Org">
                 <i className="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/company/1-thing-org/"
-              >
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/1-thing-org/">
                 <i className="fa fa-linkedin-square" aria-hidden="true"></i>
               </a>
               <a
@@ -51,6 +43,6 @@ export default class Footer extends Component {
           </section>
         </div>
       </footer>
-    );
+    )
   }
 }
