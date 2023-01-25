@@ -8,6 +8,7 @@
 # testing
 /coverage
 
+
 # next.js
 /.next/
 /out/
@@ -18,6 +19,9 @@
 # misc
 .DS_Store
 *.pem
+yarn-*
+yarn.lock
+package-lock.json
 
 # debug
 npm-debug.log*
@@ -38,3 +42,6 @@ yarn.lock
 /__pycache__
 # remove any md files
 docker.md
+
+yarn.log
+package-lock.json
