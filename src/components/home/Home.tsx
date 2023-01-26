@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom/client';
-import Navbar from '../navbar/NavBar';
+import NavBar from '../navbar/NavBar';
 
 class Home extends Component{
     render() {
         return (
             <div>
-                <Navbar />
+                <NavBar />
+                <h1>Home Page</h1>
             </div>
         )
     }
