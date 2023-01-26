@@ -45,6 +45,7 @@ export function getStats(startDate, endDate, state = null) {
       return response.data
     })
 }
+
 export function upsertIncident(incident) {
   const incidentAPIUrl = config.api_endpoint + "/incidents"
   if (!incident.incident_source) {
