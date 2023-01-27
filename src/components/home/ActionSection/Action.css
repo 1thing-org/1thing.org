@@ -1,0 +1,20 @@
+#action {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem;
+}
+
+#action-content {
+    margin: 3rem 3rem;
+    padding: 0 10rem 3rem 0;
+    text-align: left;
+    position: relative;
+}
+
+#button {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}

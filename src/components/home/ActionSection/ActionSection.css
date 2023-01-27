@@ -1,0 +1,13 @@
+#action-section {
+    margin: 7rem 8rem;
+}
+
+#action-desc {
+    padding: 0 15rem 2rem 15rem;
+}
+
+.action-row {
+    display: flex;
+    flex-direction: row;
+    
+}

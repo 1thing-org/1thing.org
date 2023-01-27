@@ -1,0 +1,14 @@
+#hero-image {
+    width: 100%;
+    height: 80vh;
+}
+
+#hero-text {
+    margin: 10rem 10rem auto 40rem;
+    text-align: left;
+}
+
+#hero-title {
+    font-size: 35px;
+    margin-bottom: 3rem;
+}
