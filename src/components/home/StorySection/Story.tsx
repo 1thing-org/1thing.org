@@ -15,10 +15,10 @@ class Story extends Component<Props> {
 
     render() {
         return (
-            <Card>
-                <Card.Text>{this.props.quote}</Card.Text>
-                <Card.Body>
-                    <Card.Text>{this.props.name}</Card.Text>
+            <Card id="story">
+                <Card.Text id="story-quote">{this.props.quote}</Card.Text>
+                <Card.Body id="story-body">
+                    <Card.Text id="story-name">{this.props.name}</Card.Text>
                     <Card.Img id="profile-pic" src={this.props.picUrl}/>
                 </Card.Body>
             </Card>

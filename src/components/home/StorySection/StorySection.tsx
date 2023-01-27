@@ -9,17 +9,17 @@ const storyData: {name: string, quote: string, picUrl: string}[] = [
         "picUrl": require("./../../../assets/home-page/placeholder-image.png")
     },
     {
-        "name": "Li M.",
+        "name": "Kai K.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
         "picUrl": require("./../../../assets/home-page/placeholder-image.png")
     },
     {
-        "name": "Li M.",
+        "name": "Josh C.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
         "picUrl": require("./../../../assets/home-page/placeholder-image.png")
     },
     {
-        "name": "Li M.",
+        "name": "Hannelore B.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
         "picUrl": require("./../../../assets/home-page/placeholder-image.png")
     }
