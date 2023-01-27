@@ -1,0 +1,12 @@
+#story-section {
+    margin: 7rem 8rem;
+}
+
+#story-desc {
+    padding: 0 15rem 3rem 15rem;
+}
+
+#stories {
+    display: flex;
+    flex-direction: row;
+}
