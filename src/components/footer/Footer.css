@@ -1,0 +1,47 @@
+footer {
+    background-color: grey;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+.footer-container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    color: white;
+}
+
+.left-side {
+    width: 50%;
+    padding: 0 5rem;
+    text-align: left;
+}
+
+.left-side h4 {
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.left-side p {
+    padding-bottom: 1.5rem;
+}
+
+.right-side {
+    width: 50%;
+    padding: 0 5rem;
+}
+
+.split-line {
+    border-left: 1px solid white;
+    height: 80px;
+}
+
+.icon {
+    color: white;
+    font-size: 1.8rem;
+    padding-right: 1.5rem;
+}

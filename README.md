@@ -1,2 +1,1 @@
-# 1thing.org
-1thing.org Web Site
+1 Thing Org Website
