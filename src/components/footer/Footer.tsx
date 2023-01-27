@@ -23,9 +23,9 @@ class Footer extends Component{
                         </p>
                         <div className='social-icons'>
                             <SocialMedia name={faEnvelope} refLink='' />
-                            <SocialMedia name={faTwitter} refLink='' />
-                            <SocialMedia name={faLinkedin} refLink='' />
-                            <SocialMedia name={faFacebook} refLink='' />
+                            <SocialMedia name={faTwitter} refLink='https://twitter.com/1Thing_Org' />
+                            <SocialMedia name={faLinkedin} refLink='https://www.linkedin.com/company/1-thing-org/' />
+                            <SocialMedia name={faFacebook} refLink='https://www.facebook.com/people/One-Thing-Org/100081311228444/' />
                         </div>
                     </div> 
                     <div className="split-line"></div>
