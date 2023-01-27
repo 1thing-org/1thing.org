@@ -4,30 +4,29 @@ import {LinkContainer} from 'react-router-bootstrap';
 import Logo from './../../assets/logo.png';
 import './NavBar.css';
 
+function Page({title, links} : {title: string, links: string}){
+    return (
+        <LinkContainer to={links} className="link">
+            <Nav.Link>{title}</Nav.Link>
+        </LinkContainer>
+    )
+}
+
 class NavBar extends Component{
     render(){
         return(
-            <Navbar bg="light" expand="lg" className="nav" >
+            <Navbar className="nav" bg="light" expand="lg">
                 <LinkContainer to="/">
                     <Navbar.Brand>
                         <img src={Logo} width="100" height="100" alt="1 Thing Org logo"/>
                     </Navbar.Brand>
                 </LinkContainer>
-
                 {/* <Navbar.Collapse id="responsive-navbar-nav"> */}
                 <Nav className="links ms-auto">
-                    <LinkContainer to="/takeaction" className="link">
-                        <Nav.Link>Take Action</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/testimonials" className="link">
-                        <Nav.Link>Testimonials</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/aboutus" className="link">
-                        <Nav.Link>About Us</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/contact" className="link">
-                        <Nav.Link>Contact</Nav.Link>
-                    </LinkContainer>
+                    <Page title={'Take Action'} links={'/takeaction'}></Page>
+                    <Page title={'Testimonials'} links={'/testimonials'}></Page>
+                    <Page title={'About Us'} links={'/aboutus'}></Page>
+                    <Page title={'Contact'} links={'/contact'}></Page>
                 </Nav>
                 {/* </Navbar.Collapse> */}
             </Navbar>
