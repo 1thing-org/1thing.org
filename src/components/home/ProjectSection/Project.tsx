@@ -6,6 +6,7 @@ type Props = {
     name: string;
     desc: string;
     imageUrl: string;
+    projectUrl: string;
 };
 
 class Project extends Component<Props>{
@@ -19,7 +20,7 @@ class Project extends Component<Props>{
                 <Card.Body id={this.props.name === "Hate Crime Tracker" ? "project-body-top" : "project-body-bottom"}>
                     <Card.Title>{this.props.name}</Card.Title>
                     <Card.Text>{this.props.desc}</Card.Text>
-                    <Card.Text id="learn-more">Learn More</Card.Text>
+                    <Card.Link id="learn-more" href={this.props.projectUrl}>Learn More</Card.Link>
                 </Card.Body>
                 <Card.Img id={this.props.name === "Hate Crime Tracker" ? "project-image-top" : "project-image-bottom"} src={this.props.imageUrl}/>
             </Card>

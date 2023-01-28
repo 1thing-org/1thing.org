@@ -4,7 +4,9 @@
 }
 
 #hero-text {
-    margin: 10rem 10rem auto 40rem;
+    left: 40%;
+    right: 10%;
+    top: 30%;
     text-align: left;
 }
 
