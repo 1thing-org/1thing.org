@@ -2,10 +2,6 @@
     margin: 5rem 8rem;
 }
 
-#volunteers {
-    margin: 2rem 0;
-}
-
 #top-section, #bottom-section{
     display: flex;
     flex-direction: row;
