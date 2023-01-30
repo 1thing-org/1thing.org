@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Button from 'react-bootstrap/Button';
 import Action from './Action';
 import './ActionSection.css';
 
@@ -37,6 +38,7 @@ class ActionSection extends Component {
                         <Action desc={actionData[2].desc}/>
                         <Action desc={actionData[3].desc}/>
                     </div>
+                    <Button id="find-button">Find your one thing</Button>
                 </div>
             </div>
         )

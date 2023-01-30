@@ -1,0 +1,36 @@
+#volunteer {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 2rem;
+    padding: 2rem 1.5rem;
+}
+
+#left-side {
+    text-align: left;
+    position: relative;
+    width: 60%;
+}
+
+
+#volunteer-interview {
+    font-weight: bold;
+    position: absolute;
+    bottom: 15%;
+}
+
+#right-side {
+    /* position: relative; */
+}
+
+#volunteer-profile-pic {
+    height: 130px;
+    width: 130px;
+    border-radius: 100px;
+}
+
+#volunteer-name {
+    font-weight: bold;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+}
