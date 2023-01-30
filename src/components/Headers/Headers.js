@@ -4,19 +4,19 @@ import { Link } from "react-router-dom"
 import Headroom from "headroom.js"
 // reactstrap components
 import {
-  UncontrolledCollapse,
-  NavbarBrand,
+  Col,
+  Container,
+  Nav,
   Navbar,
+  NavbarBrand,
   NavItem,
   NavLink,
-  Nav,
-  Container,
   Row,
-  Col,
+  UncontrolledCollapse,
   UncontrolledTooltip
 } from "reactstrap"
-import "./Header.module.scss"
 import Share from "../Share/Sharing"
+import "./Header.module.scss"
 
 export default class HeaderSection extends React.Component {
   componentDidMount() {
@@ -80,7 +80,7 @@ export default class HeaderSection extends React.Component {
                   <NavLink tag={Link} className="nav-link" to="/">
                     <span className="nav-link-inner--text">Home</span>
                   </NavLink>
-                  <NavLink tag={Link} to="/actionPage" target="_blank">
+                  <NavLink tag={Link} to="/actions" target="_blank">
                     <span className="nav-link-inner--text">Action</span>
                   </NavLink>
                   <NavLink
