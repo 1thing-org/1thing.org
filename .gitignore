@@ -38,3 +38,5 @@ yarn.lock
 /__pycache__
 # remove any md files
 docker.md
+
+package-lock.json
