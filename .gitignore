@@ -39,4 +39,6 @@ yarn.lock
 # remove any md files
 docker.md
 
+# github
+/.github/
 package-lock.json

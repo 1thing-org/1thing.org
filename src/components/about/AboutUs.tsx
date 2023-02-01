@@ -1,17 +1,13 @@
-import React, {Component} from 'react'
-import NavBar from '../navbar/NavBar';
-import Footer from '../footer/Footer';
+import { Component } from "react"
 
-class AboutUs extends Component{
-    render() {
-        return (
-            <div>
-                <NavBar />
-                <h1>About Page</h1>
-                <Footer />
-            </div>
-        )
-    }
+class AboutUs extends Component {
+  render() {
+    return (
+      <div>
+        <h1>About Page</h1>
+      </div>
+    )
+  }
 }
 
-export default AboutUs;
+export default AboutUs

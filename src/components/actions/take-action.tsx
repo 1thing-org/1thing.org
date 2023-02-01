@@ -1,12 +1,13 @@
 import { Component } from "react"
 
-class HomePage extends Component {
+class TakeAction extends Component {
   render() {
     return (
       <div>
-        <h1>Home Page</h1>
+        <h1>Take Action Page</h1>
       </div>
     )
   }
 }
-export default HomePage
+
+export default TakeAction
