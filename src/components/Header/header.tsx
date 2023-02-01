@@ -19,7 +19,7 @@ export default function HeaderSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <a href="/">
               <span className="sr-only">1 Thing</span>
               <img className="h-20 w-auto sm:h-20" src={Logo} alt="1 Thing Org logo" />
             </a>
@@ -31,7 +31,7 @@ export default function HeaderSection() {
             </Popover.Button>
           </div>
 
-          <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+          <div className="flex space-x-4 hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <Navigation title={"Take Action"} links={"/take-actions"}></Navigation>
             <Navigation title={"Testimonials"} links={"/testimonials"}></Navigation>
             <Navigation title={"About Us"} links={"/about-us"}></Navigation>
