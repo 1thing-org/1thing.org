@@ -1,6 +1,6 @@
 import { Component } from "react"
-import "./testmonials.module.css"
-class TestimonialSection extends Component {
+
+class TestimonialsPage extends Component {
   render() {
     return (
       <div>
@@ -10,4 +10,4 @@ class TestimonialSection extends Component {
   }
 }
 
-export default TestimonialSection
+export default TestimonialsPage
