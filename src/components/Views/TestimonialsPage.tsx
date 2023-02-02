@@ -1,11 +1,11 @@
 import { Component } from "react"
-
+import { DefaultLayout } from "../Layouts"
 class TestimonialsPage extends Component {
   render() {
     return (
-      <div>
+      <DefaultLayout>
         <h1>Testimonials Page</h1>
-      </div>
+      </DefaultLayout>
     )
   }
 }

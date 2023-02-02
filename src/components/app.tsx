@@ -2,13 +2,8 @@ import React from "react"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import styles from "../assets/styles/global.module.css"
-import { DefaultLayout } from "./Layouts"
 
-import TakeAction from "./actions/take-action"
-import AboutUs from "./about/AboutUs"
-import Contact from "./contact/ContactUs"
-import { HomePage } from "./Views/"
-import { TestimonialSection } from "./Testimonials/"
+import { HomePage, TakeActionPage, AboutPage, ContactPage, TestimonialsPage } from "./Views/"
 
 function App() {
   return (
@@ -16,38 +11,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route
-            path="/take-actions"
-            element={
-              <DefaultLayout>
-                <TakeAction />
-              </DefaultLayout>
-            }
-          />
-          <Route
-            path="/testimonials"
-            element={
-              <DefaultLayout>
-                <TestimonialSection />
-              </DefaultLayout>
-            }
-          />
-          <Route
-            path="/about-us"
-            element={
-              <DefaultLayout>
-                <AboutUs />
-              </DefaultLayout>
-            }
-          />
-          <Route
-            path="/contact-us"
-            element={
-              <DefaultLayout>
-                <Contact />
-              </DefaultLayout>
-            }
-          />
+          <Route path="/take-actions" element={<TakeActionPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/about-us" element={<AboutPage />} />
+          <Route path="/contact-us" element={<ContactPage />} />
         </Routes>
       </Router>
     </div>

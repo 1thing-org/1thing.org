@@ -1,11 +1,12 @@
 import { Component } from "react"
+import { DefaultLayout } from "../Layouts"
 
 class ContactPage extends Component {
   render() {
     return (
-      <div>
+      <DefaultLayout>
         <h1>Contact Page</h1>
-      </div>
+      </DefaultLayout>
     )
   }
 }
