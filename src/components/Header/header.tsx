@@ -32,7 +32,7 @@ export default function HeaderSection() {
           </div>
 
           <div className="flex space-x-4 hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <Navigation title={"Take Action"} links={"/take-actions"}></Navigation>
+            <Navigation title={"Take Actions"} links={"/take-actions"}></Navigation>
             <Navigation title={"Testimonials"} links={"/testimonials"}></Navigation>
             <Navigation title={"About Us"} links={"/about-us"}></Navigation>
             <Navigation title={"Contact Us"} links={"/contact-us"}></Navigation>
@@ -66,10 +66,10 @@ export default function HeaderSection() {
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="text-lg">
-                <Navigation title={"Take Action"} links={"/takeaction"}></Navigation>
+                <Navigation title={"Take Actions"} links={"/takeaction"}></Navigation>
                 <Navigation title={"Testimonials"} links={"/testimonials"}></Navigation>
                 <Navigation title={"About Us"} links={"/aboutus"}></Navigation>
-                <Navigation title={"Contact"} links={"/contact"}></Navigation>
+                <Navigation title={"Contact Us"} links={"/contact"}></Navigation>
               </div>
             </div>
           </div>

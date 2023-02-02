@@ -2,16 +2,16 @@ footer {
     background-color: grey;
     padding-top: 7rem;
     padding-bottom: 4rem;
-    position:absolute;
-    left:0;
-    bottom:0;
-    right:0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .footer-container {
-    display: flex; 
+    display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     color: white;
 }
 

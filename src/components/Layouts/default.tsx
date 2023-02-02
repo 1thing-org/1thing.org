@@ -2,7 +2,7 @@ import React, { Suspense } from "react"
 import { HeaderSection } from "../Header"
 import { FooterSection } from "../Footer"
 
-const DefaultLayout = ({ children }: { children: React.ReactElement }) => {
+const DefaultLayout = ({ children }: { children: React.ReactElement | React.ReactElement[] }) => {
   return (
     <>
       <HeaderSection />

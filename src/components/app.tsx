@@ -2,12 +2,12 @@ import React from "react"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import styles from "../assets/styles/global.module.css"
-import { DefaultLayout } from "./Layout"
+import { DefaultLayout } from "./Layouts"
 
 import TakeAction from "./actions/take-action"
 import AboutUs from "./about/AboutUs"
 import Contact from "./contact/ContactUs"
-import { HomePage } from "./Home/"
+import { HomePage } from "./Views/"
 import { TestimonialSection } from "./Testimonials/"
 
 function App() {
@@ -15,14 +15,7 @@ function App() {
     <div className={styles.app}>
       <Router>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <DefaultLayout>
-                <HomePage />
-              </DefaultLayout>
-            }
-          />
+          <Route path="/" element={<HomePage />} />
           <Route
             path="/take-actions"
             element={
