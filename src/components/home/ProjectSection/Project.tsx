@@ -7,6 +7,9 @@ type Props = {
     desc: string;
     imageUrl: string;
     projectUrl: string;
+    projectId: string; 
+    bodyId: string; 
+    imgId: string
 };
 
 class Project extends Component<Props>{
@@ -16,13 +19,13 @@ class Project extends Component<Props>{
     
     render(){
         return(
-            <Card className="project" id={this.props.name === "Hate Crime Tracker" ? "project-top" : "project-bottom"}>
-                <Card.Body id={this.props.name === "Hate Crime Tracker" ? "project-body-top" : "project-body-bottom"}>
+            <Card className="project" id={this.props.projectId}>
+                <Card.Body id={this.props.bodyId}>
                     <Card.Title>{this.props.name}</Card.Title>
                     <Card.Text>{this.props.desc}</Card.Text>
                     <Card.Link id="learn-more" href={this.props.projectUrl}>Learn More</Card.Link>
                 </Card.Body>
-                <Card.Img id={this.props.name === "Hate Crime Tracker" ? "project-image-top" : "project-image-bottom"} src={this.props.imageUrl}/>
+                <Card.Img id={this.props.imgId} src={this.props.imageUrl}/>
             </Card>
         )
     }
