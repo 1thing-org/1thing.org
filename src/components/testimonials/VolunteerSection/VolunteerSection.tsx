@@ -6,25 +6,25 @@ const volunteerData: {name: string, quote: string, pic: string, interview: strin
     {
         "name": "Li M.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "pic": require("./../../../assets/home-page/placeholder-image.png"),
+        "pic": require("assets/home-page/placeholder-image.png"),
         "interview": ""
     },
     {
         "name": "Kai K.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "pic": require("./../../../assets/home-page/placeholder-image.png"),
+        "pic": require("assets/home-page/placeholder-image.png"),
         "interview": ""
     },
     {
         "name": "Josh C.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "pic": require("./../../../assets/home-page/placeholder-image.png"),
+        "pic": require("assets/home-page/placeholder-image.png"),
         "interview": ""
     },
     {
         "name": "Hannelore B.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "pic": require("./../../../assets/home-page/placeholder-image.png"),
+        "pic": require("assets/home-page/placeholder-image.png"),
         "interview": ""
     }
 ]

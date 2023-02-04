@@ -8,7 +8,7 @@ const projectData: {name: string, desc: string, imageUrl: string, projectUrl: st
         "desc": `Anti-Asian hate crimes are happening everyday and we’ve built a tool to help track them. 
                 1 Thing’s Hate Crime Tracker scrapes incident reports from national media news outlets and visualizes 
                 the data to raise awareness.`,
-        "imageUrl": require("./../../../assets/home-page/placeholder-image.png"),
+        "imageUrl": require("assets/home-page/placeholder-image.png"),
         "projectUrl": "/",
         "projectId": "project-top",
         "bodyId": "project-body-top",
@@ -18,7 +18,7 @@ const projectData: {name: string, desc: string, imageUrl: string, projectUrl: st
         "name": "Project Together",
         "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique 
                 id lectus. Eget orci vestibulum fringilla diam adipiscing proin.`,
-        "imageUrl": require("./../../../assets/home-page/placeholder-image.png"),
+        "imageUrl": require("assets/home-page/placeholder-image.png"),
         "projectUrl": "/",
         "projectId": "project-bottom",
         "bodyId": "project-body-bottom",
@@ -28,7 +28,7 @@ const projectData: {name: string, desc: string, imageUrl: string, projectUrl: st
         "name": "Supporting Victims",
         "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique 
         id lectus. Eget orci vestibulum fringilla diam adipiscing proin.`,
-        "imageUrl": require("./../../../assets/home-page/placeholder-image.png"),
+        "imageUrl": require("assets/home-page/placeholder-image.png"),
         "projectUrl": "/",
         "projectId": "project-bottom",
         "bodyId": "project-body-bottom",

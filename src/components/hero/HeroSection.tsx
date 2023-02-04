@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import './HeroSection.css';
-import HeroImage from '../../assets/hero-placeholder.png';
+import HeroImage from 'assets/hero-placeholder.png';
 
 type Props = {
     heading: string;
