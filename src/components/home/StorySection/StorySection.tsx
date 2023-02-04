@@ -40,10 +40,7 @@ class StorySection extends Component {
                     <h6>Read More</h6>
                 </div>
                 <div id="stories">
-                    <Story name={storyData[0].name} quote={storyData[0].quote} picUrl={storyData[0].picUrl}/>
-                    <Story name={storyData[1].name} quote={storyData[1].quote} picUrl={storyData[1].picUrl}/>
-                    <Story name={storyData[2].name} quote={storyData[2].quote} picUrl={storyData[2].picUrl}/>
-                    <Story name={storyData[3].name} quote={storyData[3].quote} picUrl={storyData[3].picUrl}/>
+                    {storyData.map(story => <Story name={story.name} quote={story.quote} picUrl={story.picUrl}/>)}
                 </div>
             </div>
         )
