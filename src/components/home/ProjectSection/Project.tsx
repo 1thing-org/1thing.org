@@ -5,11 +5,8 @@ import "./Project.css";
 type Props = {
     name: string;
     desc: string;
-    imageUrl: string;
     projectUrl: string;
     projectId: string; 
-    bodyId: string; 
-    imgId: string
 };
 
 class Project extends Component<Props>{
@@ -20,12 +17,12 @@ class Project extends Component<Props>{
     render(){
         return(
             <Card className="project" id={this.props.projectId}>
-                <Card.Body id={this.props.bodyId}>
+                <Card.Body id={"body-" + this.props.projectId}>
                     <Card.Title>{this.props.name}</Card.Title>
                     <Card.Text>{this.props.desc}</Card.Text>
                     <Card.Link id="learn-more" href={this.props.projectUrl}>Learn More</Card.Link>
                 </Card.Body>
-                <Card.Img id={this.props.imgId} src={this.props.imageUrl}/>
+                <Card.Img id={"image-" + this.props.projectId} />    {/* image url in css */}
             </Card>
         )
     }

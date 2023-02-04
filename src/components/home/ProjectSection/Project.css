@@ -8,16 +8,16 @@
     position: relative;
 }
 
-#project-bottom{
+#bottom-left, #bottom-right {
     height: 300px;
 }
 
-#project-body-top {
+#body-top {
     width: 40%;
     padding: 0 2rem;
 }
 
-#project-body-bottom {
+#body-bottom-left, #body-bottom-right {
     width: 55%;
     padding: 0 2rem;
 }
@@ -27,12 +27,20 @@
     bottom: 8%;
 }
 
-#project-image-top{
+#image-top {
     width: 60%;
     height: 100%;
+    content: url("assets/home-page/placeholder-image.png");
 }
 
-#project-image-bottom {
+#image-bottom-left {
     width: 45%;
     height: 100%;
+    content: url("assets/home-page/placeholder-image.png");
+}
+
+#image-bottom-right {
+    width: 45%;
+    height: 100%;
+    content: url("assets/home-page/placeholder-image.png");
 }
