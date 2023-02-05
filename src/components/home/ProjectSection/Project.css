@@ -8,16 +8,11 @@
     position: relative;
 }
 
-#bottom-left, #bottom-right {
+#together, #victim-support {
     height: 300px;
 }
 
-#body-top {
-    width: 40%;
-    padding: 0 2rem;
-}
-
-#body-bottom-left, #body-bottom-right {
+#body-together, #body-victim-support {
     width: 55%;
     padding: 0 2rem;
 }
@@ -27,19 +22,19 @@
     bottom: 8%;
 }
 
-#image-top {
+#image-tracker {
     width: 60%;
     height: 100%;
     content: url("assets/home-page/placeholder-image.png");
 }
 
-#image-bottom-left {
+#image-together {
     width: 45%;
     height: 100%;
     content: url("assets/home-page/placeholder-image.png");
 }
 
-#image-bottom-right {
+#image-victim-support {
     width: 45%;
     height: 100%;
     content: url("assets/home-page/placeholder-image.png");

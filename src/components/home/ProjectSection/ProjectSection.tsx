@@ -9,21 +9,21 @@ const projectData: {name: string, desc: string, projectUrl: string, projectId: s
                 1 Thing’s Hate Crime Tracker scrapes incident reports from national media news outlets and visualizes 
                 the data to raise awareness.`,
         "projectUrl": "/",
-        "projectId": "top"
+        "projectId": "tracker"
     },
     {
         "name": "Project Together",
         "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique 
                 id lectus. Eget orci vestibulum fringilla diam adipiscing proin.`,
         "projectUrl": "/",
-        "projectId": "bottom-left"
+        "projectId": "together"
     },
     {
         "name": "Supporting Victims",
         "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique 
         id lectus. Eget orci vestibulum fringilla diam adipiscing proin.`,
         "projectUrl": "/",
-        "projectId": "bottom-right"
+        "projectId": "victim-support"
     }
 ];
 
