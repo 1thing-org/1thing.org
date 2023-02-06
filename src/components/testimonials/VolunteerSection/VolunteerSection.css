@@ -1,0 +1,8 @@
+#volunteer-section{
+    margin: 5rem 8rem;
+}
+
+#top-section, #bottom-section{
+    display: flex;
+    flex-direction: row;
+}

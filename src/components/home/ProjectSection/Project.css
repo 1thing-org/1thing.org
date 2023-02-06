@@ -1,0 +1,41 @@
+.project {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    align-items: center;
+    text-align: left;
+    height: 400px;
+    position: relative;
+}
+
+#together, #victim-support {
+    height: 300px;
+}
+
+#body-together, #body-victim-support {
+    width: 55%;
+    padding: 0 2rem;
+}
+
+#learn-more {
+    position: absolute;
+    bottom: 8%;
+}
+
+#image-tracker {
+    width: 60%;
+    height: 100%;
+    content: url("assets/home-page/placeholder-image.png");
+}
+
+#image-together {
+    width: 45%;
+    height: 100%;
+    content: url("assets/home-page/placeholder-image.png");
+}
+
+#image-victim-support {
+    width: 45%;
+    height: 100%;
+    content: url("assets/home-page/placeholder-image.png");
+}

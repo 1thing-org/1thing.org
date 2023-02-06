@@ -1,0 +1,24 @@
+#action-section {
+    margin: 7rem 8rem 0 8rem;
+}
+
+#action-desc {
+    padding: 0 15rem 2rem 15rem;
+}
+
+#action-desc p {
+    padding-top: 0.8rem;
+}
+
+.action-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#find-button {
+    margin: 4rem 0 8rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: larger;
+    background-color: grey;
+}

@@ -1,0 +1,13 @@
+#project-section {
+    margin: 3rem 8rem;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+#middle {
+    width: 6rem;
+}
