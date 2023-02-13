@@ -1,4 +1,3 @@
-import React, {Component} from 'react'
 import NavBar from '../navbar/NavBar';
 import Footer from '../footer/Footer';
 import ShareOneThing from './share/ShareOneThing';
@@ -11,18 +10,16 @@ const actionHeroData: {heading: string, subheading: string} = {
                   Get inspiration about what you can do to help.`
 }
 
-class TakeAction extends Component{
-    render() {
-        return (
-            <div>
-                <NavBar />
-                <HeroSection heading={actionHeroData.heading} subheading={actionHeroData.subheading} />
-                <ActionsGroup/>
-                <ShareOneThing/>
-                <Footer />
-            </div>
-        )
-    }
+function TakeAction(){
+    return (
+        <div>
+            <NavBar />
+            <HeroSection heading={actionHeroData.heading} subheading={actionHeroData.subheading} />
+            <ActionsGroup/>
+            <ShareOneThing/>
+            <Footer />
+        </div>
+    )
 }
 
 export default TakeAction;

@@ -1,4 +1,3 @@
-import React, {Component} from 'react';
 import Project from './Project';
 import "./ProjectSection.css";
 
@@ -27,34 +26,32 @@ const projectData: {name: string, desc: string, projectUrl: string, projectId: s
     }
 ];
 
-class ProjectSection extends Component{
-    render(){
-        return(
-            <div id="project-section">
+function ProjectSection(){
+    return(
+        <div id="project-section">
+            <Project 
+                name={projectData[0].name} 
+                desc={projectData[0].desc} 
+                projectUrl={projectData[0].projectUrl}
+                projectId={projectData[0].projectId}
+            />
+            <div id="bottom">
                 <Project 
-                    name={projectData[0].name} 
-                    desc={projectData[0].desc} 
-                    projectUrl={projectData[0].projectUrl}
-                    projectId={projectData[0].projectId}
+                    name={projectData[1].name} 
+                    desc={projectData[1].desc} 
+                    projectUrl={projectData[1].projectUrl}
+                    projectId={projectData[1].projectId}
                 />
-                <div id="bottom">
-                    <Project 
-                        name={projectData[1].name} 
-                        desc={projectData[1].desc} 
-                        projectUrl={projectData[1].projectUrl}
-                        projectId={projectData[1].projectId}
-                    />
-                    <div id="middle"></div>
-                    <Project 
-                        name={projectData[2].name} 
-                        desc={projectData[2].desc} 
-                        projectUrl={projectData[2].projectUrl}
-                        projectId={projectData[2].projectId}
-                    />
-                </div>
+                <div id="middle"></div>
+                <Project 
+                    name={projectData[2].name} 
+                    desc={projectData[2].desc} 
+                    projectUrl={projectData[2].projectUrl}
+                    projectId={projectData[2].projectId}
+                />
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default ProjectSection;

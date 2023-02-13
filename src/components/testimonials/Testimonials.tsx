@@ -1,4 +1,3 @@
-import React, {Component} from 'react'
 import NavBar from '../navbar/NavBar';
 import Footer from '../footer/Footer';
 import HeroSection from '../hero/HeroSection';
@@ -12,18 +11,16 @@ const testimonialHeroData: {heading: string, subheading: string} = {
                     convallis ultricies mauris sollicitudin nisl.`
 }
 
-class Testimonials extends Component{
-    render() {
-        return (
-            <div>
-                <NavBar />
-                <HeroSection heading={testimonialHeroData.heading} subheading={testimonialHeroData.subheading} />
-                <VolunteerSection />
-                <SignUp />
-                <Footer />
-            </div>
-        )
-    }
+function Testimonials(){
+    return (
+        <div>
+            <NavBar />
+            <HeroSection heading={testimonialHeroData.heading} subheading={testimonialHeroData.subheading} />
+            <VolunteerSection />
+            <SignUp />
+            <Footer />
+        </div>
+    )
 }
 
 export default Testimonials;
