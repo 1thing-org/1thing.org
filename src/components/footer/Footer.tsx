@@ -20,7 +20,7 @@ function Footer(){
                         Together we can make the world a more beautiful place — one thing at a time.
                     </p>
                     <div className='social-icons'>
-                        <SocialMedia name={faEnvelope} refLink='' />
+                        <SocialMedia name={faEnvelope} refLink='mailto:info@1thing.org' />
                         <SocialMedia name={faTwitter} refLink='https://twitter.com/1Thing_Org' />
                         <SocialMedia name={faLinkedin} refLink='https://www.linkedin.com/company/1-thing-org/' />
                         <SocialMedia name={faFacebook} refLink='https://www.facebook.com/people/One-Thing-Org/100081311228444/' />
