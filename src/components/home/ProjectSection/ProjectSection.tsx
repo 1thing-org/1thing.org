@@ -28,7 +28,7 @@ const projectData: {name: string, desc: string, projectUrl: string, projectId: s
 
 function ProjectSection(){
     return(
-        <div id="project-section">
+        <div id="home-project-section">
             <Project 
                 name={projectData[0].name} 
                 desc={projectData[0].desc} 

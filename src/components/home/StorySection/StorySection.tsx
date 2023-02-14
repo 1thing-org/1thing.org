@@ -5,22 +5,22 @@ const storyData: {name: string, quote: string, picUrl: string}[] = [
     {
         "name": "Li M.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "picUrl": require("assets/home-page/placeholder-image.png")
+        "picUrl": require("assets/home-page/profile-placeholder.jpeg")
     },
     {
         "name": "Kai K.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "picUrl": require("assets/home-page/placeholder-image.png")
+        "picUrl": require("assets/home-page/profile-placeholder.jpeg")
     },
     {
         "name": "Josh C.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "picUrl": require("assets/home-page/placeholder-image.png")
+        "picUrl": require("assets/home-page/profile-placeholder.jpeg")
     },
     {
         "name": "Hannelore B.",
         "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "picUrl": require("assets/home-page/placeholder-image.png")
+        "picUrl": require("assets/home-page/profile-placeholder.jpeg")
     }
 ];
 

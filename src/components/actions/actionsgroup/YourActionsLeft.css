@@ -29,20 +29,6 @@
     line-height: 19px;
 }
 
-#together, #victim-support {
-    height: 300px;
-}
-
-#body-together, #body-victim-support {
-    width: 55%;
-    padding: 0 2rem;
-}
-
-#learn-more {
-    position: absolute;
-    bottom: 8%;
-}
-
 #image-support {
     width: 30%;
     height: 100%;

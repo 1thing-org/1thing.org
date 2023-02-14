@@ -1,7 +1,5 @@
 import YourActionsLeft from './YourActionsLeft';
 import YourActionsRight from './YourActionsRight';
-import './ActionsGroup.css';
-
 
 const actionData: { name: string, desc: string[], actiontUrl: string, actionId: string }[] = [
     {
@@ -60,7 +58,7 @@ const actionData: { name: string, desc: string[], actiontUrl: string, actionId: 
 
 function ActionsGroup(){
     return (
-        <div id="project-section">
+        <div id="action-section">
             <YourActionsRight
                 name={actionData[0].name}
                 desc={actionData[0].desc}

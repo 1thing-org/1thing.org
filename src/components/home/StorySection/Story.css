@@ -1,6 +1,6 @@
 #story {
     margin: 0 1rem;
-    height: 380px;
+    height: 350px;
     border-radius: 20px;
 }
 
@@ -10,24 +10,28 @@
     text-align: left;
     padding: 1rem 1.5rem 0 1.5rem;
     position: relative;
+    height: 100px;
 }
 
 #story-name {
     position: absolute;
-    top: 60%;
+    bottom: 20%;
     font-weight: bold;
 }
 
 #story-quote {
     padding: 2rem 1.5rem 0 1.5rem;
     text-align: left;
-    font-size: larger;
+    font-size: large;
 }
 
 #profile-pic {
-    height: 130px;
-    width: 130px;
-    border-radius: 100px;
+    max-width: 65%;
+    max-height: 65%;
+    height: auto;
+    width: auto;
     position: absolute;
-    right: 10%;
+    bottom: 20%;
+    right: 8%;
+    border-radius: 50%;
 }

@@ -4,9 +4,9 @@ import './SignUp.css';
 
 function SignUp(){
     return (
-        <div className="signup-form">
-            <h2>Sign Up to Volunteer</h2>
-            <Form>
+        <div className="signup">
+            <h2 id='signup-title'>Sign Up to Volunteer</h2>
+            <Form id="signup-form">
                 <Form.Control id="form-name" type="name" placeholder="Enter name" />
                 <br />
                 <Form.Control id="form-email" type="email" placeholder="Enter email" />
