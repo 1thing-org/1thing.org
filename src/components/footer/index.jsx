@@ -1,3 +1,3 @@
-import FooterSection from "./footer"
+import FooterSection from "./Footer"
 
 export { FooterSection }

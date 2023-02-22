@@ -5,7 +5,7 @@ import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter } from "react-icons
 import { Link } from "react-router-dom"
 import "./footer.css"
 
-class Footer extends Component {
+class FooterSection extends Component {
   render() {
     return (
       <footer>
@@ -45,4 +45,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer
+export default FooterSection
