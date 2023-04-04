@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
 import YourActionsLeft from './YourActionsLeft';
 import YourActionsRight from './YourActionsRight';
-import './ActionsGroup.css';
-
 
 const actionData: { name: string, desc: string[], actiontUrl: string, actionId: string }[] = [
     {
@@ -59,35 +56,31 @@ const actionData: { name: string, desc: string[], actiontUrl: string, actionId: 
     
 ];
 
-class ActionsGroup extends Component {
-    render() {
-        return (
-            <div id="project-section">
-                
-
-                <YourActionsRight
-                    name={actionData[0].name}
-                    desc={actionData[0].desc}
-                    actionId={actionData[0].actionId}
-                />
-                <YourActionsLeft
-                    name={actionData[1].name}
-                    desc={actionData[1].desc}
-                    actionId={actionData[1].actionId}
-                />
-                <YourActionsRight
-                    name={actionData[2].name}
-                    desc={actionData[2].desc}
-                    actionId={actionData[2].actionId}
-                />
-                <YourActionsLeft
-                    name={actionData[3].name}
-                    desc={actionData[3].desc}
-                    actionId={actionData[3].actionId}
-                />
-            </div>
-        )
-    }
+function ActionsGroup(){
+    return (
+        <div id="action-section">
+            <YourActionsRight
+                name={actionData[0].name}
+                desc={actionData[0].desc}
+                actionId={actionData[0].actionId}
+            />
+            <YourActionsLeft
+                name={actionData[1].name}
+                desc={actionData[1].desc}
+                actionId={actionData[1].actionId}
+            />
+            <YourActionsRight
+                name={actionData[2].name}
+                desc={actionData[2].desc}
+                actionId={actionData[2].actionId}
+            />
+            <YourActionsLeft
+                name={actionData[3].name}
+                desc={actionData[3].desc}
+                actionId={actionData[3].actionId}
+            />
+        </div>
+    )
 }
 
 export default ActionsGroup;

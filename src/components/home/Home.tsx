@@ -1,4 +1,3 @@
-import React, {Component} from 'react';
 import NavBar from '../navbar/NavBar';
 import Footer from '../footer/Footer';
 import HeroSection from '../hero/HeroSection';
@@ -13,18 +12,16 @@ const homeHeroData: {heading: string, subheading: string} = {
                     convallis ultricies mauris sollicitudin nisl.`
 }
 
-class Home extends Component{
-    render() {
-        return (
-            <div>
-                <NavBar />
-                <HeroSection heading={homeHeroData.heading} subheading={homeHeroData.subheading} />
-                <ProjectSection />
-                <StorySection />
-                <ActionSection />
-                <Footer />
-            </div>
-        )
-    }
+function Home(){
+    return (
+        <div>
+            <NavBar />
+            <HeroSection heading={homeHeroData.heading} subheading={homeHeroData.subheading} />
+            <ProjectSection />
+            <StorySection />
+            <ActionSection />
+            <Footer />
+        </div>
+    )
 }
 export default Home;

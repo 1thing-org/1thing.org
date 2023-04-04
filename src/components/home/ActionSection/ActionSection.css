@@ -1,5 +1,5 @@
 #action-section {
-    margin: 7rem 8rem 0 8rem;
+    margin: 0rem 8rem;
 }
 
 #action-desc {
@@ -21,4 +21,12 @@
     border-radius: 1rem;
     font-size: larger;
     background-color: grey;
+    width: 20%;
+}
+
+/* media rules for large screens */
+@media screen and (min-width: 1600px){
+    #action-section {
+        margin: 0 20rem;
+    }
 }

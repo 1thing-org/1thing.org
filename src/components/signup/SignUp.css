@@ -1,8 +1,13 @@
-.signup-form {
-    margin: 5rem 35rem;
+.signup {
+    margin: 5rem auto;
 }
 
-h2 {
+#signup-form {
+    margin: 2rem auto;
+    width: 20%;
+}
+
+.signup-form h2{
     padding-bottom: 2rem;
 }
 

@@ -1,9 +1,15 @@
 .nav {
     font-size: 20px;
-    padding: 2.5rem 4rem;
+    padding: 2rem 4rem;
 }
 
 .link {
     margin: 0 1em;
 }
 
+/* media rules for large screens */
+@media screen and (min-width: 1600px){
+    .nav {
+        padding: 2.5rem 4rem;
+    }
+}

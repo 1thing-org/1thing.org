@@ -9,10 +9,10 @@
 }
 
 #together, #victim-support {
-    height: 300px;
+    height: 280px;
 }
 
-#body-together, #body-victim-support {
+#body-tracker, #body-together, #body-victim-support {
     width: 55%;
     padding: 0 2rem;
 }
@@ -38,4 +38,15 @@
     width: 45%;
     height: 100%;
     content: url("assets/home-page/placeholder-image.png");
+}
+
+/* media rules for large screens */
+@media screen and (min-width: 1600px){
+    .project {
+        height: 450px;
+    }
+
+    #together, #victim-support {
+        height: 330px;
+    }
 }

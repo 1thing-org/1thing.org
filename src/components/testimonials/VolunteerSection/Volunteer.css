@@ -1,7 +1,7 @@
 #volunteer {
     display: flex;
     flex-direction: row;
-    margin: 2rem 2rem;
+    margin: 1.5rem 2rem;
     padding: 2rem 1.5rem;
     width: 50%;
     height: 300px;
@@ -13,7 +13,6 @@
     width: 60%;
 }
 
-
 #volunteer-interview {
     font-weight: bold;
     position: absolute;
@@ -22,21 +21,21 @@
 
 #right-side {
     position: relative;
+    padding: 0;
 }
 
 #volunteer-profile-pic {
-    height: 130px;
-    width: 130px;
-    border-radius: 100px;
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+    width: auto;
+    border-radius: 50%;
 }
 
 #volunteer-name {
     font-weight: bold;
     position: absolute;
     bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     text-align: center;
+    width: 100%;
 }
