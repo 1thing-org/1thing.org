@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import './HeroSection.css';
-import HeroImage from 'assets/hero-placeholder.png';
+import HeroImage from 'assets/hero.svg';
 
 type Props = {
     heading: string;

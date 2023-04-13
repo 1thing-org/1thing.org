@@ -1,5 +1,5 @@
 footer {
-    background-color: grey;
+    background: #0C0928;
     padding-top: 7rem;
     padding-bottom: 4rem;
     /* position:absolute;
@@ -26,12 +26,51 @@ footer {
     font-weight: bold;
 }
 
+.footer-logo{
+    width: 43px;
+    height: 45px;
+    left: 117px;
+    top: 129px; 
+}
+.footer-text{
+    width: 75px;
+    height: 48px;
+    left: 168px;
+    top: 128px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* or 100% */
+    
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.copy-right{
+    width: 201px;
+    height: 38px;
+    left: 120px;
+    top: 256px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+}
+
 .left-side p {
     padding-bottom: 1.5rem;
 }
 
 .right-side {
-    width: 50%;
+    width: 75%;
     padding: 0 5rem;
 }
 
@@ -45,3 +84,36 @@ footer {
     font-size: 1.8rem;
     padding-right: 1.5rem;
 }
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subscribe-form .form-control {
+    flex: 1;
+    margin-right: 1rem;
+  }
+
+.button{
+    width: 186px;
+    height: 48px;
+    left: 931px;
+    top: 187px;
+    
+    background: #5CE6E7;
+    border-radius: 8px;
+}
+.subscribe {
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #18181A;
+}
+
