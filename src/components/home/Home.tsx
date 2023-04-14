@@ -6,10 +6,8 @@ import StorySection from './StorySection/StorySection';
 import ActionSection from './ActionSection/ActionSection';
 
 const homeHeroData: {heading: string, subheading: string} = {
-    "heading": `1 Thing Against Racism is a volunteer organization dedicated to fighting for racial justice and equality`,
-    "subheading": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus. 
-                    Eget orci vestibulum fringilla diam adipiscing proin. Auctor vestibulum varius interdum euismod 
-                    convallis ultricies mauris sollicitudin nisl.`
+    "heading": `Small Actions can add up to improve racial equality`,
+    "subheading": `Take action. Share your story. Inspire others.`
 }
 
 function Home(){

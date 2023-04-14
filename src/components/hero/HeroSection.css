@@ -4,13 +4,40 @@
 }
 
 #hero-text {
-    left: 40%;
-    right: 10%;
-    top: 30%;
-    text-align: left;
+    height: 496px;
+    width: 444px;
+    left: 152px;
+    top: 32px;
+    border-radius: 0px;
+    background: #FFE033;
 }
 
 #hero-title {
-    font-size: 35px;
-    margin-bottom: 3rem;
+    text-align: start;
+    margin-left: 26px;
+    top: 32px;
+    width: 330px;
+    height: 384px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.4px;
+    color: #18181A;
+}
+
+#hero-subtitle {
+    text-align: start;
+    margin-left: 26px;
+    margin-top: 24px;
+    width: 391px;
+    height: 22px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    color: #18181A;
 }
