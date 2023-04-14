@@ -41,3 +41,10 @@
     letter-spacing: 0.4px;
     color: #18181A;
 }
+
+.hero-container{
+    margin-top: 128px;
+    margin-left: 323px;
+    margin-right: 323px;
+    margin-bottom: 128px;
+}
