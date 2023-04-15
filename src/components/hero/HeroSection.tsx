@@ -16,6 +16,8 @@ function HeroSection(props:Props) {
                 <Card.Text id="hero-subtitle">{props.subheading}</Card.Text>
             </Card.ImgOverlay>
         </Card>
+        
+        
     )
 }
 

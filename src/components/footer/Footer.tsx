@@ -4,7 +4,7 @@ import { faTwitter, faLinkedin, faFacebook, faInstagram } from '@fortawesome/fre
 import { IconName, IconProp } from '@fortawesome/fontawesome-svg-core';
 import './Footer.css'
 import {Navbar, Button,Form} from 'react-bootstrap';
-import NewLogo from '../../assets/NewLogo.svg';
+import footerLogo from '../../assets/footerLogo.svg';
 
 function SocialMedia({name, refLink} : {name: IconProp, refLink: string}) {
     return <a className="icon" href={refLink} target="_blank"><FontAwesomeIcon icon={name as IconName} /></a>;
@@ -16,7 +16,7 @@ function Footer(){
             <div className="footer-container">
                 <div className='left-side'>
                     <Navbar.Brand className ='brand-container'>
-                    <img className='footer-logo' src={NewLogo} width="100" height="100" alt="1 Thing Org logo"/>
+                    <img className='footer-logo' src={footerLogo} width="100" height="100" alt="1 Thing Org logo"/>
                     <Navbar.Text className='text-container'>
                         <div className='footer-text' >
                             1 Thing<br/>
@@ -25,11 +25,6 @@ function Footer(){
                         </div>
                         </Navbar.Text>
                 </Navbar.Brand>
-                    {/* <p>
-                        1 Thing Against Racism is a grassroots, non-profit organization of volunteers founded in [DATE]. 
-                        We believe ending racism and hate begins with uniting people through compassion and advocacy. 
-                        Together we can make the world a more beautiful place — one thing at a time.
-                    </p> */}
                     <div className='social-icons'>
                         <SocialMedia name={faInstagram} refLink='mailto:info@1thing.org' />
                         <SocialMedia name={faTwitter} refLink='https://twitter.com/1Thing_Org' />
@@ -40,7 +35,7 @@ function Footer(){
                 </div> 
                 <div className="split-line"></div>
                 <div className='right-side'>
-                    <p>Sign up for our newsletter for updates on the organization and the projects we’re working on.</p>
+                    <p className="sign-up-text">Sign up for our newsletter for updates on the organization and the projects we’re working on.</p>
                     <div className="subscribe-form">
                          <Form.Control type="email" placeholder="Email" aria-label="Email address"/>
                          <Button className="button" href="#">

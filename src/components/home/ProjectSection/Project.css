@@ -1,11 +1,11 @@
-.project {
+.tracker {
     display: flex;
-    flex-direction: row;
-    background-color: lightgrey;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: left;
-    height: 400px;
-    position: relative;
+    padding: 128px 323px;
+    gap: 34px;
+    background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
 }
 
 #together, #victim-support {
@@ -17,15 +17,53 @@
     padding: 0 2rem;
 }
 
+.card-title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.card-text{
+    width: 592px;
+    height: 88px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    margin-top: 34px;
+
+}
+
 #learn-more {
     position: absolute;
     bottom: 8%;
+    background-color: yellow;
+    border-radius: 8px;
+}
+.learnMore-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #0C0928;
 }
 
 #image-tracker {
     width: 60%;
     height: 100%;
-    content: url("assets/home-page/placeholder-image.png");
+    content: url("assets/home-page/graph.svg");
 }
 
 #image-together {
@@ -43,10 +81,43 @@
 /* media rules for large screens */
 @media screen and (min-width: 1600px){
     .project {
-        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 128px 323px;
+        gap: 34px;
+        background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
     }
 
     #together, #victim-support {
         height: 330px;
     }
+}
+
+.cases-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+/* .months-cases{
+    margin-left: 526px;
+}
+
+.year-cases{
+    margin-right: 728px;
+} */
+
+
+.cases-text{
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: center;
+    color: #FFD800;
 }
