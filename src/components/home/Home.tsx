@@ -5,6 +5,7 @@ import ProjectSection from './ProjectSection/ProjectSection';
 import StorySection from './StorySection/StorySection';
 import ActionSection from './ActionSection/ActionSection';
 import WhoWeAre from 'components/whoWeAre/WhoWeAre';
+import WorkingOn from './WorkingOn/WorkingOn';
 
 const homeHeroData: {heading: string, subheading: string} = {
     "heading": `Small Actions can add up to improve racial equality`,
@@ -18,6 +19,7 @@ function Home(){
             <HeroSection heading={homeHeroData.heading} subheading={homeHeroData.subheading} />
             <WhoWeAre/>
             <ProjectSection />
+            <WorkingOn/>
             <StorySection />
             <ActionSection />
             <Footer />

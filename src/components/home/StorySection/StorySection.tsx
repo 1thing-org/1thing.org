@@ -29,8 +29,8 @@ function StorySection(){
     return (
         <div id='story-section'>
             <div id='story-desc'>
-                <h2>Our Story</h2>
-                <p> 
+                <h2 className='our-story'>Our Story</h2>
+                <p className='story-text'> 
                     1 Thing Against Racism began as a slide deck shared around the offices at Google. 
                     Today, it is a mission driven orgnization comprised of volunteers who have their own 
                     reasons for contributing their time to our mission.
