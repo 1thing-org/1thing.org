@@ -24,24 +24,30 @@
     #story-section {
         margin: 7rem 20rem;
     }
-    .our-story{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 44px;
-
-    text-align: center;
-
-    color: #18181A;
+    #story-desc {
+        padding: 0 20rem 3rem 20rem;
     }
-
-    .story-text{
-        display: flex;
-        justify-content: center;
-        font-family: Open Sans;
-        
-
+    .our-story {
+        margin: 0;
+      }
+      
+      .story-text {
+        margin: 0;
+      }
+      
+      h6 {
+        margin: 0;
+      }
+      .story-button{
+        background: #B591FD;
+      }
+      .story-button-text{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #232830;
+      }
 
     }
-}

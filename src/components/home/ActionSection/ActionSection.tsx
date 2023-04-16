@@ -24,31 +24,31 @@ const actionData: {desc: string}[] = [
 function ActionSection() {
     return (
         <div id="action-section">
-            <div className='left-side'>
-                <h2 className='h2'>Small Actions. Big Changes</h2>
-                <p className='p1'> 
+            <div className='action-left-side'>
+                <h2 className='action-h2'>Small Actions. Big Changes</h2>
+                <p className='action-p1'> 
                     By encouraging everyone to make one small but meaningful contribution we 
                     can create significant change.
                 </p>
                 <div className='action-container'>
-                    <img src={a1} alt="Raise awareness" />
+                    <img className='action-img' src={a1} alt="Raise awareness" />
                     <span className='action-text'>Raise awareness</span>
                 </div>
                 <div className='action-container'>
-                    <img src={a2} alt="Support Victims" />
+                    <img className='action-img'  src={a2} alt="Support Victims" />
                     <span className='action-text'>Support vicitms of anti-Asian hate</span>
                 </div>
                 <div className='action-container'>
-                    <img src={a3} alt="Use your expertise" />
+                    <img className='action-img' src={a3} alt="Use your expertise" />
                     <span className='action-text'>Use your expertise</span>
                 </div>
                 <div className='action-container'>
-                     <img src={a4} alt="Promote cross" />
+                     <img className='action-img' src={a4} alt="Promote cross" />
                     <span className='action-text'>Promote cross-racial understanding</span>
                 </div>
 
             </div>
-            <div className='right-side'></div>
+            <div className='action-right-side'></div>
             {/* <div id="actions">
                 <div className="action-row">
                     <Action desc={actionData[0].desc}/>

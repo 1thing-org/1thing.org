@@ -14,7 +14,7 @@ function Footer(){
     return (
         <footer>
             <div className="footer-container">
-                <div className='left-side'>
+                <div className='footer-left-side'>
                     <Navbar.Brand className ='brand-container'>
                     <img className='footer-logo' src={footerLogo} width="100" height="100" alt="1 Thing Org logo"/>
                     <Navbar.Text className='text-container'>
@@ -34,7 +34,7 @@ function Footer(){
                     <p className="copy-right">1 Thing Against Racism © 2022 All rights reserved. </p>
                 </div> 
                 <div className="split-line"></div>
-                <div className='right-side'>
+                <div className='footer-right-side'>
                     <p className="sign-up-text">Sign up for our newsletter for updates on the organization and the projects we’re working on.</p>
                     <div className="subscribe-form">
                          <Form.Control type="email" placeholder="Email" aria-label="Email address"/>

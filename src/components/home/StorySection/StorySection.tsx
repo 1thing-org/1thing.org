@@ -1,5 +1,6 @@
 import Story from './Story';
 import './StorySection.css';
+import { Button } from 'react-bootstrap';
 
 const storyData: {name: string, quote: string, picUrl: string}[] = [
     {
@@ -31,11 +32,13 @@ function StorySection(){
             <div id='story-desc'>
                 <h2 className='our-story'>Our Story</h2>
                 <p className='story-text'> 
-                    1 Thing Against Racism began as a slide deck shared around the offices at Google. 
-                    Today, it is a mission driven orgnization comprised of volunteers who have their own 
-                    reasons for contributing their time to our mission.
+                1 Thing Against Racism began as a slide deck shared around the offices at 
+                Google. Today, it is a mission driven organization comprised of volunteers who 
+                contribute their time to our mission.
                 </p>
-                <h6>Read More</h6>
+                <Button className='story-button' href="#">
+                            <div className='story-button-text'>Read More</div>
+                         </Button>
             </div>
             <div id="stories">
                 {storyData.map(story => <Story name={story.name} quote={story.quote} picUrl={story.picUrl}/>)}

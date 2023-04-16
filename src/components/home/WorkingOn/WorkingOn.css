@@ -38,19 +38,17 @@ letter-spacing: 0.4px;
 color: #18181A;
   }
 
-  .text{
+  .working-text{
+    display: inline;
     margin-top: 24px;
     width: 361px;
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-/* or 138% */
-
-letter-spacing: 0.4px;
-
-color: #18181A;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    color: #18181A;
   }
   
   /* Optional: Style the images */
@@ -58,5 +56,3 @@ color: #18181A;
   .right-image {
 
   }
-  
-  

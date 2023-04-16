@@ -10,14 +10,14 @@ function WorkingOn() {
     <div className="image-container">
       <img className="left-image" src={placeholderimg} alt="Left Image" />
       <h2 className='title'>Project Together</h2>
-      <p className='text'>Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus. Eget orci vestibulum fringilla diam adipiscing proin. </p>
+      <p className='working-text'>Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus. Eget orci vestibulum fringilla diam adipiscing proin. </p>
       <a href="/" >Learn More</a>
     </div>
     <div className="image-container">
       <img className="right-image" src={placeholderimg} alt="Right Image" />
       <h2 className='title'>Supporting Victims</h2>
-      <p className='text'>Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus. Eget orci vestibulum fringilla diam adipiscing proin. </p>
-      <a href="/" >Learn More</a>
+      <p className='working-text'>Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus. Eget orci vestibulum fringilla diam adipiscing proin. </p>
+      <a className='working-link'  href="/" >Learn More</a>
     </div>
   </div>
 </div>
