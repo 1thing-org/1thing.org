@@ -5,6 +5,7 @@ import a1 from '../../../assets//home-page/a1.svg';
 import a2 from '../../../assets//home-page/a2.svg';
 import a3 from '../../../assets//home-page/a3.svg';
 import a4 from '../../../assets//home-page/a4.svg';
+import StockImage from '../../../assets//home-page/stock_Image.svg';
 
 const actionData: {desc: string}[] = [
     {
@@ -48,7 +49,9 @@ function ActionSection() {
                 </div>
 
             </div>
-            <div className='action-right-side'></div>
+            <div className='action-right-side'>
+                <img className='stock-img' src={StockImage} alt="Promote cross" />
+            </div>
             {/* <div id="actions">
                 <div className="action-row">
                     <Action desc={actionData[0].desc}/>

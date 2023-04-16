@@ -33,7 +33,8 @@
         margin-left: 0%;
         margin-right: 0%;
     }
-    .action-left-side,.action-right-side {
+    .action-left-side {
+        
         justify-content: flex-start;
         margin-bottom: 128px;
         flex: 1;
