@@ -11,14 +11,17 @@ footer {
 .footer-container {
     display: flex; 
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
+    justify-content: center; 
     color: white;
 }
 
-.left-side {
-    width: 25%;
-    padding: 0 5rem;
+.footer-left-side {
+    margin-left: 110px;
+    margin-right: 190px;
+    padding: 0 2 rem;
     text-align: left;
+    width: auto;
 }
 
 .left-side h4 {
@@ -30,21 +33,13 @@ footer {
     width: 43px;
     height: 45px;
 }
-.footer-text{
-    width: 75px;
-    height: 48px;
-    left: 168px;
-    top: 128px;
-    
+.footer-text{    
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
-    /* or 100% */
-    
     text-transform: uppercase;
-    
     color: #FFFFFF;
 }
 
@@ -72,9 +67,11 @@ footer {
 .left-side p {
     padding-bottom: 1.5rem;
 }
-
-
 .split-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 166px;
     height: 0px;
     border: 1px solid #FFFFFF;
@@ -82,10 +79,12 @@ footer {
 }
 
 
-.right-side {
+.footer-right-side {
     display: flex;
     align-items: flex-start;
     flex-direction: column; 
+    width: 60%;
+    padding: 0 2rem;
 }
 
 .subscribe-form {
@@ -133,5 +132,12 @@ footer {
     font-size: 16px;
     line-height: 22px;
     color: #18181A;
+}
+
+.social-icons {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 

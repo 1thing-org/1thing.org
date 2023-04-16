@@ -2,6 +2,7 @@ import Card from 'react-bootstrap/Card';
 import "./Project.css";
 import { Button } from 'react-bootstrap';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'; 
+
 {/*need to install recharts if need to make dynamic grapth*/}
 
 type Props = {
@@ -20,8 +21,11 @@ function Project(props: Props){
                 <Card.Text className='card-text'>{props.desc}</Card.Text>
             </Card.Body>
 
+          
+				 {/*need to make dynamic graph*/}
             {/* the tracker graph and the cases still need to work on */}
-            <Card.Img id={"image-" + props.projectId} src={props.imageUrl}/>    {/*image url in css*/}
+            {/* <Card.Img id={"image-" + props.projectId} src={props.imageUrl}/>     */}
+            {/*image url in css*/}
 
 
             <div className='cases-container'>

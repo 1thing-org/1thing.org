@@ -1,0 +1,58 @@
+/* Style the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style the main title */
+  .main-title {
+    margin-top: 128px;
+  }
+  
+  /* Style the images container */
+  .images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 24px;
+  }
+  
+  /* Style the image containers */
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 10px); /* This will give each container half of the parent container width, minus 10 pixels for spacing */
+  }
+
+  .title{
+    margin-top: 40px;
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.4px;
+
+color: #18181A;
+  }
+
+  .working-text{
+    display: inline;
+    margin-top: 24px;
+    width: 361px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    color: #18181A;
+  }
+  
+  /* Optional: Style the images */
+  .left-image,
+  .right-image {
+
+  }

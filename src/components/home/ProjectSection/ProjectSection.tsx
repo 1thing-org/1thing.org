@@ -17,14 +17,16 @@ const projectData: {name: string, desc: string, projectUrl: string, projectId: s
     //     "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique 
     //             id lectus. Eget orci vestibulum fringilla diam adipiscing proin.`,
     //     "projectUrl": "/",
-    //     "projectId": "together"
+    //     "projectId": "together",
+    //     "imageUrl": "../../assets/graph.svg",
     // },
     // {
     //     "name": "Supporting Victims",
     //     "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique 
     //     id lectus. Eget orci vestibulum fringilla diam adipiscing proin.`,
     //     "projectUrl": "/",
-    //     "projectId": "victim-support"
+    //     "projectId": "victim-support",
+    //     "imageUrl": "../../assets/graph.svg",
     // }
 ];
 
@@ -44,6 +46,8 @@ function ProjectSection(){
                     desc={projectData[1].desc} 
                     projectUrl={projectData[1].projectUrl}
                     projectId={projectData[1].projectId}
+                imageUrl={projectData[0].imageUrl}
+
                 />
                 <div id="middle"></div>
                 <Project 
@@ -51,6 +55,8 @@ function ProjectSection(){
                     desc={projectData[2].desc} 
                     projectUrl={projectData[2].projectUrl}
                     projectId={projectData[2].projectId}
+                imageUrl={projectData[0].imageUrl}
+
                 />
             </div> */}
         </div>
