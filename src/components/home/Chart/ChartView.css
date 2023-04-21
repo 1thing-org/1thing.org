@@ -1,10 +1,3 @@
-/* .hcr {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
-   
-  } */
-  
   .word {
     width: 90%;
     margin-left: 5%;
@@ -101,94 +94,7 @@
     line-height: 24px;
   }
   
-  @media only screen and (max-width: 768px) {
-    .hcr {
-      margin-left: 10%;
-      margin-top: 10%;
-      margin-bottom: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 128px 323px;
-      gap: 34px;
-      width: 1440px;
-      height: 1044px;
-      background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
-    }
-    
-    .chart-title {
-      
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 2rem; /* Add space between title and chart */
-    }
-    
-    .t3 {
-      width: 524px;
-      height: 40px;
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 32px;
-      line-height: 40px;
-      text-align: center;
-      letter-spacing: 0.4px;
-      text-transform: capitalize;
-      color: #FFFFFF;
-      margin-bottom: 1rem;
-    }
-
-    .t4{
-      width: 592px;
-      height: 88px;
-
-      /* Body Text/Main */
-
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      /* or 138% */
-
-      text-align: center;
-      letter-spacing: 0.4px;
-
-      color: #FFFFFF;
-    }
-    
-    .chart {
-      width: 794px;
-      height: 382px;
-    }
-    .t-cases{
-      position: absolute;
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 28px;
-      color: #FFD800;
-    }
-    .childword{
-      justify-content: space-evenly;
-    }
-    .col-3{
-    }
-    .t1{
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      text-align: center;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1440px) {
     .hcr {
       margin-bottom: none;
       display: flex;
