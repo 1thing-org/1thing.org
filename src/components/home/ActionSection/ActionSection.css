@@ -24,6 +24,76 @@
     width: 20%;
 }
 
+@media  screen and (max-width: 1440px) {
+    #action-section {
+        
+        display: flex;
+        background: #FFD800;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .action-left-side {
+        
+        justify-content: flex-start;
+        margin-bottom: 128px;
+        flex: 1;
+    }
+    .action-h2{
+        margin-left: 121px;
+        margin-top: 128px;
+        width: 456px;
+        height: 44px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: #18181A;
+    }
+
+    .action-p1{
+        margin-left: 142px;
+        margin-bottom: 40px;
+        width: 590px;
+        height: 44px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #18181A;
+        text-align: left;
+    }
+    
+    .action-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        margin-left: 142px;
+        margin-bottom: 26.19px;
+    }
+
+    .action-img{
+ 
+        height: 62.82552208470046px;
+        width: 68.56564331054717px;
+        border-radius: 0px;
+    }
+
+    .action-text{
+        margin-left: 23.68px;
+        height: 33px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+        color: #18181A;
+    }
+}
+    
 /* media rules for large screens */
 @media screen and (min-width: 1600px){
     #action-section {

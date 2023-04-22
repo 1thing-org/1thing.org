@@ -19,6 +19,37 @@
     flex-direction: row;
 }
 
+/* @media screen and (min-width: 768) {
+  #story-section {
+    margin: 7rem 20rem;
+}
+#story-desc {
+    padding: 0 20rem 3rem 20rem;
+}
+.our-story {
+    margin: 0;
+  }
+  
+  .story-text {
+    margin: 0;
+  }
+  
+  h6 {
+    margin: 0;
+  }
+  .story-button{
+    background: #B591FD;
+  }
+  .story-button-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #232830;
+  }
+} */
+  
 /* media rules for large screens */
 @media screen and (min-width: 1600px){
     #story-section {
