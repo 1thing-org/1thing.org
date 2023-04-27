@@ -18,9 +18,9 @@ import "./IncidentChart.css";
 
 const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
   const formatXAxis = (tickVal) => {
-    //yyyy-mm-dd to mm/dd/2021
+    //yyyy-mm-dd to mm/year, e.g. 2020-01-01 to Jan 2020
     const d = moment(tickVal, "YYYY-MM-DD");
-    return d.format("M/D/YY");
+    return d.format("MMMM YY");
   };
   const { t } = useTranslation();
   const [xticks, setXTicks] = useState([]);
@@ -62,7 +62,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
       const daily = payload[0].payload.value ? payload[0].payload.value : 0;
       return tooltip !== "daily" ? (
         <div className="recharts-custom-tooltip">
-          <p className="date">{d.format("MMM YYYY")}</p>
+          <p className="date">{d.format("MMMM YYYY")}</p>
           <p className="cases">
             <strong>
               {t("incident_chart.total_monthly_cases", { count: monthly })}
@@ -108,8 +108,14 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
           <div className="drop-down" />
         </>
       ) : null}
-      <ResponsiveContainer>
-        <ComposedChart height={300} data={chart_data}>
+      <ResponsiveContainer >
+      <ComposedChart 
+            height={300}
+            width={794} 
+            data={chart_data} 
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.1)"
+          }}>
+            
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             dataKey="key"
@@ -134,31 +140,24 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             orientation="right"
             allowDecimals={false}
             interval="preserveStartEnd"
-            label={{
-              value: t("monthly_count"),
-              angle: 90,
-              position: "insideRight",
-            }}
+            
           />
           <Tooltip content={<CustomTooltip />} />
           <Area
             name={t("monthly_count")}
             type="monotone"
             dataKey="monthly_cases"
-            fill="rgba(155, 161, 225, 0.5)"
-            stroke="rgba(155, 161, 225, 0.5)"
+            fill="url(#monthly-gradient)"
             yAxisId="right"
             onMouseOver={() => setTooltip("monthly")}
           />
-          <Bar
-            name={t("daily_count")}
-            dataKey="value"
-            stroke={chart_data.length > 60 ? "#84B6BD" : undefined}
-            fill="#84B6BD"
-            strokeWidth={3}
-            onMouseOver={() => setTooltip("daily")}
-          />
-          <Legend wrapperStyle={{ position: "relative", marginTop: "4px" }} />
+          <defs>
+            <linearGradient id="monthly-gradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FFE033" />
+              <stop offset="100%" stop-color="rgba(255, 224, 51, 0)" />
+            </linearGradient>
+          </defs>
+
         </ComposedChart>
       </ResponsiveContainer>
     </div>
