@@ -1,5 +1,5 @@
 import Story from './Story';
-import './StorySection.css';
+import './StorySection-2.css';
 import { Button } from 'react-bootstrap';
 
 const storyData: {name: string, quote: string, picUrl: string}[] = [
@@ -36,9 +36,7 @@ function StorySection(){
                 Google. Today, it is a mission driven organization comprised of volunteers who 
                 contribute their time to our mission.
                 </p>
-                <Button className='story-button' href="#">
-                            <div className='story-button-text'>Read More</div>
-                         </Button>
+                <Button className='story-button' href="#">Read More</Button>
             </div>
             <div id="stories">
                 {storyData.map(story => <Story name={story.name} quote={story.quote} picUrl={story.picUrl}/>)}
