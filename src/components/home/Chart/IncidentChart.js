@@ -148,6 +148,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             type="monotone"
             dataKey="monthly_cases"
             fill="url(#monthly-gradient)"
+            stroke="#FFE033"
             yAxisId="right"
             onMouseOver={() => setTooltip("monthly")}
           />

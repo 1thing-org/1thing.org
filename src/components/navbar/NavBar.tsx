@@ -27,7 +27,7 @@ function NavBar(){
                 </Navbar.Brand>
             </LinkContainer>
             {/* <Navbar.Collapse id="responsive-navbar-nav"> */}
-            <Nav className="links ms-auto">
+            <Nav className="links-ms-auto">
             <Page  title={'Take Action'} links={'/takeaction'} className={'inner-text'}></Page>
                 {/* <Page title={'Testimonials'} links={'/testimonials'}></Page> */}
                 <Page title={'About Us'} links={'/aboutus'} className={'inner-text'}></Page>
