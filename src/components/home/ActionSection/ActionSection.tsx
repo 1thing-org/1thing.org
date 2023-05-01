@@ -26,32 +26,31 @@ function ActionSection() {
     return (
         <div id="action-section">
             <div className='action-left-side'>
-                <h2 className='action-h2'>Small Actions. Big Changes</h2>
-                <p className='action-p1'> 
+                <h2 className='action-title'>Small Actions. Big Changes</h2>
+                <p className='action-description'> 
                     By encouraging everyone to make one small but meaningful contribution we 
                     can create significant change.
                 </p>
                 <div className='action-container'>
-                    <img className='action-img' src={a1} alt="Raise awareness" />
-                    <span className='action-text'>Raise awareness</span>
+                    <div className='action-item'>
+                        <img className='action-img' src={a1} alt="Raise awareness" />
+                        <span className='action-text'>Raise awareness</span>
+                    </div>
+                    <div className='action-item'>
+                        <img className='action-img'  src={a2} alt="Support Victims" />
+                        <span className='action-text'>Support vicitms of anti-Asian hate</span>
+                    </div>
+                    <div className='action-item'>
+                        <img className='action-img' src={a3} alt="Use your expertise" />
+                        <span className='action-text'>Use your expertise</span>
+                    </div>
+                    <div className='action-item'>
+                        <img className='action-img' src={a4} alt="Promote cross" />
+                        <span className='action-text'>Promote cross-racial understanding</span>
+                    </div>
                 </div>
-                <div className='action-container'>
-                    <img className='action-img'  src={a2} alt="Support Victims" />
-                    <span className='action-text'>Support vicitms of anti-Asian hate</span>
-                </div>
-                <div className='action-container'>
-                    <img className='action-img' src={a3} alt="Use your expertise" />
-                    <span className='action-text'>Use your expertise</span>
-                </div>
-                <div className='action-container'>
-                     <img className='action-img' src={a4} alt="Promote cross" />
-                    <span className='action-text'>Promote cross-racial understanding</span>
-                </div>
-
             </div>
-            <div className='action-right-side'>
-                <img className='stock-img' src={StockImage} alt="Promote cross" />
-            </div>
+            <div className='action-right-side' ></div>
             {/* <div id="actions">
                 <div className="action-row">
                     <Action desc={actionData[0].desc}/>

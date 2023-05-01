@@ -12,8 +12,8 @@ function Story(props: Props) {
         <Card id="story">
             <Card.Text id="story-quote">{props.quote}</Card.Text>
             <Card.Body id="story-body">
-                <Card.Text id="story-name">{props.name}</Card.Text>
                 <Card.Img id="profile-pic" src={props.picUrl}/>
+                <Card.Text id="story-name">{props.name}</Card.Text>
             </Card.Body>
         </Card>
     )
