@@ -1,11 +1,4 @@
-  .word {
-    width: 90%;
-    margin-left: 5%;
-    height: auto;
-    margin-bottom: 5%;
-    font-family: "Quicksand";
-    font-style: normal;
-  }
+
   
   .childword {
     margin-bottom: 5%;
@@ -47,7 +40,7 @@
     text-align: center;
     color: rgba(8, 13, 31, 0.7);
     margin-bottom: 5%;
-    font-family: "Quicksand";
+    font-family: sans-serif;
     font-style: normal;
     font-size: 14px;
     line-height: 16px;
@@ -117,9 +110,9 @@
     }
     
     .t3 {
-      width: 524px;
+      width: auto;
       height: 40px;
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 32px;
@@ -134,10 +127,7 @@
     .t4{
       width: 592px;
       height: 88px;
-
-      /* Body Text/Main */
-
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -151,33 +141,52 @@
     }
     
     .chart {
-      width: 794px;
-      height: 382px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 15%;
+
     }
     .t-cases{
-      position: absolute;
-      font-family: 'Open Sans';
+      width: 200px;
+      
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
       line-height: 28px;
       color: #FFD800;
     }
-    .childword{
-      justify-content: space-evenly;
+    .word {
+      padding-right: 50px;
+      width: fit-content;
+      height: 92px;
+    }
+    
+    .childword {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      margin-right: 2rem;
     }
     .col-3{
+      justify-items: center;
+      justify-content: center;
+      text-align:center
     }
+
+    /* Text/Body still need to adjust */
     .t1{
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
-      text-align: center;
+      text-align:center;
       letter-spacing: 0.4px;
       margin-top: 36px;
       color: #FFFFFF;
+      width: 187px;
     }
 
 
@@ -228,9 +237,9 @@
     }
     
     .t3 {
-      width: 524px;
+      width: auto;
       height: 40px;
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 32px;
@@ -245,10 +254,7 @@
     .t4{
       width: 592px;
       height: 88px;
-
-      /* Body Text/Main */
-
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -262,33 +268,52 @@
     }
     
     .chart {
-      width: 794px;
-      height: 382px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 20%;
+
     }
     .t-cases{
-      position: absolute;
-      font-family: 'Open Sans';
+      width: 200px;
+      
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
       line-height: 28px;
       color: #FFD800;
     }
-    .childword{
-      justify-content: space-evenly;
+    .word {
+      padding-right: 50px;
+      width: fit-content;
+      height: 92px;
+    }
+    
+    .childword {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      margin-right: 2rem;
     }
     .col-3{
+      justify-items: center;
+      justify-content: center;
+      text-align:center
     }
+
+    /* Text/Body still need to adjust */
     .t1{
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
-      text-align: center;
+      text-align:center;
       letter-spacing: 0.4px;
       margin-top: 36px;
       color: #FFFFFF;
+      width: 187px;
     }
 
 
@@ -322,13 +347,20 @@
       align-items: center;
       padding: 128px 323px;
       gap: 34px;
-      width: 1440px;
+      width: 100%;
       height: 1044px;
       background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
     }
+
+    .chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 15%;
+
+    }
     
     .chart-title {
-      
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -337,9 +369,9 @@
     }
     
     .t3 {
-      width: 524px;
+      width: auto;
       height: 40px;
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 32px;
@@ -354,10 +386,7 @@
     .t4{
       width: 592px;
       height: 88px;
-
-      /* Body Text/Main */
-
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -370,34 +399,46 @@
       color: #FFFFFF;
     }
     
-    .chart {
-      width: 794px;
-      height: 382px;
-    }
     .t-cases{
-      position: absolute;
-      font-family: 'Open Sans';
+      width: 200px;
+      
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
       line-height: 28px;
       color: #FFD800;
     }
-    .childword{
-      justify-content: space-evenly;
+    .word {
+      padding-right: 50px;
+      width: fit-content;
+      height: 92px;
+    }
+    
+    .childword {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      margin-right: 2rem;
     }
     .col-3{
+      justify-items: center;
+      justify-content: center;
+      text-align:center
     }
+
+    /* Text/Body still need to adjust */
     .t1{
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
-      text-align: center;
+      text-align:center;
       letter-spacing: 0.4px;
       margin-top: 36px;
       color: #FFFFFF;
+      width: 187px;
     }
 
 

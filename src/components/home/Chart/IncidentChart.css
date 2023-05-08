@@ -24,10 +24,12 @@
   text-shadow: 2px #ffffff;
 }
 
+
 .recharts-wrapper {
-  height: 350px;
+  width: 794px;
+  height: 382px;
+  left: 100px;
   border-radius: 16px;
-  
 }
 
 .recharts-custom-tooltip {

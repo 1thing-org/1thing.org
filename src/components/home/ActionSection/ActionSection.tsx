@@ -44,7 +44,7 @@ function ActionSection() {
                         <img className='action-img' src={a3} alt="Use your expertise" />
                         <span className='action-text'>Use your expertise</span>
                     </div>
-                    <div className='action-item'>
+                    <div className='action-item-4'>
                         <img className='action-img' src={a4} alt="Promote cross" />
                         <span className='action-text'>Promote cross-racial understanding</span>
                     </div>
