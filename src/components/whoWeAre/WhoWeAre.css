@@ -1,6 +1,6 @@
 
 #who-container{
-    width: 100%;
+    width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,9 +35,9 @@
     color: #18181A;
 }
 
-@media screen and (min-width: 1024px){
-    .who-title{
-        width: 500px;
-    }
+@media screen and (min-width: 1441px){
+    #who-container{
+        width: 100%;
+}
 }
 

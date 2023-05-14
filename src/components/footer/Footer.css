@@ -2,10 +2,7 @@ footer {
     background: #0C0928;
     padding-top: 7rem;
     padding-bottom: 4rem;
-    /* position:absolute;
-    left:0;
-    bottom:0;
-    right:0; */
+    width: 1440px;
 }
 
 .footer-container {
@@ -139,5 +136,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media  screen and (min-width: 1441px) {
+    footer {
+        width: 100%;
+    }
 }
 

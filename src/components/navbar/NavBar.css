@@ -2,7 +2,7 @@
     font-size: 20px;
     padding: 2rem 4rem;
     justify-content: space-between;
-    width: 100%;
+    width: 1440px;
 }
 
 .link {
@@ -45,7 +45,7 @@
         width: auto;
         font-family: sans-serif;
         font-size: 16px;
-        font-weight: 800; 
+        font-weight: 700; 
         line-height: 22px;
         letter-spacing: 0.4000000059604645px;
         text-align: left;
@@ -53,3 +53,11 @@
         color: #18181A;
     }
 
+    @media screen and (min-width: 1441px){
+        .nav {
+            font-size: 20px;
+            padding: 2rem 4rem;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
