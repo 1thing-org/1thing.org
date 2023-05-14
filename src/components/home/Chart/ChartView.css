@@ -211,7 +211,7 @@
     }
   }
   
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1441px) {
     .hcr {
       margin-left: auto;
       margin-right: auto;
@@ -222,7 +222,7 @@
       align-items: center;
       padding: 128px 323px;
       gap: 34px;
-      width: 1440px;
+      width: 100%;
       height: 1044px;
       background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
     }

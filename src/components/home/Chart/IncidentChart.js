@@ -65,7 +65,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
       const daily = payload[0].payload.value ? payload[0].payload.value : 0;
       return tooltip !== "daily" ? (
         <div className="recharts-custom-tooltip">
-          <p className="date">{d.format("MMMM YYYY")}</p>
+          <p className="date">{d.format("MMM YYYY")}</p>
           <p className="cases">
             <strong>
               {t("incident_chart.total_monthly_cases", { count: monthly })}
@@ -114,8 +114,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
 
       <ResponsiveContainer>
       <ComposedChart 
-            height={382}
-            width={1000}
+            height={300}
             data={chart_data} 
             margin={{ top: 30, right: 30, bottom: 10, left: -30 }}
             style={{ backgroundColor: "rgba(255, 255, 255, 0.1)"
