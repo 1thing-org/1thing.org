@@ -130,7 +130,7 @@ const ChartView = () => {
 	return (
 		<div className="hcr">
 			<div className="chart-title">
-				<p className="t3">We Made A Hate Crime Tracker.</p>
+				<p className="t3">We Made A Hate Crime Tracker</p>
 				<p className="t4">
 				Anti-Asian hate crimes are happening everyday and we’ve built a tool to help track them. 1 Thing’s Hate Crime Tracker project scrapes reports from national media news outlets and visualizes the data to raise awareness about these terrible incidents.
 				</p>

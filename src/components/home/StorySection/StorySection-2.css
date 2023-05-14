@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 1440px;
     height: 67.78vw;
     padding: 9% 8.5%;
     background: #F4F4F4;
@@ -21,7 +21,7 @@
 .our-story {
     margin: 0;
     /* when choose Open Sans then, font-weight: 800 will not take effect */
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -32,7 +32,7 @@
 
 .story-text {
     margin: 0;
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -81,8 +81,9 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
     #story-section {
+        width: 100%;
         padding: 8rem 7.5rem;
         height: 976px;
     }

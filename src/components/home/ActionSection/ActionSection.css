@@ -3,6 +3,7 @@
     background: #FFD800;
     display: flex;
     flex-direction: row;
+    width: 1440px;
 }
 
 .action-left-side {
@@ -15,7 +16,7 @@
 }
 
 .action-title {
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
     color: #18181A;
@@ -23,7 +24,7 @@
 
 .action-description {
     text-align: left;
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -32,7 +33,7 @@
 }
 
 .action-container {
-    width: 40vw;
+    width: 100%;
     height: 40vw;
     display: flex;
     flex-direction: column;
@@ -41,17 +42,17 @@
 }
 
 .action-img {
-    margin-right: 1.6vw;
+    margin-right: 24px;
     width: 5.5vw;
     height: 5.5vw;
 }
 
 .action-text {
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 33px;
     color: #18181A;
 }
 
@@ -80,8 +81,9 @@
     width: 20%;
 }
 
-@media  screen and (min-width: 1440px) {
+@media  screen and (min-width: 1441px) {
     #action-section {
+        width: 100%;
         display: flex;
         height: 782px;
         margin-left: 0%;
@@ -91,7 +93,7 @@
         padding: 8em 0 5.75em 7.5em;
     }
     .action-container {
-        width: 576px;
+        width: 700px;
         height: 562px;
     }
     .action-img {

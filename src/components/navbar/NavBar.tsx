@@ -13,7 +13,7 @@ function Page({title, links, className} : {title: string, links: string, classNa
 
 function NavBar(){
     return(
-        <Navbar className="nav" bg="light" expand="lg">
+        <Navbar className="nav">
             <LinkContainer to="/">
                 <Navbar.Brand className ='brand-container'>
                     <img className='logo' src={NewLogo} width="100" height="100" alt="1 Thing Org logo"/>

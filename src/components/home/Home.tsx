@@ -21,7 +21,7 @@ function Home(){
             <WhoWeAre/>
             <ChartView/>
             {/* <ProjectSection /> */}
-            <WorkingOn/>
+            {/* <WorkingOn/> */} {/* temporary displayed */}
             <StorySection />
             <ActionSection />
             <Footer />
