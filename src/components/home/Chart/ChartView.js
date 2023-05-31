@@ -177,7 +177,7 @@ const ChartView = () => {
 
 				<Row className="link1">
 				<Button className="chart-button" href="https://hatecrimetracker.1thing.org/">
-                            <div className="chart-button-text">ViewProject</div>
+                            <div className="chart-button-text">View Project</div>
 							</Button>
 						</Row>
 				{/* <Row className="link1">

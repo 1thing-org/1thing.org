@@ -56,3 +56,13 @@ color: #18181A;
   .right-image {
 
   }
+
+  @media  screen and (min-width: 768px){
+    .container{
+    max-width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 128px;
+    }
+  }
+

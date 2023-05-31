@@ -10,7 +10,7 @@ type Props = {
 function HeroSection(props:Props) {
     return(
         <Card>
-              <Card.Img id="hero-image" src={HeroImage} style={{ objectFit: "cover" }} />
+              <Card.Img id="hero-image" src={HeroImage}/>
             <Card.ImgOverlay id="hero-text-container">
                 <Card.Title id="hero-title">{props.heading}</Card.Title>
                 <Card.Text id="hero-subtitle">{props.subheading}</Card.Text>

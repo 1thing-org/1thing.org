@@ -21,25 +21,6 @@ function WorkingOn() {
     </div>
   </div>
 </div>
-
-
-    // <div className="container">
-    //     <p className="workingOn-title">
-    //         We're also working on
-    //         </p>
-    //     <div className='workingOn-container'>
-          
-    //             <img className="project-image" />
-    //             <p className='project-title'>Project Together</p>
-    //             <p className='project-content'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam qui molestiae reiciendis, expedita laboriosam non. Dolores, sit odit nihil quod aperiam sapiente, laudantium iusto enim quis blanditiis cum laborum molestias.</p>
-    //         <div>
-    //             <img className="supporting-image" />
-    //             <p className='supporting-title'>Supporting Victims</p>
-    //             <p className='supporting-content'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam qui molestiae reiciendis, expedita laboriosam non. Dolores, sit odit nihil quod aperiam sapiente, laudantium iusto enim quis blanditiis cum laborum molestias.</p>
-    //         </div>
-    //     </div>
-    // </div>
-  
   );
 }
 export default WorkingOn;

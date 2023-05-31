@@ -2,7 +2,9 @@
     font-size: 20px;
     padding: 2rem 4rem;
     justify-content: space-between;
-    width: 1440px;
+    max-width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
 }
 
 .link {
@@ -53,11 +55,11 @@
         color: #18181A;
     }
 
-    @media screen and (min-width: 1441px){
+    /* @media screen and (max-width: 1440px){
         .nav {
             font-size: 20px;
             padding: 2rem 4rem;
             justify-content: space-between;
             width: 100%;
         }
-    }
+    } */
