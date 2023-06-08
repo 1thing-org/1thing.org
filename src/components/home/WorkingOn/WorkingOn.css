@@ -1,5 +1,5 @@
 /* Style the main container */
-.container {
+.working-on-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,3 +56,12 @@ color: #18181A;
   .right-image {
 
   }
+
+  @media  screen and (min-width: 768px){
+    .working-on-container{
+    max-width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
+    }
+  }
+

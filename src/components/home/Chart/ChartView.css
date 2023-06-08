@@ -1,5 +1,3 @@
-
-  
   .childword {
     margin-bottom: 5%;
   }
@@ -86,135 +84,11 @@
     font-size: 20px;
     line-height: 24px;
   }
-  @media only screen and (min-width: 1024px) {
-    .hcr {
-      margin-bottom: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 128px 323px;
-      gap: 34px;
-      width: 1440px;
-      height: 1044px;
-      background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
-    }
-    
-    .chart-title {
-      
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 2rem; /* Add space between title and chart */
-    }
-    
-    .t3 {
-      width: auto;
-      height: 40px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 32px;
-      line-height: 40px;
-      text-align: center;
-      letter-spacing: 0.4px;
-      text-transform: capitalize;
-      color: #FFFFFF;
-      margin-bottom: 1rem;
-    }
 
-    .t4{
-      width: 592px;
-      height: 88px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      /* or 138% */
-
-      text-align: center;
-      letter-spacing: 0.4px;
-
-      color: #FFFFFF;
-    }
-    
-    .chart {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-right: 15%;
-
-    }
-    .t-cases{
-      width: 200px;
-      
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 28px;
-      color: #FFD800;
-    }
-    .word {
-      padding-right: 50px;
-      width: fit-content;
-      height: 92px;
-    }
-    
-    .childword {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: row;
-      margin-right: 2rem;
-    }
-    .col-3{
-      justify-items: center;
-      justify-content: center;
-      text-align:center
-    }
-
-    /* Text/Body still need to adjust */
-    .t1{
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      text-align:center;
-      letter-spacing: 0.4px;
-      margin-top: 36px;
-      color: #FFFFFF;
-      width: 187px;
-    }
-
-
-    .chart-button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 148px;
-      height: 54px;  
-      background: #FFD800;
-      border-radius: 8px;
-    }
-    .chart-button-text{
-      width: 100px;
-      height: 22px;
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 22px;
-      color: #18181A;
-    }
-  }
   
-  @media only screen and (min-width: 1441px) {
+  @media only screen and (min-width: 768px) {
     .hcr {
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       margin-bottom: none;
       display: flex;
       flex-direction: column;
@@ -222,7 +96,8 @@
       align-items: center;
       padding: 128px 323px;
       gap: 34px;
-      width: 100%;
+      min-width: 1440px;
+      max-width: 1440px;
       height: 1044px;
       background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
     }
@@ -321,146 +196,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 148px;
+      width: 148spx;
       height: 54px;  
-      background: #FFD800;
+      background: #FFF599;
       border-radius: 8px;
+
     }
     .chart-button-text{
       width: 100px;
       height: 22px;
-      font-family: 'Open Sans';
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 22px;
       color: #18181A;
+      text-align: center;
     }
   }
-
-  @media only screen and (min-width: 1600px) {
-    .hcr {
-      margin-bottom: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 128px 323px;
-      gap: 34px;
-      width: 100%;
-      height: 1044px;
-      background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
-    }
-
-    .chart {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-right: 15%;
-
-    }
-    
-    .chart-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 2rem; /* Add space between title and chart */
-    }
-    
-    .t3 {
-      width: auto;
-      height: 40px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 32px;
-      line-height: 40px;
-      text-align: center;
-      letter-spacing: 0.4px;
-      text-transform: capitalize;
-      color: #FFFFFF;
-      margin-bottom: 1rem;
-    }
-
-    .t4{
-      width: 592px;
-      height: 88px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      /* or 138% */
-
-      text-align: center;
-      letter-spacing: 0.4px;
-
-      color: #FFFFFF;
-    }
-    
-    .t-cases{
-      width: 200px;
-      
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 28px;
-      color: #FFD800;
-    }
-    .word {
-      padding-right: 50px;
-      width: fit-content;
-      height: 92px;
-    }
-    
-    .childword {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: row;
-      margin-right: 2rem;
-    }
-    .col-3{
-      justify-items: center;
-      justify-content: center;
-      text-align:center
-    }
-
-    /* Text/Body still need to adjust */
-    .t1{
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      text-align:center;
-      letter-spacing: 0.4px;
-      margin-top: 36px;
-      color: #FFFFFF;
-      width: 187px;
-    }
-
-
-    .chart-button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 148px;
-      height: 54px;  
-      background: #FFD800;
-      border-radius: 8px;
-    }
-    .chart-button-text{
-      width: 100px;
-      height: 22px;
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 22px;
-      color: #18181A;
-    }
-  }
-
-

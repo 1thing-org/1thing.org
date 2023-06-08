@@ -2,7 +2,9 @@ footer {
     background: #0C0928;
     padding-top: 7rem;
     padding-bottom: 4rem;
-    width: 1440px;
+    max-width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer-container {
@@ -115,7 +117,7 @@ footer {
     left: 931px;
     top: 187px;
     
-    background: #5CE6E7;
+    background: #99E0FF;
     border-radius: 8px;
 }
 .subscribe {
@@ -123,7 +125,7 @@ footer {
     height: 22px;
     left: 985px;
     top: 200px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans' sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -136,11 +138,5 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media  screen and (min-width: 1441px) {
-    footer {
-        width: 100%;
-    }
 }
 
