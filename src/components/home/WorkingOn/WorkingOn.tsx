@@ -4,7 +4,7 @@ import placeholderimg from '../../../assets//home-page/working-on-placeholder.sv
 
 function WorkingOn() {
   return (
-<div className="container">
+<div className="working-on-container">
   <h1 className="main-title">We're also Working on</h1>
   <div className="images">
     <div className="image-container">
