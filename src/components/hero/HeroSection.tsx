@@ -18,8 +18,9 @@ function HeroSection(props:Props) {
         <Row className="justify-content-center align-items-center">
         <Col xs={12} sm={8} md={6} lg={4} xl={3}>
             <Card.ImgOverlay id="hero-text-container" >
-             
+            
               <Card.Title id="hero-title">{props.heading}</Card.Title>
+          
               <Card.Text id="hero-subtitle">{props.subheading}</Card.Text>
               
             </Card.ImgOverlay>

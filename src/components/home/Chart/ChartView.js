@@ -5,7 +5,7 @@ import "./ChartView.css";
 import moment from "moment";
 import { useEffect, useState } from "react";
 import { Row, Col, Container } from "reactstrap";
-import {Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 // import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
 // import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
@@ -128,13 +128,20 @@ const ChartView = () => {
 	});
 
 	return (
-		<div className="hcr">
-			<div className="chart-title">
-				<p className="t3">We Made A Hate Crime Tracker</p>
-				<p className="t4">
-				Anti-Asian hate crimes are happening everyday and we’ve built a tool to help track them. 1 Thing’s Hate Crime Tracker project scrapes reports from national media news outlets and visualizes the data to raise awareness about these terrible incidents.
-				</p>
-			</div>
+		<div className="hcr-backgrund">
+		<Container md={10} className="hcr">
+			<Row >
+				<Col className="chart-title">
+					<p className="t3">We Made A Hate Crime Tracker</p>
+				</Col>
+			</Row>
+			<Row >
+				<Col>
+					<p className="t4">
+						Anti-Asian hate crimes are happening everyday and we’ve built a tool to help track them. 1 Thing’s Hate Crime Tracker project scrapes reports from national media news outlets and visualizes the data to raise awareness about these terrible incidents.
+					</p>
+				</Col>
+			</Row>
 			<div className="chart">
 				<IncidentChart
 					className="behind-relative"
@@ -176,26 +183,12 @@ const ChartView = () => {
 			<div>
 
 				<Row className="link1">
-				<Button className="chart-button" href="https://hatecrimetracker.1thing.org/">
-                            <div className="chart-button-text">View Project</div>
-							</Button>
-						</Row>
-				{/* <Row className="link1">
-					<Col
-						lg={{ offset: 10 }}
-						md={{ offset: 8 }}
-						sm={{ offset: 5 }}
-						xs={{ offset: 5 }}>
-						<a
-							className="vm1"
-							href="https://hatecrimetracker.1thing.org/"
-							target="_blank"
-							rel="noopener noreferrer">
-							View More &rarr;
-						</a>
-					</Col>
-				</Row> */}
+					<Button className="chart-button" href="https://hatecrimetracker.1thing.org/">
+						<div className="chart-button-text">View Project</div>
+					</Button>
+				</Row>
 			</div>
+		</Container>
 		</div>
 	);
 };

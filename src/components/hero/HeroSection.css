@@ -1,3 +1,7 @@
+#hero-card{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 #hero-image {
   max-width: 1440px;
 }
@@ -31,17 +35,17 @@
     width: 100%;
     height: 80%;
     text-align: start;
-    font-family: "Open Sans" sans-serif;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 4vw;
+    font-size: 4.0vw;
     line-height: 114%;
   }
 
   #hero-subtitle {
     text-align: start;
     margin-left: 1.8vw;
-    font-family: "Open Sans" sans-serif;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
     padding-top: 10%;
@@ -52,10 +56,13 @@
 
 @media screen and (min-width: 1440px) {
   #hero-text-container {
+    box-sizing: border-box;
     position: absolute;
     box-sizing: border-box;
     width: 444px;
     height: 496px;
+    background-color: yellow;
+    box-sizing: border-box;
     background: #FFD500;
     border: 1px solid #000000;
   }
@@ -64,10 +71,10 @@
     margin-left: 26px;
     width: 330px;
     height: 384px;
-    font-family: 'Open Sans' sans-serif;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 56px;
+    font-size: 54px;
     line-height: 64px;
     letter-spacing: 0.4px;
   }
@@ -76,7 +83,7 @@
     padding-top: 24px;
     width: 391px;
     height: 24px;
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
