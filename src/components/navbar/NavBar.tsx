@@ -54,11 +54,11 @@ function NavBar() {
                 links={"/takeaction"}
                 className={"inner-text"}
               ></Page>
-              <Page
+              {/* <Page
                 title={"Testimonials"}
                 links={"/testimonials"}
                 className={"inner-text"}
-              ></Page>
+              ></Page> */}
               <Page
                 title={"About Us"}
                 links={"/aboutus"}
