@@ -3,6 +3,7 @@ import Footer from '../footer/Footer';
 import HeroSection from '../hero/HeroSection';
 import VolunteerSection from './VolunteerSection/VolunteerSection';
 import SignUp from '../signup/SignUp';
+import HeroImage from "assets/hero.svg";
 
 const testimonialHeroData: {heading: string, subheading: string} = {
     "heading": `1 Thing Against Racism Testimonials Page`,
@@ -15,7 +16,7 @@ function Testimonials(){
     return (
         <div>
             <NavBar />
-            <HeroSection heading={testimonialHeroData.heading} subheading={testimonialHeroData.subheading} />
+            <HeroSection heading={testimonialHeroData.heading} subheading={testimonialHeroData.subheading} imageSrc={HeroImage}/>
             <VolunteerSection />
             <SignUp />
             <Footer />
