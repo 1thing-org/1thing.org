@@ -1,7 +1,7 @@
 .nav{
     max-width: 1440px;
     margin: 0 auto;
-    height: 118px;
+    height: 150px;
 }
 .brand-container{
     display: flex;
@@ -24,12 +24,6 @@ height: 58.48px;
     color: #18181A;
     text-align: start;
 }
-
-.links-ms-auto{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 .inner-text{
     height: 22px;
     width: auto;
@@ -43,6 +37,6 @@ height: 58.48px;
     color: #18181A;
 }
 
-#responsive-navbar-nav{
+#responsive-navbar-toggle{
     justify-content: flex-end;
 }

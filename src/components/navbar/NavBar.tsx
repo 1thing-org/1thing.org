@@ -3,6 +3,7 @@ import {LinkContainer} from 'react-router-bootstrap';
 import NewLogo from '../../assets/NewLogo.svg';
 import './NavBar.css';
 
+
 function Page({title, links, className} : {title: string, links: string, className?: string}){
     return (
         <LinkContainer to={links} className={`link ${className}`}>
@@ -29,17 +30,18 @@ function NavBar(){
                 </Navbar.Brand>
                 </Col>
             </LinkContainer>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-            <Col md = {9}>
+            <Col md= {5}>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" id = 'responsive-navbar-nav-control' />
+            <Navbar.Collapse id="responsive-navbar-toggle">
             <Nav className="links-ms-auto">
-            <Page  title={'Take Action'} links={'/takeaction'} className={'inner-text'}></Page>
-                {/* <Page title={'Testimonials'} links={'/testimonials'}></Page> */}
+                
+             <Page  title={'Take Action'} links={'/takeaction'} className={'inner-text'}></Page>
                 <Page title={'About Us'} links={'/aboutus'} className={'inner-text'}></Page>
                 <Page title={'Contact'} links={'/contact'} className={'inner-text'}></Page>
             </Nav>
-            </Col>  
             </Navbar.Collapse>
+            </Col>
+        
             </Container>
         </Navbar>
     );

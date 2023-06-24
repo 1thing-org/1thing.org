@@ -149,7 +149,7 @@ const ChartView = () => {
 					isFirstLoadData={isFirstLoadData}
 				/>
 			</div>
-			{dimensions.width < 576 ? (
+			{dimensions.width < 768 ? (
 				<div>
 					<Container className="word">
 						<div className="childword">
