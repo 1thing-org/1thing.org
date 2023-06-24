@@ -2,6 +2,7 @@ import NavBar from '../navbar/NavBar';
 import Footer from '../footer/Footer';
 import HeroSection from '../hero/HeroSection';
 import SignUp from '../signup/SignUp';
+import HeroImage from "assets/hero.svg";
 
 const contactHeroData: {heading: string, subheading: string} = {
     "heading": `1 Thing Against Racism Contact Page`,
@@ -14,7 +15,7 @@ function Contact(){
     return (
         <div>
             <NavBar />
-            <HeroSection heading={contactHeroData.heading} subheading={contactHeroData.subheading} />
+            <HeroSection heading={contactHeroData.heading} subheading={contactHeroData.subheading} imageSrc={HeroImage}/>
             <SignUp />
             <Footer />
         </div>

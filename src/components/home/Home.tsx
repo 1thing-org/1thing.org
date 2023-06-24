@@ -7,6 +7,7 @@ import ActionSection from "./ActionSection/ActionSection";
 import WhoWeAre from "components/whoWeAre/WhoWeAre";
 import WorkingOn from "./WorkingOn/WorkingOn";
 import ChartView from "./Chart/ChartView";
+import HeroImage from "assets/hero.svg";
 
 const homeHeroData: { heading: string; subheading: string } = {
   heading: `Small Actions can add up to improve racial equality`,
@@ -20,6 +21,7 @@ function Home() {
       <HeroSection
         heading={homeHeroData.heading}
         subheading={homeHeroData.subheading}
+        imageSrc={HeroImage}
       />
       <WhoWeAre />
       <ChartView />

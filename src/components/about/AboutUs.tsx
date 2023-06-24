@@ -1,6 +1,8 @@
 import NavBar from '../navbar/NavBar';
 import Footer from '../footer/Footer';
 import HeroSection from '../hero/HeroSection';
+import HeroImage from "assets/hero.svg";
+
 
 const aboutHeroData: {heading: string, subheading: string} = {
     "heading": `1 Thing Against Racism About Page`,
@@ -13,7 +15,7 @@ function AboutUs(){
     return (
         <div>
             <NavBar />
-            <HeroSection heading={aboutHeroData.heading} subheading={aboutHeroData.subheading} />
+            <HeroSection heading={aboutHeroData.heading} subheading={aboutHeroData.subheading} imageSrc={HeroImage}/>
             <Footer />
         </div>
     );
