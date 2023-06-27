@@ -5,8 +5,8 @@ import TakeAction from "./components/actions/TakeAction";
 import Testimonials from "./components/testimonials/Testimonials";
 import AboutUs from "./components/about/AboutUs";
 import Contact from "./components/contact/Contact";
-import ProjectTogether from "components/projectDetails/ProjectTogether";
-import VictimSupportFund from "components/projectDetails/VictimSupportFund";
+import ProjectTogether from "components/projects/projectTogether/ProjectTogether";
+import VictimSupportFund from "components/projects/victimSupportFund/VictimSupportFund";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
-import NavBar from "../navbar/NavBar";
-import Footer from "../footer/Footer";
-import HeroSection from "../hero/HeroSection";
+import NavBar from "../../navbar/NavBar";
+import Footer from "../../footer/Footer";
+import HeroSection from "../../hero/HeroSection";
 import HeroImage from "assets/hero.svg";
 
 const aboutHeroData: { heading: string; subheading: string } = {
