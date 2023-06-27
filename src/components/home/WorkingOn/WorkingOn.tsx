@@ -1,6 +1,7 @@
 import React from "react";
 import "./WorkingOn.css";
 import placeholderimg from "../../../assets//home-page/working-on-placeholder.svg";
+import { Link } from "react-router-dom";
 
 function WorkingOn() {
   return (
@@ -34,7 +35,7 @@ function WorkingOn() {
               </ul>
             </p>{" "}
           </p>
-          <a href="/projects/project-together">Learn More</a>
+          <Link to="/projects/project-together">Learn More</Link>
         </div>
         <div className="image-container">
           <img className="right-image" src={placeholderimg} alt="Right Image" />
@@ -53,9 +54,7 @@ function WorkingOn() {
               the funds on the victims and the community.
             </p>{" "}
           </p>
-          <a className="working-link" href="/projects/victim-support-fund">
-            Learn More
-          </a>
+          <Link to="/projects/victim-support-fund">Learn More</Link>
         </div>
       </div>
     </div>
