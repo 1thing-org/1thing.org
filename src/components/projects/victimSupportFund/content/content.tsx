@@ -11,6 +11,9 @@ function Content() {
         </Col>
         <Col>
           <p className="content-text">
+            <p>Why we have this fund</p>
+            <p> Where’s the money from - Donate now!</p>
+            <p>Where’s the money going - total donation for X victims</p>
             1thing.org receives donations from individuals and corporations like
             Google. We disburse the funds to victims of anti-Asian hate crimes
             in a transparent and accountable manner, and provide regular updates

@@ -17,11 +17,7 @@ function ProjectTogether() {
   return (
     <div>
       <NavBar />
-      <HeroSection
-        heading={aboutHeroData.heading}
-        subheading={aboutHeroData.subheading}
-        imageSrc={HeroImage}
-      />
+      <HeroSection heading={aboutHeroData.heading} imageSrc={HeroImage} />
       <Content />
       <Footer />
     </div>
