@@ -12,18 +12,20 @@ function WorkingOn() {
           <img className="left-image" src={placeholderimg} alt="Left Image" />
           <h2 className="title">Project Together</h2>
           <p className="working-text">
-            The Asian American and Pacific Islander (AAPI) community is facing a
-            number of challenges, including increased hate crimes,
-            discrimination, and lack of representation. These challenges can be
-            overwhelming, and it can be difficult to know where to start to
-            help.
+            <p>
+              The Asian American and Pacific Islander (AAPI) community is facing
+              a number of challenges, including increased hate crimes,
+              discrimination, and lack of representation. These challenges can
+              be overwhelming, and it can be difficult to know where to start to
+              help.
+            </p>
             <p>
               Project Together is a mobile app that connects people who want to
-              support the AAPI community. With Project Together, users can:{" "}
+              support the AAPI community. With Project Together, users can:
               <ul>
                 <li>
                   Find a community of people who share their passion for
-                  supporting the AAPI community.{" "}
+                  supporting the AAPI community.
                 </li>
                 <li>
                   Easily find and join projects that are already underway.
@@ -33,7 +35,7 @@ function WorkingOn() {
                   implement them.
                 </li>
               </ul>
-            </p>{" "}
+            </p>
           </p>
           <Link to="/projects/project-together">Learn More</Link>
         </div>

@@ -1,0 +1,106 @@
+.background{
+    max-width: 1440px;
+    background: #F4F4F4;
+    margin: 0 auto;
+}
+@media screen and (max-width:799px) {
+    #content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-title {
+        width: auto;
+        height: 40px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        color: #18181A;
+        white-space: nowrap;
+    }
+    
+    .content-text {
+        margin-top: 24px;
+        width: 794px;
+        height: 72px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #18181A;
+    }
+}
+
+@media screen and (min-width:500px) {
+    #content-container {
+        padding-top: 20%;
+    }
+    .content-text {
+        margin-top: 24px;
+        width: 90vw;
+        height: 20vh;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #18181A;
+    }
+
+    
+}
+@media screen and (min-width:800px) {
+    #content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+        height: 392px;
+        padding: 128px 323px;
+        gap: 24px;
+    }
+
+    .content-title {
+        width: auto;
+        height: 40px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        color: #18181A;
+        white-space: nowrap;
+    }
+
+    .content-text {
+        margin-top: 24px;
+        width: 794px;
+        height: 72px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #18181A;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #content-container {
+        max-width: 1440px;
+    }
+}
