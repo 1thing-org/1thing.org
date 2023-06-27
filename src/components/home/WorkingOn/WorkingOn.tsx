@@ -11,21 +11,49 @@ function WorkingOn() {
           <img className="left-image" src={placeholderimg} alt="Left Image" />
           <h2 className="title">Project Together</h2>
           <p className="working-text">
-            Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim
-            porttitor tristique id lectus. Eget orci vestibulum fringilla diam
-            adipiscing proin.{" "}
+            The Asian American and Pacific Islander (AAPI) community is facing a
+            number of challenges, including increased hate crimes,
+            discrimination, and lack of representation. These challenges can be
+            overwhelming, and it can be difficult to know where to start to
+            help.
+            <p>
+              Project Together is a mobile app that connects people who want to
+              support the AAPI community. With Project Together, users can:{" "}
+              <ul>
+                <li>
+                  Find a community of people who share their passion for
+                  supporting the AAPI community.{" "}
+                </li>
+                <li>
+                  Easily find and join projects that are already underway.
+                </li>
+                <li>
+                  Propose their own projects and find volunteers to help them
+                  implement them.
+                </li>
+              </ul>
+            </p>{" "}
           </p>
-          <a href="/projects/1">Learn More</a>
+          <a href="/projects/project-together">Learn More</a>
         </div>
         <div className="image-container">
           <img className="right-image" src={placeholderimg} alt="Right Image" />
-          <h2 className="title">Supporting Victims</h2>
+          <h2 className="title">Victim Support Fund</h2>
           <p className="working-text">
-            Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim
-            porttitor tristique id lectus. Eget orci vestibulum fringilla diam
-            adipiscing proin.{" "}
+            As a 501C(3) non profit, 1thing.org receives donations from
+            individuals and corporations like Google. We disburse the funds to
+            victims of anti-Asian hate crimes in a transparent and accountable
+            manner, and provide regular updates to donors and the public on the
+            progress of the fundraising campaign and how the funds are being
+            used. With careful planning and execution, we ensure that the funds
+            are used effectively and efficiently. We ensure that victims receive
+            support and resources to address their needs and challenges.{" "}
+            <p>
+              Click to learn about the disbursement process and the impact of
+              the funds on the victims and the community.
+            </p>{" "}
           </p>
-          <a className="working-link" href="/projects/2">
+          <a className="working-link" href="/projects/victim-support-fund">
             Learn More
           </a>
         </div>
