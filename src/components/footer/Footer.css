@@ -3,80 +3,28 @@ footer {
     padding-top: 7rem;
     padding-bottom: 4rem;
     max-width: 1440px;
-    min-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer-container {
     display: flex; 
     flex-direction: row;
     align-items: center;
-    justify-content: center; 
+    justify-content: space-between; 
     color: white;
 }
 
-.footer-left-side {
-    margin-left: 110px;
-    margin-right: 190px;
-    padding: 0 2 rem;
-    text-align: left;
+.footer-left-side,
+.footer-right-side {
+    margin: auto;
     width: auto;
 }
 
-.left-side h4 {
-    padding-bottom: 1rem;
-    font-weight: bold;
+.footer-left-side {
+    text-align: left;
 }
-
-.footer-logo{
-    width: 43px;
-    height: 45px;
-}
-.footer-text{    
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-
-.icon {
-    color: white;
-    font-size: 1.8rem;
-    padding-right: 1.5rem;
-}
-
-
-.copy-right{
-    width: 201px;
-    height: 38px;
-    margin-top: 24px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #FFFFFF;
-}
-
-
-.left-side p {
-    padding-bottom: 1.5rem;
-}
-.split-line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 166px;
-    height: 0px;
-    border: 1px solid #FFFFFF;
-    transform: rotate(90deg);
-}
-
 
 .footer-right-side {
     display: flex;
@@ -86,51 +34,101 @@ footer {
     padding: 0 2rem;
 }
 
-.subscribe-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 75%;
-    
-  }
+.left-side h4,
+.left-side p {
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
 
-  .sign-up-text{
+.footer-logo{
+    width: 43px;
+    height: 45px;
+}
+
+.footer-text,
+.copy-right,
+.sign-up-text {
     font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.copy-right {
+    width: 201px;
+    height: 38px;
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.sign-up-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-  }
-  
-  .subscribe-form .form-control {
-    flex: 1;
-    margin-right: 1rem;
-  }
+}
 
-.button{
+.icon,
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon {
+    color: white;
+    font-size: 1.8rem;
+    padding-right: 1.5rem;
+}
+
+.button {
     width: 186px;
     height: 48px;
-    left: 931px;
-    top: 187px;
-    
     background: #99E0FF;
     border-radius: 8px;
 }
+
 .subscribe {
     width: 78px;
     height: 22px;
-    left: 985px;
-    top: 200px;
-    font-family: 'Open Sans' sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     color: #18181A;
+}
+
+.split-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166px;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.subscribe-form .form-control {
+    flex: 1;
+    margin-right: 1rem;
 }
 
 .social-icons {
@@ -140,3 +138,179 @@ footer {
     align-items: center;
 }
 
+.brand-container {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        box-sizing: border-box;
+        padding: 0 0;
+    }
+
+    .footer-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-right-side {
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .sign-up-text {
+        text-align: center;
+    }
+
+    .form-control {
+        flex: 1;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .button {
+        width: 80%;
+    }
+
+    .footer-left-side {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%
+    }
+
+
+    .footer-logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-text{    
+        text-align: justify;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%
+    }
+
+    .icon {
+        padding: 0.5rem;
+    }
+
+    .split-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 80%;
+        height: 0px;
+        border: 1px solid #FFFFFF;
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    footer {
+        max-width: 991px;
+        box-sizing: border-box;
+        padding: 0 0;
+    }
+
+    .footer-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-right-side {
+        width: 100%;
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        margin: 0;
+    }
+
+    .icon {
+        padding: 1rem;
+    }
+
+    .copy-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    .split-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 90%;
+        height: 0px;
+        border: 1px solid #FFFFFF;
+        transform: rotate(180deg);
+        margin-bottom: 1rem;
+    }
+    .sign-up-text {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: white;
+    }
+    
+    .footer {
+        height: auto;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .footer-container {
+        margin: 1 rem;
+        padding: 0;
+        max-width: 1440px;
+        height: 264px;
+  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-left-side {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}

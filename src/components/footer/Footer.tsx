@@ -31,7 +31,7 @@ function Footer(){
                         <SocialMedia name={faLinkedin} refLink='https://www.linkedin.com/company/1-thing-org/' />
                         <SocialMedia name={faFacebook} refLink='https://www.facebook.com/people/One-Thing-Org/100081311228444/' />
                     </div>
-                    <p className="copy-right">1 Thing Against Racism © 2022 All rights reserved. </p>
+                    <p className="copy-right">1 Thing Against Racism © 2023 All rights reserved. </p>
                 </div> 
                 <div className="split-line"></div>
                 <div className='footer-right-side'>
