@@ -1,0 +1,73 @@
+.content-container {
+  max-width: 1440px;
+  background: #f4f4f4;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 799px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overview h2,
+  .problem-statement h2,
+  .proposal h2,
+  .get-involved h2 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    color: #18181a;
+  }
+
+  .overview p,
+  .problem-statement p,
+  .proposal p,
+  .get-involved p {
+    margin-top: 24px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #18181a;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overview h2,
+  .problem-statement h2,
+  .proposal h2,
+  .get-involved h2 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    color: #18181a;
+  }
+
+  .overview p,
+  .problem-statement p,
+  .proposal p,
+  .get-involved p {
+    margin-top: 24px;
+    width: 794px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #18181a;
+  }
+}

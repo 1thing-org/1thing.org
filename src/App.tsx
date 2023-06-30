@@ -5,7 +5,8 @@ import TakeAction from "./components/actions/TakeAction";
 import Testimonials from "./components/testimonials/Testimonials";
 import AboutUs from "./components/about/AboutUs";
 import Contact from "./components/contact/Contact";
-import ProjectDetails from "./components/projectDetails/ProjectDetails";
+import ProjectTogether from "components/projects/projectTogether/ProjectTogether";
+import VictimSupportFund from "components/projects/victimSupportFund/VictimSupportFund";
 
 function App() {
   return (
@@ -17,7 +18,14 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects/:id" element={<ProjectDetails />} />
+          <Route
+            path="/projects/project-together"
+            element={<ProjectTogether />}
+          />
+          <Route
+            path="/projects/victim-support-fund"
+            element={<VictimSupportFund />}
+          />
         </Routes>
       </Router>
     </div>
