@@ -4,6 +4,7 @@ import ShareOneThing from "./share/ShareOneThing";
 import ActionsGroup from "./actionsgroup/ActionsGroup";
 import HeroSection from "../hero/HeroSection";
 import HeroActionImage from "assets/hero-action.svg";
+import TopTitle from "assets/take-action-page/title.svg";
 
 const actionHeroData: { heading: string; subheading: string } = {
   heading: `There are many small actions we can take to improve racial equality.`,
@@ -16,6 +17,7 @@ function TakeAction() {
     <div>
       <NavBar />
       <HeroSection imageSrc={HeroActionImage} />
+      <img src={TopTitle} />
       <ActionsGroup />
       <ShareOneThing />
       <Footer />
