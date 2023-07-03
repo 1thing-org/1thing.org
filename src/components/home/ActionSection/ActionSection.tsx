@@ -1,69 +1,129 @@
-import Button from 'react-bootstrap/Button';
-import Action from './Action';
-import './ActionSection.css';
-import a1 from '../../../assets//home-page/a1.svg';
-import a2 from '../../../assets//home-page/a2.svg';
-import a3 from '../../../assets//home-page/a3.svg';
-import a4 from '../../../assets//home-page/a4.svg';
-import StockImage from '../../../assets//home-page/stock_Image.svg';
+import React from "react";
+import styled from "styled-components";
+import a1 from "../../../assets/home-page/a1.svg";
+import a2 from "../../../assets/home-page/a2.svg";
+import a3 from "../../../assets/home-page/a3.svg";
+import a4 from "../../../assets/home-page/a4.svg";
+import backgroundImage from "../../../assets/home-page/action.svg";
+import Action from "./Action";
 
-const actionData: {desc: string}[] = [
-    {
-        "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.`
-    },
-    {
-        "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.`
-    },
-    {
-        "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.`
-    },
-    {
-        "desc": `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.`
-    }
-];
+const ActionSectionContainer = styled.div`
+  height: 782px;
+  background: #ffd800;
+  display: flex;
+  flex-direction: row;
+  min-width: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
+`;
+
+const ActionLeftSide = styled.div`
+  width: 51.5%;
+  padding: 8.5vw 0 5.8vw 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const ActionTitle = styled.h2`
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: #18181a;
+`;
+
+const ActionDescription = styled.p`
+  text-align: left;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #18181a;
+`;
+
+const ActionContainer = styled.div`
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const ActionItem = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const ActionItemImage = styled.img`
+  margin-right: 24px;
+  width: 5.5vw;
+  height: 5.5vw;
+`;
+
+const ActionItemText = styled.span`
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #18181a;
+`;
+
+const ActionRightSide = styled.div`
+  align-self: flex-end;
+  width: 49.5%;
+  height: 100%;
+  background-image: url(${backgroundImage});
+  background-size: cover;
+  background-position: center;
+`;
 
 function ActionSection() {
-    return (
-        <div id="action-section">
-            <div className='action-left-side'>
-                <h2 className='action-title'>Small Actions. Big Changes</h2>
-                <p className='action-description'> 
-                    By encouraging everyone to make one small but meaningful contribution we 
-                    can create significant change.
-                </p>
-                <div className='action-container'>
-                    <div className='action-item'>
-                        <img className='action-img' src={a1} alt="Raise awareness" />
-                        <span className='action-text'>Raise awareness</span>
-                    </div>
-                    <div className='action-item'>
-                        <img className='action-img'  src={a2} alt="Support Victims" />
-                        <span className='action-text'>Support vicitms of anti-Asian hate</span>
-                    </div>
-                    <div className='action-item'>
-                        <img className='action-img' src={a3} alt="Use your expertise" />
-                        <span className='action-text'>Use your expertise</span>
-                    </div>
-                    <div className='action-item-4'>
-                        <img className='action-img' src={a4} alt="Promote cross" />
-                        <span className='action-text'>Promote cross-racial understanding</span>
-                    </div>
+  return (
+    <ActionSectionContainer>
+      <ActionLeftSide>
+        <ActionTitle>Small Actions. Big Changes</ActionTitle>
+        <ActionDescription>
+          By encouraging everyone to make one small but meaningful contribution
+          we can create significant change.
+        </ActionDescription>
+        <ActionContainer>
+          <ActionItem>
+            <ActionItemImage src={a1} alt="Raise awareness" />
+            <ActionItemText>Raise awareness</ActionItemText>
+          </ActionItem>
+          <ActionItem>
+            <ActionItemImage src={a2} alt="Support Victims" />
+            <ActionItemText>Support victims of anti-Asian hate</ActionItemText>
+          </ActionItem>
+          <ActionItem>
+            <ActionItemImage src={a3} alt="Use your expertise" />
+            <ActionItemText>Use your expertise</ActionItemText>
+          </ActionItem>
+          <ActionItem>
+            <ActionItemImage src={a4} alt="Promote cross" />
+            <ActionItemText>Promote cross-racial understanding</ActionItemText>
+          </ActionItem>
+        </ActionContainer>
+      </ActionLeftSide>
+      <ActionRightSide />
+      {/*
+            <div id="actions">
+                <div className="action-row">
+                    <Action desc="Action Description 1" />
+                    <Action desc="Action Description 2" />
+                </div>
+                <div className="action-row">
+                    <Action desc="Action Description 3" />
+                    <Action desc="Action Description 4" />
                 </div>
             </div>
-            <div className='action-right-side' ></div>
-            {/* <div id="actions">
-                <div className="action-row">
-                    <Action desc={actionData[0].desc}/>
-                    <Action desc={actionData[1].desc}/>
-                </div>
-                <div className="action-row">
-                    <Action desc={actionData[2].desc}/>
-                    <Action desc={actionData[3].desc}/>
-                </div>
-                <Button id="find-button">Find your one thing</Button>
-            </div> */}
-        </div>
-    )
+            */}
+    </ActionSectionContainer>
+  );
 }
 
 export default ActionSection;

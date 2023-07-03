@@ -1,18 +1,42 @@
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import './Action.css';
+import React from "react";
+import styled from "styled-components";
+import { Card } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+
+const StyledCard = styled(Card)`
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 1rem;
+`;
+
+const CardText = styled(Card.Text)`
+  margin: 3rem 3rem;
+  padding: 0 10rem 3rem 0;
+  text-align: left;
+  position: relative;
+`;
+
+const StyledButton = styled(Button)`
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+`;
 
 type Props = {
-    desc: string;
-}
+  desc: string;
+};
 
 function Action(props: Props) {
-    return (
-        <Card id="action">
-            <Card.Text id="action-content">{props.desc}</Card.Text>
-            <Button id="button" variant="secondary" href="#">Action Type Icon</Button>
-        </Card>
-    )
+  return (
+    <StyledCard>
+      <CardText>{props.desc}</CardText>
+      <StyledButton variant="secondary" href="#">
+        Action Type Icon
+      </StyledButton>
+    </StyledCard>
+  );
 }
 
 export default Action;
