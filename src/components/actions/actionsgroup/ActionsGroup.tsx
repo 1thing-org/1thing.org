@@ -77,21 +77,73 @@ const actionData: {
 function ActionsGroup() {
   return (
     <div id="action-section">
+      <h3
+        style={{
+          marginTop: "96px",
+          fontFamily: "Open Sans",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "800",
+          lineHeight: "40px",
+          letterSpacing: "0.4px",
+        }}
+      >
+        {actionData[0].name}
+      </h3>
       <YourActionsRight
         name={actionData[0].name}
         desc={actionData[0].desc}
         actionId={actionData[0].actionId}
       />
+      <h3
+        style={{
+          marginTop: "96px",
+          fontFamily: "Open Sans",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "800",
+          lineHeight: "40px",
+          letterSpacing: "0.4px",
+        }}
+      >
+        {actionData[1].name}
+      </h3>
       <YourActionsLeft
         name={actionData[1].name}
         desc={actionData[1].desc}
         actionId={actionData[1].actionId}
       />
+      <h3
+        style={{
+          marginTop: "96px",
+          fontFamily: "Open Sans",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "800",
+          lineHeight: "40px",
+          letterSpacing: "0.4px",
+        }}
+      >
+        {actionData[2].name}
+      </h3>
       <YourActionsRight
         name={actionData[2].name}
         desc={actionData[2].desc}
         actionId={actionData[2].actionId}
       />
+      <h3
+        style={{
+          marginTop: "96px",
+          fontFamily: "Open Sans",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "800",
+          lineHeight: "40px",
+          letterSpacing: "0.4px",
+        }}
+      >
+        {actionData[3].name}
+      </h3>
       <YourActionsLeft
         name={actionData[3].name}
         desc={actionData[3].desc}
