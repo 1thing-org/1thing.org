@@ -11,7 +11,7 @@ function YourActionsLeft(props: Props){
     return (
         <Card className="your-actions-left" id={props.actionId}>
             <Card.Body id={"body-" + props.actionId}>
-                <Card.Title className="title">{props.name}</Card.Title>
+
                 <Card.Text className="text">
                     <ul>
                         {

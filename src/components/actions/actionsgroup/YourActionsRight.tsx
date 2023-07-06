@@ -12,7 +12,6 @@ function YourActionsRight(props: Props){
         <Card className="your-actions-right" id={props.actionId}>
             <Card.Img id={"image-" + props.actionId} />
             <Card.Body id={"body-" + props.actionId}>
-                <Card.Title className="title">{props.name}</Card.Title>
                 <Card.Text className="text">
                     <ul>
                         {
