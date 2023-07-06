@@ -1,42 +1,40 @@
-.your-actions-left{
-    border: white;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    align-items: center;
-    text-align: left;
-    height: 300px;
-    width: 80%;
-    margin-top: 8%;
-    margin-left: 10%;
-    margin-bottom: 8%;
+.your-actions-left {
+  border: white;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  text-align: left;
+  height: 300px;
+  width: 80%;
+  margin-top: 8%;
+  margin-left: 10%;
+  margin-bottom: 8%;
 }
 
-.your-actions-left .title{
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+.your-actions-left .title {
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
 }
 
-.your-actions-left .text{
-    width: 90%;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.your-actions-left .text {
+  width: 90%;
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 #image-support {
-    width: 30%;
-    height: 100%;
-    content: url("assets/home-page/placeholder-image.png");
+  width: 30%;
+  height: 100%;
 }
 
 #image-understanding {
-    width: 30%;
-    height: 100%;
-    content: url("assets/home-page/placeholder-image.png");
+  width: 30%;
+  height: 100%;
 }

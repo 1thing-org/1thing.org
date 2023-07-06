@@ -1,43 +1,41 @@
 .your-actions-right {
-    border: white;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    align-items: center;
-    text-align: left;
-    height: 300px;
-    width: 80%;
-    margin-top: 8%;
-    margin-left: 10%;
-    margin-bottom: 8%;
+  border: white;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  text-align: left;
+  height: 300px;
+  width: 80%;
+  margin-top: 8%;
+  margin-left: 10%;
+  margin-bottom: 8%;
 }
 
-.your-actions-right .title{
-    padding-left: 1rem;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+.your-actions-right .title {
+  padding-left: 1rem;
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
 }
 
-.your-actions-right .text{
-    padding-left: 1rem;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.your-actions-right .text {
+  padding-left: 1rem;
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 #image-raiseAwareness {
-    width: 30%;
-    height: 100%;
-    content: url("assets/home-page/placeholder-image.png");
+  width: 30%;
+  height: 100%;
 }
 
 #image-useSkills {
-    width: 30%;
-    height: 100%;
-    content: url("assets/home-page/placeholder-image.png");
+  width: 30%;
+  height: 100%;
 }
