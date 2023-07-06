@@ -20,7 +20,6 @@ function YourActionsRight(props: Props) {
           </ul>
         </Card.Text>
       </Card.Body>{" "}
-      {/* image url in css */}
     </Card>
   );
 }
