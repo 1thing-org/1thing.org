@@ -5,6 +5,7 @@ import { IconName, IconProp } from '@fortawesome/fontawesome-svg-core';
 import './Footer.css'
 import {Navbar, Button,Form} from 'react-bootstrap';
 import footerLogo from '../../assets/footerLogo.svg';
+import MailChimpForm from "../../utility/mailchimp";
 
 function SocialMedia({name, refLink} : {name: IconProp, refLink: string}) {
     return <a className="icon" href={refLink} target="_blank"><FontAwesomeIcon icon={name as IconName} /></a>;
@@ -37,11 +38,8 @@ function Footer(){
                 <div className='footer-right-side'>
                     <p className="sign-up-text">Sign up for our newsletter for updates on the organization and the projects we’re working on.</p>
                     <div className="subscribe-form">
-                         <Form.Control type="email" placeholder="Email" aria-label="Email address"/>
-                         <Button className="button" href="#">
-                            <div className="subscribe">Subscribe</div>
-                         </Button>
-                         </div>
+                        <MailChimpForm />
+                    </div>
                 </div>
             </div>
         </footer>
