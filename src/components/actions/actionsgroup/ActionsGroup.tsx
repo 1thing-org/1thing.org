@@ -74,7 +74,10 @@ const actionData: {
 
 function ActionsGroup() {
   return (
-    <div id="action-section">
+    <div
+      style={{ width: "100%", maxWidth: "1440px", margin: "0 auto" }}
+      id="action-section"
+    >
       <h3
         style={{
           marginTop: "96px",
@@ -90,7 +93,12 @@ function ActionsGroup() {
       </h3>
       <YourActionsRight
         imgs={actionData[0].imgs[0]}
-        desc={actionData[0].desc}
+        desc={actionData[0].desc.filter((v, i) => i <= 3)}
+        actionId={actionData[0].actionId}
+      />
+      <YourActionsLeft
+        imgs={actionData[0].imgs[1]}
+        desc={actionData[0].desc.filter((v, i) => i > 3)}
         actionId={actionData[0].actionId}
       />
       <h3
@@ -106,7 +114,7 @@ function ActionsGroup() {
       >
         {actionData[1].name}
       </h3>
-      <YourActionsLeft
+      <YourActionsRight
         imgs={actionData[1].imgs[0]}
         desc={actionData[1].desc}
         actionId={actionData[1].actionId}
@@ -124,9 +132,14 @@ function ActionsGroup() {
       >
         {actionData[2].name}
       </h3>
+      <YourActionsLeft
+        imgs={actionData[2].imgs[0]}
+        desc={actionData[2].desc.filter((v, i) => i <= 2)}
+        actionId={actionData[2].actionId}
+      />
       <YourActionsRight
         imgs={actionData[2].imgs[1]}
-        desc={actionData[2].desc}
+        desc={actionData[2].desc.filter((v, i) => i > 2)}
         actionId={actionData[2].actionId}
       />
       <h3
@@ -144,7 +157,12 @@ function ActionsGroup() {
       </h3>
       <YourActionsLeft
         imgs={actionData[3].imgs[0]}
-        desc={actionData[3].desc}
+        desc={actionData[3].desc.filter((v, i) => i <= 2)}
+        actionId={actionData[3].actionId}
+      />
+      <YourActionsRight
+        imgs={actionData[3].imgs[1]}
+        desc={actionData[3].desc.filter((v, i) => i > 2)}
         actionId={actionData[3].actionId}
       />
     </div>
