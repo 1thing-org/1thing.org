@@ -5,11 +5,8 @@
   background-color: white;
   align-items: center;
   text-align: left;
-  height: 300px;
-  width: 80%;
-  margin-top: 8%;
-  margin-left: 10%;
-  margin-bottom: 8%;
+  width: 95%;
+  padding: 2%;
 }
 
 .your-actions-right .title {
@@ -31,11 +28,25 @@
 }
 
 #image-raiseAwareness {
-  width: 30%;
+  width: 50%;
   height: 100%;
 }
 
+ul,
+li {
+  list-style: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+li span {
+  font-weight: bold;
+}
+
 #image-useSkills {
-  width: 30%;
+  width: 50%;
   height: 100%;
 }

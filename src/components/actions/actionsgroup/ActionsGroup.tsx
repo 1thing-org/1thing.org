@@ -74,7 +74,10 @@ const actionData: {
 
 function ActionsGroup() {
   return (
-    <div style={{ width: "100%", maxWidth: "1440px" }} id="action-section">
+    <div
+      style={{ width: "100%", maxWidth: "1440px", margin: "0 auto" }}
+      id="action-section"
+    >
       <h3
         style={{
           marginTop: "96px",
@@ -96,7 +99,7 @@ function ActionsGroup() {
       <YourActionsLeft
         imgs={actionData[0].imgs[1]}
         desc={actionData[0].desc.filter((v, i) => i > 3)}
-        actionId={actionData[1].actionId}
+        actionId={actionData[0].actionId}
       />
       <h3
         style={{
