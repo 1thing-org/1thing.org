@@ -74,7 +74,7 @@ const actionData: {
 
 function ActionsGroup() {
   return (
-    <div id="action-section">
+    <div style={{ width: "100%", maxWidth: "1440px" }} id="action-section">
       <h3
         style={{
           marginTop: "96px",
