@@ -1,18 +1,33 @@
-.your-actions-left{
+.your-actions-left {
     border: white;
     display: flex;
     flex-direction: row;
     background-color: white;
     align-items: center;
     text-align: left;
-    height: 300px;
-    width: 80%;
-    margin-top: 8%;
-    margin-left: 10%;
-    margin-bottom: 8%;
+    width: 95%;
+    padding: 2%;
 }
 
-.your-actions-left .title{
+.card-body {
+    width: 50%;
+}
+
+ul,
+li {
+    list-style: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+li span {
+    font-weight: bold;
+}
+
+.your-actions-left .title {
     font-family: 'SF Pro';
     font-style: normal;
     font-weight: 400;
@@ -20,7 +35,7 @@
     line-height: 38px;
 }
 
-.your-actions-left .text{
+.your-actions-left .text {
     width: 90%;
     font-family: 'SF Pro';
     font-style: normal;
@@ -30,13 +45,11 @@
 }
 
 #image-support {
-    width: 30%;
+    width: 50%;
     height: 100%;
-    content: url("assets/home-page/placeholder-image.png");
 }
 
 #image-understanding {
-    width: 30%;
+    width: 50%;
     height: 100%;
-    content: url("assets/home-page/placeholder-image.png");
 }

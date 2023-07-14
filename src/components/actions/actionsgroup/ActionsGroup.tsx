@@ -1,5 +1,12 @@
 import YourActionsLeft from "./YourActionsLeft";
 import YourActionsRight from "./YourActionsRight";
+import raiseAwarenessLeft from "../../../assets/take-action-page/raise-awareness-left.svg";
+import raiseAwarenessRight from "../../../assets/take-action-page/raise-awareness-right.svg";
+import supportVictim from "../../../assets/take-action-page/support-victim.svg";
+import useSkillsRight from "../../../assets/take-action-page/use-skills-right.svg";
+import useSkillsLeft from "../../../assets/take-action-page/use-skills-left.svg";
+import promoteRight from "../../../assets/take-action-page/promote-right.svg";
+import promoteLeft from "../../../assets/take-action-page/promote-left.svg";
 
 const actionData: {
   name: string;
@@ -21,10 +28,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "raiseAwareness",
-    imgs: [
-      require("../../../assets/take-action-page/raise-awareness-left.svg"),
-      require("../../../assets/take-action-page/raise-awareness-right.svg"),
-    ],
+    imgs: [raiseAwarenessLeft, raiseAwarenessRight],
   },
   {
     name: "Support Anti-Asian hate crime victims",
@@ -37,7 +41,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "support",
-    imgs: [require("../../../assets/take-action-page/support-victim.svg")],
+    imgs: [supportVictim],
   },
   {
     name: "Use your skills",
@@ -51,10 +55,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "useSkills",
-    imgs: [
-      require("../../../assets/take-action-page/use-skills-right.svg"),
-      require("../../../assets/take-action-page/use-skills-left.svg"),
-    ],
+    imgs: [useSkillsRight, useSkillsLeft],
   },
   {
     name: "Promote cross racial understanding",
@@ -67,34 +68,101 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "understanding",
-    imgs: [
-      require("../../../assets/take-action-page/promote-right.svg"),
-      require("../../../assets/take-action-page/promote-left.svg"),
-    ],
+    imgs: [promoteRight, promoteLeft],
   },
 ];
 
 function ActionsGroup() {
   return (
-    <div id="action-section">
+    <div
+      style={{ width: "100%", maxWidth: "1440px", margin: "0 auto" }}
+      id="action-section"
+    >
+      <h3
+        style={{
+          marginTop: "96px",
+          fontFamily: "Open Sans",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "800",
+          lineHeight: "40px",
+          letterSpacing: "0.4px",
+        }}
+      >
+        {actionData[0].name}
+      </h3>
       <YourActionsRight
-        name={actionData[0].name}
-        desc={actionData[0].desc}
+        imgs={actionData[0].imgs[0]}
+        desc={actionData[0].desc.filter((v, i) => i <= 3)}
         actionId={actionData[0].actionId}
       />
       <YourActionsLeft
-        name={actionData[1].name}
+        imgs={actionData[0].imgs[1]}
+        desc={actionData[0].desc.filter((v, i) => i > 3)}
+        actionId={actionData[0].actionId}
+      />
+      <h3
+        style={{
+          marginTop: "96px",
+          fontFamily: "Open Sans",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "800",
+          lineHeight: "40px",
+          letterSpacing: "0.4px",
+        }}
+      >
+        {actionData[1].name}
+      </h3>
+      <YourActionsRight
+        imgs={actionData[1].imgs[0]}
         desc={actionData[1].desc}
         actionId={actionData[1].actionId}
       />
-      <YourActionsRight
-        name={actionData[2].name}
-        desc={actionData[2].desc}
+      <h3
+        style={{
+          marginTop: "96px",
+          fontFamily: "Open Sans",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "800",
+          lineHeight: "40px",
+          letterSpacing: "0.4px",
+        }}
+      >
+        {actionData[2].name}
+      </h3>
+      <YourActionsLeft
+        imgs={actionData[2].imgs[0]}
+        desc={actionData[2].desc.filter((v, i) => i <= 2)}
         actionId={actionData[2].actionId}
       />
+      <YourActionsRight
+        imgs={actionData[2].imgs[1]}
+        desc={actionData[2].desc.filter((v, i) => i > 2)}
+        actionId={actionData[2].actionId}
+      />
+      <h3
+        style={{
+          marginTop: "96px",
+          fontFamily: "Open Sans",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "800",
+          lineHeight: "40px",
+          letterSpacing: "0.4px",
+        }}
+      >
+        {actionData[3].name}
+      </h3>
       <YourActionsLeft
-        name={actionData[3].name}
-        desc={actionData[3].desc}
+        imgs={actionData[3].imgs[0]}
+        desc={actionData[3].desc.filter((v, i) => i <= 2)}
+        actionId={actionData[3].actionId}
+      />
+      <YourActionsRight
+        imgs={actionData[3].imgs[1]}
+        desc={actionData[3].desc.filter((v, i) => i > 2)}
         actionId={actionData[3].actionId}
       />
     </div>
