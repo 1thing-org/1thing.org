@@ -43,6 +43,7 @@ footer {
 .footer-logo{
     width: 80%;
     height: 100%;
+    padding-right: 0.5rem;
 }
 
 .footer-text,
