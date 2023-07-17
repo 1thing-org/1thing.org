@@ -17,17 +17,15 @@ function Footer(){
             <div className="footer-container">
                 <div className='footer-left-side'>
                     <Navbar.Brand className ='brand-container'>
-                    <img className='footer-logo' src={footerLogo} width="100" height="100" alt="1 Thing Org logo"/>
-                    <Navbar.Text className='text-container'>
-                        <div className='footer-text' >
-                            1 Thing<br/>
-                            Against<br/>
-                            Racism
-                        </div>
+                        <img className='footer-logo' src={footerLogo} width="100" height="100" alt="1 Thing Org logo"/>
+                        <Navbar.Text className='text-container'>
+                            <div className='footer-text' >
+                                1 Thing Against Racism
+                            </div>
                         </Navbar.Text>
-                </Navbar.Brand>
+                    </Navbar.Brand>
                     <div className='social-icons'>
-                        <SocialMedia name={faInstagram} refLink='mailto:info@1thing.org' />
+                        <SocialMedia name={faEnvelope} refLink='mailto:info@1thing.org' />
                         <SocialMedia name={faTwitter} refLink='https://twitter.com/1Thing_Org' />
                         <SocialMedia name={faLinkedin} refLink='https://www.linkedin.com/company/1-thing-org/' />
                         <SocialMedia name={faFacebook} refLink='https://www.facebook.com/people/One-Thing-Org/100081311228444/' />

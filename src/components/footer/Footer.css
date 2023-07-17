@@ -1,7 +1,7 @@
 footer {
     background: #0C0928;
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -41,8 +41,9 @@ footer {
 }
 
 .footer-logo{
-    width: 43px;
-    height: 45px;
+    width: 80%;
+    height: 100%;
+    padding-right: 0.5rem;
 }
 
 .footer-text,
@@ -142,6 +143,7 @@ footer {
     padding-top: 1rem;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 767px) {
@@ -209,7 +211,7 @@ footer {
 
     .social-icons {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 60%
     }
@@ -227,6 +229,10 @@ footer {
         height: 0px;
         border: 1px solid #FFFFFF;
         transform: rotate(180deg);
+    }
+
+    .brand-container{
+        justify-content: center;
     }
 }
 
@@ -273,7 +279,6 @@ footer {
         text-align: center;
     }
 
-    
     .split-line {
         display: flex;
         justify-content: center;
@@ -287,6 +292,10 @@ footer {
     }
     .sign-up-text {
         text-align: center;
+    }
+
+    .brand-container{
+        justify-content: center;
     }
 
 }
@@ -318,5 +327,4 @@ footer {
         padding-left: 4rem;
         padding-right: 4rem;
     }
-
 }
