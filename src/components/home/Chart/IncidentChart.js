@@ -24,7 +24,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
     const d = moment(tickVal, "YYYY-MM-DD");
     return d.format("MMM' YY");
   };
-  
+
   const { t } = useTranslation();
   const [xticks, setXTicks] = useState([]);
   const [totalCases, setTotalCases] = useState(0);
@@ -113,33 +113,31 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
       ) : null}
 
       <ResponsiveContainer>
-      <ComposedChart 
-            height={300}
-            data={chart_data} 
-            margin={{ top: 30, right: 30, bottom: 10, left: -30 }}
-            style={{ backgroundColor: "rgba(255, 255, 255, 0.1)"
-          }}>
-            
+        <ComposedChart
+          height={300}
+          data={chart_data}
+          margin={{ top: 30, right: 30, bottom: 10, left: -30 }}
+          style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+        >
           <CartesianGrid strokeDasharray="3 3" />
-          
+
           <XAxis
             dataKey="key"
             tickFormatter={formatXAxis}
             interval="preserveStartEnd"
             ticks={xticks}
-             minTickGap={1}
+            minTickGap={1}
             tick={{
-              fontSize: '12px',
-              fontFamily: 'sans-serif',
-              fontStyle: 'normal',
+              fontSize: "12px",
+              fontFamily: "sans-serif",
+              fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: '16px',
-              textAlign: 'center',
-              letterSpacing: '0.4px',
-              fill: '#F4F4F4',
+              lineHeight: "16px",
+              textAlign: "center",
+              letterSpacing: "0.4px",
+              fill: "#F4F4F4",
             }}
             axisLine={{ stroke: "#FFFFFF", strokeWidth: 2 }}
-            
           />
           <YAxis
             allowDecimals={false}
@@ -148,7 +146,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             type="number"
             domain={[0, "dataMax + 3"]}
             axisLine={{ stroke: "#FFFFFF", strokeWidth: 2 }}
-            
           />
           <YAxis
             hide={true}
@@ -156,8 +153,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             orientation="right"
             allowDecimals={false}
             interval="preserveStartEnd"
-            
-            
           />
           <Tooltip content={<CustomTooltip />} />
           <Area
@@ -176,7 +171,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
               <stop offset="100%" stop-color="rgba(255, 224, 51, 0)" />
             </linearGradient>
           </defs>
-
         </ComposedChart>
       </ResponsiveContainer>
     </div>
