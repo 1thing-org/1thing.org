@@ -24,7 +24,6 @@
   text-shadow: 2px #ffffff;
 }
 
-
 .recharts-wrapper {
   width: 100%;
   height: 382px;
@@ -79,11 +78,10 @@
   }
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width: 1440px) {
   .recharts-wrapper {
     width: 794px;
     height: 382px;
-    margin:0 auto;
-
+    margin: 0 auto;
   }
 }

@@ -1,237 +1,230 @@
-  @media only screen and (min-width:500px){
-    .hcr {
-      width: 80%;
-      margin-left:10%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .hcr-backgrund{
-      height: 1056px;
-      margin: 0 auto;
-      background: linear-gradient(51.3deg, #140033 -5.26%, #5200FF 93.17%);
-      
-    }
-    .chart {
-      height: auto;
-      width: 92%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .chart-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .t3 {
-      margin-top: 128px;
-      white-space: nowrap;
-      width: auto;
-      height: 40px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 4vw;
-      line-height: 125%;
-      text-align: center;
-      letter-spacing: 0.4px;
-      text-transform: capitalize;
-      color: #F4F4F4;
-      margin-bottom: 1rem;
-    }
-    .t4 {
-      margin-top: 34px;
-      width: 480px;
-      height: 88px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 2vw;
-      line-height: 150%;
-      text-align: center;
-      letter-spacing: 0.4px;
-      color: #F4F4F4;
-    }
-
-    .t2 {
-      padding-top: 20%;
-      width: 200px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 28px;
-      color: #FFD800;
-    }
-
-    .t1 {
-      font-weight: 500;
-      text-align: center;
-      color: white;
-      font-family: sans-serif;
-      font-style: normal;
-      font-size: 18px;
-      line-height: 24px;
-    }
-
-    
-    .chart-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 148spx;
-      height: 54px;
-      background: #FFD500;
-      border-radius: 3px;
-
-    }
-
-    .chart-button-text {
-      width: 100px;
-      height: 22px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 22px;
-      color: #18181A;
-      text-align: center;
-    }
+@media only screen and (min-width: 500px) {
+  .hcr {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-    
-
-  @media only screen and (min-width: 768px) {
-    .hcr {
-      width: 80%;
-      margin-left:10%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .hcr-backgrund{
-      height: 1056px;
-      margin: 0 auto;
-      background: linear-gradient(51.3deg, #140033 -5.26%, #5200FF 93.17%);
-      
-    }
-
-    .chart-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .t3 {
-      margin-top: 128px;
-      white-space: nowrap;
-      width: auto;
-      height: 40px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 32px;
-      line-height: 125%;
-      text-align: center;
-      letter-spacing: 0.4px;
-      text-transform: capitalize;
-      color: #F4F4F4;
-      margin-bottom: 1rem;
-    }
-
-    .t4 {
-      margin-top: 34px;
-      width: 592px;
-      height: 88px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      text-align: center;
-      letter-spacing: 0.4px;
-      color: #F4F4F4;
-    }
-
-    .chart {
-      margin: 0 auto;
-      height: 382px;
-      width: 55.14vw;
-      border-radius: 16px;
-    }
-
-    .t-cases {
-      width: 200px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 28px;
-      color: #FFD800;
-    }
-
-    .word {
-    }
-
-    .childword {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: row;
-      padding-right: 3rem;
-      margin-top: 34px;
-    }
-
-    .col-3 {
-      justify-items: center;
-      justify-content: center;
-      text-align: center
-    }
-
-    /* Text/Body still need to adjust */
-    .t1 {
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      text-align: center;
-      letter-spacing: 0.4px;
-      padding-top: 16px;
-      color: #F4F4F4;
-      width: 187px;
-    }
-
-
-    .chart-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 148spx;
-      height: 54px;
-      background: #FFD500;
-      border-radius: 3px;
-
-    }
-
-    .chart-button-text {
-      width: 100px;
-      height: 22px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 22px;
-      color: #18181A;
-      text-align: center;
-    }
+  .hcr-backgrund {
+    height: 1056px;
+    margin: 0 auto;
+    background: linear-gradient(51.3deg, #140033 -5.26%, #5200ff 93.17%);
+  }
+  .chart {
+    height: auto;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .chart-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  @media only screen and (min-width: 1440px){
-    .hcr-backgrund{
-      max-width: 1440px;
-    }
+  .t3 {
+    margin-top: 128px;
+    white-space: nowrap;
+    width: auto;
+    height: 40px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4vw;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    color: #f4f4f4;
+    margin-bottom: 1rem;
   }
+  .t4 {
+    margin-top: 34px;
+    width: 480px;
+    height: 88px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #f4f4f4;
+  }
+
+  .t2 {
+    padding-top: 20%;
+    width: 200px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffd800;
+  }
+
+  .t1 {
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .chart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 148spx;
+    height: 54px;
+    background: #ffd500;
+    border-radius: 3px;
+  }
+
+  .chart-button-text {
+    width: 100px;
+    height: 22px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #18181a;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hcr {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hcr-backgrund {
+    height: 1056px;
+    margin: 0 auto;
+    background: linear-gradient(51.3deg, #140033 -5.26%, #5200ff 93.17%);
+  }
+
+  .chart-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .t3 {
+    margin-top: 128px;
+    white-space: nowrap;
+    width: auto;
+    height: 40px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    color: #f4f4f4;
+    margin-bottom: 1rem;
+  }
+
+  .t4 {
+    margin-top: 34px;
+    width: 592px;
+    height: 88px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #f4f4f4;
+  }
+
+  .chart {
+    margin: 0 auto;
+    height: 382px;
+    width: 55.14vw;
+    border-radius: 16px;
+  }
+
+  .t-cases {
+    width: 200px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffd800;
+  }
+
+  .word {
+  }
+
+  .childword {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-right: 3rem;
+    margin-top: 34px;
+  }
+
+  .col-3 {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Text/Body still need to adjust */
+  .t1 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    padding-top: 16px;
+    color: #f4f4f4;
+    width: 187px;
+  }
+
+  .chart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 148spx;
+    height: 54px;
+    background: #ffd500;
+    border-radius: 3px;
+  }
+
+  .chart-button-text {
+    width: 100px;
+    height: 22px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #18181a;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hcr-backgrund {
+    max-width: 1440px;
+  }
+}
