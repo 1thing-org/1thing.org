@@ -1,55 +1,55 @@
 .your-actions-left {
-    border: white;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    align-items: center;
-    text-align: left;
-    width: 95%;
-    padding: 2%;
+  border: white;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  text-align: left;
+  width: 95%;
+  padding: 2%;
 }
 
 .card-body {
-    width: 50%;
+  width: 50%;
 }
 
 ul,
 li {
-    list-style: none;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+  list-style: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 li span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .your-actions-left .title {
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 .your-actions-left .text {
-    width: 90%;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+  width: 90%;
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 #image-support {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 #image-understanding {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
