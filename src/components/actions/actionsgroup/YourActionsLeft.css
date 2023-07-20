@@ -1,16 +1,9 @@
 .your-actions-left {
   border: white;
-  display: flex;
-  flex-direction: row;
   background-color: white;
   align-items: center;
   text-align: left;
-  width: 95%;
   padding: 2%;
-}
-
-.card-body {
-  width: 50%;
 }
 
 ul,
@@ -44,12 +37,7 @@ li span {
   line-height: 19px;
 }
 
-#image-support {
-  width: 50%;
-  height: 100%;
-}
-
-#image-understanding {
-  width: 50%;
-  height: 100%;
+.card-img {
+  width: 100%;
+  height: auto;
 }
