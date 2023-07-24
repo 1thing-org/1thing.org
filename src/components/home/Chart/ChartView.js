@@ -169,17 +169,18 @@ const ChartView = () => {
         ) : (
           <div>
             <Container className="word">
-              <Row className="childword">
+              <div className="childword">
                 <Col className="col-3">
                   <h3 className="t-cases">{totalLastMonthCases} Cases</h3>
                   <p className="t1">were reported in {lastMonthName}</p>
                 </Col>
-
+              </div>
+              <div className="childword">
                 <Col className="col-3">
                   <h3 className="t-cases">{totalAnnualCases} Cases</h3>
                   <p className="t1">were reported in the past 12 months</p>
                 </Col>
-              </Row>
+              </div>
             </Container>
           </div>
         )}
