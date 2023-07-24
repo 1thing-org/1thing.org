@@ -1,4 +1,4 @@
-import Card from "react-bootstrap/Card";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import "./YourActionsRight.css";
 
 type Props = {
@@ -9,22 +9,28 @@ type Props = {
 
 function YourActionsRight(props: Props) {
   return (
-    <Card className="your-actions-right" id={props.actionId}>
-      <Card.Img id={"image-" + props.actionId} src={props.imgs} />
-      <Card.Body id={"body-" + props.actionId}>
-        <Card.Text className="text">
-          <ul>
-            {props.desc.map((item, index) => {
-              return (
-                <li key={index}>
-                  <span>{index + 1}.</span> &nbsp;{item}
-                </li>
-              );
-            })}
-          </ul>
-        </Card.Text>
-      </Card.Body>{" "}
-    </Card>
+    <Container fluid>
+      <Row>
+        <Col md={6}>
+          <Card.Img id={"image-" + props.actionId} src={props.imgs} />
+        </Col>
+        <Col md={6}>
+          <Card.Body id={"body-" + props.actionId}>
+            <Card.Text className="text">
+              <ul>
+                {props.desc.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <span>{index + 1}.</span> &nbsp;{item}
+                    </li>
+                  );
+                })}
+              </ul>
+            </Card.Text>
+          </Card.Body>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
