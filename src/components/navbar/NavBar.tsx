@@ -1,7 +1,8 @@
-import { Nav, Navbar, Container, Row, Col, Collapse } from "react-bootstrap";
+import { Nav, Navbar,   Offcanvas, Container, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import NewLogo from "../../assets/NewLogo.svg";
 import "./NavBar.css";
+import { useState } from 'react';
 
 function Page({
   title,
@@ -20,6 +21,10 @@ function Page({
 }
 
 function NavBar() {
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+  const handleMenuToggle = () => {
+    setShowOffcanvas(!showOffcanvas);
+  };
   return (
     <Navbar className="nav" expand="lg">
       <Container id="navbar-container">
@@ -49,9 +54,48 @@ function NavBar() {
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             id="responsive-navbar-nav-control"
+            onClick={handleMenuToggle}
+            
           />
-          <Navbar.Collapse id="responsive-navbar-toggle">
+           {!showOffcanvas && (
+          <Navbar.Collapse id="responsive-navbar-nav" >
+         <Nav className="links-ms-auto">
+   
+              <Page
+              title={"Take Action"}
+              links={"/takeaction"}
+              className={"inner-text"}
+              ></Page>
+              <Page
+              title={"About Us"}
+              links={"/aboutus"}
+              className={"inner-text"}
+              ></Page>
+              <Page
+              title={"Contact"}
+              links={"/contact"}
+              className={"inner-text"}
+              ></Page>
+              <Page
+              title={"Testimonial"}
+              links={"/testimonials"}
+              className={"inner-text"}
+              ></Page>
+  
+          </Nav>
+         </Navbar.Collapse>
+         )}
+         <Offcanvas placement="end" show={showOffcanvas} onHide={() => setShowOffcanvas(false)} className={showOffcanvas ? "show" : "show"} >
+
+           <Offcanvas.Header closeButton>
+              <Offcanvas.Title> < img className="offcanvas-logo" src={NewLogo} alt="Logo" /></Offcanvas.Title>
+            </Offcanvas.Header>
+
+     
+          <Offcanvas.Body >
+      
             <Nav className="links-ms-auto">
+   
               <Page
                 title={"Take Action"}
                 links={"/takeaction"}
@@ -72,8 +116,11 @@ function NavBar() {
                 links={"/testimonials"}
                 className={"inner-text"}
               ></Page>
+             
             </Nav>
-          </Navbar.Collapse>
+            </Offcanvas.Body>
+            </Offcanvas>
+         
         </Col>
       </Container>
     </Navbar>

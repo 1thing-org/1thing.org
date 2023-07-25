@@ -36,7 +36,63 @@ height: 58.48px;
     text-transform: uppercase;
     color: #18181A;
 }
+           
+#responsive-navbar-nav-control {
+    position: absolute;
+    top: 5em;
+    right: 1%;
+    margin-top: -45px;
+    width: 3em;
+    height: 45px;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+  }
 
+  
 #responsive-navbar-toggle{
     justify-content: flex-end;
+   
+    
 }
+.offcanvas {
+    width: 100% !important; 
+    max-width: 100% !important;
+    
+    
+  }
+  
+  .offcanvas-header {
+    width: 100%;
+    padding: 1rem;
+    
+  }
+  
+
+.offcanvas-body {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+  }
+  
+  .offcanvas .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .offcanvas .nav-link {
+    padding: 2rem 50rem;
+ 
+    text-align: center;
+    border-bottom: 0.8px solid grey;
+    
+    
+  }
+  
+  .offcanvas .nav-link + .nav-link {
+    margin-top: 1.5rem; 
+  }
