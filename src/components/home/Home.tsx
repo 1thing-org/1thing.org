@@ -10,8 +10,8 @@ import ChartView from "./Chart/ChartView";
 import HeroImage from "assets/hero.svg";
 
 const homeHeroData: { heading: string; subheading: string } = {
-  heading: `Small Actions can add up to improve racial equality`,
-  subheading: `Action, Share and Inspire. Together we can make a real difference.`,
+  heading: `Action, Share and Inspire. Together we can make a real difference.`,
+  subheading: `Small actions can add up to improve racial equality.`,
 };
 
 function Home() {
