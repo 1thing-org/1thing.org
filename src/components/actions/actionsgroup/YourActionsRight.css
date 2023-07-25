@@ -1,11 +1,8 @@
 .your-actions-right {
   border: white;
-  display: flex;
-  flex-direction: row;
   background-color: white;
   align-items: center;
   text-align: left;
-  width: 95%;
   padding: 2%;
 }
 
@@ -27,11 +24,6 @@
   line-height: 19px;
 }
 
-#image-raiseAwareness {
-  width: 50%;
-  height: 100%;
-}
-
 ul,
 li {
   list-style: none;
@@ -46,7 +38,7 @@ li span {
   font-weight: bold;
 }
 
-#image-useSkills {
-  width: 50%;
-  height: 100%;
+.card-img {
+  width: 100%;
+  height: auto;
 }
