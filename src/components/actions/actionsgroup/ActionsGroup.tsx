@@ -81,7 +81,7 @@ function ActionsGroup() {
       <h3
         style={{
           marginTop: "96px",
-          fontFamily: "Open Sans",
+          fontFamily: "sans-serif ",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
@@ -104,7 +104,7 @@ function ActionsGroup() {
       <h3
         style={{
           marginTop: "96px",
-          fontFamily: "Open Sans",
+          fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
@@ -122,7 +122,7 @@ function ActionsGroup() {
       <h3
         style={{
           marginTop: "96px",
-          fontFamily: "Open Sans",
+          fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
@@ -145,7 +145,7 @@ function ActionsGroup() {
       <h3
         style={{
           marginTop: "96px",
-          fontFamily: "Open Sans",
+          fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
