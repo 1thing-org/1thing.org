@@ -93,7 +93,7 @@ function ActionsGroup() {
       </h3>
       <YourActionsRight
         imgs={actionData[0].imgs[0]}
-        desc={actionData[0].desc.filter((v, i) => i <= 3)}
+        desc={actionData[0].desc}
         actionId={actionData[0].actionId}
       />
 
@@ -130,7 +130,7 @@ function ActionsGroup() {
       </h3>
       <YourActionsRight
         imgs={actionData[2].imgs[0]}
-        desc={actionData[2].desc.filter((v, i) => i <= 2)}
+        desc={actionData[2].desc}
         actionId={actionData[2].actionId}
       />
 
@@ -149,7 +149,7 @@ function ActionsGroup() {
       </h3>
       <YourActionsLeft
         imgs={actionData[3].imgs[0]}
-        desc={actionData[3].desc.filter((v, i) => i <= 2)}
+        desc={actionData[3].desc}
         actionId={actionData[3].actionId}
       />
     </div>
