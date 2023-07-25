@@ -16,11 +16,7 @@ function YourActionsLeft(props: Props) {
             <Card.Text className="text">
               <ul>
                 {props.desc.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <span>{index + 1}.</span> &nbsp;{item}
-                    </li>
-                  );
+                  return <li key={index}>{item}</li>;
                 })}
               </ul>
             </Card.Text>
