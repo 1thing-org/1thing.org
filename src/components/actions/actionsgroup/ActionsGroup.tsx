@@ -93,14 +93,10 @@ function ActionsGroup() {
       </h3>
       <YourActionsRight
         imgs={actionData[0].imgs[0]}
-        desc={actionData[0].desc.filter((v, i) => i <= 3)}
+        desc={actionData[0].desc}
         actionId={actionData[0].actionId}
       />
-      <YourActionsLeft
-        imgs={actionData[0].imgs[1]}
-        desc={actionData[0].desc.filter((v, i) => i > 3)}
-        actionId={actionData[0].actionId}
-      />
+
       <h3
         style={{
           marginTop: "96px",
@@ -114,7 +110,7 @@ function ActionsGroup() {
       >
         {actionData[1].name}
       </h3>
-      <YourActionsRight
+      <YourActionsLeft
         imgs={actionData[1].imgs[0]}
         desc={actionData[1].desc}
         actionId={actionData[1].actionId}
@@ -132,16 +128,12 @@ function ActionsGroup() {
       >
         {actionData[2].name}
       </h3>
-      <YourActionsLeft
-        imgs={actionData[2].imgs[0]}
-        desc={actionData[2].desc.filter((v, i) => i <= 2)}
-        actionId={actionData[2].actionId}
-      />
       <YourActionsRight
-        imgs={actionData[2].imgs[1]}
-        desc={actionData[2].desc.filter((v, i) => i > 2)}
+        imgs={actionData[2].imgs[0]}
+        desc={actionData[2].desc}
         actionId={actionData[2].actionId}
       />
+
       <h3
         style={{
           marginTop: "96px",
@@ -157,12 +149,7 @@ function ActionsGroup() {
       </h3>
       <YourActionsLeft
         imgs={actionData[3].imgs[0]}
-        desc={actionData[3].desc.filter((v, i) => i <= 2)}
-        actionId={actionData[3].actionId}
-      />
-      <YourActionsRight
-        imgs={actionData[3].imgs[1]}
-        desc={actionData[3].desc.filter((v, i) => i > 2)}
+        desc={actionData[3].desc}
         actionId={actionData[3].actionId}
       />
     </div>
