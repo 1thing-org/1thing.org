@@ -97,14 +97,14 @@ function ActionsGroup() {
 
       <h3
         style={{
-          marginTop: "96px",
+          marginTop: "48px",
           fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
-          margin: "48px",
+          marginBottom: "48px",
         }}
       >
         {actionData[1].name}
@@ -116,14 +116,14 @@ function ActionsGroup() {
       />
       <h3
         style={{
-          marginTop: "96px",
+          marginTop: "48px",
           fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
-          margin: "48px",
+          marginBottom: "48px",
         }}
       >
         {actionData[2].name}
@@ -136,7 +136,7 @@ function ActionsGroup() {
 
       <h3
         style={{
-          marginTop: "96px",
+          marginTop: "48px",
           fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
