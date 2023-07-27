@@ -12,7 +12,13 @@ function YourActionsRight(props: Props) {
     <Container fluid>
       <Row>
         <Col md={6}>
-          <Card.Img id={"image-" + props.actionId} src={props.imgs} />
+          <div style={{ display: "flex", justifyContent: "right" }}>
+            <Card.Img
+              style={{ width: "592px", height: "334px" }}
+              id={"image-" + props.actionId}
+              src={props.imgs}
+            />
+          </div>
         </Col>
         <Col md={6}>
           <Card.Body id={"body-" + props.actionId}>
