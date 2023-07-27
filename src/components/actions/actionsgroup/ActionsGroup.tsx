@@ -84,6 +84,7 @@ function ActionsGroup() {
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[0].name}
@@ -103,6 +104,7 @@ function ActionsGroup() {
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          margin: "48px",
         }}
       >
         {actionData[1].name}
@@ -121,6 +123,7 @@ function ActionsGroup() {
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          margin: "48px",
         }}
       >
         {actionData[2].name}
@@ -140,6 +143,7 @@ function ActionsGroup() {
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[3].name}
