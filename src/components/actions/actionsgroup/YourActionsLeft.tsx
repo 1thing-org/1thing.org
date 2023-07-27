@@ -11,7 +11,8 @@ function YourActionsLeft(props: Props) {
   return (
     <Container fluid>
       <Row>
-        <Col md={6}>
+        <Col md={1}></Col>
+        <Col md={5} className="d-flex align-items-center">
           <Card.Body id={"body-" + props.actionId}>
             <Card.Text className="text">
               <ul>
@@ -22,15 +23,16 @@ function YourActionsLeft(props: Props) {
             </Card.Text>
           </Card.Body>
         </Col>
-        <Col md={6}>
-          <div style={{ display: "flex", justifyContent: "left" }}>
+        <Col md={5}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <Card.Img
-              style={{ width: "592px", height: "334px" }}
+              style={{ maxWidth: "100%", height: "auto" }}
               id={"image-" + props.actionId}
               src={props.imgs}
             />
           </div>
         </Col>
+        <Col md={1}></Col>
       </Row>
     </Container>
   );
