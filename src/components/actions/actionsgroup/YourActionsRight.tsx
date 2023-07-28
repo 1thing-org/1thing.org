@@ -11,10 +11,17 @@ function YourActionsRight(props: Props) {
   return (
     <Container fluid>
       <Row>
-        <Col md={6}>
-          <Card.Img id={"image-" + props.actionId} src={props.imgs} />
+        <Col md={1}></Col>
+        <Col md={5}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Card.Img
+              style={{ maxWidth: "100%", height: "auto" }}
+              id={"image-" + props.actionId}
+              src={props.imgs}
+            />
+          </div>
         </Col>
-        <Col md={6}>
+        <Col md={5} className="d-flex align-items-center">
           <Card.Body id={"body-" + props.actionId}>
             <Card.Text className="text">
               <ul>
@@ -25,6 +32,7 @@ function YourActionsRight(props: Props) {
             </Card.Text>
           </Card.Body>
         </Col>
+        <Col md={1}></Col>
       </Row>
     </Container>
   );

@@ -1,41 +1,11 @@
-.your-actions-right {
-  border: white;
-  background-color: white;
-  align-items: center;
+.text ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: left;
-  padding: 2%;
-}
-
-.your-actions-right .title {
-  padding-left: 1rem;
-  font-family: "SF Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.your-actions-right .text {
-  padding-left: 1rem;
-  font-family: "SF Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-ul,
-li {
-  list-style: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
-li span {
-  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
 }
 
 .card-img {

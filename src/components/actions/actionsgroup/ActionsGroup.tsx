@@ -1,11 +1,8 @@
 import YourActionsLeft from "./YourActionsLeft";
 import YourActionsRight from "./YourActionsRight";
-import raiseAwarenessLeft from "../../../assets/take-action-page/raise-awareness-left.svg";
 import raiseAwarenessRight from "../../../assets/take-action-page/raise-awareness-right.svg";
 import supportVictim from "../../../assets/take-action-page/support-victim.svg";
 import useSkillsRight from "../../../assets/take-action-page/use-skills-right.svg";
-import useSkillsLeft from "../../../assets/take-action-page/use-skills-left.svg";
-import promoteRight from "../../../assets/take-action-page/promote-right.svg";
 import promoteLeft from "../../../assets/take-action-page/promote-left.svg";
 
 const actionData: {
@@ -28,7 +25,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "raiseAwareness",
-    imgs: [raiseAwarenessLeft, raiseAwarenessRight],
+    imgs: [raiseAwarenessRight],
   },
   {
     name: "Support Anti-Asian hate crime victims",
@@ -55,7 +52,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "useSkills",
-    imgs: [useSkillsRight, useSkillsLeft],
+    imgs: [useSkillsRight],
   },
   {
     name: "Promote cross racial understanding",
@@ -68,7 +65,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "understanding",
-    imgs: [promoteRight, promoteLeft],
+    imgs: [promoteLeft],
   },
 ];
 
@@ -87,6 +84,7 @@ function ActionsGroup() {
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[0].name}
@@ -99,13 +97,14 @@ function ActionsGroup() {
 
       <h3
         style={{
-          marginTop: "96px",
+          marginTop: "48px",
           fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[1].name}
@@ -117,13 +116,14 @@ function ActionsGroup() {
       />
       <h3
         style={{
-          marginTop: "96px",
+          marginTop: "48px",
           fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[2].name}
@@ -136,13 +136,14 @@ function ActionsGroup() {
 
       <h3
         style={{
-          marginTop: "96px",
+          marginTop: "48px",
           fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[3].name}
