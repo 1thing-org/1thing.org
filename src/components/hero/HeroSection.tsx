@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import { Container, Col, Row } from "react-bootstrap";
 import "./HeroSection.css";
+import { title } from "process";
 
 type Props = {
   heading?: string;
@@ -9,31 +10,22 @@ type Props = {
 };
 
 function HeroSection(props: Props) {
-  const { heading, subheading, imageSrc } = props;
+  const { heading, subheading, imageSrc, } = props;
 
   return (
-    <div
-      className="hero-wrapper"
-      style={{ position: "relative", maxWidth: "1440px" }}
-    >
-      <Card.Img id="hero-image" src={imageSrc} style={{ width: "100%" }} />
+    <Card id="hero-card">
+      <div className="title-container">
+        <Card.Title id="hero-title">{heading}</Card.Title>
+      </div>
 
-      {/* Check if heading is present before rendering the overlay container */}
-      {heading && (
-        <div className="overlay-container">
-          <Container>
-            <Row className="justify-content-center align-items-center">
-              <Col xs={12} sm={8} md={6} lg={4} xl={3}>
-                <Card.ImgOverlay id="hero-text-container">
-                  <Card.Title id="hero-title">{heading}</Card.Title>
-                  <Card.Text id="hero-subtitle">{subheading}</Card.Text>
-                </Card.ImgOverlay>
-              </Col>
-            </Row>
-          </Container>
+      <div className="hero-image-container">
+        <Card.Img src={imageSrc} />
+        <div className="hero-text-container">
+          <Card.Title className="title-2">1 Thing Against Racism</Card.Title>
+          <Card.Text id="hero-subtitle">{subheading}</Card.Text>
         </div>
-      )}
-    </div>
+      </div>
+    </Card>
   );
 }
 
