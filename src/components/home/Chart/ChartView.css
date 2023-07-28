@@ -1,7 +1,8 @@
 @media only screen and (min-width: 500px) {
   .hcr {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,14 +10,13 @@
   }
   .hcr-backgrund {
     height: 1056px;
-    margin: 0 auto;
+    margin: 0;
     background: linear-gradient(51.3deg, #140033 -5.26%, #5200ff 93.17%);
   }
   .chart {
     height: auto;
     width: 92%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem 0;
   }
   .chart-title {
     display: flex;
@@ -26,7 +26,6 @@
   }
 
   .t3 {
-    margin-top: 128px;
     white-space: nowrap;
     width: auto;
     height: 40px;
@@ -76,6 +75,24 @@
     line-height: 24px;
   }
 
+  .col-3 {
+    width: 100%;
+  }
+
+  .t-cases {
+    width: 100%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffd800;
+  }
+
+  .link1 {
+    margin-top: 1rem;
+  }
+
   .chart-button {
     display: flex;
     justify-content: center;
@@ -100,18 +117,21 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .hcr-backgrund {
+    height: 891px;
+    margin: 0 auto;
+    padding: 2.17rem 2rem;
+    background: linear-gradient(51.3deg, #140033 -5.26%, #5200ff 93.17%);
+  }
+
   .hcr {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .hcr-backgrund {
-    height: 1056px;
-    margin: 0 auto;
-    background: linear-gradient(51.3deg, #140033 -5.26%, #5200ff 93.17%);
   }
 
   .chart-title {
@@ -119,10 +139,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 3.33rem;
   }
 
   .t3 {
-    margin-top: 128px;
+    margin: 0px;
     white-space: nowrap;
     width: auto;
     height: 40px;
@@ -135,7 +156,6 @@
     letter-spacing: 0.4px;
     text-transform: capitalize;
     color: #f4f4f4;
-    margin-bottom: 1rem;
   }
 
   .t4 {
@@ -153,14 +173,14 @@
   }
 
   .chart {
-    margin: 0 auto;
+    margin: 2rem 0;
+    width: 92%;
     height: 382px;
-    width: 55.14vw;
     border-radius: 16px;
   }
 
   .t-cases {
-    width: 200px;
+    width: 100%;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -170,17 +190,21 @@
   }
 
   .word {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
   }
 
   .childword {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding-right: 3rem;
-    margin-top: 34px;
+    width: 187px;
   }
 
   .col-3 {
+    width: 100%;
     justify-items: center;
     justify-content: center;
     text-align: center;
@@ -221,10 +245,59 @@
     color: #18181a;
     text-align: center;
   }
+
+  .link1 {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .chart {
+    width: 92%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .hcr-backgrund {
     max-width: 1440px;
+    height: 891px;
+    padding: 50px 120px;
+  }
+  .hcr {
+    width: 1200px;
+    height: 791px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .chart-title {
+    width: 521px;
+    height: 40px;
+  }
+  .t3 {
+    margin: 0px;
+  }
+  .t4 {
+    width: 792px;
+    height: 81px;
+  }
+  .chart {
+    width: 1200px;
+    height: 382px;
+  }
+  .word {
+    width: 389px;
+    height: 98px;
+    margin: 34px auto;
+    padding: 0px;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .t-cases {
+    width: 100%;
+  }
+  .link1 {
+    width: 148px;
+    margin: 0px;
   }
 }

@@ -1,52 +1,14 @@
-.your-actions-right {
-  border: white;
+.text ul {
   display: flex;
-  flex-direction: row;
-  background-color: white;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: left;
-  width: 95%;
-  padding: 2%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
 }
 
-.your-actions-right .title {
-  padding-left: 1rem;
-  font-family: "SF Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.your-actions-right .text {
-  padding-left: 1rem;
-  font-family: "SF Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-#image-raiseAwareness {
-  width: 50%;
-  height: 100%;
-}
-
-ul,
-li {
-  list-style: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
-li span {
-  font-weight: bold;
-}
-
-#image-useSkills {
-  width: 50%;
-  height: 100%;
+.card-img {
+  width: 100%;
+  height: auto;
 }
