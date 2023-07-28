@@ -77,11 +77,3 @@
     position: absolute;
   }
 }
-
-@media screen and (min-width: 1440px) {
-  .recharts-wrapper {
-    width: 794px;
-    height: 382px;
-    margin: 0 auto;
-  }
-}

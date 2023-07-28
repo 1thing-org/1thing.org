@@ -1,11 +1,8 @@
 import YourActionsLeft from "./YourActionsLeft";
 import YourActionsRight from "./YourActionsRight";
-import raiseAwarenessLeft from "../../../assets/take-action-page/raise-awareness-left.svg";
 import raiseAwarenessRight from "../../../assets/take-action-page/raise-awareness-right.svg";
 import supportVictim from "../../../assets/take-action-page/support-victim.svg";
 import useSkillsRight from "../../../assets/take-action-page/use-skills-right.svg";
-import useSkillsLeft from "../../../assets/take-action-page/use-skills-left.svg";
-import promoteRight from "../../../assets/take-action-page/promote-right.svg";
 import promoteLeft from "../../../assets/take-action-page/promote-left.svg";
 
 const actionData: {
@@ -28,7 +25,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "raiseAwareness",
-    imgs: [raiseAwarenessLeft, raiseAwarenessRight],
+    imgs: [raiseAwarenessRight],
   },
   {
     name: "Support Anti-Asian hate crime victims",
@@ -55,7 +52,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "useSkills",
-    imgs: [useSkillsRight, useSkillsLeft],
+    imgs: [useSkillsRight],
   },
   {
     name: "Promote cross racial understanding",
@@ -68,7 +65,7 @@ const actionData: {
     ],
     actiontUrl: "/",
     actionId: "understanding",
-    imgs: [promoteRight, promoteLeft],
+    imgs: [promoteLeft],
   },
 ];
 
@@ -81,88 +78,79 @@ function ActionsGroup() {
       <h3
         style={{
           marginTop: "96px",
-          fontFamily: "Open Sans",
+          fontFamily: "sans-serif ",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[0].name}
       </h3>
       <YourActionsRight
         imgs={actionData[0].imgs[0]}
-        desc={actionData[0].desc.filter((v, i) => i <= 3)}
+        desc={actionData[0].desc}
         actionId={actionData[0].actionId}
       />
-      <YourActionsLeft
-        imgs={actionData[0].imgs[1]}
-        desc={actionData[0].desc.filter((v, i) => i > 3)}
-        actionId={actionData[0].actionId}
-      />
+
       <h3
         style={{
-          marginTop: "96px",
-          fontFamily: "Open Sans",
+          marginTop: "48px",
+          fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[1].name}
       </h3>
-      <YourActionsRight
+      <YourActionsLeft
         imgs={actionData[1].imgs[0]}
         desc={actionData[1].desc}
         actionId={actionData[1].actionId}
       />
       <h3
         style={{
-          marginTop: "96px",
-          fontFamily: "Open Sans",
+          marginTop: "48px",
+          fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[2].name}
       </h3>
-      <YourActionsLeft
-        imgs={actionData[2].imgs[0]}
-        desc={actionData[2].desc.filter((v, i) => i <= 2)}
-        actionId={actionData[2].actionId}
-      />
       <YourActionsRight
-        imgs={actionData[2].imgs[1]}
-        desc={actionData[2].desc.filter((v, i) => i > 2)}
+        imgs={actionData[2].imgs[0]}
+        desc={actionData[2].desc}
         actionId={actionData[2].actionId}
       />
+
       <h3
         style={{
-          marginTop: "96px",
-          fontFamily: "Open Sans",
+          marginTop: "48px",
+          fontFamily: "sans-serif",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "800",
           lineHeight: "40px",
           letterSpacing: "0.4px",
+          marginBottom: "48px",
         }}
       >
         {actionData[3].name}
       </h3>
       <YourActionsLeft
         imgs={actionData[3].imgs[0]}
-        desc={actionData[3].desc.filter((v, i) => i <= 2)}
-        actionId={actionData[3].actionId}
-      />
-      <YourActionsRight
-        imgs={actionData[3].imgs[1]}
-        desc={actionData[3].desc.filter((v, i) => i > 2)}
+        desc={actionData[3].desc}
         actionId={actionData[3].actionId}
       />
     </div>
