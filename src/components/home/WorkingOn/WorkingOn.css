@@ -1,67 +1,85 @@
-/* Style the main container */
 .working-on-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Style the main title */
-  .main-title {
-    margin-top: 128px;
-  }
-  
-  /* Style the images container */
-  .images {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 24px;
-  }
-  
-  /* Style the image containers */
-  .image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(50% - 10px); /* This will give each container half of the parent container width, minus 10 pixels for spacing */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
-  .title{
-    margin-top: 40px;
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: 0.4px;
+.main-title {
+  margin-top: 128px;
+}
 
-color: #18181A;
-  }
+.images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
 
-  .working-text{
-    display: inline;
-    margin-top: 24px;
-    width: 361px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.4px;
-    color: #18181A;
-  }
-  
-  /* Optional: Style the images */
-  .left-image,
-  .right-image {
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 10px);
+}
 
-  }
+.title {
+  margin-top: 40px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  color: #18181A;
+}
 
-  @media  screen and (min-width: 768px){
-    .working-on-container{
-    max-width: 1440px;
-    min-width: 1440px;
-    margin: 0 auto;
+.working-text {
+  display: inline;
+  margin-top: 24px;
+  width: 361px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: #18181A;
+}
+
+@media  screen and (min-width: 768px){
+  .working-on-container {
+      max-width: 1440px;
+      min-width: 1440px;
+      margin: 0 auto;
     }
+
+    
   }
+@media screen and (max-width: 767px) {
+    .image-container-project,
+    .image-container-victim{
+      width: 100%;
+    
+      
+  }
+
+  .image-container-victim{
+    padding-bottom: 50px;
+   
+
+  }
+ 
+
+ 
+ 
+    
+  
+} 
+
+
+
+
+ 
 
