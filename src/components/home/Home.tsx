@@ -7,11 +7,12 @@ import ActionSection from "./ActionSection/ActionSection";
 import WhoWeAre from "components/whoWeAre/WhoWeAre";
 import WorkingOn from "./WorkingOn/WorkingOn";
 import ChartView from "./Chart/ChartView";
-import HeroImage from "assets/hero.svg";
+import HeroImage from "assets/newHero.svg";
 
-const homeHeroData: { heading: string; subheading: string } = {
-  heading: `Small Actions can add up to improve racial equality`,
-  subheading: `Action, Share and Inspire. Together we can make a real difference.`,
+const homeHeroData: { heading: string; subheading: string;} = {
+  heading: `Action, Share and Inspire. 
+  Together we can make a real difference.`,
+  subheading: `We’re a grassroots, non-profit organization of volunteers dedicated to fighting anti-Asian racism. We believe ending all forms of racism and hate begins with uniting people through compassion, awareness, and advocacy. Together we can make the world a more beautiful place — one thing at a time.`,
 };
 
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
         subheading={homeHeroData.subheading}
         imageSrc={HeroImage}
       />
-      <WhoWeAre />
+      {/* <WhoWeAre /> */}
       <ChartView />
       {/* <ProjectSection /> */}
       <WorkingOn />

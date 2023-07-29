@@ -1,4 +1,4 @@
-import { Nav, Navbar,  NavDropdown, Offcanvas, Container, Row, Col, Collapse } from "react-bootstrap";
+import { Nav, Navbar,   Offcanvas, Container, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import NewLogo from "../../assets/NewLogo.svg";
 import "./NavBar.css";
@@ -88,7 +88,7 @@ function NavBar() {
          <Offcanvas placement="end" show={showOffcanvas} onHide={() => setShowOffcanvas(false)} className={showOffcanvas ? "show" : "show"} >
 
            <Offcanvas.Header closeButton>
-              <Offcanvas.Title> <img className="offcanvas-logo" src={NewLogo} alt="Logo" /></Offcanvas.Title>
+              <Offcanvas.Title> < img className="offcanvas-logo" src={NewLogo} alt="Logo" /></Offcanvas.Title>
             </Offcanvas.Header>
 
      

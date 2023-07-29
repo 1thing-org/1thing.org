@@ -1,7 +1,7 @@
 {
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "files.autoSave": "afterDelay",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "explorer.confirmDelete": false,
   "emmet.triggerExpansionOnTab": true,
