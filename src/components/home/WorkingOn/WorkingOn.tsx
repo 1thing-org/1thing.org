@@ -6,21 +6,12 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import React, { useState, useEffect } from "react";
 
-
 function WorkingOn() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
-
   useEffect(() => {
     window.addEventListener("resize", () => {
       setIsMobile(window.innerWidth <= 767);
     });
-
-    // Cleanup
-    // return () => {
-    //   window.removeEventListener("resize", () => {
-    //     setIsMobile(window.innerWidth <= 767);
-    //   });
-    // };
   }, []);
   return (
     <div className="working-on-container">
@@ -28,7 +19,6 @@ function WorkingOn() {
       <div className="images">
       {isMobile ? (
       <Carousel showThumbs={false} showStatus={false} dynamicHeight={false} useKeyboardArrows={true}>
-
         <div className="image-container-project">
           <img className="left-image" src={placeholderimg} alt="Left Image" />
           <h2 className="title">Project Together</h2>
