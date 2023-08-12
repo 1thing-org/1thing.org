@@ -40,13 +40,6 @@ function StorySection() {
     window.addEventListener("resize", () => {
       setIsMobile(window.innerWidth <= 767);
     });
-
-    // Cleanup
-    // return () => {
-    //   window.removeEventListener("resize", () => {
-    //     setIsMobile(window.innerWidth <= 767);
-    //   });
-    // };
   }, []);
   return (
     <div id="story-section">
