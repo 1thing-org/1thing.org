@@ -8,6 +8,7 @@ import WhoWeAre from "components/whoWeAre/WhoWeAre";
 import WorkingOn from "./WorkingOn/WorkingOn";
 import ChartView from "./Chart/ChartView";
 import HeroImage from "assets/newHero.svg";
+import HomeActionSection from "./ActionSection/HomeActionSection";
 
 const homeHeroData: { heading: string; subheading: string;} = {
   heading: `Action, Share and Inspire. 
@@ -29,7 +30,7 @@ function Home() {
       {/* <ProjectSection /> */}
       <WorkingOn />
       <StorySection />
-      <ActionSection />
+      <HomeActionSection />
       <Footer />
     </div>
   );
