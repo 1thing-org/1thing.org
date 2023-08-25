@@ -15,7 +15,12 @@ function HomeActionSection() {
   return (
     <Container id="home-action-container">
       <Row className="m-0">
-        <Col md={6} className="p-0 text-start">
+        <Col
+          xs={3}
+          md={6}
+          className="p-0 text-start order-2 order-md-1"
+          style={{ width: "50%" }}
+        >
           <Card.Title id="action-title">Small Actions. Big Changes</Card.Title>
           <Card.Text id="action-body-text">
             By encouraging everyone to make one small but meaningful
@@ -23,36 +28,36 @@ function HomeActionSection() {
           </Card.Text>
           <div id="small-action-container">
             <Row className="align-items-center">
-              <Col md={3}>
-                <Image src={a1} fluid className="small-action-image p-0" />
+              <Col xs={4} sm={5} md={3} className="p-0">
+                <Image src={a1} id="action-image" />
               </Col>
-              <Col md={8} className="p-0">
+              <Col xs={1} sm={1} md={8} className="p-0">
                 <Card.Text id="small-action-text">Raise awareness</Card.Text>
               </Col>
             </Row>
             <Row className="align-items-center">
-              <Col md={3} className="p-0">
-                <Image src={a2} fluid />
+              <Col xs={4} sm={5} md={3} className="p-0">
+                <Image src={a2} id="action-image" />
               </Col>
-              <Col md={8} className="p-0">
+              <Col xs={1} sm={1} md={8} className="p-0">
                 <Card.Text id="small-action-text">
                   Support victims of anti-Asian hate
                 </Card.Text>
               </Col>
             </Row>
             <Row className="align-items-center">
-              <Col md={3} className="p-0">
-                <Image src={a3} fluid />
+              <Col xs={4} sm={5} md={3} className="p-0">
+                <Image src={a3} id="action-image" />
               </Col>
-              <Col md={8} className="p-0">
+              <Col xs={1} sm={1} md={8} className="p-0">
                 <Card.Text id="small-action-text">Use your expertise</Card.Text>
               </Col>
             </Row>
             <Row className="align-items-center">
-              <Col md={3} className="p-0">
-                <Image src={a4} fluid />
+              <Col xs={4} sm={5} md={3} className="p-0">
+                <Image src={a4} id="action-image" />
               </Col>
-              <Col md={8} className="p-0">
+              <Col xs={1} sm={1} md={8} className="p-0">
                 <Card.Text id="small-action-text">
                   Promote cross-racial understanding
                 </Card.Text>
@@ -61,8 +66,10 @@ function HomeActionSection() {
           </div>
         </Col>
 
-        <Col md={6} className="p-0 text-end">
-          <Image id="right-image" src={backgroundImage} />
+        <Col md={6} className="p-0 text-end order-1 order-md-2">
+          <div>
+            <Image id="right-image" src={backgroundImage} />
+          </div>
         </Col>
       </Row>
     </Container>
