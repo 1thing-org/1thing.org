@@ -11,8 +11,7 @@ import HeroImage from "assets/newHero.svg";
 import HomeActionSection from "./ActionSection/HomeActionSection";
 
 const homeHeroData: { heading: string; subheading: string;} = {
-  heading: `Action, Share and Inspire. 
-  Together we can make a real difference.`,
+  heading: `Action, Share and Inspire.`,
   subheading: `We’re a grassroots, non-profit organization of volunteers dedicated to fighting anti-Asian racism. We believe ending all forms of racism and hate begins with uniting people through compassion, awareness, and advocacy. Together we can make the world a more beautiful place — one thing at a time.`,
 };
 
