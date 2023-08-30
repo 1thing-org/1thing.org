@@ -16,6 +16,7 @@ function HeroSection(props: Props) {
     <Card id="hero-card">
       <div className="title-container">
         <Card.Title id="hero-title">{heading}</Card.Title>
+        <p className="p2">Together we can make a real difference.</p>
       </div>
 
       <div className="hero-image-container">

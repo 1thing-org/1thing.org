@@ -50,7 +50,7 @@ function NavBar() {
             </Navbar.Brand>
           </Col>
         </LinkContainer>
-        <Col md={5}>
+        <Col sm={7} md={5} className="link-container">
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             id="responsive-navbar-nav-control"
