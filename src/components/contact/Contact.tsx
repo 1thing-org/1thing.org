@@ -3,11 +3,6 @@ import Footer from '../footer/Footer';
 import HeroSection from '../hero/HeroSection';
 import SignUpForm from 'utility/signup';
 import HeroImage from "assets/hero.svg";
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
 import "./Contact.css";
 
 const contactHeroData: {heading: string, subheading: string} = {
