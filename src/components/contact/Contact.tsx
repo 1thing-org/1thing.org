@@ -1,8 +1,14 @@
 import NavBar from '../navbar/NavBar';
 import Footer from '../footer/Footer';
 import HeroSection from '../hero/HeroSection';
-import SignUp from '../signup/SignUp';
+import SignUpForm from 'utility/signup';
 import HeroImage from "assets/hero.svg";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
+import "./Contact.css";
 
 const contactHeroData: {heading: string, subheading: string} = {
     "heading": `1 Thing Against Racism Contact Page`,
@@ -16,7 +22,7 @@ function Contact(){
         <div>
             <NavBar />
             <HeroSection heading={contactHeroData.heading} subheading={contactHeroData.subheading} imageSrc={HeroImage}/>
-            <SignUp />
+            <SignUpForm className={"signup"} />
             <Footer />
         </div>
     )

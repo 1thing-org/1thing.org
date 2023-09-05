@@ -1,6 +1,9 @@
 import { Component } from "react";
 import Mailchimp from "react-mailchimp-form";
 
+import styles from "../components/footer/Footer"
+
+
 class MailChimpForm extends Component {
   render() {
     return (
@@ -27,4 +30,4 @@ class MailChimpForm extends Component {
   }
 }
 
-export default MailChimpForm
+export default MailChimpForm;
