@@ -27,4 +27,4 @@ class MailChimpForm extends Component {
   }
 }
 
-export default MailChimpForm
+export default MailChimpForm;

@@ -1,0 +1,26 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup input{
+    width: 30%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup input[type="text"] {
+    height: 100px;
+}
+
+.signup button {
+    padding: 0.7rem 3rem;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
