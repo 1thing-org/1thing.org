@@ -5,6 +5,9 @@ import VolunteerSection from "./VolunteerSection/VolunteerSection";
 import SignUp from "../signup/SignUp";
 import HeroImage from "assets/hero.svg";
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import InterviewPage from './VolunteerSection/InterviewPage';
+
 const testimonialHeroData: { heading: string; subheading: string } = {
   heading: `1 Thing Against Racism Testimonials Page`,
   subheading: `Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus. 
@@ -21,6 +24,7 @@ function Testimonials() {
         subheading={testimonialHeroData.subheading}
         imageSrc={HeroImage}
       />
+
       <VolunteerSection />
       <SignUp />
       <Footer />
