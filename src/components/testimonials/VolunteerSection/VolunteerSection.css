@@ -1,9 +1,14 @@
 #volunteer-section {
-    margin: 5rem 8rem;
+    margin: 5rem .5rem;
+    max-width: 1400px;
+    margin:0;
+    
+    
 }
 
 #volunteers {
     padding-top: 20px;
+   
 }
 
 #top-section, #bottom-section {
@@ -12,8 +17,8 @@
 }
 
 /* media rules for large screens */
-@media screen and (min-width: 1600px) {
+/* @media screen and (min-width: 1600px) {
     #volunteer-section {
         margin: 5rem 17rem;
     }
-}
+} */
