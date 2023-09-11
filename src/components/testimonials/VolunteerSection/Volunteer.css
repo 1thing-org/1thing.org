@@ -1,10 +1,14 @@
 #volunteer {
     display: flex;
     flex-direction: row;
-    margin: 1.5rem 2rem;
+    margin: 1.5rem 1rem;
     padding: 2rem 1.5rem;
     width: 50%;
     height: 300px;
+  
+}
+#volunteer-quote{
+    font-size: 1rem;
 }
 
 #left-side {
@@ -16,7 +20,7 @@
 #volunteer-interview {
     font-weight: bold;
     position: absolute;
-    bottom: 5%;
+    bottom:0;
 }
 
 #right-side {
@@ -39,3 +43,39 @@
     text-align: center;
     width: 100%;
 }
+
+
+@media screen and (max-width: 1245px) {
+    #volunteer-quote{
+        font-size: .9rem;
+    }
+    #volunteer {
+        margin: 1rem 1rem;
+        padding: 1.5rem 0rem;
+        width: 50%;   
+    }
+    
+}
+@media screen and (max-width: 995px) {
+    #volunteer-quote{
+        font-size: .8rem;
+    }
+    #volunteer {
+        margin: 1rem 1rem;
+        padding: .4rem 0rem;
+        width: 50%;   
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    #volunteer-quote{
+        font-size: .7rem;
+    }
+    #volunteer {
+        margin: 1rem 1rem;
+        padding: 1rem 0rem;
+        width: 50%;   
+    }
+    
+}
+

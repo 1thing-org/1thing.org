@@ -13,7 +13,7 @@ function Volunteer(props: Props){
         <Card id="volunteer">
             <Card.Body id="left-side">
                 <Card.Text id="volunteer-quote">{props.quote}</Card.Text>
-                <Card.Link href={`/interviews/${props.name}/${encodeURIComponent(props.interview)}/${encodeURIComponent(props.pic)}`} id="volunteer-interview">Read the interview</Card.Link>
+                <Card.Link href={`/interviews/${props.name}/${encodeURIComponent(props.interview)}/${encodeURIComponent(props.pic)}`} id="volunteer-interview">Read the testimonial</Card.Link>
 
             </Card.Body>
             <Card.Body id="right-side">
