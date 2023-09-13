@@ -1,9 +1,13 @@
 #volunteer-section {
-    margin: 5rem 8rem;
+    margin: 5rem .5rem;
+    max-width: 1400px;
+    margin:0;   
+    
 }
 
 #volunteers {
     padding-top: 20px;
+   
 }
 
 #top-section, #bottom-section {
@@ -11,9 +15,38 @@
     flex-direction: row;
 }
 
+#volunteers > div > div > ul{
+    display: flex;
+    justify-content: left;
+    margin-left:15rem;
+    align-items: left;
+}
 /* media rules for large screens */
-@media screen and (min-width: 1600px) {
-    #volunteer-section {
-        margin: 5rem 17rem;
+@media screen and (max-width: 850px) {
+    #volunteers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width:180%;
+        margin:1rem;
+        padding: 9% 8.5%;   
+    }
+    #volunteers > div > div > ul{
+        display: flex;
+        justify-content: left;
+        margin-left:20%;    
+    }
+    #volunteer-interview{
+        bottom:5%;
+    }
+    #volunteer{
+        margin:0;
+
+    }
+    #top-section, #bottom-section{
+        display: flex;
+        flex-direction: column;
+      
     }
 }
+
