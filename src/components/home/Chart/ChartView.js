@@ -7,15 +7,10 @@ import { useEffect, useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 import { Button } from "react-bootstrap";
 
-// import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
-// import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 import IncidentChart from "./IncidentChart";
-
 import * as incidentsService from "./incident";
-// import { useRouter } from '../../utility/hooks/useRouter';
 
 const ChartView = () => {
-  // const router = useRouter();
   const [dateRange, setDateRange] = useState([
     moment().subtract(1, "year"),
     moment(),

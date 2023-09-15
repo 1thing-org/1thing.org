@@ -1,7 +1,5 @@
 import Card from "react-bootstrap/Card";
-import { Container, Col, Row } from "react-bootstrap";
 import "./HeroSection.css";
-import { title } from "process";
 
 type Props = {
   heading?: string;
@@ -10,7 +8,7 @@ type Props = {
 };
 
 function HeroSection(props: Props) {
-  const { heading, subheading, imageSrc, } = props;
+  const { heading, subheading, imageSrc } = props;
 
   return (
     <Card id="hero-card">

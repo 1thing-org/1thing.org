@@ -4,10 +4,6 @@ import { useState, useEffect } from "react";
 import {
   ComposedChart,
   Area,
-  Bar,
-  Legend,
-  AreaChart,
-  ReferenceLine,
   CartesianGrid,
   ResponsiveContainer,
   Tooltip,
