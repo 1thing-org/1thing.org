@@ -13,7 +13,7 @@ import MailChimpForm from "../../utility/mailchimp";
 
 function SocialMedia({ name, refLink }: { name: IconProp; refLink: string }) {
   return (
-    <a className="icon" href={refLink} target="_blank">
+    <a className="icon" href={refLink} target="_blank" rel="noreferrer">
       <FontAwesomeIcon icon={name as IconName} />
     </a>
   );

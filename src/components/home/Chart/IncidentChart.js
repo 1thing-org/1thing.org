@@ -49,6 +49,8 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             newXTicks.push(chart_data[i].key);
           }
           break;
+        default:
+          break;
       }
     }
     setXTicks(newXTicks);

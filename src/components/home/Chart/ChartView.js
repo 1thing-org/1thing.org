@@ -11,10 +11,7 @@ import IncidentChart from "./IncidentChart";
 import * as incidentsService from "./incident";
 
 const ChartView = () => {
-  const [dateRange, setDateRange] = useState([
-    moment().subtract(1, "year"),
-    moment(),
-  ]);
+  const dateRange = [moment().subtract(1, "year"), moment()];
   const [isFirstLoadData, setIsFirstLoadData] = useState(true);
   const [totalAnnualCases, setTotalCases] = useState(0);
   const [totalLastMonthCases, setTotalLastMonthCases] = useState(0);
