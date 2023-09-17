@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { IconName, IconProp } from '@fortawesome/fontawesome-svg-core';
 import './Footer.css'
-import {Navbar, Button,Form} from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import footerLogo from '../../assets/footerLogo.svg';
 import MailChimpForm from "../../utility/mailchimp";
 

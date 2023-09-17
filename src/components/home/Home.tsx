@@ -1,10 +1,7 @@
 import NavBar from "../navbar/NavBar";
 import Footer from "../footer/Footer";
 import HeroSection from "../hero/HeroSection";
-import ProjectSection from "./ProjectSection/ProjectSection";
 import StorySection from "./StorySection/StorySection";
-import ActionSection from "./ActionSection/ActionSection";
-import WhoWeAre from "components/whoWeAre/WhoWeAre";
 import WorkingOn from "./WorkingOn/WorkingOn";
 import ChartView from "./Chart/ChartView";
 import HeroImage from "assets/newHero.svg";
@@ -24,9 +21,7 @@ function Home() {
         subheading={homeHeroData.subheading}
         imageSrc={HeroImage}
       />
-      {/* <WhoWeAre /> */}
       <ChartView />
-      {/* <ProjectSection /> */}
       <WorkingOn />
       <StorySection />
       <HomeActionSection />
