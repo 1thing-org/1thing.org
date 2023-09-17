@@ -3,16 +3,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { IconName, IconProp } from '@fortawesome/fontawesome-svg-core';
 import './Footer.css'
-import { Navbar } from "react-bootstrap";
+import { Navbar } from 'react-bootstrap';
 import footerLogo from '../../assets/footerLogo.svg';
 import MailChimpForm from "../../utility/mailchimp";
 
-function SocialMedia({ name, refLink }: { name: IconProp; refLink: string }) {
-  return (
-    <a className="icon" href={refLink} target="_blank" rel="noreferrer">
-      <FontAwesomeIcon icon={name as IconName} />
-    </a>
-  );
+function SocialMedia({name, refLink} : {name: IconProp, refLink: string}) {
+    return <a className="icon" href={refLink} target="_blank"><FontAwesomeIcon icon={name as IconName} /></a>;
 }
 
 function Footer(){
