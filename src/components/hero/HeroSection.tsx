@@ -1,7 +1,5 @@
 import Card from "react-bootstrap/Card";
-import { Container, Col, Row } from "react-bootstrap";
 import "./HeroSection.css";
-import { title } from "process";
 
 type Props = {
   heading?: string;
