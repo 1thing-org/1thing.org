@@ -5,10 +5,11 @@ type Props = {
   heading?: string;
   subheading?: string;
   imageSrc: string;
+  hideHeroText?: boolean;
 };
 
 function HeroSection(props: Props) {
-  const { heading, subheading, imageSrc, } = props;
+  const { heading, subheading, imageSrc, hideHeroText } = props;
 
   return (
     <Card id="hero-card">
@@ -19,11 +20,14 @@ function HeroSection(props: Props) {
 
       <div className="hero-image-container">
         <Card.Img src={imageSrc} />
-        <div className="hero-text-container">
-          <Card.Title className="title-2">1 Thing Against Racism</Card.Title>
-          <Card.Text id="hero-subtitle">{subheading}</Card.Text>
-        </div>
+        {!hideHeroText && ( // Use this prop to conditionally render the div
+          <div className="hero-text-container">
+            <Card.Title className="title-2">1 Thing Against Racism</Card.Title>
+            <Card.Text id="hero-subtitle">{subheading}</Card.Text>
+          </div>
+        )}
       </div>
+      <div></div>
     </Card>
   );
 }

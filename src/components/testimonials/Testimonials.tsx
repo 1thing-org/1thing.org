@@ -20,6 +20,7 @@ function Testimonials() {
         heading={testimonialHeroData.heading}
         subheading={testimonialHeroData.subheading}
         imageSrc={HeroImage}
+        hideHeroText={true}
       />
 
       <VolunteerSection />
