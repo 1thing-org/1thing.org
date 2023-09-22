@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 
 import "./ChartView.css";
 
 import moment from "moment";
-import { useEffect, useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 import { Button } from "react-bootstrap";
 
@@ -12,10 +11,7 @@ import IncidentChart from "./IncidentChart";
 import * as incidentsService from "./incident";
 
 const ChartView = () => {
-  const [dateRange, setDateRange] = useState([
-    moment().subtract(1, "year"),
-    moment(),
-  ]);
+  const dateRange = useMemo(() => [moment().subtract(1, "year"), moment()], []);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true);
   const [totalAnnualCases, setTotalCases] = useState(0);
   const [totalLastMonthCases, setTotalLastMonthCases] = useState(0);
@@ -27,7 +23,6 @@ const ChartView = () => {
       value: 0,
     },
   ]);
-  const [loading, setLoading] = useState(false);
 
   // stats [{'2021-01-02:1}, {'2021-01-01:1}...]  dates descending
   // Remove date out of the range, and insert days that does not have data
@@ -81,8 +76,8 @@ const ChartView = () => {
     });
     return total;
   };
-  const loadData = () => {
-    setLoading(true);
+
+  const loadData = useCallback(() => {
     incidentsService.getStats(dateRange[0], dateRange[1]).then((stats) => {
       const mergedData = mergeDate(
         stats.stats,
@@ -96,14 +91,13 @@ const ChartView = () => {
       const lastMonth = moment().subtract(1, "month").format("YYYY-MM");
       setTotalLastMonthCases(calculateTotalCasesOfMonth(mergedData, lastMonth));
       setLastMonthName(lastMonthName);
-      setLoading(false);
       setIsFirstLoadData(false);
     });
-  };
+  }, [dateRange]);
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, [loadData]);
 
   //responsive
   const [dimensions, setDimensions] = React.useState({
