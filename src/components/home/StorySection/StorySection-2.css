@@ -1,6 +1,3 @@
-.card-img{
-   
-}
 #stories {
     display: flex;
     flex-direction: row;
@@ -141,12 +138,8 @@
     }
     #story-quote{
         font-size: .8rem;
-        line-height: 1.5rem; 
-        
+        line-height: 1.5rem;  
     }
-    
-  
-  
     
 }
 
@@ -253,26 +246,3 @@
 
 
 
-
-/* @media screen and (max-width: 1300px) {
-    #story-quote{
-        font-size: .8rem;
-        line-height: 1.5rem; 
-        
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #story-quote{
-        font-size: .7rem;
-        line-height: 1.5rem; 
-        
-    }
-}
-@media screen and (min-width: 1100px) {
-    #story-quote{
-        font-size: .65rem;
-        line-height: 1.5rem; 
-        
-    }
-} */
