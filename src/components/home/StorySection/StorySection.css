@@ -1,4 +1,4 @@
-#story-section {
+/* #story-section {
     margin: 7rem 8rem;
 }
 
@@ -18,6 +18,8 @@
     display: flex;
     flex-direction: row;
 }
+ */
+
 
 /* @media screen and (min-width: 768) {
   #story-section {
@@ -51,10 +53,11 @@
 } */
   
 /* media rules for large screens */
-@media screen and (min-width: 1600px){
+/* @media screen and (min-width: 1600px){
     #story-section {
         margin: 7rem 20rem;
     }
+    
     #story-desc {
         padding: 0 20rem 3rem 20rem;
     }
@@ -81,4 +84,4 @@
         color: #232830;
       }
 
-    }
+    } */

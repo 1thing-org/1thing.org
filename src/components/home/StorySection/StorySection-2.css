@@ -1,16 +1,28 @@
+.card-img{
+   
+}
+#stories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 33vw;
+    
+}
+
+
 @media screen and (min-width: 768px) {
     .story-text {
         font-size: 16px;
     }
+    
     #story-section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        min-width: 1440px;
         max-width: 1440px;
         margin: 0 auto;
-        height: 67.78vw;
+        height: 73vw;
         padding: 9% 8.5%;
         background: #F4F4F4;
     }
@@ -20,7 +32,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        width: 42vw;
+        width: 40vw;
         height: 16vw;
     }
     
@@ -78,15 +90,30 @@
     }
     
     #stories {
-        align-self: flex-end;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 30vw;
+        height: 33vw;
+        
     }
+   
+    #story{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #story-quote{
+        font-size: .8rem;
+        line-height: 1.5rem; 
+        
+    }
+  
+  
+  
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) {
     #story-section {
         width: 100%;
         padding: 8rem 7.5rem;
@@ -112,4 +139,140 @@
     #stories {
         height: 426px;
     }
+    #story-quote{
+        font-size: .8rem;
+        line-height: 1.5rem; 
+        
+    }
+    
+  
+  
+    
 }
+
+
+
+@media screen and (max-width: 1292px) {
+    #story-quote{
+        font-size: .75em;
+        line-height: 1.5rem; 
+        
+    }
+} 
+
+@media screen and (max-width: 1213px) {
+    #story-quote{
+        font-size: .7em;
+        line-height: 1.3rem; 
+        
+    }
+} 
+
+@media screen and (max-width: 1134px) {
+    #story-quote{
+        font-size: .65em;
+        line-height: 1.2rem; 
+        
+    }
+
+}
+
+@media screen and (max-width: 1054px) {
+    #story-quote{
+        font-size: .6rem;
+        line-height: 1.1rem; 
+        
+    }
+    #story-name{
+       font-size:.7em;
+       line-height: 1rem; 
+    }
+
+}
+@media screen and (max-width: 977px) {
+    #story-quote{
+        font-size: .55rem;
+        line-height: 1rem; 
+        
+    }
+    #story-name{
+       font-size:.6em;
+       line-height: 1rem; 
+    }
+
+}
+@media screen and (max-width: 896px) and (min-width: 768px) {
+    #story-section > div.carousel-root > div > div > ul {
+       margin-left: 1350px;
+       margin-top:15px;
+       
+    }
+    #story{
+       height: 350px;
+       width: 450px;
+     
+    }
+
+    #story-desc{
+        width:120%;
+    }
+    #profile-pic{
+        width: 80%;
+        margin-left:30px;
+        
+    }
+    #story-quote{
+        font-size: .8em;
+        line-height: 1.2rem;   
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #story{
+        height:500px;
+        margin-top:30px;
+    }
+    #story-body{
+        width: 40%;
+       
+    }
+    #profile-pic{
+        width: 80%;
+        margin-left:30px;
+    }
+    #story-quote{
+        font-size: 1em;
+        line-height: 2rem; 
+
+        
+    }
+
+}
+
+
+
+
+
+/* @media screen and (max-width: 1300px) {
+    #story-quote{
+        font-size: .8rem;
+        line-height: 1.5rem; 
+        
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #story-quote{
+        font-size: .7rem;
+        line-height: 1.5rem; 
+        
+    }
+}
+@media screen and (min-width: 1100px) {
+    #story-quote{
+        font-size: .65rem;
+        line-height: 1.5rem; 
+        
+    }
+} */
