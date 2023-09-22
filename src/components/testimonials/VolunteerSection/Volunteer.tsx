@@ -1,5 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import "./Volunteer.css";
+import "./Volunteer.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+
+
 
 type Props = {
     name: string;
@@ -9,14 +13,15 @@ type Props = {
 }
 
 function Volunteer(props: Props){
+      
     return (
         <Card id="volunteer">
             <Card.Body id="left-side">
                 <Card.Text id="volunteer-quote">{props.quote}</Card.Text>
-                <Card.Link href={props.interview} id="volunteer-interview">Read the interview</Card.Link>
+                <Card.Link href={`/interviews/${props.name}/${encodeURIComponent(props.interview)}/${encodeURIComponent(props.pic)}`} id="volunteer-interview">Read the testimonial</Card.Link>
             </Card.Body>
             <Card.Body id="right-side">
-                <Card.Img id="volunteer-profile-pic" src={props.pic}/>
+            <Card.Img id="volunteer-profile-pic" src={props.pic} alt="Profile" />
                 <Card.Text id="volunteer-name">{props.name}</Card.Text>
             </Card.Body>
         </Card>

@@ -20,5 +20,8 @@
   "dart.openDevTools": "flutter",
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "i18n-ally.localesPaths": [
+    "public/locales"
+  ]
 }
