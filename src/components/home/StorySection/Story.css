@@ -34,7 +34,9 @@
 }
 
 #profile-pic {
-    border-radius: 50%;
+    border-radius: 80%;
+    bottom:5%;
+    
 }
 
 #story-name {
