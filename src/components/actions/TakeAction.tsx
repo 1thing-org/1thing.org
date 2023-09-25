@@ -16,7 +16,7 @@ function TakeAction() {
   return (
     <div>
       <NavBar />
-      <HeroSection imageSrc={HeroActionImage} />
+      <HeroSection imageSrc={HeroActionImage} hideHeroText={true} />
       <img style={{ width: "100%", maxWidth: "1440px" }} src={TopTitle} />
       <ActionsGroup />
       <ShareOneThing />

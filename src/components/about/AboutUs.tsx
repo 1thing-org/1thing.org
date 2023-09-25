@@ -15,7 +15,7 @@ function AboutUs(){
     return (
         <div>
             <NavBar />
-            <HeroSection heading={aboutHeroData.heading} subheading={aboutHeroData.subheading} imageSrc={HeroImage}/>
+            <HeroSection heading={aboutHeroData.heading} subheading={aboutHeroData.subheading} imageSrc={HeroImage} hideHeroText={true} />
             <Footer />
         </div>
     );
