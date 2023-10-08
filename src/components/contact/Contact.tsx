@@ -16,7 +16,7 @@ function Contact(){
     return (
         <div>
             <NavBar />
-            <HeroSection heading={contactHeroData.heading} subheading={contactHeroData.subheading} imageSrc={HeroImage}/>
+            <HeroSection heading={contactHeroData.heading} subheading={contactHeroData.subheading} imageSrc={HeroImage} hideHeroText={true}/>
             <SignUpForm className={"signup"} />
             <Footer />
         </div>
