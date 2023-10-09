@@ -9,10 +9,10 @@ class MailChimpForm extends Component {
         fields={[
           {
             name: "EMAIL",
-            placeholder: "Email",
+            placeholder: "Enter Email",
             type: "email",
-            required: true
-          }
+            required: true,
+          },
         ]}
         messages={{
           sending: "Sending...",
@@ -20,10 +20,10 @@ class MailChimpForm extends Component {
           error: "An unexpected internal error has occurred.",
           empty: "Please provide a valid e-mail.",
           duplicate: "Too many subscribe attempts for this email address",
-          button: "Subscribe!"
+          button: "Subscribe",
         }}
       />
-    )
+    );
   }
 }
 
