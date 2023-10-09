@@ -58,8 +58,8 @@ function Footer() {
         <div className="split-line"></div>
         <div className="footer-right-side">
           <p className="sign-up-text">
-            Sign up for our newsletter for updates on the organization and the
-            projects we’re working on.
+            Sign up for our newsletter to get updates on the organization and
+            the projects we’re working on.
           </p>
           <div className="subscribe-form">
             <MailChimpForm />
