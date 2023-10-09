@@ -9,7 +9,7 @@ class MailChimpForm extends Component {
         fields={[
           {
             name: "EMAIL",
-            placeholder: "Enter Email",
+            placeholder: "Enter your email",
             type: "email",
             required: true,
           },
