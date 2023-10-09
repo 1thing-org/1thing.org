@@ -1,5 +1,5 @@
 footer {
-    background: #0C0928;
+    background: #FFF;
     padding-top: 1rem;
     padding-bottom: 1rem;
     max-width: 1440px;
@@ -9,10 +9,10 @@ footer {
 }
 
 .footer-container {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     color: white;
 }
 
@@ -29,7 +29,7 @@ footer {
 .footer-right-side {
     display: flex;
     align-items: flex-start;
-    flex-direction: column; 
+    flex-direction: column;
     width: 60%;
     padding: 0 2rem;
 }
@@ -40,7 +40,7 @@ footer {
     font-weight: bold;
 }
 
-.footer-logo{
+.footer-logo {
     width: 43px;
     height: 45px;
     padding-right: 0.5rem;
@@ -50,7 +50,7 @@ footer {
 .copy-right,
 .sign-up-text {
     font-family: sans-serif;
-    color: #FFFFFF;
+    color: #18181A;
 }
 
 .footer-text {
@@ -87,7 +87,7 @@ footer {
 }
 
 .icon {
-    color: white;
+    color: #18181A;
     font-size: 1.8rem;
     padding-right: 1.5rem;
 }
@@ -112,7 +112,7 @@ footer {
     align-items: center;
     width: 166px;
     height: 0px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #18181A;
     transform: rotate(90deg);
 }
 
@@ -165,18 +165,18 @@ footer {
 
     .subscribe-form {
         flex-direction: row;
-        justify-content: space-around; 
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         margin: 1rem auto;
     }
 
-    .subscribe-form button{
+    .subscribe-form button {
         width: 100%;
         margin: 0.5rem;
     }
 
-    .subscribe-form input{
+    .subscribe-form input {
         width: 100%;
         margin: 0.5rem;
     }
@@ -199,7 +199,7 @@ footer {
         width: 90%
     }
 
-    .footer-text{    
+    .footer-text {
         text-align: justify;
     }
 
@@ -218,19 +218,19 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         width: 80%;
         height: 0px;
         border: 1px solid #FFFFFF;
         transform: rotate(180deg);
     }
 
-    .brand-container{
+    .brand-container {
         justify-content: center;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px) {
     footer {
         max-width: 991px;
         box-sizing: border-box;
@@ -277,18 +277,19 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         width: 90%;
         height: 0px;
         border: 1px solid #FFFFFF;
         transform: rotate(180deg);
         margin-bottom: 1rem;
     }
+
     .sign-up-text {
         text-align: center;
     }
 
-    .brand-container{
+    .brand-container {
         justify-content: center;
     }
 
@@ -298,7 +299,7 @@ footer {
     body {
         background-color: white;
     }
-    
+
     .footer {
         height: auto;
         margin: 0 auto;
@@ -310,7 +311,7 @@ footer {
         padding: 0;
         max-width: 1440px;
         height: 264px;
-  
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
