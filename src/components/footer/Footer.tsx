@@ -9,6 +9,7 @@ import { IconName, IconProp } from "@fortawesome/fontawesome-svg-core";
 import "./Footer.css";
 import { Navbar } from "react-bootstrap";
 import footerLogo from "../../assets/NewLogo.svg";
+import footerText from "../../assets/1 Thing Against Racism.svg";
 import MailChimpForm from "../../utility/mailchimp";
 
 function SocialMedia({ name, refLink }: { name: IconProp; refLink: string }) {
@@ -33,7 +34,11 @@ function Footer() {
               alt="1 Thing Org logo"
             />
             <Navbar.Text className="text-container">
-              <div className="footer-text">1 Thing Against Racism</div>
+              <img
+                src={footerText}
+                alt="1 Thing Against Racism"
+                className="footer-text-logo"
+              />
             </Navbar.Text>
           </Navbar.Brand>
           <div className="social-icons">

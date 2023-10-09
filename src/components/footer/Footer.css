@@ -46,6 +46,12 @@ footer {
     padding-right: 0.5rem;
 }
 
+.footer-text-logo {
+    width: 43px;
+    height: 45px;
+    padding-right: 0.5rem;
+}
+
 .footer-text,
 .copy-right,
 .sign-up-text {
@@ -54,11 +60,13 @@ footer {
 }
 
 .footer-text {
+    color: var(--neutral-neutral-01, #18181A);
+    font-family: PoetsenOne;
+    font-size: 13.333px;
     font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.366px;
 }
 
 .copy-right {
