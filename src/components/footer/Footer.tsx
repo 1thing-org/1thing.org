@@ -8,7 +8,7 @@ import {
 import { IconName, IconProp } from "@fortawesome/fontawesome-svg-core";
 import "./Footer.css";
 import { Navbar } from "react-bootstrap";
-import footerLogo from "../../assets/footerLogo.svg";
+import footerLogo from "../../assets/NewLogo.svg";
 import MailChimpForm from "../../utility/mailchimp";
 
 function SocialMedia({ name, refLink }: { name: IconProp; refLink: string }) {
