@@ -95,15 +95,20 @@ footer {
 .subscribe-form button {
     width: 150px;
     height: 48px;
-    background: #99E0FF;
-    border-radius: 8px;
+    background-color: #FFC530;
+    border-color: #FFC530;
+    border-radius: 2px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     color: #18181A;
+    text-transform: uppercase;
+    text-align: center;
     margin: 1rem;
+    border: none;
+    box-shadow: none;
 }
 
 .split-line {
@@ -125,7 +130,7 @@ footer {
 }
 
 .subscribe-form input {
-    width: 250px;
+    width: 150px;
     height: 48px;
     border-radius: 8px;
     text-align: center;
