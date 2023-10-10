@@ -3,7 +3,6 @@
   margin: 0 auto;
   background: #fbfbfb;
   border: hidden;
-
 }
 
 #hero-image {
@@ -91,9 +90,15 @@
     font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
-    padding-top: 10%;
     font-size: 3.1vw;
     line-height: 150%;
+    padding-bottom: 32px;
+  }
+
+  .text-section {
+    align-items: center !important;
+    gap: 4px;
+    margin-top: 2.5vh;
   }
 }
 

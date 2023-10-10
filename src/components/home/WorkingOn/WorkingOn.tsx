@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import React, { useState, useEffect } from "react";
+import logo from "../../../assets/home-page/smallLogo.svg"
+import project_together from '../../../assets/home-page/ProjectTogether.svg'
+import {Container, Row, Col} from 'react-bootstrap'
 
 function WorkingOn() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
@@ -14,13 +17,16 @@ function WorkingOn() {
     });
   }, []);
   return (
-    <div className="working-on-container">
-      <h1 className="main-title">We're also Working on</h1>
+    <Container className="working-on-container">
+      <Col style={{display:"flex", justifyContent:"center", alignItems:"center", gap:"8px"}}>
+      <img src={logo} style={{width:'37px', height: '23.5px'}}></img>
+      <h1 className="main-title">We're also Working on:</h1>
+      </Col>
       <div className="images">
       {isMobile ? (
       <Carousel showThumbs={false} showStatus={false} dynamicHeight={false} useKeyboardArrows={true}>
         <div className="image-container-project">
-          <img className="left-image" src={placeholderimg} alt="Left Image" />
+          <img className="left-image" src={project_together} alt="Left Image" />
           <h2 className="title">Project Together</h2>
           <p className="working-text">
               The Asian American and Pacific Islander (AAPI) community is facing
@@ -55,7 +61,7 @@ function WorkingOn() {
            ) : (
             <>
              <div className="image-container">
-          <img className="left-image" src={placeholderimg} alt="Left Image" />
+          <img className="left-image" src={project_together} alt="Left Image" />
           <h2 className="title">Project Together</h2>
           <p className="working-text">
               The Asian American and Pacific Islander (AAPI) community is facing
@@ -90,7 +96,7 @@ function WorkingOn() {
         )}
 
       </div>
-    </div>
+    </Container>
   );
 }
 export default WorkingOn;

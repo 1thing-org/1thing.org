@@ -5,6 +5,8 @@ import { Button } from "react-bootstrap";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import React, { useState, useEffect } from "react";
+import logo from "../../../assets/home-page/smallLogo.svg"
+import {Container, Row, Col} from 'react-bootstrap'
 const storyData: { name: string; quote: string; picUrl: string }[] = [
   {
     name: "Li M.",
@@ -42,9 +44,14 @@ function StorySection() {
   }, []);
   return (
     <div id="story-section">
-      <div id="story-desc">
+      
+      <Container id="story-desc">
+      <Col style={{display:"flex", justifyContent:"center", alignItems:"center", gap:"8px"}}>
+      <img src={logo} style={{width:'37px', height: '23.5px'}}></img>
         <h2 className="our-story">Our Story</h2>
+        </Col>
         <p className="story-text">
+        
           1 Thing Against Racism began as a slide deck shared around the offices
           at Google. Today, it is a mission driven organization comprised of
           volunteers who contribute their time to our mission.
@@ -52,7 +59,7 @@ function StorySection() {
         <Button className="story-button" href="#">
           Read More
         </Button>
-      </div>
+      </Container>
 
       {isMobile ? (
         <Carousel
