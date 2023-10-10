@@ -179,6 +179,7 @@ const ChartView = () => {
             <Button
               className="chart-button"
               href="https://hatecrimetracker.1thing.org/"
+              target="_blank"
             >
               <div className="chart-button-text">View Project</div>
             </Button>
