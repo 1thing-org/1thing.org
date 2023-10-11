@@ -1,3 +1,50 @@
+.chart-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.t3 {
+  color: #18181a;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px; /* 125% */
+  letter-spacing: 0.4px;
+  margin-bottom: 0px;
+}
+
+.t4{
+  width: 100%;
+  max-width: 1008px;
+  height: auto;
+  max-height: 44px;
+  color: var(--neutral-neutral-01, #18181A);
+text-align: center;
+
+/* Main (test) */
+font-family: sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  
+}
+
+.t-cases{
+
+  color: var(--Secondary-color, #0F54DB);
+  width: 100%;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+}
 @media only screen and (min-width: 500px) {
   .hcr {
     width: 100%;
@@ -11,48 +58,15 @@
   .hcr-backgrund {
     height: 1056px;
     margin: 0;
-    background: linear-gradient(51.3deg, #140033 -5.26%, #5200ff 93.17%);
+    background: #FFF;
   }
   .chart {
     height: auto;
     width: 92%;
     margin: 1rem 0;
   }
-  .chart-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  .t3 {
-    white-space: nowrap;
-    width: auto;
-    height: 40px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 4vw;
-    line-height: 125%;
-    text-align: center;
-    letter-spacing: 0.4px;
-    text-transform: capitalize;
-    color: #f4f4f4;
-    margin-bottom: 1rem;
-  }
-  .t4 {
-    margin-top: 34px;
-    width: 480px;
-    height: 88px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: 0.4px;
-    color: #f4f4f4;
-  }
+
 
   .t2 {
     padding-top: 20%;
@@ -79,15 +93,6 @@
     width: 100%;
   }
 
-  .t-cases {
-    width: 100%;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 28px;
-    color: #ffd800;
-  }
 
   .link1 {
     margin-top: 1rem;
@@ -121,7 +126,7 @@
     height: 891px;
     margin: 0 auto;
     padding: 2.17rem 2rem;
-    background: linear-gradient(51.3deg, #140033 -5.26%, #5200ff 93.17%);
+    background: #FFF;
   }
 
   .hcr {
@@ -134,43 +139,11 @@
     align-items: center;
   }
 
-  .chart-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 3.33rem;
-  }
 
-  .t3 {
-    margin: 0px;
-    white-space: nowrap;
-    width: auto;
-    height: 40px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 125%;
-    text-align: center;
-    letter-spacing: 0.4px;
-    text-transform: capitalize;
-    color: #f4f4f4;
-  }
 
-  .t4 {
-    margin-top: 34px;
-    width: 592px;
-    height: 88px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: 0.4px;
-    color: #f4f4f4;
-  }
+
+
+
 
   .chart {
     margin: 2rem 0;
@@ -179,15 +152,6 @@
     border-radius: 16px;
   }
 
-  .t-cases {
-    width: 100%;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 28px;
-    color: #ffd800;
-  }
 
   .word {
     display: flex;
@@ -220,7 +184,7 @@
     text-align: center;
     letter-spacing: 0.4px;
     padding-top: 16px;
-    color: #f4f4f4;
+    color: var(--neutral-neutral-01, #18181A);
     width: 187px;
   }
 
@@ -269,17 +233,6 @@
     padding: 0px;
     margin: 0px;
   }
-  .chart-title {
-    width: 521px;
-    height: 40px;
-  }
-  .t3 {
-    margin: 0px;
-  }
-  .t4 {
-    width: 792px;
-    height: 81px;
-  }
   .chart {
     width: 1200px;
     height: 382px;
@@ -293,9 +246,7 @@
   .col-3 {
     width: 100%;
   }
-  .t-cases {
-    width: 100%;
-  }
+
   .link1 {
     width: 148px;
     margin: 0px;

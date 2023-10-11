@@ -4,9 +4,6 @@
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.main-title {
   margin-top: 128px;
 }
 
@@ -34,6 +31,17 @@
   line-height: 28px;
   letter-spacing: 0.4px;
   color: #18181A;
+}
+
+.main-title{
+  color: #18181A;
+text-align: center;
+font-family: sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 800;
+line-height: 40px; /* 125% */
+letter-spacing: 0.4px;
 }
 
 .working-text {
