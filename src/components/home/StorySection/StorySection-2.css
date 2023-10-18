@@ -125,6 +125,8 @@
         height: 230px;
     }
     .story-text {
+        width:  1008px; ;
+        height: 44px;
         font-size: 16px;
         margin-top: 1.5em;
         margin-bottom: 2.5em;

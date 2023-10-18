@@ -120,7 +120,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 771px) {
   #home-action-container {
     min-height: 1306px;
     display: flex;
@@ -183,4 +183,8 @@
   }
 }
 
-;
+@media screen and (min-width: 772px) and (max-width:991px) {
+  #small-action-container{
+    gap: 20px;
+  }
+}
