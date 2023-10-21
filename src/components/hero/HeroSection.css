@@ -59,29 +59,24 @@
   }
 
   #hero-title {
-    margin-top: 48px;
-    margin-left: 10%;
-    width: 84vw;
+    color: var(--neutral-neutral-01, #18181A);
+    text-align: center;
     font-family: sans-serif;
-    font-size: 3.7vw;
+    font-size: 60px;
     font-style: normal;
-    font-weight: 800;
-    line-height: 114.286%;
-    letter-spacing: 0.4px;
-    color: var(--neutral-neutral-01, #18181a);
-    text-align: start;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.549px;
   }
   .p2 {
-    padding-bottom: 48px;
-    margin-left: 10%;
-    font-family: sans-serif;
-    font-size: 3.7vw;
+    color: var(--neutral-neutral-01, #18181A);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 800;
-    line-height: 114.286%;
+    font-weight: 400;
+    line-height: normal;
     letter-spacing: 0.4px;
-    color: var(--neutral-neutral-01, #18181a);
-    text-align: start;
   }
 
   #hero-subtitle {
