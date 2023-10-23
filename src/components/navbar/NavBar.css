@@ -1,7 +1,18 @@
 .nav {
   max-width: 1440px;
   margin: 0 auto;
-  height: 150px;
+  height: auto 73px;
+
+
+}
+
+#navbar-container{
+  display: flex;
+  width: 1008px;
+  padding: 8px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 }
 
 .brand-container {
@@ -11,9 +22,18 @@
   height: 58.48px;
 }
 
+.link-container{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1 0 0;
+  width: 100% 411px;
+  height: auto 57px;
+}
+
 .logo {
-  width: 58.48px;
-  height: 58.48px;
+  width: 68.402px;
+  height: 58.485px;
 }
 
 .logo-text {
@@ -41,9 +61,10 @@
   color: #18181A;
 }
 
+
 #responsive-navbar-nav-control {
-  position: absolute;
-  top: 5em;
+  position:absolute;
+  top: 4em;
   right: 1%;
   margin-top: -45px;
   width: 3em;
@@ -100,10 +121,4 @@
 
 .offcanvas .nav-link+.nav-link {
   margin-top: 1.5rem;
-}
-
-@media only screen and (min-width: 991px) and (max-width:1200px) {
-  .link-container{
-    width: 460px;
-  }
 }

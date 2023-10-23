@@ -1,4 +1,4 @@
-import { Nav, Navbar,   Offcanvas, Container, Col } from "react-bootstrap";
+import { Nav, Navbar,   Offcanvas, Container, Col, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import NewLogo from "../../assets/NewLogo.svg";
 import "./NavBar.css";
@@ -26,10 +26,11 @@ function NavBar() {
     setShowOffcanvas(!showOffcanvas);
   };
   return (
-    <Navbar className="nav" expand="lg">
+    <Navbar className="nav" expand="lg"  >
       <Container id="navbar-container">
-        <LinkContainer to="/">
-          <Col md={2}>
+        
+        <Col md={2}>
+        <LinkContainer to="/" className="link-container">
             <Navbar.Brand className="brand-container">
               <img
                 className="logo"
@@ -48,9 +49,12 @@ function NavBar() {
                 </div>
               </Navbar.Text>
             </Navbar.Brand>
-          </Col>
         </LinkContainer>
-        <Col sm={7} md={5} className="link-container">
+        </Col>
+
+    
+    
+        <Col sm={5} md={6}>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             id="responsive-navbar-nav-control"
@@ -58,7 +62,7 @@ function NavBar() {
             
           />
            {!showOffcanvas && (
-          <Navbar.Collapse id="responsive-navbar-nav" >
+          <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent:"flex-end"}} >
          <Nav className="links-ms-auto">
    
               <Page
@@ -122,7 +126,9 @@ function NavBar() {
             </Offcanvas>
          
         </Col>
+   
       </Container>
+      
     </Navbar>
   );
 }
