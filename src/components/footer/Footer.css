@@ -41,15 +41,14 @@ footer {
 }
 
 .footer-logo {
-    width: 43px;
-    height: 45px;
-    padding-right: 0.5rem;
+    width: 60px;
+    height: 60px;
+    padding-right: 0.4rem;
 }
 
 .footer-text-logo {
-    width: 43px;
-    height: 45px;
-    padding-right: 0.5rem;
+    width: 48px;
+    height: 48px;
 }
 
 .footer-text,
