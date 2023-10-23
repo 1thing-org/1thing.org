@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
+
 const aboutUsData: {
   name: string;
   desc: string;
@@ -26,17 +27,17 @@ const aboutUsData: {
 function AboutUsSection() {
     return (
             <Container id="about-us-container">
-                <Row>
-                    <Col xs={4} className = "">{aboutUsData[0].name}</Col>
-                    <Col xs={8}>{aboutUsData[0].desc}</Col>
+                <Row className="about-us-row">
+                    <Col xs={4} className="about-us-title">{aboutUsData[0].name}</Col>
+                    <Col xs={8} className="about-paragraph">{aboutUsData[0].desc}</Col>
                 </Row>
-                <Row>
-                    <Col xs={4}>{aboutUsData[1].name}</Col>
-                    <Col xs={8}>{aboutUsData[1].desc}</Col>
+                <Row className="about-us-row">
+                    <Col xs={4} className="subtitle">{aboutUsData[1].name}</Col>
+                    <Col xs={8} className="about-paragraph">{aboutUsData[1].desc}</Col>
                 </Row>
-                <Row>
-                    <Col xs={4}>{aboutUsData[2].name}</Col>
-                    <Col xs={8}>{aboutUsData[2].desc}</Col>
+                <Row className="about-us-row">
+                    <Col xs={4} className="subtitle">{aboutUsData[2].name}</Col>
+                    <Col xs={8} className="about-paragraph">{aboutUsData[2].desc}</Col>
                 </Row>
             </Container>
     );

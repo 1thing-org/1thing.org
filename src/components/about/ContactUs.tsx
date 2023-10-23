@@ -2,7 +2,7 @@ import logo from "../../assets/home-page/smallLogo.svg"
 
 function ContactOneThing() {
     return (
-        <div className="share form">
+        <div className="share-us-form" style={{ backgroundColor: '#FBFBFB' }}>
             <div className="wrapper">
                 <div className="form-inner-cont">
                     <form action="https://1thing.us20.list-manage.com/subscribe/post?u=21d473c726961a9ff53d21a35&id=81aac402d9" method="post" className="signin-form">
