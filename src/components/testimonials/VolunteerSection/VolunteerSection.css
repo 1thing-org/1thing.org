@@ -1,52 +1,174 @@
-#volunteer-section {
-    margin: 5rem .5rem;
-    max-width: 1440px;
-    margin:0 auto;   
+#volunteer{
+    width: 100%;
+    border:none;
+    --bs-card-bg:transparent;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+  
+}
+
+.our-volunteers{
+    align-self: stretch;
+    color: #18181A;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px; /* 150% */
+    letter-spacing: 0.4px; 
+}
+
+ #volunteers{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;    
+} 
+
+#volunteer-profile-pic {
+    width: 292px;
+    height: 292px;
+    border-radius: 600px;
+}
+
+#volunteer-name{
+    color: var(--neutral-neutral-01, #18181A);
+    text-align: center;
+    align-self: stretch;
+    /* Heading/Heading3 */
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: 0.4px;
+}
+#volunteer-quote{
+    color: var(--neutral-neutral-01, #18181A);
+    align-self: stretch;
+    /* Main (test) */
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: start;
+    height:210px;
     
 }
 
-#volunteers {
-    padding-top: 20px;
+#volunteer-interview{
+    color: var(--Secondary-color, #0F54DB);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;  
+}
+
+@media screen and (min-width:968px) and (max-width: 1440px){   
    
-}
-
-#top-section, #bottom-section {
-    display: flex;
-    flex-direction: row;
-}
-
-#volunteers > div > div > ul{
-    display: flex;
-    justify-content: left;
-    margin-left:15rem;
-    align-items: left;
-}
-/* media rules for large screens */
-@media screen and (max-width: 850px) {
-    #volunteers {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-width:180%;
-        margin:1rem;
-        padding: 9% 8.5%;   
-    }
-    #volunteers > div > div > ul{
-        display: flex;
-        justify-content: left;
-        margin-left:20%;    
-    }
-    #volunteer-interview{
-        bottom:5%;
-    }
     #volunteer{
-        margin:0;
-
-    }
-    #top-section, #bottom-section{
+        width: 100%;
+        border:none;
+        --bs-card-bg:transparent;
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
       
     }
+    
+    .our-volunteers{
+        align-self: stretch;
+        color: #18181A;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 60px; /* 150% */
+        letter-spacing: 0.4px; 
+    }
+    #volunteer-section {
+
+        display: flex;
+        padding: 50px 50px 40px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+        
+    }
+    
+    
+    #volunteers{
+        gap: 40px;   
+        border:none;
+        --bs-card-bg:transparent;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+    }
+    
+    #volunteer-profile-pic {
+        width: 292px;
+        height: 292px;
+        border-radius: 600px;
+    }
+    
+    #volunteer-name{
+        color: var(--neutral-neutral-01, #18181A);
+        text-align: center;
+        align-self: stretch;
+        /* Heading/Heading3 */
+        font-family: Open Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 28px; /* 116.667% */
+        letter-spacing: 0.4px;
+    }
+    #volunteer-quote{
+        color: var(--neutral-neutral-01, #18181A);
+        align-self: stretch;
+        /* Main (test) */
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: start;
+        height:210px;
+        
+    }
+    
+    #volunteer-interview{
+        color: var(--Secondary-color, #0F54DB);
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;  
+    }
+
+  
+}
+@media screen and (min-width: 1441px){
+    #volunteer-section {
+        display: flex;
+        padding: 50px 20px 40px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+        
+    }
+
 }
 
+@media screen and (min-width: 700px) and (max-width: 1010px){
+ 
+   
+}
