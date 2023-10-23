@@ -3,6 +3,7 @@ import './VolunteerSection.css';
 import React, { useState, useEffect } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
+import {Container, Row, Col} from 'react-bootstrap'
 
 const volunteerData: { name: string, quote: string, pic: string, interview: string}[] = [
     {
@@ -22,22 +23,16 @@ const volunteerData: { name: string, quote: string, pic: string, interview: stri
         "quote": "Share your story, because how else are you going to get to know another person? Be empathetic. You have to start somewhere and what easier place to start than with your personal story?",
         "pic": require("assets/volunteers/Josh.png"),
         "interview": "While in between jobs, Josh was looking for a way to network, grow his career, and make a positive difference. When Josh found the VolunteerMatch post for a UX design role at 1 Thing Against Racism he said it was like a lightbulb had switched on. \n\n One of the reasons he was drawn to the non-profit was because of why it was founded. “I do believe in the organization’s mission: if everyone took on a small act everyday, once a week, or even once a month - that these small acts can genuinely be small -  it would be that much easier to root out racism.” \n\n The rise in anti-Asian sentiment during the pandemic struck closer to home when Josh learned that his mom was getting aggressive looks at the grocery store. When a shooting spree occurred in March of 2021 at several spas in Atlanta, where Josh currently resides, he felt even more motivated to work with an organization doing what it can to make a positive impact. \n\n Through his desire to support its mission, he has become involved with a few aspects of the organization. He’s currently working on an overhaul of the 1 Thing Against Racism’s website, collaborating with other volunteers to revamp its design and messaging. He’s also contributing his UX design skills to the development of a mobile app version of the “Anti-Asian Hate Crime Tracker” project. \n\n In particular, Josh finds the hate crime tracker to be a powerful tool because with it, there is a unique opportunity to visualize and perhaps make more tangible an issue that has always been hard to demonstrate the frequency of. By taking newly reported acts of violence rooted in racism, aggregating the data, and visualizing it, the goal of the tracker is to act as a visual, shareable, reference for statistics of racism in acts big and small. \n\n As it picks up momentum, Josh hopes 1 Thing Against Racism will accomplish its goal of raising awareness, inspiring volunteers, and establishing a community of people who are united around a singular goal of making a difference in a world that could use a lot more kindness. When asked to give a message for those interested in putting the organization's mission into practice, he had this to say:\n\n “Be kind to each other, I feel like that’s kind of a cliche thing to say but there's a reason to say that. Maybe there's not enough kindness in the world. I think there is a reason it is a cliche, cause it’s an easy aspiration anyone can get behind and so it’s like really easy to say ‘be kind to each other’. And [...] share your story, because how else are you going to get to know another person? Be empathetic. You have to start somewhere and what easier place to start than with your personal story?”        "
-    },
-    {
-        "name": "Hannelore B.",
-        "quote": "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-        "pic": require("assets/home-page/profile-placeholder.jpeg"),
-        "interview": "hello"
     }
 ]
 
 
 function VolunteerSection(){
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 700);
     };
 
     window.addEventListener('resize', handleResize);
@@ -48,7 +43,8 @@ function VolunteerSection(){
 
   const renderVolunteers = () => (
     <Carousel showThumbs={false} showStatus={false} dynamicHeight={false} useKeyboardArrows={true}>
-        {volunteerData.map((volunteer, index) => (
+       
+        {volunteerData.map((volunteer, index) => (       
             <div key={index}>
                 <Volunteer 
                     name={volunteer.name} 
@@ -56,28 +52,41 @@ function VolunteerSection(){
                     pic={volunteer.pic} 
                     interview={volunteer.interview}
                 />
+                   
             </div>
         ))}
+    
     </Carousel>
 );
 
 return (
     <div id="volunteer-section">
-        <h2>Our Volunteers</h2>
-        <div id="volunteers">
-            {isMobile ? renderVolunteers() : (
+        <Row>
+            <h2 className='our-volunteers'>Hear our stories</h2>
+        </Row>   
+        
+            <div className="volunteers">
+            <Row>
+            {isMobile ? renderVolunteers() : ( 
                 <>
-                    <div id="top-section">
+                    <Col>
                         <Volunteer name={volunteerData[0].name} quote={volunteerData[0].quote} pic={volunteerData[0].pic} interview={volunteerData[0].interview}/>
+                    </Col>  
+                    <Col>
                         <Volunteer name={volunteerData[1].name} quote={volunteerData[1].quote} pic={volunteerData[1].pic} interview={volunteerData[1].interview}/>
-                    </div>
-                    <div id="bottom-section">
+                    </Col>  
+                 
+                    <Col>
                         <Volunteer name={volunteerData[2].name} quote={volunteerData[2].quote} pic={volunteerData[2].pic} interview={volunteerData[2].interview}/>
-                        <Volunteer name={volunteerData[3].name} quote={volunteerData[3].quote} pic={volunteerData[3].pic} interview={volunteerData[3].interview}/>
-                    </div>
+                    </Col>           
                 </>
+             
             )}
-        </div>
+        </Row>  
+            </div>
+     
+
+       
     </div>
 );
 }
