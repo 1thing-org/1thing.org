@@ -1,4 +1,4 @@
-import NavBar from "../navbar/NavBar";
+import NavBar from "./navbaraction/NavBar";
 import Footer from "../footer/Footer";
 import ShareOneThing from "./share/ShareOneThing";
 import ActionsGroup from "./actionsgroup/ActionsGroup";
