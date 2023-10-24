@@ -175,6 +175,10 @@
     border-radius: 16px;
   }
 
+  .chart-title{
+    flex-direction: row;
+    gap: 8px;
+  }
   .word {
     display: flex;
     flex-direction: row;
