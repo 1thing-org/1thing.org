@@ -1,5 +1,8 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import Footer from "../../../components/footer/Footer";
+import NavBar from "../../../components/navbar/NavBar";
 import "./InterviewPage.css";
 
 function InterviewPage() {
@@ -20,18 +23,34 @@ function InterviewPage() {
 
   return (
     <div>
-      <h1 className="interview-title">{name}</h1>
-      <img
-        className="interview-profile"
-        src={decodeURIComponent(pic)}
-        alt={`${name}'s pic`}
-      />
-      {paragraphs.map((para, index) => (
-        <p className="interview-paragraph" key={index}>
-          {para}
-        </p>
-      ))}
-      {/* Display the interview content here */}
+      <NavBar />
+      <Container>
+        <Row>
+          <Col>
+            <h1 className="interview-title">{name}</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <img
+              className="interview-profile"
+              src={decodeURIComponent(pic)}
+              alt={`${name}'s pic`}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            {paragraphs.map((para, index) => (
+              <p className="interview-paragraph" key={index}>
+                {para}
+              </p>
+            ))}
+            {/* Display the interview content here */}
+          </Col>
+        </Row>
+      </Container>
+      <Footer />
     </div>
   );
 }
