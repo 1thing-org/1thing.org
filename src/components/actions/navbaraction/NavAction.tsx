@@ -26,7 +26,7 @@ function NavBar() {
     setShowOffcanvas(!showOffcanvas);
   };
   return (
-    <Navbar className="nav" expand="lg"  >
+    <Navbar className="nav-action" expand="lg"  >
       <Container id="navbar-container">
         
         <Col md={2}>

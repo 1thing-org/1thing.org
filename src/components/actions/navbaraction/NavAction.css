@@ -1,16 +1,11 @@
-/* .nav {
-  position:fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  z-index: 1000;
+.nav-action {
   max-width: 1440px;
   margin: 0 auto;
   height: auto 73px;
-
+  background-color: #eae5fd;
 }
 
-#navbar-container{
+#navbar-container {
   display: flex;
   width: 1008px;
   padding: 8px 24px;
@@ -26,7 +21,7 @@
   height: 58.48px;
 }
 
-.link-container{
+.link-container {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -67,7 +62,7 @@
 
 
 #responsive-navbar-nav-control {
-  position:absolute;
+  position: absolute;
   top: 4em;
   right: 1%;
   margin-top: -45px;
@@ -125,4 +120,4 @@
 
 .offcanvas .nav-link+.nav-link {
   margin-top: 1.5rem;
-} */
+}
