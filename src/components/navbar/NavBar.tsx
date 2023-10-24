@@ -1,8 +1,8 @@
-import { Nav, Navbar,   Offcanvas, Container, Col, Row } from "react-bootstrap";
+import { Nav, Navbar, Offcanvas, Container, Col, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import NewLogo from "../../assets/NewLogo.svg";
 import "./NavBar.css";
-import { useState } from 'react';
+import { useState } from "react";
 
 function Page({
   title,
@@ -26,11 +26,10 @@ function NavBar() {
     setShowOffcanvas(!showOffcanvas);
   };
   return (
-    <Navbar className="nav" expand="lg"  >
+    <Navbar className="nav" expand="lg">
       <Container id="navbar-container">
-        
         <Col md={2}>
-        <LinkContainer to="/" className="link-container">
+          <LinkContainer to="/" className="link-container">
             <Navbar.Brand className="brand-container">
               <img
                 className="logo"
@@ -49,86 +48,81 @@ function NavBar() {
                 </div>
               </Navbar.Text>
             </Navbar.Brand>
-        </LinkContainer>
+          </LinkContainer>
         </Col>
 
-    
-    
         <Col sm={5} md={6}>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             id="responsive-navbar-nav-control"
             onClick={handleMenuToggle}
-            
           />
-           {!showOffcanvas && (
-          <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent:"flex-end"}} >
-         <Nav className="links-ms-auto">
-   
-              <Page
-              title={"Take Action"}
-              links={"/takeaction"}
-              className={"inner-text"}
-              ></Page>
-              <Page
-              title={"About Us"}
-              links={"/aboutus"}
-              className={"inner-text"}
-              ></Page>
-              <Page
-              title={"Contact"}
-              links={"/contact"}
-              className={"inner-text"}
-              ></Page>
-              <Page
-              title={"Testimonial"}
-              links={"/testimonials"}
-              className={"inner-text"}
-              ></Page>
-  
-          </Nav>
-         </Navbar.Collapse>
-         )}
-         <Offcanvas placement="end" show={showOffcanvas} onHide={() => setShowOffcanvas(false)} className={showOffcanvas ? "show" : "show"} >
-
-           <Offcanvas.Header closeButton>
-              <Offcanvas.Title> < img className="offcanvas-logo" src={NewLogo} alt="Logo" /></Offcanvas.Title>
+          {!showOffcanvas && (
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="links-ms-auto">
+                <Page
+                  title={"Take Action"}
+                  links={"/takeaction"}
+                  className={"inner-text"}
+                ></Page>
+                <Page
+                  title={"About Us"}
+                  links={"/aboutus"}
+                  className={"inner-text"}
+                ></Page>
+                <Page
+                  title={"Contact"}
+                  links={"/contact"}
+                  className={"inner-text"}
+                ></Page>
+                <Page
+                  title={"Testimonial"}
+                  links={"/testimonials"}
+                  className={"inner-text"}
+                ></Page>
+              </Nav>
+            </Navbar.Collapse>
+          )}
+          <Offcanvas
+            placement="end"
+            show={showOffcanvas}
+            onHide={() => setShowOffcanvas(false)}
+            className={showOffcanvas ? "show" : "show"}
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title>
+                {" "}
+                <img className="offcanvas-logo" src={NewLogo} alt="Logo" />
+              </Offcanvas.Title>
             </Offcanvas.Header>
 
-     
-          <Offcanvas.Body >
-      
-            <Nav className="links-ms-auto">
-   
-              <Page
-                title={"Take Action"}
-                links={"/takeaction"}
-                className={"inner-text"}
-              ></Page>
-              <Page
-                title={"About Us"}
-                links={"/aboutus"}
-                className={"inner-text"}
-              ></Page>
-              <Page
-                title={"Contact"}
-                links={"/contact"}
-                className={"inner-text"}
-              ></Page>
-              <Page
-                title={"Testimonial"}
-                links={"/testimonials"}
-                className={"inner-text"}
-              ></Page>
-             
-            </Nav>
+            <Offcanvas.Body>
+              <Nav className="links-ms-auto">
+                <Page
+                  title={"Take Action"}
+                  links={"/takeaction"}
+                  className={"inner-text"}
+                ></Page>
+                <Page
+                  title={"About Us"}
+                  links={"/aboutus"}
+                  className={"inner-text"}
+                ></Page>
+                <Page
+                  title={"Contact"}
+                  links={"/contact"}
+                  className={"inner-text"}
+                ></Page>
+                <Page
+                  title={"Testimonial"}
+                  links={"/testimonials"}
+                  className={"inner-text"}
+                ></Page>
+              </Nav>
             </Offcanvas.Body>
-            </Offcanvas>
-         
+          </Offcanvas>
         </Col>
-   
       </Container>
-      
     </Navbar>
   );
 }
