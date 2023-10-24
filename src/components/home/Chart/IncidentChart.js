@@ -120,8 +120,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
           margin={{ top: 30, right: 30, bottom: 10, left: -30 }}
           style={{ backgroundColor: "#FBFBFB" }}
         >
-          {/* <CartesianGrid strokeDasharray="3 3" /> */}
-
           <XAxis
             dataKey="key"
             tickFormatter={formatXAxis}
@@ -138,7 +136,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
               letterSpacing: "0.4px",
               fill: "var(--Dark-Grey, #535353)",
             }}
-            // axisLine={{ stroke: "var(--Dark-Grey, #535353)", strokeWidth:  }}
           />
           <YAxis
             yAxisId="left"
@@ -168,7 +165,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             stroke="#0F54DB"
             onMouseOver={() => setTooltip("monthly")}
           />
-
           <defs>
             <linearGradient id="monthly-gradient" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#FFE033" />
