@@ -1,7 +1,7 @@
 import { Nav, Navbar,   Offcanvas, Container, Col, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import NewLogo from "../../../assets/NewLogo.svg";
-import "./NavBar.css";
+import "./NavAction.css";
 import { useState } from 'react';
 
 function Page({

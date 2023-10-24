@@ -1,9 +1,12 @@
-.nav {
+/* .nav {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 1000;
   max-width: 1440px;
   margin: 0 auto;
   height: auto 73px;
-  background-color: ;
-
 
 }
 
@@ -122,4 +125,4 @@
 
 .offcanvas .nav-link+.nav-link {
   margin-top: 1.5rem;
-}
+} */
