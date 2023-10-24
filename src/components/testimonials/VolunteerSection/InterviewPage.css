@@ -1,18 +1,20 @@
-.interview-title{
-    font-size:2rem;
-    margin:1rem;
+.interview-title {
+    font-size: 2rem;
+    margin: 1rem;
 }
 
-.interview-profile{
+.interview-profile {
     margin: .5rem;
     max-width: 100%;
     height: auto;
 }
 
-.interview-paragraph{
+.interview-paragraph {
     text-align: left;
     margin: 2rem;
 }
-img{
-    width:30%;
+
+img {
+    width: 30%;
+    border-radius: 50%;
 }

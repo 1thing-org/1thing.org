@@ -1,7 +1,17 @@
-.nav {
+.nav-action {
   max-width: 1440px;
   margin: 0 auto;
-  height: 150px;
+  height: auto 73px;
+  background-color: #eae5fd;
+}
+
+#navbar-container {
+  display: flex;
+  width: 1008px;
+  padding: 8px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 }
 
 .brand-container {
@@ -9,6 +19,15 @@
   flex-direction: row;
   width: 130px;
   height: 58.48px;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1 0 0;
+  width: 100% 411px;
+  height: auto 57px;
 }
 
 .logo {
@@ -19,12 +38,12 @@
 .logo-text {
   width: 80px;
   height: 48px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 16px;
-  color: #18181a;
+  color: #18181A;
   text-align: start;
 }
 
@@ -38,12 +57,13 @@
   letter-spacing: 0.4000000059604645px;
   text-align: left;
   text-transform: uppercase;
-  color: #18181a;
+  color: #18181A;
 }
+
 
 #responsive-navbar-nav-control {
   position: absolute;
-  top: 5em;
+  top: 4em;
   right: 1%;
   margin-top: -45px;
   width: 3em;
@@ -52,23 +72,26 @@
   transition: all 0.3s ease-in-out;
 }
 
-#responsive-navbar-nav {
+
+#responsive-navbar-toggle {
   justify-content: flex-end;
+
+
 }
 
 .offcanvas {
   width: 100% !important;
   max-width: 100% !important;
+
+
 }
 
 .offcanvas-header {
   width: 100%;
   padding: 1rem;
+
 }
 
-.offcanvas-logo {
-  width: 100%;
-}
 
 .offcanvas-body {
   display: flex;
@@ -76,12 +99,14 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+
 }
 
 .offcanvas .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .offcanvas .nav-link {
@@ -89,8 +114,10 @@
 
   text-align: center;
   border-bottom: 0.8px solid grey;
+
+
 }
 
-.offcanvas .nav-link + .nav-link {
+.offcanvas .nav-link+.nav-link {
   margin-top: 1.5rem;
 }

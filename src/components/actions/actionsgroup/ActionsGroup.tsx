@@ -13,7 +13,7 @@ const actionData: {
   imgs: Array<any>;
 }[] = [
   {
-    name: "Raise awareness",
+    name: " Raise awareness",
     desc: [
       "Tell a friend or colleague that you are concerned for your safety out in the streets nowadays because of Anti-Asian hate crime incidents.",
       "Talk about this issue with coworkers.",
@@ -28,7 +28,7 @@ const actionData: {
     imgs: [raiseAwarenessRight],
   },
   {
-    name: "Support Anti-Asian hate crime victims",
+    name: " Support Anti-Asian hate crime victims",
     desc: [
       "Donate to Anti-Asian hate crime victims.",
       "Help capture suspects.",
@@ -41,7 +41,7 @@ const actionData: {
     imgs: [supportVictim],
   },
   {
-    name: "Use your skills",
+    name: " Use your skills",
     desc: [
       "Create: paint, draw, or digitally make a piece of art that reflects your attitude towards asian-hate, prejudice, and bias.",
       "Share: art, websites, or books that inspire and help you.",
@@ -55,7 +55,7 @@ const actionData: {
     imgs: [useSkillsRight],
   },
   {
-    name: "Promote cross racial understanding",
+    name: " Promote cross racial understanding",
     desc: [
       "Communicate: as a minority friend about their experience living in the US.",
       "Empathize: try to relate to others, share the challenges the APPI community is facing.",
@@ -87,6 +87,10 @@ function ActionsGroup() {
           marginBottom: "48px",
         }}
       >
+        <img
+          src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+          style={{ width: "37.4px", height: "23.5px" }}
+        />
         {actionData[0].name}
       </h3>
       <YourActionsRight
@@ -107,6 +111,10 @@ function ActionsGroup() {
           marginBottom: "48px",
         }}
       >
+        <img
+          src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+          style={{ width: "37.4px", height: "23.5px" }}
+        />
         {actionData[1].name}
       </h3>
       <YourActionsLeft
@@ -126,6 +134,10 @@ function ActionsGroup() {
           marginBottom: "48px",
         }}
       >
+        <img
+          src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+          style={{ width: "37.4px", height: "23.5px" }}
+        />
         {actionData[2].name}
       </h3>
       <YourActionsRight
@@ -146,6 +158,10 @@ function ActionsGroup() {
           marginBottom: "48px",
         }}
       >
+        <img
+          src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+          style={{ width: "37.4px", height: "23.5px" }}
+        />
         {actionData[3].name}
       </h3>
       <YourActionsLeft
