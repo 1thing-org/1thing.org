@@ -18,32 +18,46 @@
   margin-bottom: 0px;
 }
 
-.t4{
+.t4 {
   width: 100%;
   max-width: 1008px;
   height: auto;
   max-height: 44px;
-  color: var(--neutral-neutral-01, #18181A);
-text-align: center;
+  color: var(--neutral-neutral-01, #18181a);
+  text-align: center;
 
-/* Main (test) */
-font-family: sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  
+  /* Main (test) */
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.t-cases{
-
-  color: var(--Secondary-color, #0F54DB);
-  width: 100%;
+.t-cases {
+  width: 200px;
+  color: var(--Secondary-color, #0f54db);
+  text-align: center;
   font-family: sans-serif;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 28px;
+  font-weight: 900;
+  line-height: 28px; /* 77.778% */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.chart-button {
+  display: flex;
+  width: 201px;
+  height: 61px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--Redius, 2px);
+  border: 1px solid var(--Primary-color, #ffc530) !important;
+  background: var(--Primary-color, #ffc530) !important;
 }
 @media only screen and (min-width: 500px) {
   .hcr {
@@ -54,11 +68,20 @@ line-height: normal;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
+  }
+  .chart-title {
+    flex-direction: column;
+  }
+  .word {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
   }
   .hcr-backgrund {
     height: 1056px;
     margin: 0;
-    background: #FFF;
+    background: #fff;
   }
   .chart {
     height: auto;
@@ -66,33 +89,39 @@ line-height: normal;
     margin: 1rem 0;
   }
 
-
+  .childword {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
 
   .t2 {
-    padding-top: 20%;
+    margin: 0 0;
     width: 200px;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 28px;
-    color: #ffd800;
+    color: #0f54db;
   }
 
   .t1 {
-    font-weight: 500;
+    margin: 0 0;
+    color: #18181a;
     text-align: center;
-    color: white;
     font-family: sans-serif;
+    font-size: 16px;
     font-style: normal;
-    font-size: 18px;
-    line-height: 24px;
+    font-weight: 400;
+    line-height: normal;
   }
 
   .col-3 {
     width: 100%;
   }
-
 
   .link1 {
     margin-top: 1rem;
@@ -126,7 +155,7 @@ line-height: normal;
     height: 891px;
     margin: 0 auto;
     padding: 2.17rem 2rem;
-    background: #FFF;
+    background: #fff;
   }
 
   .hcr {
@@ -139,12 +168,6 @@ line-height: normal;
     align-items: center;
   }
 
-
-
-
-
-
-
   .chart {
     margin: 2rem 0;
     width: 92%;
@@ -152,12 +175,12 @@ line-height: normal;
     border-radius: 16px;
   }
 
-
   .word {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px;
+    gap: 70px;
   }
 
   .childword {
@@ -184,18 +207,8 @@ line-height: normal;
     text-align: center;
     letter-spacing: 0.4px;
     padding-top: 16px;
-    color: var(--neutral-neutral-01, #18181A);
+    color: var(--neutral-neutral-01, #18181a);
     width: 187px;
-  }
-
-  .chart-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 148spx;
-    height: 54px;
-    background: #ffd500;
-    border-radius: 3px;
   }
 
   .chart-button-text {
@@ -238,10 +251,10 @@ line-height: normal;
     height: 382px;
   }
   .word {
-    width: 389px;
-    height: 98px;
-    margin: 34px auto;
-    padding: 0px;
+    display: flex;
+    align-items: flex-start;
+    gap: 75px;
+    padding-top: 40px;
   }
   .col-3 {
     width: 100%;

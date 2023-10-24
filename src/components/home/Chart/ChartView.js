@@ -10,7 +10,7 @@ import IncidentChart from "./IncidentChart";
 
 import * as incidentsService from "./incident";
 
-import logo from "../../../assets/home-page/smallLogo.svg"
+import logo from "../../../assets/home-page/smallLogo.svg";
 
 const ChartView = () => {
   const dateRange = useMemo(() => [moment().subtract(1, "year"), moment()], []);
@@ -124,7 +124,7 @@ const ChartView = () => {
       <Container md={10} className="hcr">
         <Row>
           <Col className="chart-title">
-            <img src={logo} style={{width:'37px', height: '23.5px'}}></img>
+            <img src={logo} style={{ width: "37px", height: "23.5px" }}></img>
             <p className="t3">We Made A Hate Crime Tracker</p>
           </Col>
         </Row>
@@ -153,7 +153,7 @@ const ChartView = () => {
                 <p className="t1">were reported in {lastMonthName}</p>
               </div>
 
-              <div>
+              <div className="childword">
                 <p className="t2">{totalAnnualCases} Cases</p>
                 <p className="t1">were reported last year</p>
               </div>

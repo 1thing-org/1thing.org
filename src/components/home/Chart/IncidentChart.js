@@ -5,10 +5,12 @@ import {
   ComposedChart,
   Area,
   CartesianGrid,
+  Line,
   ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
+  LineChart,
 } from "recharts";
 import { useTranslation } from "react-i18next";
 import { Trans } from "react-i18next";
@@ -18,7 +20,7 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
   const formatXAxis = (tickVal) => {
     //yyyy-mm-dd to mm/year, e.g. 2020-01-01 to Jan 2020
     const d = moment(tickVal, "YYYY-MM-DD");
-    return d.format("MMM' YY");
+    return d.format("MMM");
   };
 
   const { t } = useTranslation();
@@ -111,13 +113,14 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
       ) : null}
 
       <ResponsiveContainer>
-        <ComposedChart
-          height={300}
+        <LineChart
+          height={266}
+          width={955}
           data={chart_data}
           margin={{ top: 30, right: 30, bottom: 10, left: -30 }}
-          style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+          style={{ backgroundColor: "#FBFBFB" }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          {/* <CartesianGrid strokeDasharray="3 3" /> */}
 
           <XAxis
             dataKey="key"
@@ -129,21 +132,22 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
               fontSize: "12px",
               fontFamily: "sans-serif",
               fontStyle: "normal",
-              fontWeight: 400,
+              fontWeight: 600,
               lineHeight: "16px",
               textAlign: "center",
               letterSpacing: "0.4px",
-              fill: "#F4F4F4",
+              fill: "var(--Dark-Grey, #535353)",
             }}
-            axisLine={{ stroke: "#FFFFFF", strokeWidth: 2 }}
+            // axisLine={{ stroke: "var(--Dark-Grey, #535353)", strokeWidth:  }}
           />
           <YAxis
+            yAxisId="left"
             allowDecimals={false}
             orientation="left"
             interval="preserveStartEnd"
             type="number"
-            domain={[0, "dataMax + 3"]}
-            axisLine={{ stroke: "#FFFFFF", strokeWidth: 2 }}
+            domain={[0, "dataMax"]}
+            // axisLine={{ stroke: "#FFFFFF", strokeWidth: 2 }}
           />
           <YAxis
             hide={true}
@@ -153,23 +157,25 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             interval="preserveStartEnd"
           />
           <Tooltip content={<CustomTooltip />} />
-          <Area
+
+          <Line
             name={t("monthly_count")}
             type="monotone"
             dataKey="monthly_cases"
-            fill="url(#monthly-gradient)"
-            stroke="#FFE033"
-            strokeWidth={4}
-            yAxisId="right"
+            dot={false}
+            yAxisId="left"
+            strokeWidth={3}
+            stroke="#0F54DB"
             onMouseOver={() => setTooltip("monthly")}
           />
+
           <defs>
             <linearGradient id="monthly-gradient" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#FFE033" />
               <stop offset="100%" stop-color="rgba(255, 224, 51, 0)" />
             </linearGradient>
           </defs>
-        </ComposedChart>
+        </LineChart>
       </ResponsiveContainer>
     </div>
   );
