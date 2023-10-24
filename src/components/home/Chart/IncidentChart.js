@@ -144,7 +144,6 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
             interval="preserveStartEnd"
             type="number"
             domain={[0, "dataMax"]}
-            // axisLine={{ stroke: "#FFFFFF", strokeWidth: 2 }}
           />
           <YAxis
             hide={true}
