@@ -78,6 +78,7 @@ footer {
 }
 
 .sign-up-text {
+    font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -137,11 +138,12 @@ footer {
 }
 
 .subscribe-form input {
-    width: 400px;
+    width: 340px;
     height: 48px;
     padding: 10px;
     border-radius: 4px;
-    border: 2px solid #9E9EA6;
+    border: 2px solid #AFAFAF;
+    background-color: #F4F4F4;
 }
 
 .social-icons {
