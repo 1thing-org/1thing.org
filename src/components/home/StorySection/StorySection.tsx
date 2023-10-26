@@ -39,101 +39,106 @@ function StorySection() {
   }, []);
   return (
     <div id="story-section">
-    
-        <Row className="mb-2">
-          <Col style={{display:"flex", justifyContent:"center", alignItems:"center", gap:"8px"}}>
-            <img src={logo} style={{width:'37px', height: '23.5px'}}></img>
-          </Col>
-          <Col>
-            <h2 className="our-story">Our Story</h2>
-          </Col>
-        </Row>
-        <Col className="mt-1 mb-2" >
-          <p className="story-text">
-            1 Thing Against Racism began as a slide deck shared around the offices
-            at Google. Today, it is a mission driven organization comprised of
-            volunteers who contribute their time to our mission.
-          </p>
-        </Col>
-         
-      
-        <Row>
-      {isMobile ? (
-       
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          dynamicHeight={false}
-          useKeyboardArrows={true}
-        >
-      
-        <Col className="mt-0 mb-0">
-          <Card id="story">
-            <Card.Text id="story-name" className="story-name">Li M.</Card.Text>
-            <Card.Text id="story-quote">
-            The presentation experience shifted my perspective, motivating me to take manageable actions without fretting over immediate results and encouraging others to join me. I believed that if enough people became mobilized, real change would follow. This led me to establish the non-profit organization, 1 Thing Against Racism.
-            </Card.Text>
-            <Card.Body id="story-body">
-              <Card.Img
-                id="profile-pic"
-                src={require("assets/volunteers/Li.png")}
-              />   
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className="mt-0 mb-0">
-          <Card id="story">
-            <Card.Text id="story-name" className="story-name">Kai K.</Card.Text>
-            <Card.Text id="story-quote">
-            Sometimes we can be daunted by how big of an idea we have but once we start breaking it down and just start doing something, no matter how big or small it is at least we are doing something. The big idea will feel less daunting and more achievable.
-            </Card.Text>
-            <Card.Body id="story-body">
-              <Card.Img
-                id="profile-pic"
-                src={require("assets/home-page/profile-placeholder.jpeg")}
-              />  
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className="mt-0 mb-0">
-          <Card id="story">
-            <Card.Text id="story-name" className="story-name">Josh C.</Card.Text>
-            <Card.Text id="story-quote">
-            Share your story, because how else are you going to get to know another person? Be empathetic. You have to start somewhere and what easier place to start than with your personal story?
-            </Card.Text>
-            <Card.Body id="story-body">
-              <Card.Img
-                id="profile-pic"
-                src={require("assets/volunteers/Josh.png")}
-              />
-              
-            </Card.Body>
-          </Card>
-        </Col>
-        </Carousel>
-     
-      ) : (
-        <div id="stories">
-          {storyData.map((story) => (
-            
-            <Story
-              name={story.name}
-              quote={story.quote}
-              picUrl={story.picUrl}
-            />
-            
-          
-          ))}
-        </div>
-      )}
-         </Row> 
+      <Container id="our-sotry-text-container">
+        <img src={logo} style={{ width: "37px", height: "23.5px" }}></img>
+
+        <h2 className="our-story">Our Story</h2>
+      </Container>
+      <Col className="mt-1 mb-2">
+        <p className="story-text">
+          1 Thing Against Racism began as a slide deck shared around the offices
+          at Google. Today, it is a mission driven organization comprised of
+          volunteers who contribute their time to our mission.
+        </p>
+      </Col>
+
       <Row>
-         <Button className="story-button" href="#">
+        {isMobile ? (
+          <Carousel
+            showThumbs={false}
+            showStatus={false}
+            dynamicHeight={false}
+            useKeyboardArrows={true}
+          >
+            <Col className="mt-0 mb-0">
+              <Card id="story">
+                <Card.Text id="story-name" className="story-name">
+                  Li M.
+                </Card.Text>
+                <Card.Text id="story-quote">
+                  The presentation experience shifted my perspective, motivating
+                  me to take manageable actions without fretting over immediate
+                  results and encouraging others to join me. I believed that if
+                  enough people became mobilized, real change would follow. This
+                  led me to establish the non-profit organization, 1 Thing
+                  Against Racism.
+                </Card.Text>
+                <Card.Body id="story-body">
+                  <Card.Img
+                    id="profile-pic"
+                    src={require("assets/volunteers/Li.png")}
+                  />
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className="mt-0 mb-0">
+              <Card id="story">
+                <Card.Text id="story-name" className="story-name">
+                  Kai K.
+                </Card.Text>
+                <Card.Text id="story-quote">
+                  Sometimes we can be daunted by how big of an idea we have but
+                  once we start breaking it down and just start doing something,
+                  no matter how big or small it is at least we are doing
+                  something. The big idea will feel less daunting and more
+                  achievable.
+                </Card.Text>
+                <Card.Body id="story-body">
+                  <Card.Img
+                    id="profile-pic"
+                    src={require("assets/home-page/profile-placeholder.jpeg")}
+                  />
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className="mt-0 mb-0">
+              <Card id="story">
+                <Card.Text id="story-name" className="story-name">
+                  Josh C.
+                </Card.Text>
+                <Card.Text id="story-quote">
+                  Share your story, because how else are you going to get to
+                  know another person? Be empathetic. You have to start
+                  somewhere and what easier place to start than with your
+                  personal story?
+                </Card.Text>
+                <Card.Body id="story-body">
+                  <Card.Img
+                    id="profile-pic"
+                    src={require("assets/volunteers/Josh.png")}
+                  />
+                </Card.Body>
+              </Card>
+            </Col>
+          </Carousel>
+        ) : (
+          <div id="stories">
+            {storyData.map((story) => (
+              <Story
+                name={story.name}
+                quote={story.quote}
+                picUrl={story.picUrl}
+              />
+            ))}
+          </div>
+        )}
+      </Row>
+      <Row>
+        <Button className="story-button" href="#">
           Read More
         </Button>
       </Row>
     </div>
-    
   );
 }
 

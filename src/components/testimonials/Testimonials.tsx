@@ -16,12 +16,6 @@ function Testimonials() {
   return (
     <div>
       <NavBar />
-      <HeroSection
-        heading={testimonialHeroData.heading}
-        subheading={testimonialHeroData.subheading}
-        imageSrc={HeroImage}
-        hideHeroText={true}
-      />
 
       <VolunteerSection />
       <SignUp />

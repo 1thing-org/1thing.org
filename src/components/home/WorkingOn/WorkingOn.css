@@ -24,7 +24,7 @@
 
 .title {
   margin-top: 40px;
-  font-family: 'Open Sans';
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -33,22 +33,23 @@
   color: #18181A;
 }
 
-.main-title{
+.main-title {
   color: #18181A;
-text-align: center;
-font-family: sans-serif;
-font-size: 32px;
-font-style: normal;
-font-weight: 800;
-line-height: 40px; /* 125% */
-letter-spacing: 0.4px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  /* 125% */
+  letter-spacing: 0.4px;
 }
 
 .working-text {
   display: inline;
   margin-top: 24px;
   width: 361px;
-  font-family: 'Open Sans';
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -58,13 +59,14 @@ letter-spacing: 0.4px;
 }
 
 @media screen and (max-width: 767px) {
+
   .image-container-project,
-  .image-container-victim{
-    width: 100%;   
+  .image-container-victim {
+    width: 100%;
   }
 
-  .image-container-victim{
+  .image-container-victim {
     padding-bottom: 50px;
-   
+
   }
-} 
+}
