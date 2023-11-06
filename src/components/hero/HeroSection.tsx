@@ -80,9 +80,6 @@ function HeroSection(props: Props) {
                   fontWeight: "700",
                   textTransform: "uppercase",
                 }}
-                onClick={() => {
-                  console.log("Button clicked!");
-                }}
               >
                 Take Action
               </Button>
