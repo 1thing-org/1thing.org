@@ -1,102 +1,46 @@
-
 import "./WorkingOn.css";
 import placeholderimg from "../../../assets//home-page/working-on-placeholder.svg";
 import { Link } from "react-router-dom";
-import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import React, { useState, useEffect } from "react";
-import logo from "../../../assets/home-page/smallLogo.svg"
-import project_together from '../../../assets/home-page/ProjectTogether.svg'
-import {Container, Row, Col} from 'react-bootstrap'
+import logo from "../../../assets/home-page/smallLogo.svg";
+import project_together from '../../../assets/home-page/ProjectTogether.svg';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function WorkingOn() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setIsMobile(window.innerWidth <= 767);
-    });
-  }, []);
   return (
-    <Container className="working-on-container">
-      <Col style={{display:"flex", justifyContent:"center", alignItems:"center", gap:"8px"}}>
-      <img src={logo} style={{width:'37px', height: '23.5px'}}></img>
-      <h1 className="main-title">We're also Working on:</h1>
+    <Container id="workingOn-section">
+      <Col md={12} id="working-on-container">
+      
+        <img src={logo} style={{ width: '37px', height: '23.5px' }}></img>
+        <h2 className="main-title">We're also Working on:</h2>
+        
       </Col>
-      <div className="images">
-      {isMobile ? (
-      <Carousel showThumbs={false} showStatus={false} dynamicHeight={false} useKeyboardArrows={true}>
-        <div className="image-container-project">
-          <img className="left-image" src={project_together} alt="Left Image" />
-          <h2 className="title">Project Together</h2>
-          <p className="working-text">
-              The Asian American and Pacific Islander (AAPI) community is facing
-              a number of challenges, including increased hate crimes,
-              discrimination, and lack of representation. These challenges can
-              be overwhelming, and it can be difficult to know where to start to
-              help.         
-          </p>
-          <br></br>
-          <Link to="/projects/project-together">Learn More</Link>
-        </div>
-        <div className="image-container-victim">
-          <img className="right-image" src={placeholderimg} alt="Right Image" />
-          <h2 className="title">Victim Support Fund</h2>
-          <p className="working-text">
-            As a 501C(3) non profit, 1thing.org receives donations from
-            individuals and corporations like Google. We disburse the funds to
-            victims of anti-Asian hate crimes in a transparent and accountable
-            manner, and provide regular updates to donors and the public on the
-            progress of the fundraising campaign and how the funds are being
-            used. With careful planning and execution, we ensure that the funds
-            are used effectively and efficiently. We ensure that victims receive
-            support and resources to address their needs and challenges.
-            <br></br>
-              Click to learn about the disbursement process and the impact of
-              the funds on the victims and the community.
-          </p>
-          <br></br>
-          <Link to="/projects/victim-support-fund">Learn More</Link>
-        </div>
-        </Carousel>
-           ) : (
-            <>
-             <div className="image-container">
-          <img className="left-image" src={project_together} alt="Left Image" />
-          <h2 className="title">Project Together</h2>
-          <p className="working-text">
-              The Asian American and Pacific Islander (AAPI) community is facing
-              a number of challenges, including increased hate crimes,
-              discrimination, and lack of representation. These challenges can
-              be overwhelming, and it can be difficult to know where to start to
-              help.         
-          </p>
-          <br></br>
-          <Link to="/projects/project-together">Learn More</Link>
-          </div>
-        <div className="image-container">
-          <img className="right-image" src={placeholderimg} alt="Right Image" />
-          <h2 className="title">Victim Support Fund</h2>
-          <p className="working-text">
-            As a 501C(3) non profit, 1thing.org receives donations from
-            individuals and corporations like Google. We disburse the funds to
-            victims of anti-Asian hate crimes in a transparent and accountable
-            manner, and provide regular updates to donors and the public on the
-            progress of the fundraising campaign and how the funds are being
-            used. With careful planning and execution, we ensure that the funds
-            are used effectively and efficiently. We ensure that victims receive
-            support and resources to address their needs and challenges.
-            <br></br>
-              Click to learn about the disbursement process and the impact of
-              the funds on the victims and the community.
-          </p>
-          <br></br>
-          <Link to="/projects/victim-support-fund">Learn More</Link>
-        </div>
-        </>
-        )}
 
-      </div>
+      <Row id="project-block">
+        <Col className="mt-1 mb-2" id="block-project">
+          <img id="workingOn-pic" src={project_together} alt="project together Image" />
+          <div id="inner">
+            <h2 className="title">Project Together</h2>
+            <p className="working-text">
+              A volunteer's social network, where everybody can share their actions, inspire or be inspired, and contribute to their favorite causes. The mobile app will serve as an online community where people can easily exercise 1 Thing idea, make real difference 1 thing at time.
+            </p>
+            <Link className="link" to="/projects/project-together">Learn More</Link>
+          </div>
+        </Col>
+
+        <Col className="mt-1 mb-2" id="block-supporting">
+          <img id="workingOn-pic" src={placeholderimg} alt="Victim Support Fund Image" />
+          <div id="inner">
+            <h2 className="title">Victim Support Fund</h2>
+            <p className="working-text">
+              As a non-profit organization, 1 Thing Org uses donations from individuals and corporations to support victims of anti-Asian hate crimes. We carefully plan and distribute the funds promptly to victims in urgent need. We are transparent and accountable in our disbursement of funds, regularly updating donors and the public on our progress and how we use the money.
+            </p>
+            <Link className="link" to="/projects/victim-support-fund">Learn More</Link>
+          </div>
+        </Col>
+      </Row>
     </Container>
+
   );
 }
 export default WorkingOn;
