@@ -8,8 +8,8 @@ import Contact from "./components/contact/Contact";
 import ProjectTogether from "components/projects/projectTogether/ProjectTogether";
 import VictimSupportFund from "components/projects/victimSupportFund/VictimSupportFund";
 
-import InterviewPage from './components/testimonials/VolunteerSection/InterviewPage'; 
-import VolunteerSection from './components/testimonials/VolunteerSection/VolunteerSection'; 
+import InterviewPage from "./components/testimonials/VolunteerSection/InterviewPage";
+import VolunteerSection from "./components/testimonials/VolunteerSection/VolunteerSection";
 
 function App() {
   return (
@@ -18,11 +18,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/takeaction" element={<TakeAction />} />
-          
+
           <Route path="/testimonials" element={<Testimonials />} />
 
           <Route path="/volunteers" element={<VolunteerSection />} />
-          <Route path="/interviews/:name/:interview/:pic" element={<InterviewPage />} />
+          <Route
+            path="/interviews/:name/:interview/:pic/:quote"
+            element={<InterviewPage />}
+          />
 
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />

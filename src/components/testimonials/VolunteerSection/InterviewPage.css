@@ -1,6 +1,27 @@
-.interview-title {
-    font-size: 2rem;
+.interview-container {
+    width: 65rem;
+}
+
+.interview-brief-introduction {
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.interview-name {
+    font-size: 2.5rem;
+    font-family: Open Sans;
+    line-height: 3rem;
+    letter-spacing: 0.4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
     margin: 1rem;
+}
+
+.interview-quote {
+    font-size: 2rem;
+    font-family: Avenir;
+    line-height: 2rem;
+    text-shadow: 2px 2px 4px #18181A;
 }
 
 .interview-profile {
@@ -9,12 +30,42 @@
     height: auto;
 }
 
+.interview-content {
+    text-align: left;
+}
+
 .interview-paragraph {
     text-align: left;
     margin: 2rem;
+    font-size: Times New Roman;
 }
 
 img {
-    width: 30%;
+    width: 100%;
     border-radius: 50%;
+}
+
+.interview-name-bottom {
+    font-family: Open Sans;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 991px) {
+    .interview-name {
+        font-size: 2rem;
+        font-family: Open Sans;
+        line-height: 2rem;
+        letter-spacing: 0.4px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-weight: bolder;
+        margin: 1rem;
+    }
+
+    .interview-quote {
+        font-size: 1rem;
+        font-family: Avenir;
+        line-height: 2rem;
+        text-shadow: 2px 2px 4px #18181A;
+    }
 }

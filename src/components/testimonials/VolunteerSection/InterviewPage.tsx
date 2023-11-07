@@ -6,7 +6,7 @@ import NavBar from "../../../components/navbar/NavBar";
 import "./InterviewPage.css";
 
 function InterviewPage() {
-  const { name, pic, interview } = useParams<{
+  const { name, pic, interview, quote } = useParams<{
     name?: string;
     quote?: string;
     pic?: string;
@@ -16,7 +16,7 @@ function InterviewPage() {
     ? decodeURIComponent(interview).split("\n\n")
     : [];
 
-  if (!name || !pic || !interview) {
+  if (!name || !pic || !interview || !quote) {
     // Handle the case when name or quote is undefined
     return <div>Invalid URL parameters.</div>;
   }
@@ -24,32 +24,38 @@ function InterviewPage() {
   return (
     <div>
       <NavBar />
-      <Container>
-        <Row>
-          <Col>
-            <h1 className="interview-title">{name}</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <img
-              className="interview-profile"
-              src={decodeURIComponent(pic)}
-              alt={`${name}'s pic`}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            {paragraphs.map((para, index) => (
-              <p className="interview-paragraph" key={index}>
-                {para}
-              </p>
-            ))}
-            {/* Display the interview content here */}
-          </Col>
-        </Row>
+      <Container className="interview-container">
+        <Container className="interview-introduction">
+          <Row>
+            <Col md={5}>
+              <img
+                className="interview-profile"
+                src={decodeURIComponent(pic)}
+                alt={`${name}'s pic`}
+              />
+            </Col>
+            <Col className="interview-brief-introduction">
+              <h1 className="interview-name">{name}</h1>
+              <p className="interview-quote">"{quote}"</p>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row></Row>
+          <Row>
+            <Col>
+              {paragraphs.map((para, index) => (
+                <p className="interview-paragraph" key={index}>
+                  {para}
+                </p>
+              ))}
+              <p className="interview-paragraph">[end]</p>
+              <p className="interview-paragraph interview-name-bottom">{name}</p>
+            </Col>
+          </Row>
+        </Container>
       </Container>
+
       <Footer />
     </div>
   );
