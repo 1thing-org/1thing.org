@@ -78,7 +78,7 @@ footer {
 }
 
 .sign-up-text {
-    font-family: Open Sans;
+    font-family:  sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -105,7 +105,7 @@ footer {
     background-color: #FFC530;
     border-color: #FFC530;
     border-radius: 2px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
