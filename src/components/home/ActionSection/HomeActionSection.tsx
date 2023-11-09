@@ -17,11 +17,11 @@ function HomeActionSection() {
           </div>
         </Col>
 
-        <Col lg={6} md={8}  className="p-0 text-start order-md-2">
+        <Col lg={6} md={8} className="p-0 text-start order-md-2">
           <Col id="right-side-container">
             <Col id="box-1">
               <Card.Title id="action-title">
-                Small Actions. Big Changes
+                Small actions, big changes.
               </Card.Title>
               <Card.Text id="action-body-text">
                 By encouraging everyone to make one small but meaningful

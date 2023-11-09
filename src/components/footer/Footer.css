@@ -43,11 +43,13 @@ footer {
     width: 60px;
     height: 60px;
     padding-right: 0.4rem;
+    border-radius: 0;
 }
 
 .footer-text-logo {
     width: 48px;
     height: 48px;
+    border-radius: 0;
 }
 
 .footer-text,
