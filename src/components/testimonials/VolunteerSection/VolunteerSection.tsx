@@ -3,7 +3,7 @@ import './VolunteerSection.css';
 import React, { useState, useEffect } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-import {Container, Row, Col} from 'react-bootstrap'
+import {Row, Col} from 'react-bootstrap'
 
 const volunteerData: { name: string, quote: string, pic: string, interview: string}[] = [
     {

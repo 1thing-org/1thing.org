@@ -14,6 +14,7 @@ function ShareOneThing() {
               <img
                 src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
                 style={{ width: "37.4px", height: "23.5px" }}
+                alt="1 Thing Logo"
               />
               <span> Share You One Thing</span>
             </h4>

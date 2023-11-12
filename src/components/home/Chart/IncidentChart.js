@@ -2,9 +2,6 @@ import moment from "moment";
 import React from "react";
 import { useState, useEffect } from "react";
 import {
-  ComposedChart,
-  Area,
-  CartesianGrid,
   Line,
   ResponsiveContainer,
   Tooltip,
