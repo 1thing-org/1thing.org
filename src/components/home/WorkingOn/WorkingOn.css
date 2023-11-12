@@ -1,62 +1,114 @@
-.working-on-container {
+#workingOn-section {
   display: flex;
+  padding: 128px 221px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
+  gap: 24px;
+  align-self: stretch;
+}
+
+#working-on-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#project-block {
+  gap: 80px;
 }
 
 .main-title {
-  margin-top: 128px;
+  margin: 0;
+  color: #18181A;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.4px;
 }
 
-.images {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 24px;
+#workingOn-pic {
+  width: 263px;
+  height: 315px;
 }
-
-.image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(50% - 20px);
-}
-
 
 .title {
-  margin-top: 40px;
-  font-family: 'Open Sans';
+  color: var(--neutral-neutral-01, #18181A);
+  text-align: center;
+  font-size: 24px;
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.4px;
-  color: #18181A;
 }
 
 .working-text {
-  display: inline;
-  margin-top: 24px;
-  width: 361px;
-  font-family: 'Open Sans';
+  color: var(--neutral-neutral-01, #18181A);
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.4px;
-  color: #18181A;
+  line-height: normal;
+  text-align: left;
 }
 
-@media screen and (max-width: 767px) {
-  .image-container-project,
-  .image-container-victim{
-    width: 100%;   
+.link {
+  color: var(--Secondary-color, #0F54DB);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+
+#inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  #working-on-container{
+    width: max-content;
+  }
+}
+@media screen and (max-width: 768px) {
+  #working-on-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space_1, 8px);
+    align-self: stretch;
   }
 
-  .image-container-victim{
-    padding-bottom: 50px;
-   
+  .main-title {
+    width: max-content;
+    color: #18181A;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.4px;
   }
-} 
+
+  #project-block{
+    gap: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #inner {
+    height: 50%;
+  }
+  .link {
+    margin-top: auto;
+  }
+}

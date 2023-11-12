@@ -1,5 +1,5 @@
 footer {
-    background: #0C0928;
+    background: #FFF;
     padding-top: 1rem;
     padding-bottom: 1rem;
     max-width: 1440px;
@@ -9,10 +9,10 @@ footer {
 }
 
 .footer-container {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-around;
     color: white;
 }
 
@@ -29,9 +29,8 @@ footer {
 .footer-right-side {
     display: flex;
     align-items: flex-start;
-    flex-direction: column; 
+    flex-direction: column;
     width: 60%;
-    padding: 0 2rem;
 }
 
 .left-side h4,
@@ -40,25 +39,32 @@ footer {
     font-weight: bold;
 }
 
-.footer-logo{
-    width: 43px;
-    height: 45px;
-    padding-right: 0.5rem;
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    padding-right: 0.4rem;
+}
+
+.footer-text-logo {
+    width: 48px;
+    height: 48px;
 }
 
 .footer-text,
 .copy-right,
 .sign-up-text {
     font-family: sans-serif;
-    color: #FFFFFF;
+    color: #18181A;
 }
 
 .footer-text {
+    color: var(--neutral-neutral-01, #18181A);
+    font-family: PoetsenOne;
+    font-size: 13.333px;
     font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.366px;
 }
 
 .copy-right {
@@ -72,6 +78,7 @@ footer {
 }
 
 .sign-up-text {
+    font-family:  sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -87,7 +94,7 @@ footer {
 }
 
 .icon {
-    color: white;
+    color: #18181A;
     font-size: 1.8rem;
     padding-right: 1.5rem;
 }
@@ -95,15 +102,20 @@ footer {
 .subscribe-form button {
     width: 150px;
     height: 48px;
-    background: #99E0FF;
-    border-radius: 8px;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #FFC530;
+    border-color: #FFC530;
+    border-radius: 2px;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     color: #18181A;
+    text-transform: uppercase;
+    text-align: center;
     margin: 1rem;
+    border: none;
+    box-shadow: none;
 }
 
 .split-line {
@@ -112,7 +124,7 @@ footer {
     align-items: center;
     width: 166px;
     height: 0px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #18181A;
     transform: rotate(90deg);
 }
 
@@ -122,14 +134,16 @@ footer {
     align-items: center;
     width: 100%;
     flex-direction: row;
+    gap: 10px;
 }
 
 .subscribe-form input {
-    width: 250px;
+    width: 340px;
     height: 48px;
-    border-radius: 8px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #AFAFAF;
+    background-color: #F4F4F4;
 }
 
 .social-icons {
@@ -165,18 +179,18 @@ footer {
 
     .subscribe-form {
         flex-direction: row;
-        justify-content: space-around; 
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         margin: 1rem auto;
     }
 
-    .subscribe-form button{
+    .subscribe-form button {
         width: 100%;
         margin: 0.5rem;
     }
 
-    .subscribe-form input{
+    .subscribe-form input {
         width: 100%;
         margin: 0.5rem;
     }
@@ -199,7 +213,7 @@ footer {
         width: 90%
     }
 
-    .footer-text{    
+    .footer-text {
         text-align: justify;
     }
 
@@ -218,19 +232,19 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         width: 80%;
         height: 0px;
         border: 1px solid #FFFFFF;
         transform: rotate(180deg);
     }
 
-    .brand-container{
+    .brand-container {
         justify-content: center;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px) {
     footer {
         max-width: 991px;
         box-sizing: border-box;
@@ -277,18 +291,19 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         width: 90%;
         height: 0px;
         border: 1px solid #FFFFFF;
         transform: rotate(180deg);
         margin-bottom: 1rem;
     }
+
     .sign-up-text {
         text-align: center;
     }
 
-    .brand-container{
+    .brand-container {
         justify-content: center;
     }
 
@@ -298,7 +313,7 @@ footer {
     body {
         background-color: white;
     }
-    
+
     .footer {
         height: auto;
         margin: 0 auto;
@@ -310,7 +325,7 @@ footer {
         padding: 0;
         max-width: 1440px;
         height: 264px;
-  
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -319,6 +334,11 @@ footer {
 
     .footer-left-side {
         padding-left: 4rem;
-        padding-right: 4rem;
+        padding-right: 0rem;
+    }
+
+    .footer-right-side {
+        padding-bottom: 2.5rem;
+        padding-top: 0rem;
     }
 }

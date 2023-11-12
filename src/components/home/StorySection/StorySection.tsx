@@ -1,130 +1,69 @@
 import Story from "./Story";
 import Card from "react-bootstrap/Card";
-import "./StorySection-2.css";
+import { Link } from "react-router-dom";
+import "./Story.css";
 import { Button } from "react-bootstrap";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import React, { useState, useEffect } from "react";
-const storyData: { name: string; quote: string; picUrl: string }[] = [
+import logo from "../../../assets/home-page/smallLogo.svg"
+import {Container, Row, Col} from 'react-bootstrap'
+const storyData: { name: string; quote: string; picUrl: string; link:string }[] = [
   {
     name: "Li M.",
     quote:
-      "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-    picUrl: require("assets/home-page/profile-placeholder.jpeg"),
+    '"The presentation experience shifted my perspective, motivating me to take manageable actions without fretting over immediate results and encouraging others to join me. I believed that if enough people became mobilized, real change would follow. This led me to establish the non-profit organization, 1 Thing Against Racism."',
+    picUrl: require("assets/volunteers/Li.png"),
+    link:"/interviews/Li M./In%20April%202021%2C%20my%20journey%20to%201%20Thing%20started%20with%20a%20basic%20presentation%20to%20document%20anti-Asian%20hate%20incidents%2C%20aiming%20to%20raise%20awareness%20among%20Google%20colleagues%20about%20the%20AAPI%20community's%20challenges.%20Unexpectedly%2C%20the%20presentation%20garnered%20attention%20within%20Google%2C%20leading%20others%20to%20contribute%20additional%20incidents%2C%20refine%20content%2C%20and%20share%20it%20widely.%20As%20a%20result%2C%20the%20presentation%20reached%20thousands%20of%20Googlers%20and%20was%20cited%20in%20numerous%20internal%20events%20and%20initiatives.%20%0A%0A%20I%20noticed%20that%20many%20AAPI%20community%20members%2C%20including%20myself%2C%20were%20upset%20about%20anti-Asian%20hate%20but%20seldom%20took%20action.%20Upon%20reflecting%20on%20my%20own%20inaction%2C%20I%20identified%20several%20excuses%2C%20such%20as%20feeling%20powerless%2C%20lacking%20time%20and%20resources%2C%20struggling%20to%20find%20suitable%20actions%2C%20being%20discouraged%20by%20the%20lack%20of%20results%2C%20and%20feeling%20isolated%20due%20to%20others'%20inactivity.%0A%0A%20The%20presentation%20experience%20shifted%20my%20perspective%2C%20motivating%20me%20to%20take%20manageable%20actions%20without%20fretting%20over%20immediate%20results%20and%20encouraging%20others%20to%20join%20me.%20I%20believed%20that%20if%20enough%20people%20became%20mobilized%2C%20real%20change%20would%20follow.%20This%20led%20me%20to%20establish%20the%20non-profit%20organization%2C%201%20Thing%20Against%20Racism.%20%0A%0A%201%20Thing's%20mission%20is%20to%20mobilize%20individuals%20and%20communities%20to%20take%20small%20actions%20against%20racism%20and%20hate%2C%20inspiring%20others%20to%20participate%20in%20the%20movement.%20By%20fostering%20a%20cycle%20of%20action%2C%20sharing%2C%20and%20inspiration%2C%20we%20aim%20to%20create%20a%20positive%20feedback%20loop%20that%20combines%20small%20efforts%20into%20a%20large%20social%20movement%20driving%20meaningful%20change.%20%0A%0A%20Using%20our%20volunteers'%20technological%20expertise%2C%201%20Thing%20developed%20tools%20to%20help%20others%20embrace%20the%201%20Thing%20concept.%20We%20transformed%20the%20anti-Asian%20hate%20incident%20presentation%20into%20the%20real-time%20tracking%20website%20hatecrimetracker.1thing.org.%20Upon%20analyzing%20incident%20data%2C%20we%20found%20many%20victims%20and%20families%20needed%20immediate%20assistance%2C%20so%20we%20established%20the%20anti-Asian%20hate%20victim%20support%20fund.%20Furthermore%2C%20volunteers%20are%20developing%20Together%2C%20a%20mobile%20app%20tailored%20for%20social%20and%20racial%20equality%20volunteers%2C%20enabling%20them%20to%20practice%20the%201%20Thing%20idea%20and%20achieve%20their%20objectives./%2Fstatic%2Fmedia%2FLi.df86ee8bd3e949da2dea.png/The%20presentation%20experience%20shifted%20my%20perspective%2C%20motivating%20me%20to%20take%20manageable%20actions%20without%20fretting%20over%20immediate%20results%20and%20encouraging%20others%20to%20join%20me.%20I%20believed%20that%20if%20enough%20people%20became%20mobilized%2C%20real%20change%20would%20follow.%20This%20led%20me%20to%20establish%20the%20non-profit%20organization%2C%201%20Thing%20Against%20Racism."
   },
   {
     name: "Kai K.",
     quote:
-      "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
+      '"Sometimes we can be daunted by how big of an idea we have but once we start breaking it down and just start doing something, no matter how big or small it is at least we are doing something. The big idea will feel less daunting and more achievable."',
     picUrl: require("assets/home-page/profile-placeholder.jpeg"),
+    link:"/interviews/Kai%20K./Kai%20is%20both%20a%20passionate%20teacher%2C%20and%2C%20a%20UX%20designer.%20Currently%2C%20Kai%20is%20the%20lead%20designer%20for%20“Together”%20-%20a%20mobile%20app%20the%201%20Thing%20Against%20Racism%20organization%20is%20creating.%20The%20project%20is%20named%20“Together”%20because%20Kai%20believes%20no%20matter%20how%20big%20or%20small%20a%20single%20person’s%20contribution%20is%2C%20all%20of%20our%20contributions%20together%20can%20make%20a%20difference.%20%0A%0A%20The%20spike%20of%20hate%20crimes%20following%20the%20COVID-19%20outbreak%20provoked%20Kai%20to%20begin%20looking%20for%20ways%20to%20fight%20AAPI%20hate%20in%20America.%20She%20tried%20talking%20about%20the%20issues%20and%20found%20that%20the%20lack%20of%20awareness%20about%20this%20issue%20was%20the%20first%20big%20obstacle.%20“When%20I%20was%20sharing%20my%20thoughts%20about%20Anti-asian%20hate%2C%20people%20didn’t%20really%20know%20about%20it.%20So%20first%2C%20I%20want%20to%20raise%20awareness%20about%20the%20existence%20of%20anti-asian%20hate.%20It%20hasn’t%20just%20existed%20as%20a%20result%20of%20COVID%2C%20it’s%20happened%20for%20a%20long%2C%20long%2C%20time.”%20%0A%0A%20Using%20her%20technical%20and%20creative%20skills%2C%20Kai%20created%20a%20digital%20guide%20to%20teach%20people%20what%20actions%20can%20be%20taken%20in%20situations%20of%20AAPI%20hate.%20The%20website’s%20goal%20is%20to%20act%20as%20a%20reference%20for%20what%20actions%20can%20be%20taken%20in%20order%20to%20support%20the%20AAPI%20community%20and%20combat%20AAPI%20hate%20crimes.%20By%20providing%20actions%20for%20different%20perspectives%20in%20situations%20of%20racism%2C%20the%20website%20is%20a%20framework%20anybody%20can%20learn%20from%20and%20be%20empowered%20by.%20%0A%0A%20Being%20a%20teacher%2C%20Kai%20also%20worked%20to%20expand%20her%20efforts%20to%20include%20her%20local%20community%20-%20the%20school%20she%20teaches%20at.%20As%20the%20supervisor%20of%20the%20Asian%20Society%2C%20Kai%20worked%20with%20students%20and%20fellow%20teachers%20to%20create%20a%20safe%20space%20for%20members%20to%20share%20their%20story%2C%20to%20be%20seen%2C%20and%20to%20feel%20appreciated.%20Students%20not%20only%20had%20a%20place%20to%20share%20themselves%2C%20%20but%20through%20the%20efforts%20of%20the%20Asian%20society%20as%20a%20collective%20-%20%20students%20that%20may%20not%20realize%20AAPI%20hate%20is%20real%20and%20that%20it%20is%20a%20thing%20that%20is%20happening%20around%20them%20began%20to%20understand%20more%20about%20this%20issue.%20After%20starting%20weekly%20checkin’s%20for%20any%20Asian%20student%20or%20faculty%20member%20to%20come%20in%20and%20share%20their%20stories%20Kai%20found%20that%20being%20listened%20to%20and%20heard%20really%20impacted%20people%20in%20a%20positive%20way.%20%0A%0A%20Finding%20ways%20to%20celebrate%20the%20stories%20students%20and%20colleagues%20shared%2C%20Kai%20decided%20to%20lead%20a%20partnership%20between%20her%20local%20middle%20and%20high%20school’s%20with%20Three%20in%20Five.%20After%20creating%20a%20PSA%20about%20AAPI%20hate%20at%20her%20school%2C%20and%20seeing%20that%20the%20surge%20of%20Asian%20visibility%20in%20the%20media%20had%20no%20impact%20on%20the%20number%20of%20Asian%20hate%20crimes%2C%20she%20wanted%20to%20do%20more.%20%0A%0A%20Kai%20found%201%20Thing%2C%20really%20liked%20the%20mission%2C%20and%20felt%20joining%20the%20organization%20would%20be%20a%20happy%20union%20between%20projects%20that%20are%20both%20working%20to%20help%20the%20AAPI%20community.%20%0A%0A%20In%20Kai’s%20words%3A%20“We%20are%20more%20capable%20of%20change%20than%20we%20think.%20I%20do%20believe%20that%20together%20we%20can%20make%20a%20difference.%20Don’t%20think%20that%20your%20voice%20or%20your%20action%20is%20too%20small%20-%20it’s%20never%20too%20small.%20And%20there's%20a%20community%20of%20people%20who%20share%20your%20values%20-%20together%20we%20can%20make%20a%20difference.%20/data%3Aimage%2Fjpeg%3Bbase64%2CUklGRswLAABXRUJQVlA4IMALAADwfQCdASpYAlgCPlEokEajoqGhIhUYCHAKCWlu4XdOAPblopP3MbPsf9R%2FxXbD%2Fe%2BWp3Ubs9pv1FfeeuPsN%2BKWgj%2BpN8qzN%2FqfWNmg9UWvM0APzt5%2Bn%2Fj%2FovQ39F%2Fs78Bv8v%2Fufpd%2Bw%2F91vZu%2FYD%2F%2FgzaMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuMAupqAK8QuL0jPxk4J%2FT40dFlLjc6jQGozdGODo4Kb3HWACvELjALqagCuoWuyxs%2BwZpzD2peOt8nUoG4wrABXiFxgF1NQBXh%2FFrvz0TDcVX%2Fgf5jUBY%2F2GMQuMAupqAK8QuL%2FpEACHw0zumy6lOLb3wRbaZ3U1AFeIXE%2FDYOJrlM7qaLaohGNS3gArxC4wC6moArwf0%2FPh6dI%2FxO80oVADk8AK8QuMAupqAK8QtzOqn%2B0VXV%2F4ux0vWeBXWACvELjALqagCuoTkb3cAHBrSpp4mOc3mQma%2BXU1AFeIXGAXU1AFeDkHlYCC1rg5LV23CMcb9lkrrABXiFxgF1NQBXUjAgVX%2B34MqjUpOE32baID80WHMTUoP1%2Fq3DfzRP0tYU4TeBxwV1KrpeYuMAupqAK8QuL%2Fq0YnCC0VSdaT09C97yCXAytjv1RNTv%2B3ITTr1hWBFc2I7IPcSRgF1NQBXiFxf9WnQtq3G%2BJ3wYUn7qCy6bwa5rhrxC4wC6moArwcmUd1uke%2BCLbTOjDrAbPot5DfBdTUAV4hcYBRvzcVJdzO6moArwcaO7XQ4p1NQBXiFxgFxDXvRmQEW2md1NPHYMI3jX011NQBXiFxgFxQMFBfbxC4wC6mnj4cp8TTe46wAV4hcTxmf7agCvELjAKM8%2B9MQuMAupqAK8P7J3DUXNAcZ2oHPN9CGpMHaxVM0McdlVUplU9%2BzCWYdB3MuEAwE6qMONZ0m7cJzfGOb%2F3Vwb5to1HUCsAFeIXGAXU1AIBN7jrABX1qmoArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArxC4wC6moArw%2FgAD%2B%2FdpXxzMIMgIAAAAAAAAAAAAAAAF0A4G6jjyOEwFj04lORGhzLNuk0NoPPtHJvFMmckyIePeyzYW8h2otAwf%2FWy6ttJaCIU2v6KThP8PDLg5asi%2FQ7WPYswZSavwnnE9zpCspe6By0pzT5HMfkP61i%2BF2WyMo1K30JInQ9YecCqmG%2FOtfCqFBeXb%2BN%2Bg4fhvx0ZLTPfp2mPgijoTIyJaAqPhrlft7eStyS4QU%2FDHZbNd4vIYjBjqGZpifmnh2T%2B%2FCW40ba7CZG9hV%2BxyC5hsgwTPvg8JPmI7mYscgNag%2FTJVUP1lMUR57tO5R5l%2F27U6fPPziYHfex7a5FxLjAFRrnDWSJjdk%2Ft4MIfyDVVvR1t6jryt7XUrRTgZA41xd%2B7%2FAsrPECCKVp%2Fm6f8UwHKuDtgk2po4utoBErSgOnXxzpyn9rIryF%2BvfZ9p%2B2mi1tXGgQAL4ifReXgbD7cqj6TMjixYuj2AIu1u845BKOUxoQxS1WMeoME5lYdpktU3KBMcfgmCGd5MC2pTjG0hzIgBTbFnHxbqEaCmK%2FGX%2BKGLDair6IdH72QKMCnjTipriY2fhX9b%2BPU60BzbLWsz3ebcs3CMXbewv%2FqcYX38N30ut970VD9AGpj7ugiCLgI0bZ0XD%2Fzf2GGF7KhDoNUs%2B5DHbMH87aIE3yfvtx6k8e5nsYCjYzEJ3cwxOIByIFO38XF1Z0jPCdOFWdmmfxwuWG51J4LrqGdzrzvzt9sAxTCcgOaz%2FQZcrD6w8l4irnKCz35PhGFXk3rVnwB9%2BmkqApYEoZc0a%2Fw6NYhOQN0mmRmzZz3%2FwwfPWRcHbmJFq7UXPDpAy%2FHG753B0Ox%2Fr%2FTJDqDo4GgB2Dn9a%2FRIstOAU5PEJ3K3Rf9TPqAEVO04qTaqoMFCYU1SdW7Pu6UxWyMAiBINiOiHLM8%2Bf8hdZBblk9G2ZuWVx58VLluBR2W9Mxo%2B5c9V24tX%2BnjJ%2FU4n2LzdMPru8dL8NPkwT7%2B%2Fw5KC%2BYnRs2wFTbopGa0gwfNzv5G06dDi66oAhvi3Apcjx%2BJMfn%2F9oF7mDQX3QThalx%2BVInqDbxRqdiiJ4t6lnmhTHtWj99TwJXFGODRkdAHN%2BNb3U2FuOXLulIM8TG%2FyaUz4eHv3xLcrFiNG5LtgE%2FhhZdJIrIomJrYueZETa1XjE3IZLzjHjaaggNMxId7MV1F4ihCLl5%2FhGLFGv85RYOQ9af5B0P22Rmys3lGT3D0KWkuZpd3yvQpXfEmqrvbzT%2BYd7zoSsCgm%2FX1GN4AO1Tyzki8gBZ0L0UOB55a6ytfwCHNrHBXQPm5vbXg32WSh5NRd76Oc5KZX5wct3cv8lrjX2DornfZMS%2ByXizF6M4sbmNXmhWpWP5UwQ2%2BAxr7x4dCv3PpVx%2BYVt%2BmCpX5hnHmNcEi3tvKltUYbOOwPmZUB0cRLj8X8D1DXk0R37ES9FqO5ModqrYhnR2DupufFYTpiGmwHvjadsUrS3fu39oH0xZU2mLkQM5a%2F%2BHsYHZdFJhZ0CP3uq3N2MdqY67p9fFEhwk1aFexBM9GRpdyvWZtDnM9tY9CgXjFEax1BO0ONQpgA5M%2BNMLX%2Flwyly1vybKKUf6OjPcBC8sWaU9gdDuPETUxFDflOjilDLyMZdImnEfXVdYJDKDkxodqSNZvhLF8ykMfww8yBpY3sXwpdh9db7S6f4LbjX87l5zxF1jieIVxl2%2FR51p0P3G%2FvQKkU6eOgSmlaMCd0XeE1Td8wopu%2FHxjlv6GPbFaiFmTo1Xke4Mt7lqis2ZnTrz83769pdm%2BDqDkMI26lRdl%2Bo21Ee8afhpfMnWKegnvtm67qaabBXTQe%2Fd5JDVDYG95idCz%2F33eYf2yUbDYJkYQl5JjhSmALtUv3NWP%2Fa03j6%2BsKranm1%2BSw6esAPS3Dncw6UiOIhSr7iqYCUpgqWz%2BlGoSBYfBCYfE%2F5e7kV5YoAIsU3JThAnuFuzUEm9XvCFZcawRKBbv4I9B%2FchprWFLWHwGrVQIYtVYHoHD3FKIKxDCeWXqtqNdtMe2dT37StSa6BQtG%2FtDvlDqe59xO9yOXLNvWBwWnZ609U61lMPwVVkZl1bO9xAWNVlZYj36UqRTjsnqkx64Zyu0mZv9nkhUSiwmF6COOpzkNwGNcQcFKwfH8NbFuj47QhI4zBBgbvp6F5zp4P%2Bbl6pkhjmJ3BpOmQGH2H3jD19gNp9HYFrvfPrZ9Xj7rvJrnolVoNSsgedjEi%2FDWrP%2FLPRT5DYCFqgVx1c%2FQ%2B3UMdn3c7GFbNtPdtugeq584WMhXnXWN2ffSDYODlIS4dXyIEBvEND0QGPNzOIkGrPz6bBNTmet0QyGXJ3amhhscW3hCiZbIayqPSa3QNBEEE8aC1GZ3iYYTjXqfn%2F6AOEGgx9x7CZ%2BwjG9DKqDj8W2J3nKeONMf%2Frc98Lu3o4fEWGhYrBRiGWCPQ29ZGlPZOxzbMVuYvRFUl%2FydW%2FNM9EdmuourZwjTN6p%2By7dgJbgz%2FU5PowHgILrpRUGbQ68CTH9uHRj52GjBz0NI0Jij6BKEfxonnGEPtQOgRqC7%2BT2hY2S8aGDpNI2h0jZ%2F5V4BxWce74IaAYYao%2FK8mRZg8kfr4w3P%2Bc1Vtf6TxmcZRnYr59vKIVY%2FcREOUJJsCeIEOcCAAAAAAAAAAAAAAAAAAAA%3D%3D/Sometimes%20we%20can%20be%20daunted%20by%20how%20big%20of%20an%20idea%20we%20have%20but%20once%20we%20start%20breaking%20it%20down%20and%20just%20start%20doing%20something%2C%20no%20matter%20how%20big%20or%20small%20it%20is%20at%20least%20we%20are%20doing%20something.%20The%20big%20idea%20will%20feel%20less%20daunting%20and%20more%20achievable."
+
   },
   {
     name: "Josh C.",
     quote:
-      "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-    picUrl: require("assets/home-page/profile-placeholder.jpeg"),
-  },
-  {
-    name: "Hannelore B.",
-    quote:
-      "Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim porttitor tristique id lectus.",
-    picUrl: require("assets/home-page/profile-placeholder.jpeg"),
+      '"Share your story, because how else are you going to get to know another person? Be empathetic. You have to start somewhere and what easier place to start than with your personal story?"',
+    picUrl: require("assets/volunteers/Josh.png"),
+    link:"/interviews/Josh%20C./While%20in%20between%20jobs%2C%20Josh%20was%20looking%20for%20a%20way%20to%20network%2C%20grow%20his%20career%2C%20and%20make%20a%20positive%20difference.%20When%20Josh%20found%20the%20VolunteerMatch%20post%20for%20a%20UX%20design%20role%20at%201%20Thing%20Against%20Racism%20he%20said%20it%20was%20like%20a%20lightbulb%20had%20switched%20on.%20%0A%0A%20One%20of%20the%20reasons%20he%20was%20drawn%20to%20the%20non-profit%20was%20because%20of%20why%20it%20was%20founded.%20“I%20do%20believe%20in%20the%20organization’s%20mission%3A%20if%20everyone%20took%20on%20a%20small%20act%20everyday%2C%20once%20a%20week%2C%20or%20even%20once%20a%20month%20-%20that%20these%20small%20acts%20can%20genuinely%20be%20small%20-%20%20it%20would%20be%20that%20much%20easier%20to%20root%20out%20racism.”%20%0A%0A%20The%20rise%20in%20anti-Asian%20sentiment%20during%20the%20pandemic%20struck%20closer%20to%20home%20when%20Josh%20learned%20that%20his%20mom%20was%20getting%20aggressive%20looks%20at%20the%20grocery%20store.%20When%20a%20shooting%20spree%20occurred%20in%20March%20of%202021%20at%20several%20spas%20in%20Atlanta%2C%20where%20Josh%20currently%20resides%2C%20he%20felt%20even%20more%20motivated%20to%20work%20with%20an%20organization%20doing%20what%20it%20can%20to%20make%20a%20positive%20impact.%20%0A%0A%20Through%20his%20desire%20to%20support%20its%20mission%2C%20he%20has%20become%20involved%20with%20a%20few%20aspects%20of%20the%20organization.%20He’s%20currently%20working%20on%20an%20overhaul%20of%20the%201%20Thing%20Against%20Racism’s%20website%2C%20collaborating%20with%20other%20volunteers%20to%20revamp%20its%20design%20and%20messaging.%20He’s%20also%20contributing%20his%20UX%20design%20skills%20to%20the%20development%20of%20a%20mobile%20app%20version%20of%20the%20“Anti-Asian%20Hate%20Crime%20Tracker”%20project.%20%0A%0A%20In%20particular%2C%20Josh%20finds%20the%20hate%20crime%20tracker%20to%20be%20a%20powerful%20tool%20because%20with%20it%2C%20there%20is%20a%20unique%20opportunity%20to%20visualize%20and%20perhaps%20make%20more%20tangible%20an%20issue%20that%20has%20always%20been%20hard%20to%20demonstrate%20the%20frequency%20of.%20By%20taking%20newly%20reported%20acts%20of%20violence%20rooted%20in%20racism%2C%20aggregating%20the%20data%2C%20and%20visualizing%20it%2C%20the%20goal%20of%20the%20tracker%20is%20to%20act%20as%20a%20visual%2C%20shareable%2C%20reference%20for%20statistics%20of%20racism%20in%20acts%20big%20and%20small.%20%0A%0A%20As%20it%20picks%20up%20momentum%2C%20Josh%20hopes%201%20Thing%20Against%20Racism%20will%20accomplish%20its%20goal%20of%20raising%20awareness%2C%20inspiring%20volunteers%2C%20and%20establishing%20a%20community%20of%20people%20who%20are%20united%20around%20a%20singular%20goal%20of%20making%20a%20difference%20in%20a%20world%20that%20could%20use%20a%20lot%20more%20kindness.%20When%20asked%20to%20give%20a%20message%20for%20those%20interested%20in%20putting%20the%20organization's%20mission%20into%20practice%2C%20he%20had%20this%20to%20say%3A%0A%0A%20“Be%20kind%20to%20each%20other%2C%20I%20feel%20like%20that’s%20kind%20of%20a%20cliche%20thing%20to%20say%20but%20there's%20a%20reason%20to%20say%20that.%20Maybe%20there's%20not%20enough%20kindness%20in%20the%20world.%20I%20think%20there%20is%20a%20reason%20it%20is%20a%20cliche%2C%20cause%20it’s%20an%20easy%20aspiration%20anyone%20can%20get%20behind%20and%20so%20it’s%20like%20really%20easy%20to%20say%20‘be%20kind%20to%20each%20other’.%20And%20%5B...%5D%20share%20your%20story%2C%20because%20how%20else%20are%20you%20going%20to%20get%20to%20know%20another%20person%3F%20Be%20empathetic.%20You%20have%20to%20start%20somewhere%20and%20what%20easier%20place%20to%20start%20than%20with%20your%20personal%20story%3F”%20%20%20%20%20%20%20%20/%2Fstatic%2Fmedia%2FJosh.5dea737116391a02b35f.png/Share%20your%20story%2C%20because%20how%20else%20are%20you%20going%20to%20get%20to%20know%20another%20person%3F%20Be%20empathetic.%20You%20have%20to%20start%20somewhere%20and%20what%20easier%20place%20to%20start%20than%20with%20your%20personal%20story%3F"
+
   },
 ];
 
 function StorySection() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setIsMobile(window.innerWidth <= 767);
-    });
-  }, []);
   return (
     <div id="story-section">
-      <div id="story-desc">
+      <Container id="our-sotry-text-container">
+        <img src={logo} style={{ width: "37px", height: "23.5px" }}></img>
         <h2 className="our-story">Our Story</h2>
+      </Container>
+      <Col className="mt-1 mb-2">
         <p className="story-text">
           1 Thing Against Racism began as a slide deck shared around the offices
           at Google. Today, it is a mission driven organization comprised of
           volunteers who contribute their time to our mission.
         </p>
-        <Button className="story-button" href="#">
-          Read More
-        </Button>
-      </div>
+      </Col>
 
-      {isMobile ? (
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          dynamicHeight={false}
-          useKeyboardArrows={true}
-        >
-          <Card id="story">
-            <Card.Text id="story-quote">
-              Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim
-              porttitor tristique id lectus.
-            </Card.Text>
-            <Card.Body id="story-body">
-              <Card.Img
-                id="profile-pic"
-                src={require("assets/home-page/profile-placeholder.jpeg")}
+      <Row>
+          <div id="stories">
+            {storyData.map((story) => (
+              <Story
+                name={story.name}
+                quote={story.quote}
+                picUrl={story.picUrl}
+                link={story.link}
               />
-              <Card.Text id="story-name">Li M.</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card id="story">
-            <Card.Text id="story-quote">
-              Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim
-              porttitor tristique id lectus.
-            </Card.Text>
-            <Card.Body id="story-body">
-              <Card.Img
-                id="profile-pic"
-                src={require("assets/home-page/profile-placeholder.jpeg")}
-              />
-              <Card.Text id="story-name">Kai K.</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card id="story">
-            <Card.Text id="story-quote">
-              Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim
-              porttitor tristique id lectus.
-            </Card.Text>
-            <Card.Body id="story-body">
-              <Card.Img
-                id="profile-pic"
-                src={require("assets/home-page/profile-placeholder.jpeg")}
-              />
-              <Card.Text id="story-name">Josh C.</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card id="story">
-            <Card.Text id="story-quote">
-              Lorem ipsum dolor sit amet consectetur. Aliquam sed egestas enim
-              porttitor tristique id lectus.
-            </Card.Text>
-            <Card.Body id="story-body">
-              <Card.Img
-                id="profile-pic"
-                src={require("assets/home-page/profile-placeholder.jpeg")}
-              />
-              <Card.Text id="story-name">Hannelore B.</Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel>
-      ) : (
-        <div id="stories">
-          {storyData.map((story) => (
-            <Story
-              name={story.name}
-              quote={story.quote}
-              picUrl={story.picUrl}
-            />
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
+      </Row>
+      <Row>
+        {/* <Button className="story-button" href="/interviews/Li M./In%20April%202021%2C%20my%20journey%20to%201%20Thing%20started%20with%20a%20basic%20presentation%20to%20document%20anti-Asian%20hate%20incidents%2C%20aiming%20to%20raise%20awareness%20among%20Google%20colleagues%20about%20the%20AAPI%20community's%20challenges.%20Unexpectedly%2C%20the%20presentation%20garnered%20attention%20within%20Google%2C%20leading%20others%20to%20contribute%20additional%20incidents%2C%20refine%20content%2C%20and%20share%20it%20widely.%20As%20a%20result%2C%20the%20presentation%20reached%20thousands%20of%20Googlers%20and%20was%20cited%20in%20numerous%20internal%20events%20and%20initiatives.%20%0A%0A%20I%20noticed%20that%20many%20AAPI%20community%20members%2C%20including%20myself%2C%20were%20upset%20about%20anti-Asian%20hate%20but%20seldom%20took%20action.%20Upon%20reflecting%20on%20my%20own%20inaction%2C%20I%20identified%20several%20excuses%2C%20such%20as%20feeling%20powerless%2C%20lacking%20time%20and%20resources%2C%20struggling%20to%20find%20suitable%20actions%2C%20being%20discouraged%20by%20the%20lack%20of%20results%2C%20and%20feeling%20isolated%20due%20to%20others'%20inactivity.%0A%0A%20The%20presentation%20experience%20shifted%20my%20perspective%2C%20motivating%20me%20to%20take%20manageable%20actions%20without%20fretting%20over%20immediate%20results%20and%20encouraging%20others%20to%20join%20me.%20I%20believed%20that%20if%20enough%20people%20became%20mobilized%2C%20real%20change%20would%20follow.%20This%20led%20me%20to%20establish%20the%20non-profit%20organization%2C%201%20Thing%20Against%20Racism.%20%0A%0A%201%20Thing's%20mission%20is%20to%20mobilize%20individuals%20and%20communities%20to%20take%20small%20actions%20against%20racism%20and%20hate%2C%20inspiring%20others%20to%20participate%20in%20the%20movement.%20By%20fostering%20a%20cycle%20of%20action%2C%20sharing%2C%20and%20inspiration%2C%20we%20aim%20to%20create%20a%20positive%20feedback%20loop%20that%20combines%20small%20efforts%20into%20a%20large%20social%20movement%20driving%20meaningful%20change.%20%0A%0A%20Using%20our%20volunteers'%20technological%20expertise%2C%201%20Thing%20developed%20tools%20to%20help%20others%20embrace%20the%201%20Thing%20concept.%20We%20transformed%20the%20anti-Asian%20hate%20incident%20presentation%20into%20the%20real-time%20tracking%20website%20hatecrimetracker.1thing.org.%20Upon%20analyzing%20incident%20data%2C%20we%20found%20many%20victims%20and%20families%20needed%20immediate%20assistance%2C%20so%20we%20established%20the%20anti-Asian%20hate%20victim%20support%20fund.%20Furthermore%2C%20volunteers%20are%20developing%20Together%2C%20a%20mobile%20app%20tailored%20for%20social%20and%20racial%20equality%20volunteers%2C%20enabling%20them%20to%20practice%20the%201%20Thing%20idea%20and%20achieve%20their%20objectives./%2Fstatic%2Fmedia%2FLi.df86ee8bd3e949da2dea.png/The%20presentation%20experience%20shifted%20my%20perspective%2C%20motivating%20me%20to%20take%20manageable%20actions%20without%20fretting%20over%20immediate%20results%20and%20encouraging%20others%20to%20join%20me.%20I%20believed%20that%20if%20enough%20people%20became%20mobilized%2C%20real%20change%20would%20follow.%20This%20led%20me%20to%20establish%20the%20non-profit%20organization%2C%201%20Thing%20Against%20Racism.">
+          Read More
+        </Button> */}
+      </Row>
     </div>
   );
 }

@@ -1,126 +1,134 @@
-.smallTitle{
-    text-align: left;
+.smallTitle {
+  text-align: left;
+}
+
+.share {
+  background-color: #f5f5f5;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .wrapper {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5%;
-    margin-top: 5%;
-  }
-  
-  @media (min-width: 576px) {
-    .wrapper {
-      max-width: 540px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .wrapper {
-      max-width: 720px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .wrapper {
-      max-width: 960px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .wrapper {
-      max-width: 1140px;
-    }
-  }
-  
-.form-inner-cont h4 {
-    font-size: 30px;
-    line-height: 50px;
-    color: #333333;
-    margin-bottom: 35px;
-    text-transform: capitalize;
-    font-weight: bold;
-  }
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
 
-  form.signin-form {
-    margin: 0 auto;
-    max-width: 420px;
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
   }
-  
-  .form-input {
-    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
   }
-  
-  .form-inner-cont label {
-    font-size: 16px;
-    line-height: 25px;
-    margin-bottom: 5px;
-    color: #333333;
-    display: block;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
   }
-  
-  .form-inner-cont input,
-  .form-inner-cont textarea {
-    outline: none;
-    width: 100%;
-    font-size: 16px;
-    line-height: 25px;
-    padding: 12px 20px;
-    margin-bottom: 15px;
-    color: #333;
-    padding: 12px 20px;
-    font-family: inherit;
-    text-align: left;
-    -webkit-appearance: none;
-    background: rgba(255, 154, 66, 0.02);
-    display: grid;
-    grid-template-columns: .1fr 1fr;
-    align-items: center;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
   }
-  
-  .form-inner-cont textarea {
-    height: 125px;
-    resize: none;
-    padding: 12px 15px;
-    background: rgba(255, 154, 66, 0.02);
-    display: grid;
-    grid-template-columns: .1fr 1fr;
-    align-items: center;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  
-  .form-inner-cont input:focus,
-  .form-inner-cont textarea:focus {
-    border: 1px solid #272626;
-    background: #fff;
-  }
-  
-  button.btn {
-    text-decoration: none;
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    padding: 12px 20px;
-    font-size: 16px;
-    line-height: 25px;
-    text-align: center;
-    color: #fff;
-    background: grey;
-    display: inline-block;
-    border-radius: 4px;
-    transition: 0.3s ease;
-  }
-  
-  button.btn:hover {
-    background: #8d8b8b;
-    transition: 0.3s ease;
-  }
+}
+
+.form-inner-cont h4 {
+  font-size: 30px;
+  line-height: 50px;
+  color: #333333;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+form.signin-form {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+.form-inner-cont label {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  color: #333333;
+  display: block;
+}
+
+.form-inner-cont input,
+.form-inner-cont textarea {
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  color: #333;
+  padding: 12px 20px;
+  font-family: inherit;
+  text-align: left;
+  -webkit-appearance: none;
+  background: rgba(255, 154, 66, 0.02);
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-inner-cont textarea {
+  height: 125px;
+  resize: none;
+  padding: 12px 15px;
+  background: rgba(255, 154, 66, 0.02);
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+.form-inner-cont input:focus,
+.form-inner-cont textarea:focus {
+  border: 1px solid #272626;
+  background: #fff;
+}
+
+button.btn {
+  text-decoration: none;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: grey;
+  display: inline-block;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+button.btn:hover {
+  background: #8d8b8b;
+  transition: 0.3s ease;
+}

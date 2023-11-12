@@ -1,25 +1,19 @@
-import React from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 
 import "./ChartView.css";
 
 import moment from "moment";
-import { useEffect, useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 import { Button } from "react-bootstrap";
 
-// import "../../assets/vendor/font-awesome/css/font-awesome.min.css";
-// import "../../assets/scss/argon-design-system-react.scss?v1.1.0";
 import IncidentChart from "./IncidentChart";
 
 import * as incidentsService from "./incident";
-// import { useRouter } from '../../utility/hooks/useRouter';
+
+import logo from "../../../assets/home-page/smallLogo.svg";
 
 const ChartView = () => {
-  // const router = useRouter();
-  const [dateRange, setDateRange] = useState([
-    moment().subtract(1, "year"),
-    moment(),
-  ]);
+  const dateRange = useMemo(() => [moment().subtract(1, "year"), moment()], []);
   const [isFirstLoadData, setIsFirstLoadData] = useState(true);
   const [totalAnnualCases, setTotalCases] = useState(0);
   const [totalLastMonthCases, setTotalLastMonthCases] = useState(0);
@@ -31,7 +25,6 @@ const ChartView = () => {
       value: 0,
     },
   ]);
-  const [loading, setLoading] = useState(false);
 
   // stats [{'2021-01-02:1}, {'2021-01-01:1}...]  dates descending
   // Remove date out of the range, and insert days that does not have data
@@ -85,8 +78,8 @@ const ChartView = () => {
     });
     return total;
   };
-  const loadData = () => {
-    setLoading(true);
+
+  const loadData = useCallback(() => {
     incidentsService.getStats(dateRange[0], dateRange[1]).then((stats) => {
       const mergedData = mergeDate(
         stats.stats,
@@ -100,14 +93,13 @@ const ChartView = () => {
       const lastMonth = moment().subtract(1, "month").format("YYYY-MM");
       setTotalLastMonthCases(calculateTotalCasesOfMonth(mergedData, lastMonth));
       setLastMonthName(lastMonthName);
-      setLoading(false);
       setIsFirstLoadData(false);
     });
-  };
+  }, [dateRange]);
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, [loadData]);
 
   //responsive
   const [dimensions, setDimensions] = React.useState({
@@ -132,6 +124,7 @@ const ChartView = () => {
       <Container md={10} className="hcr">
         <Row>
           <Col className="chart-title">
+            <img src={logo} style={{ width: "37px", height: "23.5px" }}></img>
             <p className="t3">We Made A Hate Crime Tracker</p>
           </Col>
         </Row>
@@ -160,7 +153,7 @@ const ChartView = () => {
                 <p className="t1">were reported in {lastMonthName}</p>
               </div>
 
-              <div>
+              <div className="childword">
                 <p className="t2">{totalAnnualCases} Cases</p>
                 <p className="t1">were reported last year</p>
               </div>
@@ -189,6 +182,8 @@ const ChartView = () => {
             <Button
               className="chart-button"
               href="https://hatecrimetracker.1thing.org/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <div className="chart-button-text">View Project</div>
             </Button>
