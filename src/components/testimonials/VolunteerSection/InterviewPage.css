@@ -40,9 +40,13 @@
     font-size: Times New Roman;
 }
 
+.interview-profile{
+    border-radius: 50%;
+}
+
 img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 0;
 }
 
 .interview-name-bottom {
