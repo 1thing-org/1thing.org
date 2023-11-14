@@ -44,11 +44,6 @@
     border-radius: 50%;
 }
 
-img {
-    width: 100%;
-    border-radius: 0;
-}
-
 .interview-name-bottom {
     font-family: Open Sans;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
