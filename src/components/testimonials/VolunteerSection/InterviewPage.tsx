@@ -49,7 +49,6 @@ function InterviewPage() {
                   {para}
                 </p>
               ))}
-              <p className="interview-paragraph">[end]</p>
               <p className="interview-paragraph interview-name-bottom">{name}</p>
             </Col>
           </Row>
