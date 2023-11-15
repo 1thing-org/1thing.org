@@ -26,10 +26,6 @@ const ChartView = () => {
     },
   ]);
 
-  // stats [{'2021-01-02:1}, {'2021-01-01:1}...]  dates descending
-  // Remove date out of the range, and insert days that does not have data
-  // start_date, end_date: Date
-  // monthly: monthly aggregation { first_day_of_month: count_of_the_month }
   const mergeDate = (stats, start_date, end_date, monthly) => {
     const new_stats = [];
     let start = moment(start_date);
@@ -45,10 +41,9 @@ const ChartView = () => {
           stats[stats.length - 1].key > strEndDate
         ) {
           stats.pop();
-          continue; //skip data that is out of range
+          continue;
         }
         if (stats[stats.length - 1].key === strDate) {
-          //found the date in stats, use it
           new_stats.push({
             monthly_cases: monthlyData,
             ...stats[stats.length - 1],
@@ -69,7 +64,7 @@ const ChartView = () => {
     });
     return total;
   };
-  const calculateTotalCasesOfMonth = (stats, month /* string 2022-01 */) => {
+  const calculateTotalCasesOfMonth = (stats, month) => {
     let total = 0;
     stats.forEach((stat) => {
       if (stat.key.substring(0, 7) === month) {
@@ -101,7 +96,6 @@ const ChartView = () => {
     loadData();
   }, [loadData]);
 
-  //responsive
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth,
@@ -120,8 +114,8 @@ const ChartView = () => {
   });
 
   return (
-    <div className="hcr-backgrund">
-      <Container md={10} className="hcr">
+    <Container className="hcr-backgrund">
+      <Container md={12} className="hcr">
         <Row>
           <Col className="chart-title">
             <img src={logo} style={{ width: "37px", height: "23.5px" }} alt="1 Thing Logo"></img>
@@ -147,33 +141,30 @@ const ChartView = () => {
         </div>
         {dimensions.width < 768 ? (
           <div>
-            <Container className="word">
-              <div className="childword">
-                <p className="t2">{totalLastMonthCases} Cases</p>
-                <p className="t1">were reported in {lastMonthName}</p>
-              </div>
+            <Container className="word-mobile">
+              <Col md={6} className="childword-mobile">
+                <p className="t2-mobile">{totalLastMonthCases} Cases</p>
+                <p className="t1-mobile">were reported in {lastMonthName}</p>
+              </Col>
 
-              <div className="childword">
-                <p className="t2">{totalAnnualCases} Cases</p>
-                <p className="t1">were reported last year</p>
-              </div>
+              <Col md={6} className="childword-mobile">
+                <p className="t2-mobile">{totalAnnualCases} Cases</p>
+                <p className="t1-mobile">were reported last year</p>
+              </Col>
             </Container>
           </div>
         ) : (
           <div>
             <Container className="word">
-              <div className="childword">
-                <Col className="col-3">
-                  <h3 className="t-cases">{totalLastMonthCases} Cases</h3>
-                  <p className="t1">were reported in {lastMonthName}</p>
-                </Col>
-              </div>
-              <div className="childword">
-                <Col className="col-3">
-                  <h3 className="t-cases">{totalAnnualCases} Cases</h3>
-                  <p className="t1">were reported in the past 12 months</p>
-                </Col>
-              </div>
+              <Col md={6} className="childword">
+                <h3 className="t-cases">{totalLastMonthCases} Cases</h3>
+                <p className="t1">were reported in {lastMonthName}</p>
+              </Col>
+
+              <Col md={6} className="childword">
+                <h3 className="t-cases">{totalAnnualCases} Cases</h3>
+                <p className="t1">were reported in the past 12 months</p>
+              </Col>
             </Container>
           </div>
         )}
@@ -190,7 +181,7 @@ const ChartView = () => {
           </Row>
         </div>
       </Container>
-    </div>
+    </Container>
   );
 };
 
