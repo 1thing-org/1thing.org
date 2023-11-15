@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.signup-title-section {
+    margin-bottom: 2rem;
+}
+
 .signup input{
     width: 30%;
     padding: 0.5rem;
@@ -18,8 +22,9 @@
 
 .signup button {
     padding: 0.7rem 3rem;
-    background-color: grey;
-    color: white;
+    background-color: #FFC530;
+    color: black;
+    font-weight: bolder;
     border: none;
     border-radius: 5px;
     cursor: pointer;

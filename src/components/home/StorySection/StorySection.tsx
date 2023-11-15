@@ -1,8 +1,5 @@
 import Story from "./Story";
-import Card from "react-bootstrap/Card";
-import { Link } from "react-router-dom";
 import "./Story.css";
-import { Button } from "react-bootstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import logo from "../../../assets/home-page/smallLogo.svg"
 import {Container, Row, Col} from 'react-bootstrap'
@@ -36,7 +33,7 @@ function StorySection() {
   return (
     <div id="story-section">
       <Container id="our-sotry-text-container">
-        <img src={logo} style={{ width: "37px", height: "23.5px" }}></img>
+        <img src={logo} style={{ width: "37px", height: "23.5px" }} alt="1thing logo"></img>
         <h2 className="our-story">Our Story</h2>
       </Container>
       <Col className="mt-1 mb-2">

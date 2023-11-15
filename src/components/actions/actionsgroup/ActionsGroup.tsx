@@ -8,7 +8,7 @@ import promoteLeft from "../../../assets/take-action-page/promote-left.svg";
 const actionData: {
   name: string;
   desc: string[];
-  actiontUrl: string;
+  actionUrl: string;
   actionId: string;
   imgs: Array<any>;
 }[] = [
@@ -23,7 +23,7 @@ const actionData: {
       "Raise questions to the leaders of your organization, encourage concrete plans to address this issue.",
       "Inform your asian/non-asian friends about actions taken by governments and companies. Knowing that anti-Asian hate has drawn significant society-wise attention (not just among AAPI communities) will encourage everyone to do something.",
     ],
-    actiontUrl: "/",
+    actionUrl: "/",
     actionId: "raiseAwareness",
     imgs: [raiseAwarenessRight],
   },
@@ -36,7 +36,7 @@ const actionData: {
       "Tell a hate incident/crime victim that you want to listen to their feelings.",
       "Tell a hate incident/crime victim that you are here to help.",
     ],
-    actiontUrl: "/",
+    actionUrl: "/",
     actionId: "support",
     imgs: [supportVictim],
   },
@@ -50,7 +50,7 @@ const actionData: {
       "Develop: create apps, websites, or online platforms.",
       "Collaborate: propose solutions, help with projects, or volunteer out in the community.",
     ],
-    actiontUrl: "/",
+    actionUrl: "/",
     actionId: "useSkills",
     imgs: [useSkillsRight],
   },
@@ -63,7 +63,7 @@ const actionData: {
       "Recommend: Asian storytelling movies. Eg: Crazy Rich Asians, The Joy Luck Club, to friends & colleagues.",
       "Invite: share something fun about Asian culture with non-Asian friends.",
     ],
-    actiontUrl: "/",
+    actionUrl: "/",
     actionId: "understanding",
     imgs: [promoteLeft],
   },
@@ -90,6 +90,7 @@ function ActionsGroup() {
         <img
           src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
           style={{ width: "37.4px", height: "23.5px" }}
+          alt="1 Thing Logo"
         />
         {actionData[0].name}
       </h3>
@@ -114,6 +115,7 @@ function ActionsGroup() {
         <img
           src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
           style={{ width: "37.4px", height: "23.5px" }}
+          alt="1 Thing Logo"
         />
         {actionData[1].name}
       </h3>
@@ -137,6 +139,7 @@ function ActionsGroup() {
         <img
           src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
           style={{ width: "37.4px", height: "23.5px" }}
+          alt="1 Thing Logo"
         />
         {actionData[2].name}
       </h3>
@@ -161,6 +164,7 @@ function ActionsGroup() {
         <img
           src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
           style={{ width: "37.4px", height: "23.5px" }}
+          alt="1 Thing Logo"
         />
         {actionData[3].name}
       </h3>

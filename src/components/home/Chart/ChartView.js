@@ -118,7 +118,7 @@ const ChartView = () => {
       <Container md={12} className="hcr">
         <Row>
           <Col className="chart-title">
-            <img src={logo} style={{ width: "37px", height: "23.5px" }}></img>
+            <img src={logo} style={{ width: "37px", height: "23.5px" }} alt="1 Thing Logo"></img>
             <p className="t3">We Made A Hate Crime Tracker</p>
           </Col>
         </Row>

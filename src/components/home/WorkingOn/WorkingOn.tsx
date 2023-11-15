@@ -11,14 +11,14 @@ function WorkingOn() {
     <Container id="workingOn-section">
       <Col md={12} id="working-on-container">
       
-        <img src={logo} style={{ width: '37px', height: '23.5px' }}></img>
+        <img src={logo} style={{ width: '37px', height: '23.5px' }} alt="1thinglogo"></img>
         <h2 className="main-title">We're also Working on:</h2>
         
       </Col>
 
       <Row id="project-block">
         <Col className="mt-1 mb-2" id="block-project">
-          <img id="workingOn-pic" src={project_together} alt="project together Image" />
+          <img id="workingOn-pic" src={project_together} alt="Project Together"/>
           <div id="inner">
             <h2 className="title">Project Together</h2>
             <p className="working-text">
@@ -29,7 +29,7 @@ function WorkingOn() {
         </Col>
 
         <Col className="mt-1 mb-2" id="block-supporting">
-          <img id="workingOn-pic" src={placeholderimg} alt="Victim Support Fund Image" />
+          <img id="workingOn-pic" src={placeholderimg} alt="Victim Support Fund" />
           <div id="inner">
             <h2 className="title">Victim Support Fund</h2>
             <p className="working-text">
