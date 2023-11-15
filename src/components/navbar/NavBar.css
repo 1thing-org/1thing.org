@@ -1,7 +1,8 @@
 .nav {
   max-width: 1440px;
   margin: 0 auto;
-  height: 150px;
+  padding:0;
+  background: rgba(255, 255, 255, 0.80);
 }
 
 .brand-container {
@@ -11,10 +12,6 @@
   height: 58.48px;
 }
 
-.logo {
-  width: 68.402px;
-  height: 58.485px;
-}
 
 .logo-text {
   width: 80px;
