@@ -3,12 +3,14 @@ import Footer from '../footer/Footer';
 import AboutUsSection from "./AboutUsContent";
 import ContactOneThing from "./ContactUs";
 import './AboutUs.css';
+import heartImg from "../../assets/AboutUs/1thing heart.png";
 
 
 function AboutUs(){
     return (
             <div>
-                <NavBar />
+             
+       
                 <AboutUsSection />
                 <ContactOneThing />
                 <Footer />
