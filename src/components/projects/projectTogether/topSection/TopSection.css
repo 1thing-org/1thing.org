@@ -1,0 +1,45 @@
+#projectTogether-container {
+    padding-top: 100px;
+    max-width: 1440px;
+}
+
+.project-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#ProjectTogehter-title-2 {
+    color: #18181A;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+}
+
+#topSection-title {
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: 0.4px;
+    background: linear-gradient(to top, #ffd500 50%, #ffd500 50%, transparent 50%, transparent 100%);
+}
+
+#hands {
+    width: 83.871px;
+    height: var(--Section-Vertical-Margin-Large, 100px);
+    flex-shrink: 0;
+}
+
+.pj-titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}

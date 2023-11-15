@@ -1,23 +1,33 @@
 import NavBar from "../../navbar/NavBar";
 import Footer from "../../footer/Footer";
-import HeroSection from "../../hero/HeroSection";
-import HeroImage from "assets/hero.svg";
+import Iphone from "../../../assets/project-together/iphone.png"
 import Content from "./content/content";
+import TopSection from "./topSection/TopSection";
+import HeroSection from "components/hero/HeroSection";
 
-const aboutHeroData: { heading: string; subheading: string } = {
-  heading: `Project Together Page`,
-  subheading: `The Asian American and Pacific Islander (AAPI) community is facing
-              a number of challenges, including increased hate crimes,
-              discrimination, and lack of representation. These challenges can
-              be overwhelming, and it can be difficult to know where to start to
-              help.`,
+const aboutHeroData: {
+  heading: string;
+  secondheading: string;
+  subheading: string;
+} = {
+  heading: `Project Together`,
+  secondheading: `Project Together is a mobile app that connects people who want to support the AAPI community.`,
+  subheading: `We believe that Project Together has the potential to make a real difference in the AAPI community. 
+  By connecting people who want to support the AAPI community, 
+  we can help to create a more inclusive and supportive society for all.`,
 };
 
 function ProjectTogether() {
   return (
     <div>
       <NavBar />
-      <HeroSection heading={aboutHeroData.heading} imageSrc={HeroImage} />
+      <TopSection
+        heading={aboutHeroData.heading}
+        secondheading={aboutHeroData.secondheading}
+        subheading={aboutHeroData.subheading}
+        imageSrc={Iphone}
+       
+      />
       <Content />
       <Footer />
     </div>
