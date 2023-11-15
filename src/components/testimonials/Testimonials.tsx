@@ -1,7 +1,7 @@
 import NavBar from "../navbar/NavBar";
 import Footer from "../footer/Footer";
 import VolunteerSection from "./VolunteerSection/VolunteerSection";
-import SignUp from "../signup/SignUp";
+import SignUpForm from "utility/signup";
 
 function Testimonials() {
   return (
@@ -9,7 +9,7 @@ function Testimonials() {
       <NavBar />
 
       <VolunteerSection />
-      <SignUp />
+      <SignUpForm className={"signup"} signupTitle={"Sign Up to Volunteer"} />
       <Footer />
     </div>
   );

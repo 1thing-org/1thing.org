@@ -3,7 +3,7 @@ import './VolunteerSection.css';
 import React, { useState, useEffect } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-import {Row, Col} from 'react-bootstrap'
+import {Row, Col, Container} from 'react-bootstrap'
 
 const volunteerData: { name: string, quote: string, pic: string, interview: string}[] = [
     {
@@ -60,34 +60,32 @@ function VolunteerSection(){
 );
 
 return (
-    <div id="volunteer-section">
-        <Row>
-            <h2 className='our-volunteers'>Hear our stories</h2>
-        </Row>   
-        
-            <div className="volunteers">
-            <Row>
-            {isMobile ? renderVolunteers() : ( 
-                <>
-                    <Col>
-                        <Volunteer name={volunteerData[0].name} quote={volunteerData[0].quote} pic={volunteerData[0].pic} interview={volunteerData[0].interview}/>
-                    </Col>  
-                    <Col>
-                        <Volunteer name={volunteerData[1].name} quote={volunteerData[1].quote} pic={volunteerData[1].pic} interview={volunteerData[1].interview}/>
-                    </Col>  
-                 
-                    <Col>
-                        <Volunteer name={volunteerData[2].name} quote={volunteerData[2].quote} pic={volunteerData[2].pic} interview={volunteerData[2].interview}/>
-                    </Col>           
-                </>
-             
-            )}
-        </Row>  
-            </div>
-     
+  <Container id="volunteer-section">
+    <Row>
+      <h2 className="our-volunteers">Hear our stories</h2>
+    </Row>
 
-       
-    </div>
+    <Container className="volunteers">
+      <Row>
+        {isMobile ? (
+          renderVolunteers()
+        ) : (
+          <>
+            {volunteerData.map((volunteer, index) => (
+              <Col md={4} className="volunteer-element" key={index}>
+                <Volunteer
+                  name={volunteer.name}
+                  quote={volunteer.quote}
+                  pic={volunteer.pic}
+                  interview={volunteer.interview}
+                />
+              </Col>
+            ))}
+          </>
+        )}
+      </Row>
+    </Container>
+  </Container>
 );
 }
 

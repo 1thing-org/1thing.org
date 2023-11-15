@@ -1,14 +1,14 @@
-#volunteer{
+#volunteer {
     width: 100%;
-    border:none;
-    --bs-card-bg:transparent;
+    border: none;
+    --bs-card-bg: transparent;
     display: flex;
     align-items: center;
     align-self: stretch;
-  
+
 }
 
-.our-volunteers{
+.our-volunteers {
     align-self: stretch;
     color: #18181A;
     text-align: center;
@@ -16,24 +16,20 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
-    line-height: 60px; /* 150% */
-    letter-spacing: 0.4px; 
+    line-height: 60px;
+    /* 150% */
+    letter-spacing: 0.4px;
 }
 
- #volunteers{
+#volunteers {
     display: flex;
     align-items: center;
     gap: 40px;
-    align-self: stretch;    
-} 
-
-#volunteer-profile-pic {
-    width: 292px;
-    height: 292px;
-    border-radius: 600px;
+    align-self: stretch;
 }
 
-#volunteer-name{
+
+#volunteer-name {
     color: var(--neutral-neutral-01, #18181A);
     text-align: center;
     align-self: stretch;
@@ -42,10 +38,12 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 800;
-    line-height: 28px; /* 116.667% */
+    line-height: 28px;
+    /* 116.667% */
     letter-spacing: 0.4px;
 }
-#volunteer-quote{
+
+#volunteer-quote {
     color: var(--neutral-neutral-01, #18181A);
     align-self: stretch;
     /* Main (test) */
@@ -55,32 +53,32 @@
     font-weight: 400;
     line-height: normal;
     text-align: start;
-    height:210px;
-    
+    height: 210px;
+
 }
 
-#volunteer-interview{
+#volunteer-interview {
     color: var(--Secondary-color, #0F54DB);
     font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;  
+    line-height: normal;
 }
 
-@media screen and (min-width:968px) and (max-width: 1440px){   
-   
-    #volunteer{
+@media screen and (min-width:968px) and (max-width: 1440px) {
+
+    #volunteer {
         width: 100%;
-        border:none;
-        --bs-card-bg:transparent;
+        border: none;
+        --bs-card-bg: transparent;
         display: flex;
         align-items: center;
         align-self: stretch;
-      
+
     }
-    
-    .our-volunteers{
+
+    .our-volunteers {
         align-self: stretch;
         color: #18181A;
         text-align: center;
@@ -88,9 +86,11 @@
         font-size: 40px;
         font-style: normal;
         font-weight: 800;
-        line-height: 60px; /* 150% */
-        letter-spacing: 0.4px; 
+        line-height: 60px;
+        /* 150% */
+        letter-spacing: 0.4px;
     }
+
     #volunteer-section {
 
         display: flex;
@@ -99,26 +99,26 @@
         align-items: center;
         gap: 40px;
         align-self: stretch;
-        
+
     }
-    
-    
-    #volunteers{
-        gap: 40px;   
-        border:none;
-        --bs-card-bg:transparent;
+
+
+    #volunteers {
+        gap: 40px;
+        border: none;
+        --bs-card-bg: transparent;
         display: flex;
         align-items: center;
         align-self: stretch;
     }
-    
-    #volunteer-profile-pic {
+
+    /* #volunteer-profile-pic {
         width: 292px;
         height: 292px;
         border-radius: 600px;
-    }
-    
-    #volunteer-name{
+    } */
+
+    #volunteer-name {
         color: var(--neutral-neutral-01, #18181A);
         text-align: center;
         align-self: stretch;
@@ -127,10 +127,12 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 800;
-        line-height: 28px; /* 116.667% */
+        line-height: 28px;
+        /* 116.667% */
         letter-spacing: 0.4px;
     }
-    #volunteer-quote{
+
+    #volunteer-quote {
         color: var(--neutral-neutral-01, #18181A);
         align-self: stretch;
         /* Main (test) */
@@ -140,35 +142,65 @@
         font-weight: 400;
         line-height: normal;
         text-align: start;
-        height:210px;
-        
+        height: 210px;
+
     }
-    
-    #volunteer-interview{
+
+    #volunteer-interview {
         color: var(--Secondary-color, #0F54DB);
         font-family: Open Sans;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
-        line-height: normal;  
+        line-height: normal;
     }
 
-  
+
 }
-@media screen and (min-width: 1441px){
+
+@media screen and (min-width: 1440px) {
+    #volunteer-profile-pic {
+        width: 292px;
+        height: 292px;
+        border-radius: 600px;
+    }
+
     #volunteer-section {
         display: flex;
-        padding: 50px 20px 40px 20px;
+        width: 1008px;
+        padding: 0;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        gap: 40px;
         align-self: stretch;
-        
+        margin: 128px auto;
     }
-
 }
 
-@media screen and (min-width: 700px) and (max-width: 1010px){
- 
-   
+@media screen and (min-width: 1011px) and (max-width: 1399px) {
+    #volunteer-profile-pic {
+        width: 90%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #volunteer-name {
+        margin-bottom: 12px;
+    }
+
+    #volunteer-quote {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1010px) {
+    #volunteer-profile-pic {
+        width: 90%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #volunteer-quote {
+        font-size: 12px;
+    }
 }
