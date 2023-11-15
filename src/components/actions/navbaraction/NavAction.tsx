@@ -64,15 +64,19 @@ function NavBar() {
            {!showOffcanvas && (
           <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent:"flex-end"}} >
          <Nav className="links-ms-auto">
-   
+         <Page
+              title={"About Us"}
+              links={"/aboutus"}
+              className={"inner-text"}
+              ></Page>
               <Page
               title={"Take Action"}
               links={"/takeaction"}
               className={"inner-text"}
               ></Page>
-              <Page
-              title={"About Us"}
-              links={"/aboutus"}
+            <Page
+              title={"Testimonial"}
+              links={"/testimonials"}
               className={"inner-text"}
               ></Page>
               <Page
@@ -80,11 +84,7 @@ function NavBar() {
               links={"/contact"}
               className={"inner-text"}
               ></Page>
-              <Page
-              title={"Testimonial"}
-              links={"/testimonials"}
-              className={"inner-text"}
-              ></Page>
+           
   
           </Nav>
          </Navbar.Collapse>
@@ -99,26 +99,25 @@ function NavBar() {
           <Offcanvas.Body >
       
             <Nav className="links-ms-auto">
-   
-              <Page
-                title={"Take Action"}
-                links={"/takeaction"}
-                className={"inner-text"}
+            <Page
+              title={"About Us"}
+              links={"/aboutus"}
+              className={"inner-text"}
               ></Page>
               <Page
-                title={"About Us"}
-                links={"/aboutus"}
-                className={"inner-text"}
+              title={"Take Action"}
+              links={"/takeaction"}
+              className={"inner-text"}
+              ></Page>
+            <Page
+              title={"Testimonial"}
+              links={"/testimonials"}
+              className={"inner-text"}
               ></Page>
               <Page
-                title={"Contact"}
-                links={"/contact"}
-                className={"inner-text"}
-              ></Page>
-              <Page
-                title={"Testimonial"}
-                links={"/testimonials"}
-                className={"inner-text"}
+              title={"Contact"}
+              links={"/contact"}
+              className={"inner-text"}
               ></Page>
              
             </Nav>
