@@ -7,39 +7,38 @@ import AboutUs from "./components/about/AboutUs";
 import Contact from "./components/contact/Contact";
 import ProjectTogether from "components/projects/projectTogether/ProjectTogether";
 import VictimSupportFund from "components/projects/victimSupportFund/VictimSupportFund";
-
 import InterviewPage from "./components/testimonials/VolunteerSection/InterviewPage";
 import VolunteerSection from "./components/testimonials/VolunteerSection/VolunteerSection";
+import { InterviewProvider } from "components/testimonials/VolunteerSection/InterviewContext";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/takeaction" element={<TakeAction />} />
+    <InterviewProvider>
+      <div className="App">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/takeaction" element={<TakeAction />} />
 
-          <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/testimonials" element={<Testimonials />} />
 
-          <Route path="/volunteers" element={<VolunteerSection />} />
-          <Route
-            path="/interviews/:name/:interview/:pic/:quote"
-            element={<InterviewPage />}
-          />
+            <Route path="/volunteers" element={<VolunteerSection />} />
+            <Route path="/interviews/:name/" element={<InterviewPage />} />
 
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route
-            path="/projects/project-together"
-            element={<ProjectTogether />}
-          />
-          <Route
-            path="/projects/victim-support-fund"
-            element={<VictimSupportFund />}
-          />
-        </Routes>
-      </Router>
-    </div>
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/projects/project-together"
+              element={<ProjectTogether />}
+            />
+            <Route
+              path="/projects/victim-support-fund"
+              element={<VictimSupportFund />}
+            />
+          </Routes>
+        </Router>
+      </div>
+    </InterviewProvider>
   );
 }
 

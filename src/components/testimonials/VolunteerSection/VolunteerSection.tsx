@@ -42,22 +42,26 @@ function VolunteerSection(){
   }, []);
 
   const renderVolunteers = () => (
-    <Carousel showThumbs={false} showStatus={false} dynamicHeight={false} useKeyboardArrows={true}>
-       
-        {volunteerData.map((volunteer, index) => (       
-            <div key={index}>
-                <Volunteer 
-                    name={volunteer.name} 
-                    quote={volunteer.quote} 
-                    pic={volunteer.pic} 
-                    interview={volunteer.interview}
-                />
-                   
-            </div>
-        ))}
-    
+    <Carousel
+      showThumbs={false}
+      showStatus={false}
+      dynamicHeight={false}
+      useKeyboardArrows={true}
+    >
+      {volunteerData.map((volunteer, index) => (
+        <div key={index}>
+          <Volunteer
+            name={volunteer.name}
+            quote={volunteer.quote}
+            pic={volunteer.pic}
+            interview={volunteer.interview}
+          />
+
+        </div>
+      ))}
+      
     </Carousel>
-);
+  );
 
 return (
   <Container id="volunteer-section">

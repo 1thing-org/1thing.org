@@ -1,21 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { useParams } from "react-router-dom";
-import Footer from "../../../components/footer/Footer";
-import NavBar from "../../../components/navbar/NavBar";
+import Footer from "../../footer/Footer";
+import NavBar from "../../navbar/NavBar";
+import { InterviewContext } from "./InterviewContext";
 import "./InterviewPage.css";
 
 function InterviewPage() {
-  const { name, pic, interview, quote } = useParams<{
-    name?: string;
-    quote?: string;
-    pic?: string;
-    interview?: string;
-  }>();
-  const paragraphs = interview
-    ? decodeURIComponent(interview).split("\n\n")
-    : [];
-
+  const { interviewData } = useContext(InterviewContext);
+  const name = interviewData.name;
+  const pic = interviewData.pic;
+  const interview = interviewData.interview;
+  const quote = interviewData.quote;
   if (!name || !pic || !interview || !quote) {
     // Handle the case when name or quote is undefined
     return <div>Invalid URL parameters.</div>;
@@ -44,17 +39,15 @@ function InterviewPage() {
           <Row></Row>
           <Row>
             <Col>
-              {paragraphs.map((para, index) => (
-                <p className="interview-paragraph" key={index}>
-                  {para}
-                </p>
-              ))}
-              <p className="interview-paragraph interview-name-bottom">{name}</p>
+              <p className="interview-paragraph">{interview}</p>
+              <p className="interview-paragraph interview-name-bottom">
+                {name}
+              </p>
             </Col>
           </Row>
         </Container>
       </Container>
-
+      
       <Footer />
     </div>
   );
