@@ -1,3 +1,4 @@
+
 .nav-action {
   max-width: 1440px;
   margin: 0 auto;
@@ -30,21 +31,19 @@
   height: auto 57px;
 }
 
-.logo {
-  width: 68.402px;
-  height: 58.485px;
-}
+.logo{
+  width: 50.119px;
+  height: 50.333px;
 
+}
 .logo-text {
   width: 80px;
   height: 48px;
-  font-family: sans-serif;
+  color: var(--neutral-neutral-01, #18181A);
+  font-size: 14.118px;
   font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 16px;
-  color: #18181A;
-  text-align: start;
+  font-weight: 900;
+  line-height: normal;
 }
 
 .inner-text {
@@ -69,6 +68,9 @@
   height: 45px;
   z-index: 5;
   transition: all 0.3s ease-in-out;
+  border:none;
+  top: 4rem;
+  
 }
 
 
