@@ -26,7 +26,7 @@ function HeroSection(props: Props) {
         <Col md={6} xs={12}>
           <Card.Img
             src={imageSrc}
-            style={{ width: "100%", maxWidth: "522px", height: "522px" }}
+            style={{ width: "100%", maxWidth: "522px", height: "100%", objectFit:"cover" }}
           />
         </Col>
 
