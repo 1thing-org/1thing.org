@@ -49,7 +49,9 @@ function InterviewPage() {
                   {para}
                 </p>
               ))}
-              <p className="interview-paragraph interview-name-bottom">{name}</p>
+              <p className="interview-paragraph interview-name-bottom">
+                {name}
+              </p>
             </Col>
           </Row>
         </Container>
