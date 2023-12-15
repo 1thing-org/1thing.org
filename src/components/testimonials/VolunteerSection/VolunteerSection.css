@@ -12,10 +12,10 @@
     align-self: stretch;
     color: #18181A;
     text-align: center;
-    font-family: Open Sans;
+
     font-size: 40px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 60px;
     /* 150% */
     letter-spacing: 0.4px;
@@ -34,7 +34,6 @@
     text-align: center;
     align-self: stretch;
     /* Heading/Heading3 */
-    font-family: Open Sans;
     font-size: 24px;
     font-style: normal;
     font-weight: 800;
@@ -44,22 +43,19 @@
 }
 
 #volunteer-quote {
+    height: 176px;
+    text-align: left;
     color: var(--neutral-neutral-01, #18181A);
     align-self: stretch;
-    /* Main (test) */
-    font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-align: start;
-    height: 210px;
 
 }
 
 #volunteer-interview {
     color: var(--Secondary-color, #0F54DB);
-    font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -82,7 +78,6 @@
         align-self: stretch;
         color: #18181A;
         text-align: center;
-        font-family: Open Sans;
         font-size: 40px;
         font-style: normal;
         font-weight: 800;
@@ -123,7 +118,6 @@
         text-align: center;
         align-self: stretch;
         /* Heading/Heading3 */
-        font-family: Open Sans;
         font-size: 24px;
         font-style: normal;
         font-weight: 800;
@@ -136,7 +130,6 @@
         color: var(--neutral-neutral-01, #18181A);
         align-self: stretch;
         /* Main (test) */
-        font-family: Open Sans;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -148,7 +141,6 @@
 
     #volunteer-interview {
         color: var(--Secondary-color, #0F54DB);
-        font-family: Open Sans;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
