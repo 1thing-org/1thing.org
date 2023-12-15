@@ -118,7 +118,11 @@ const ChartView = () => {
       <Container md={12} className="hcr">
         <Row>
           <Col className="chart-title">
-            <img src={logo} style={{ width: "37px", height: "23.5px" }} alt="1 Thing Logo"></img>
+            <img
+              src={logo}
+              style={{ width: "37px", height: "23.5px" }}
+              alt="1 Thing Logo"
+            ></img>
             <p className="t3">We Made A Hate Crime Tracker</p>
           </Col>
         </Row>
@@ -168,8 +172,7 @@ const ChartView = () => {
             </Container>
           </div>
         )}
-        <div>
-          <Row className="link1">
+        <Col className="links">   
             <Button
               className="chart-button"
               href="https://hatecrimetracker.1thing.org/"
@@ -178,8 +181,17 @@ const ChartView = () => {
             >
               <div className="chart-button-text">View Project</div>
             </Button>
-          </Row>
-        </div>
+
+            <Button
+              className="chart-button"
+              href="https://hatecrimetracker.1thing.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="chart-button-text">See Live Tracker</div>
+            </Button>
+         
+        </Col>
       </Container>
     </Container>
   );
