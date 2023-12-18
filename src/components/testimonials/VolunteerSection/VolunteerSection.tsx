@@ -2,10 +2,10 @@ import Volunteer from "./Volunteer";
 import "./VolunteerSection.css";
 import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import { Row, Col, Container } from "react-bootstrap";
+import logo from "../../../assets/home-page/smallLogo.svg";
 
-const volunteerData: {
+export const volunteerData: {
   name: string;
   quote: string;
   pic: string;
@@ -37,12 +37,34 @@ const volunteerData: {
   },
 ];
 
+const OurStoryBriefDescriptionMobile = () => (
+  <Container id="our-story-brief-description">
+    <Container id="our-sotry-text-container">
+      <img
+        src={logo}
+        style={{ width: "37px", height: "23.5px" }}
+        alt="1thing logo"
+      ></img>
+      <h2 className="our-story">Our Story</h2>
+    </Container>
+    <p id="our-story-brief-text">
+      1 Thing Against Racism began as a slide deck shared around the offices at
+      Google. Today, it is a mission driven organization comprised of volunteers
+      who contribute their time to our mission.
+    </p>
+  </Container>
+);
+
 function VolunteerSection() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+  /**
+   * window.innerWidth does not exactly match @media screen width, 768px in
+   * chrome browser equals 780px window.innerWidth
+   */
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 780);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 700);
+      setIsMobile(window.innerWidth < 780);
     };
 
     window.addEventListener("resize", handleResize);
@@ -52,50 +74,47 @@ function VolunteerSection() {
   }, []);
 
   const renderVolunteers = () => (
-    <Carousel
-      showThumbs={false}
-      showStatus={false}
-      dynamicHeight={false}
-      useKeyboardArrows={true}
-    >
+    <>
       {volunteerData.map((volunteer, index) => (
-        <div key={index}>
+        <Row className="volunteer-element" key={index}>
           <Volunteer
             name={volunteer.name}
             quote={volunteer.quote}
             pic={volunteer.pic}
             interview={volunteer.interview}
           />
-        </div>
+        </Row>
       ))}
-    </Carousel>
+      <button id="volunteers-read-more-button">Read More</button>
+    </>
   );
 
   return (
     <Container id="volunteer-section">
-      <Row>
-        <h2 className="our-volunteers">Hear our stories</h2>
-      </Row>
-
-      <Container className="volunteers">
+      {isMobile ? (
+        <OurStoryBriefDescriptionMobile />
+      ) : (
         <Row>
-          {isMobile ? (
-            renderVolunteers()
-          ) : (
-            <>
-              {volunteerData.map((volunteer, index) => (
-                <Col md={4} className="volunteer-element" key={index}>
-                  <Volunteer
-                    name={volunteer.name}
-                    quote={volunteer.quote}
-                    pic={volunteer.pic}
-                    interview={volunteer.interview}
-                  />
-                </Col>
-              ))}
-            </>
-          )}
+          <h2 className="our-volunteers">Hear our stories</h2>
         </Row>
+      )}
+      <Container className="volunteers">
+        {isMobile ? (
+          renderVolunteers()
+        ) : (
+          <Row>
+            {volunteerData.map((volunteer, index) => (
+              <Col md={4} className="volunteer-element" key={index}>
+                <Volunteer
+                  name={volunteer.name}
+                  quote={volunteer.quote}
+                  pic={volunteer.pic}
+                  interview={volunteer.interview}
+                />
+              </Col>
+            ))}
+          </Row>
+        )}
       </Container>
     </Container>
   );
