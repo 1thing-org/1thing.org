@@ -1,5 +1,5 @@
 import "./WorkingOn.css";
-import placeholderimg from "../../../assets//home-page/working-on-placeholder.svg";
+import supportFund from "../../../assets//home-page/supportFund.png";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import logo from "../../../assets/home-page/smallLogo.svg";
@@ -29,7 +29,7 @@ function WorkingOn() {
         </Col>
 
         <Col className="mt-1 mb-2" id="block-supporting">
-          <img id="workingOn-pic" src={placeholderimg} alt="Victim Support Fund" />
+          <img id="supportFund-pic" src={supportFund} alt="Victim Support Fund" />
           <div id="inner">
             <h2 className="title">Victim Support Fund</h2>
             <p className="working-text">
