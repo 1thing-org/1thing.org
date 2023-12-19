@@ -18,33 +18,34 @@ function LiMPage() {
       <Container className="interview-container">
         <Container className="interview-introduction">
           <Row>
-            <Col md={5}>
+            <Col md={5} className="interview-profile-container">
               <img
                 className="interview-profile"
                 src={decodeURIComponent(pic)}
                 alt={`${name}'s pic`}
               />
             </Col>
-            <Col className="interview-brief-introduction">
+            <Col md={7} className="interview-brief-introduction">
               <h1 className="interview-name">{name}</h1>
               <p className="interview-quote">"{quote}"</p>
             </Col>
           </Row>
         </Container>
-        <Container>
-          <Row></Row>
-          <Row>
-            <Col>
+        <Container className="interview-detials-container">
+          <Container className="interview-paragraph-container">
+            <Col className="interview-paragraph">
               {paragraphs.map((para, index) => (
                 <p className="interview-paragraph" key={index}>
                   {para}
+                  <br />
                 </p>
               ))}
+              <br />
               <p className="interview-paragraph interview-name-bottom">
                 {name}
               </p>
             </Col>
-          </Row>
+          </Container>
         </Container>
       </Container>
 

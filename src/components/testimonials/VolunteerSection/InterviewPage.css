@@ -1,10 +1,28 @@
 .interview-container {
-    width: 65rem;
+    width: 1048px;
+    margin-top: 127px;
+    margin-bottom: 48px;
+}
+
+.interview-introduction {
+    padding: 0;
+}
+
+.interview-profile-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interview-profile {
+    max-width: 90%;
+    height: auto;
 }
 
 .interview-brief-introduction {
     text-align: left;
-    margin-left: 3rem;
 }
 
 .interview-name {
@@ -17,15 +35,10 @@
 }
 
 .interview-quote {
-    font-size: 2rem;
+    font-size: 28px;
     font-family: Avenir;
-    line-height: 2rem;
-}
-
-.interview-profile {
-    margin: .5rem;
-    max-width: 100%;
-    height: auto;
+    line-height: 40px;
+    font-weight: 600;
 }
 
 .interview-content {
@@ -42,12 +55,26 @@
     border-radius: 50%;
 }
 
+.interview-detials-container {
+    width: 1048px;
+    margin-top: 48px;
+}
+
+.interview-paragraph {
+    margin: 0;
+}
+
+.interview-paragraph:first-child::first-letter {
+    font-size: 200%;
+    font-weight: 800;
+}
+
 .interview-name-bottom {
     font-family: Open Sans;
     font-weight: bolder;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .interview-name {
         font-size: 2rem;
         font-family: Open Sans;
@@ -59,7 +86,46 @@
 
     .interview-quote {
         font-size: 1rem;
-        font-family: Avenir;
         line-height: 2rem;
+    }
+}
+
+/* mobile version max width 767px */
+@media screen and (max-width: 767px) {
+    .interview-container {
+        width: 85%;
+        margin-top: 40px;
+        margin-bottom: 48px;
+        padding: 0;
+    }
+
+    .interview-brief-introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interview-quote {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .interview-detials-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .interview-paragraph-container {
+        padding: 0;
+    }
+
+    .interview-paragraph {
+        font-size: 18px;
+    }
+
+    .interview-name {
+        font-weight: bolder;
+        margin-top: 32px;
     }
 }
