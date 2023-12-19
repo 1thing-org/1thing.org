@@ -1,4 +1,5 @@
 import "./ShareOneThing.css";
+import smallLogo from "../../../assets/home-page/smallLogo.svg"
 
 function ShareOneThing() {
   return (
@@ -12,7 +13,7 @@ function ShareOneThing() {
           >
             <h4>
               <img
-                src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+                src = {smallLogo}
                 style={{ width: "37.4px", height: "23.5px" }}
                 alt="1 Thing Logo"
               />

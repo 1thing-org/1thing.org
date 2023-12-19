@@ -4,6 +4,7 @@ import raiseAwarenessRight from "../../../assets/take-action-page/raise-awarenes
 import supportVictim from "../../../assets/take-action-page/support-victim.svg";
 import useSkillsRight from "../../../assets/take-action-page/use-skills-right.svg";
 import promoteLeft from "../../../assets/take-action-page/promote-left.svg";
+import smallLogo from "../../../assets/home-page/smallLogo.svg"
 
 const actionData: {
   name: string;
@@ -88,7 +89,7 @@ function ActionsGroup() {
         }}
       >
         <img
-          src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+          src={smallLogo}
           style={{ width: "37.4px", height: "23.5px" }}
           alt="1 Thing Logo"
         />
@@ -113,7 +114,7 @@ function ActionsGroup() {
         }}
       >
         <img
-          src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+          src={smallLogo}
           style={{ width: "37.4px", height: "23.5px" }}
           alt="1 Thing Logo"
         />
@@ -137,7 +138,7 @@ function ActionsGroup() {
         }}
       >
         <img
-          src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+          src={smallLogo}
           style={{ width: "37.4px", height: "23.5px" }}
           alt="1 Thing Logo"
         />
@@ -162,7 +163,7 @@ function ActionsGroup() {
         }}
       >
         <img
-          src="/static/media/smallLogo.c989b7883d4362ea59ebefc01f3e6398.svg"
+          src={smallLogo}
           style={{ width: "37.4px", height: "23.5px" }}
           alt="1 Thing Logo"
         />

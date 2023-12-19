@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
 import "./HeroAction.css";
+import { Container } from "react-bootstrap";
 
 type Props = {
   imageSrc: string;
@@ -9,12 +10,12 @@ function HeroSection(props: Props) {
   const { imageSrc } = props;
 
   return (
-    <div
-      className="hero-wrapper-action"
-      style={{ position: "relative", maxWidth: "1440px" }}
-    >
-      <Card.Img id="hero-image" src={imageSrc} style={{ width: "100%" }} />
-    </div>
+    <Container id="hero-wrapper-action">
+      <Card.Text id="actionPage-text">
+        There are many small actions we can take to 
+        improve racial equality.
+      </Card.Text>
+    </Container>
   );
 }
 
