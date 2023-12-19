@@ -4,7 +4,7 @@ import HeroSection from "../hero/HeroSection";
 import StorySection from "./StorySection/StorySection";
 import WorkingOn from "./WorkingOn/WorkingOn";
 import ChartView from "./Chart/ChartView";
-import HeroImage from "assets/newHero.svg";
+import HeroImage from "assets/newHero.png";
 import HomeActionSection from "./ActionSection/HomeActionSection";
 
 const homeHeroData: { heading: string; subheading: string } = {
