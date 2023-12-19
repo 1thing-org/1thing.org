@@ -1,10 +1,11 @@
+import { Col, Container } from "react-bootstrap";
 import logo from "../../assets/home-page/smallLogo.svg"
+import "./ContactUs.css"
 
 function ContactOneThing() {
     return (
       <div
         className="share-us-form"
-        style={{ backgroundColor: "#FBFBFB", padding: "128px 390px" }}
       >
         <div className="wrapper">
           <div className="form-inner-cont">

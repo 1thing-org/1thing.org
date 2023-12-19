@@ -1,11 +1,10 @@
 import NavBar from "../../navbar/NavBar";
 import Footer from "../../footer/Footer";
-import Iphone from "../../../assets/project-together/iphone.png"
+import Iphone from "../../../assets/project-together/iphone.png";
 import Content from "./content/content";
 import TopSection from "./topSection/TopSection";
 import BottomSec from "./bottomSection/BottomSec";
 import HeroSection from "components/hero/HeroSection";
-
 
 const aboutHeroData: {
   heading: string;

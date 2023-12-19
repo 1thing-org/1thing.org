@@ -7,9 +7,10 @@ import AboutUs from "./components/about/AboutUs";
 import Contact from "./components/contact/Contact";
 import ProjectTogether from "components/projects/projectTogether/ProjectTogether";
 import VictimSupportFund from "components/projects/victimSupportFund/VictimSupportFund";
-
-import InterviewPage from "./components/testimonials/VolunteerSection/InterviewPage";
 import VolunteerSection from "./components/testimonials/VolunteerSection/VolunteerSection";
+import LiMPage from "./components/testimonials/testimonialsDetails/LiMPage";
+import KaiKPage from "./components/testimonials/testimonialsDetails/KaiKPage";
+import JoshCPage from "./components/testimonials/testimonialsDetails/JoshCPage";
 
 function App() {
   return (
@@ -22,10 +23,9 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
 
           <Route path="/volunteers" element={<VolunteerSection />} />
-          <Route
-            path="/interviews/:name/:interview/:pic/:quote"
-            element={<InterviewPage />}
-          />
+          <Route path="/interviews/LiM" element={<LiMPage />} />
+          <Route path="/interviews/KaiK" element={<KaiKPage />} />
+          <Route path="/interviews/JoshC" element={<JoshCPage />} />
 
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />

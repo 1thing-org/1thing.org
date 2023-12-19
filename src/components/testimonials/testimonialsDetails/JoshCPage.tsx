@@ -1,25 +1,16 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { useParams } from "react-router-dom";
-import Footer from "../../../components/footer/Footer";
-import NavBar from "../../../components/navbar/NavBar";
-import "./InterviewPage.css";
+import Footer from "../../footer/Footer";
+import NavBar from "../../navbar/NavBar";
+import { volunteerData } from "../VolunteerSection/VolunteerSection";
+import "../VolunteerSection/InterviewPage.css";
 
-function InterviewPage() {
-  const { name, pic, interview, quote } = useParams<{
-    name?: string;
-    quote?: string;
-    pic?: string;
-    interview?: string;
-  }>();
-  const paragraphs = interview
-    ? decodeURIComponent(interview).split("\n\n")
-    : [];
-
-  if (!name || !pic || !interview || !quote) {
-    // Handle the case when name or quote is undefined
-    return <div>Invalid URL parameters.</div>;
-  }
+function LiMPage() {
+  const name = volunteerData[2].name;
+  const quote = volunteerData[2].quote;
+  const pic = volunteerData[2].pic;
+  const interview = volunteerData[2].interview;
+  const paragraphs = interview.split("\n");
 
   return (
     <div>
@@ -61,4 +52,4 @@ function InterviewPage() {
     </div>
   );
 }
-export default InterviewPage;
+export default LiMPage;

@@ -7,9 +7,8 @@
 
 .brand-container {
   display: flex;
-  flex-direction: row;
-  width: 130px;
-  height: 58.48px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 

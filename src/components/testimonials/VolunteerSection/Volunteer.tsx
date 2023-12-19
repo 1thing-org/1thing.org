@@ -10,15 +10,18 @@ type Props = {
 };
 
 function Volunteer(props: Props) {
+  const getCardLink = (name: string) => {
+    // page url format example: name: "Li M." => "LiM"
+    return name.slice(0, -1).split(" ").join("");
+  };
+
   return (
     <Card id="volunteer">
       <Card.Img id="volunteer-profile-pic" src={props.pic} alt="Profile" />
       <Card.Text id="volunteer-name">{props.name}</Card.Text>
-      <Card.Text id="volunteer-quote">{props.quote}</Card.Text>
+      <Card.Text id="volunteer-quote">"{props.quote}"</Card.Text>
       <Card.Link
-        href={`/interviews/${props.name}/${encodeURIComponent(
-          props.interview
-        )}/${encodeURIComponent(props.pic)}/${encodeURIComponent(props.quote)}`}
+        href={`/interviews/${getCardLink(props.name)}`}
         id="volunteer-interview"
       >
         Read More
