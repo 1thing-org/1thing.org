@@ -3,7 +3,7 @@ import a1 from "../../../assets/home-page/a1.svg";
 import a2 from "../../../assets/home-page/a2.svg";
 import a3 from "../../../assets/home-page/a3.svg";
 import a4 from "../../../assets/home-page/a4.svg";
-import backgroundImage from "../../../assets/AboutUs/1thing heart.png";
+import backgroundImage from "../../../assets/heart.png";
 import "./HomeActionSection.css";
 import { Button, Container, Image, Col, Row, Card } from "react-bootstrap";
 

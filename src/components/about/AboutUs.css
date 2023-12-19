@@ -1,25 +1,17 @@
-#about-us-container{
-  position:relative;
-  max-width: 1440px;
-  padding:0;
-    
+#about-us-container {
+    position: relative;
+    max-width: 1440px;
+    padding: 0;
+
 }
 
-.heart{
-    display: flex;
-    height: 677px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    margin-top: -100px;
+.heart {
+    margin-top: -220px;
     max-width: 1440px;
     width: 100%;
-    
 }
 
-.about-us-row{
+.about-us-row {
     padding: 3rem;
 }
 
