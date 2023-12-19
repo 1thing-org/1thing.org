@@ -77,7 +77,7 @@ function BottomSec() {
             There are many challenges that prevent the AAPI community and our allies from taking concrete actions to fight against
             the form of hate and discrimination we are facing:
           </p>
-          <Row>
+          <Row className="icon-row">
             <Col md={3} id="icon">
               <Image src={a1} id="icon-img" />
               <Card.Text id="icon-text">INSPIRATIONAL COMMUNITY</Card.Text>
@@ -105,10 +105,10 @@ function BottomSec() {
             <h2 className="core-features">We appreciate your support!</h2>
           </Container>
 
-          <p className="bottom-text">
+          <Col xs={12} className="bottom-text">
             Project Together has the potential to make a real difference in the AAPI community. It will help to connect people
             who want to support the AAPI community and make a difference, and it will make it easier for people to find ways to help.
-          </p>
+          </Col>
 
           <Button id="donate-button">Donate</Button>
         </div>
