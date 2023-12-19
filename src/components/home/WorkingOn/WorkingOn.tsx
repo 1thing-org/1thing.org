@@ -1,5 +1,5 @@
 import "./WorkingOn.css";
-import placeholderimg from "../../../assets//home-page/working-on-placeholder.svg";
+import supportFund from "../../../assets//home-page/supportFund.png";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import logo from "../../../assets/home-page/smallLogo.svg";
@@ -17,7 +17,7 @@ function WorkingOn() {
       </Col>
 
       <Row id="project-block">
-        <Col className="mt-1 mb-2" id="block-project">
+        <Col id="block-project">
           <img id="workingOn-pic" src={project_together} alt="Project Together"/>
           <div id="inner">
             <h2 className="title">Project Together</h2>
@@ -28,10 +28,10 @@ function WorkingOn() {
           </div>
         </Col>
 
-        <Col className="mt-1 mb-2" id="block-supporting">
-          <img id="workingOn-pic" src={placeholderimg} alt="Victim Support Fund" />
+        <Col id="block-supporting">
+          <img id="supportFund-pic" src={supportFund} alt="Victim Support Fund" />
           <div id="inner">
-            <h2 className="title">Victim Support Fund</h2>
+            <h2 className="support-fund-title">Victim Support Fund</h2>
             <p className="working-text">
               As a non-profit organization, 1 Thing Org uses donations from individuals and corporations to support victims of anti-Asian hate crimes. We carefully plan and distribute the funds promptly to victims in urgent need. We are transparent and accountable in our disbursement of funds, regularly updating donors and the public on our progress and how we use the money.
             </p>
