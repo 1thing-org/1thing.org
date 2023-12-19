@@ -1,5 +1,29 @@
-.hero-wrapper-action {
-    position: relative;
-    max-width: 1440px;
-    margin: 0 auto;
+#hero-wrapper-action {
+    display: flex;
+    height: 260px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Section-Vertical-Margin-Large, 100px);
+    align-self: stretch;
+}
+
+#actionPage-text {
+    max-width: 998px;
+    color: #18181A;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.4px;
+    background-clip: text;
+    display: inline;
+    background: linear-gradient(to top,
+                #ffd500 70%,
+                #ffd500 60%,
+                transparent 70%,
+                transparent 100%);
+
+
 }
