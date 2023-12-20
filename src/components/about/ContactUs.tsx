@@ -1,6 +1,4 @@
-import { Col, Container } from "react-bootstrap";
 import logo from "../../assets/home-page/smallLogo.svg"
-import "./ContactUs.css"
 
 function ContactOneThing() {
     return (
