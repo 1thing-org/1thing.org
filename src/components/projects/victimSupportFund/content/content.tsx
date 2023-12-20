@@ -1,31 +1,112 @@
-import React from "react";
 import "./content.css";
-import { Container, Col } from "react-bootstrap";
+import { Container, Col, Card, Row, Button } from "react-bootstrap";
+import sideLogo from "../../../../assets/home-page/smallLogo.svg";
+import section1 from "../../../../assets/supportFund/section1.png";
+import section2 from "../../../../assets/supportFund/section2.png";
+type Props = {
+  heading?: string;
+  subheading?: string;
+  imageSrc: string;
+  paragrah1?: string;
+  paragrah2?: string;
+};
 
-function Content() {
+function SupportFundContent(props: Props) {
+  const { heading, subheading, imageSrc, paragrah1, paragrah2 } = props;
+
   return (
-    <div className="background">
-      <Container id="content-container">
-        <Col>
-          <p className="content-title">Victim Support Fund</p>
-        </Col>
-        <Col>
-          <p className="content-text">
-            <p>Why we have this fund</p>
-            <p> Where’s the money from - Donate now!</p>
-            <p>Where’s the money going - total donation for X victims</p>
-            1thing.org receives donations from individuals and corporations like
-            Google. We disburse the funds to victims of anti-Asian hate crimes
-            in a transparent and accountable manner, and provide regular updates
-            to donors and the public on the progress of the fundraising campaign
-            and how the funds are being used. With careful planning and
-            execution, we ensure that the funds are used effectively and
-            efficiently. We ensure that victims receive support and resources to
-            address their needs and challenges.
-          </p>
-        </Col>
+    <Container id="SupportFund-container" fluid>
+      <Col id="support-titleContainer" md={12} xxl={12}>
+        <Card.Img id="hands" src={imageSrc} alt="hands" />
+        <Card.Title id="topSection-title">{heading}</Card.Title>
+        <Card.Title className="p2">{subheading}</Card.Title>
+      </Col>
+
+      <Container id="support-sections">
+        <Container id="main-support-content">
+          <Col id="supportHeading-container">
+            <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+            <Card.Text id="supportHeadingText">Why we have this fund</Card.Text>
+          </Col>
+
+          <Container className="support-section-content">
+            <Col md={6}>
+              <Card.Img src={section1}></Card.Img>
+            </Col>
+            <Col md={6}>
+              <Card.Body className="support-contents">{paragrah1}</Card.Body>
+            </Col>
+          </Container>
+        </Container>
+
+        <Container id="main-support-content">
+          <Col id="supportHeading-container">
+            <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+            <Card.Text id="supportHeadingText">
+              Where's the money from
+            </Card.Text>
+          </Col>
+
+          <Container className="support-section-content">
+            <Col md={6}>
+              <Col id="support-section2-text-container">
+                <Card.Text className="s1">
+                  1thing.org receives donations from individuals and
+                  corporationslike Google.
+                </Card.Text>
+                <Col id="p1">
+                  <span id="symbol">|</span>
+                  <Card.Text className="s2">
+                    Individual Online donation
+                  </Card.Text>
+                </Col>
+                <Col id="p1">
+                  <span id="symbol">|</span>
+                  <Card.Text className="s2">Corporations’ support</Card.Text>
+                </Col>
+
+                <Col md={6} id="button-container">
+                  <Button
+                    id="Donate-button"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="chart-button-text">Donate Now</div>
+                  </Button>
+                </Col>
+              </Col>
+            </Col>
+            <Col md={6}>
+              <Card.Img src={section2}></Card.Img>
+            </Col>
+          </Container>
+        </Container>
+
+        <Container id="main-support-content">
+          <Col id="supportHeading-container">
+            <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+            <Card.Text id="supportHeadingText">
+              Where's the money going
+            </Card.Text>
+          </Col>
+          <Container className="money-gose-content">
+            <Container className="word">
+              <Col md={6} className="childword">
+                <h3 className="t-cases"> $1990 Funds</h3>
+                <p className="t1">Being effectively distributes </p>
+              </Col>
+
+              <Col md={6} className="childword">
+                <h3 className="t-cases">199 Victims</h3>
+                <p className="t1">Received help from 1thing</p>
+              </Col>
+            </Container>
+          </Container>
+          <Card.Text id="support-paragrah">{paragrah2}</Card.Text>
+        </Container>
       </Container>
-    </div>
+    </Container>
   );
 }
-export default Content;
+export default SupportFundContent;
