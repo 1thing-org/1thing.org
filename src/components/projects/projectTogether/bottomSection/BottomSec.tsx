@@ -100,7 +100,7 @@ function BottomSec() {
 
       <div id="support">
         <div id="core-features-support-section">
-          <Container id="core-features-container">
+          {/* <Container id="core-features-container">
             <img className="feature-logo" src={smallLogo} style={{ width: "37px", height: "23.5px" }} alt="1thing logo"></img>
             <h2 className="core-features">We appreciate your support!</h2>
           </Container>
@@ -108,9 +108,9 @@ function BottomSec() {
           <Col xs={12} className="bottom-text">
             Project Together has the potential to make a real difference in the AAPI community. It will help to connect people
             who want to support the AAPI community and make a difference, and it will make it easier for people to find ways to help.
-          </Col>
+          </Col> */}
 
-          <Button id="donate-button">Donate</Button>
+          {/* <Button id="donate-button">Donate</Button> */}
         </div>
       </div>
     </div>
