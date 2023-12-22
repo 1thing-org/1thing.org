@@ -1,29 +1,57 @@
 #hero-wrapper-action {
     display: flex;
-    height: 260px;
+    height:20vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--Section-Vertical-Margin-Large, 100px);
     align-self: stretch;
 }
 
 #actionPage-text {
-    max-width: 998px;
-    color: #18181A;
-    text-align: center;
+    color: #18181a;
+    background: linear-gradient(to top,
+            #ffd500 50%,
+            #ffd500 50%,
+            transparent 50%,
+            transparent 100%);
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 3vw;
     letter-spacing: 0.4px;
-    background-clip: text;
-    display: inline;
-    background: linear-gradient(to top,
-                #ffd500 70%,
-                #ffd500 60%,
-                transparent 70%,
-                transparent 100%);
+}
 
+@media screen and (max-width: 991px){
+    #actionPage-text{
+        font-size: 3.25vw;
+     
+    }
+   
+}
+@media screen and (min-width:700px) and (max-width: 765px){
+    #actionPage-text{
+        font-size: 3vw;
 
+      
+    }
+
+   
+}
+
+@media screen and (min-width:591px) and (max-width: 650px){
+    #actionPage-text{
+        font-size: 3.5vw;
+
+      
+    }
+
+   
+}
+
+@media screen and (max-width: 590px){
+    #actionPage-text{
+        font-size: 4vw;
+     
+    }
+   
 }
