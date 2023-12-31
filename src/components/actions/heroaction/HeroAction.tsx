@@ -12,10 +12,8 @@ function HeroSection(props: Props) {
   return (
     <Container id="hero-wrapper-action">
       <Card.Text id="actionPage-text">
-        There are many small actions we can take to
-      </Card.Text>
-      <Card.Text id="actionPage-text">
-      improve racial equality.
+        There are many small actions we can take to 
+        improve racial equality.
       </Card.Text>
     </Container>
   );
