@@ -1,11 +1,9 @@
-// src/InterviewAnswers.js
 import React from "react";
 
 const Interview = () => {
   return (
     <div>
       <h1>Interview Answers</h1>
-      {/* Add your interview answers content here */}
       <p className="interview">
         In April 2021, my journey to 1 Thing started with a basic presentation
         to document anti-Asian hate incidents, aiming to raise awareness among
