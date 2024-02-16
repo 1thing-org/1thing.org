@@ -16,95 +16,113 @@ function SupportFundContent(props: Props) {
 
   return (
     <Container id="SupportFund-container" fluid>
-      <Col id="support-titleContainer" md={12} xxl={12}>
+      <Col id="support-titleContainer" xs={12} md={12} xxl={12}>
         <Card.Img id="hands" src={imageSrc} alt="hands" />
         <Card.Title id="topSection-title">{heading}</Card.Title>
         <Card.Title className="p2">{subheading}</Card.Title>
       </Col>
 
-      <Container id="support-sections">
-        <Container id="main-support-content">
-          <Col id="supportHeading-container">
-            <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
-            <Card.Text id="supportHeadingText">Why we have this fund</Card.Text>
-          </Col>
-
-          <Container className="support-section-content">
-            <Col md={6}>
-              <Card.Img src={section1}></Card.Img>
+      <Container fluid>
+        <Row id="support-sections">
+          <Container id="main-support-content">
+            <Col id="supportHeading-container">
+              <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+              <Card.Text id="supportHeadingText">
+                Why we have this fund
+              </Card.Text>
             </Col>
-            <Col md={6}>
-              <Card.Body className="support-contents">{paragrah1}</Card.Body>
-            </Col>
-          </Container>
-        </Container>
 
-        <Container id="main-support-content">
-          <Col id="supportHeading-container">
-            <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
-            <Card.Text id="supportHeadingText">
-              Where's the money from
-            </Card.Text>
-          </Col>
-
-          <Container className="support-section-content">
-            <Col md={6}>
-              <Col id="support-section2-text-container">
-                <Card.Text className="s1">
-                  1thing.org receives donations from individuals and
-                  corporationslike Google.
-                </Card.Text>
-                <Col id="p1">
-                  <span id="symbol">|</span>
-                  <Card.Text className="s2">
-                    Individual Online donation
-                  </Card.Text>
+            <Container fluid>
+              <Container className="contentRow">
+                <Col xs={12} md={6}>
+                  <Card.Img src={section1}></Card.Img>
                 </Col>
-                <Col id="p1">
-                  <span id="symbol">|</span>
-                  <Card.Text className="s2">Corporations’ support</Card.Text>
+                <Col xs={12} md={6}>
+                  <Card.Body className="support-contents">
+                    {paragrah1}
+                  </Card.Body>
                 </Col>
-
-                <Col md={6} id="button-container">
-                  <Button
-                    id="Donate-button"
-                    href="https://gofund.me/c67ed274"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="chart-button-text">Donate Now</div>
-                  </Button>
-                </Col>
-              </Col>
-            </Col>
-            <Col md={6}>
-              <Card.Img src={section2}></Card.Img>
-            </Col>
-          </Container>
-        </Container>
-
-        <Container id="main-support-content">
-          <Col id="supportHeading-container">
-            <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
-            <Card.Text id="supportHeadingText">
-              Where's the money going
-            </Card.Text>
-          </Col>
-          <Container className="money-gose-content">
-            <Container className="word">
-              <Col md={6} className="childword">
-                <h3 className="t-cases"> $1990 Funds</h3>
-                <p className="t1">Being effectively distributes </p>
-              </Col>
-
-              <Col md={6} className="childword">
-                <h3 className="t-cases">199 Victims</h3>
-                <p className="t1">Received help from 1thing</p>
-              </Col>
+              </Container>
             </Container>
           </Container>
-          <Card.Text id="support-paragrah">{paragrah2}</Card.Text>
-        </Container>
+
+          <Container fluid>
+            <Container id="main-support-content">
+              <Col id="supportHeading-container">
+                <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+                <Card.Text id="supportHeadingText">
+                  Where's the money from
+                </Card.Text>
+              </Col>
+
+              <Container fluid>
+                <Container className="contentRow">
+                  <Col xs={12} md={6}>
+                    <Col id="support-section2-text-container">
+                      <Card.Text className="s1">
+                        1thing.org receives donations from individuals and
+                        corporationslike Google.
+                      </Card.Text>
+                      <Col id="p1">
+                        <span id="symbol">|</span>
+                        <Card.Text className="s2">
+                          Individual Online donation
+                        </Card.Text>
+                      </Col>
+                      <Col id="p1">
+                        <span id="symbol">|</span>
+                        <Card.Text className="s2">
+                          Corporations’ support
+                        </Card.Text>
+                      </Col>
+
+                      <Col md={6} id="button-container">
+                        <Button
+                          id="Donate-button"
+                          href=""
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="chart-button-text">Donate Now</div>
+                        </Button>
+                      </Col>
+                    </Col>
+                  </Col>
+
+                  <Col xs={12} md={6}>
+                    <Card.Img src={section2}></Card.Img>
+                  </Col>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+
+          <Container fluid>
+            <Container id="main-support-content">
+              <Col id="supportHeading-container">
+                <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+                <Card.Text id="supportHeadingText">
+                  Where's the money going
+                </Card.Text>
+              </Col>
+
+              <Container className="money-gose-content">
+                <Container id="support-number">
+                  <Col md={6} className="childword">
+                    <h3 className="t-cases"> $1990 Funds</h3>
+                    <p className="t1">Being effectively distributes </p>
+                  </Col>
+
+                  <Col md={6} className="childword">
+                    <h3 className="t-cases">199 Victims</h3>
+                    <p className="t1">Received help from 1thing</p>
+                  </Col>
+                </Container>
+              </Container>
+              <Card.Text id="support-paragrah">{paragrah2}</Card.Text>
+            </Container>
+          </Container>
+        </Row>
       </Container>
     </Container>
   );
