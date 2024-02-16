@@ -45,9 +45,9 @@ function StorySection() {
       </Container>
       <Col className="mt-1 mb-2">
         <p className="story-text">
-          1 Thing Against Racism began as a slide deck shared around the offices
-          at Google. Today, it is a mission driven organization comprised of
-          volunteers who contribute their time to our mission.
+          1 Thing Against Racism began as a presentation shared around the offices
+          at work. Today, it is a mission-driven organization comprised of
+          volunteers who contribute their time to realize our goals.
         </p>
       </Col>
 
