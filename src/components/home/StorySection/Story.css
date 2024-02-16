@@ -7,7 +7,6 @@
     align-self: stretch;
     flex-direction: column;
     margin-bottom: 40px;
-
 }
 
 
@@ -19,7 +18,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
 }
 
 #our-sotry-text-container {
@@ -47,7 +45,6 @@
     padding: 128px 32px;
     flex-direction: column;
     align-items: center;
-
     align-self: stretch;
 }
 
@@ -129,10 +126,6 @@
         margin: 0 auto;
         padding: 10% 18%;
         max-width: 1440px;
-
-
-
-
     }
 
     #stories {
@@ -143,17 +136,12 @@
         align-items: center;
         align-self: stretch;
         max-width: 1440px;
-
-
-
     }
 
     #profile-pic {
         width: 292px;
         height: 292px;
         border-radius: 600px;
-
-
     }
 
     .story-text {
@@ -183,7 +171,6 @@
         font-weight: 400;
         line-height: normal;
         text-align: left;
-
     }
 
     .story-button {
@@ -218,7 +205,6 @@
         align-items: center;
         align-self: stretch;
         max-width: 1440px;
-
     }
 }
 
@@ -262,7 +248,6 @@
         padding: 128px 32px;
         flex-direction: column;
         align-items: center;
-
         align-self: stretch;
     }
 
