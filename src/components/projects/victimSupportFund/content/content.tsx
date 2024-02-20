@@ -76,26 +76,23 @@ function SupportFundContent(props: Props) {
                         </Card.Text>
                       </Col>
 
-                      <Col md={6} id="button-container">
-                        <Button
-                          id="Donate-button"
-                          href=""
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <div className="chart-button-text">Donate Now</div>
-                        </Button>
-                      </Col>
-                    </Col>
-                  </Col>
-
-                  <Col xs={12} md={6}>
-                    <Card.Img src={section2}></Card.Img>
-                  </Col>
-                </Container>
-              </Container>
-            </Container>
+                <Col md={6} id="button-container">
+                  <Button
+                    id="Donate-button"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="chart-button-text">Donate Now</div>
+                  </Button>
+                </Col>
+              </Col>
+            </Col>
+            <Col md={6}>
+              <Card.Img src={section2}></Card.Img>
+            </Col>
           </Container>
+        </Container>
 
           <Container fluid>
             <Container id="main-support-content">

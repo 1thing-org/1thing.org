@@ -110,18 +110,6 @@ function ActionSection() {
         </ActionContainer>
       </ActionLeftSide>
       <ActionRightSide />
-      {/*
-            <div id="actions">
-                <div className="action-row">
-                    <Action desc="Action Description 1" />
-                    <Action desc="Action Description 2" />
-                </div>
-                <div className="action-row">
-                    <Action desc="Action Description 3" />
-                    <Action desc="Action Description 4" />
-                </div>
-            </div>
-            */}
     </ActionSectionContainer>
   );
 }

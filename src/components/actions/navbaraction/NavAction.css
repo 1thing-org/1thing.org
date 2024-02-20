@@ -1,4 +1,3 @@
-
 .nav-action {
   max-width: 1440px;
   margin: 0 auto;
@@ -30,11 +29,12 @@
   height: auto 57px;
 }
 
-.logo{
+.logo {
   width: 50.119px;
   height: 50.333px;
 
 }
+
 .logo-text {
   width: 80px;
   height: 48px;
@@ -67,29 +67,24 @@
   height: 45px;
   z-index: 5;
   transition: all 0.3s ease-in-out;
-  border:none;
+  border: none;
   top: 4rem;
-  
+
 }
 
 
 #responsive-navbar-toggle {
   justify-content: flex-end;
-
-
 }
 
 .offcanvas {
   width: 100% !important;
   max-width: 100% !important;
-
-
 }
 
 .offcanvas-header {
   width: 100%;
   padding: 1rem;
-
 }
 
 
@@ -99,23 +94,18 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-
 }
 
 .offcanvas .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .offcanvas .nav-link {
   padding: 2rem 50rem;
-
   text-align: center;
   border-bottom: 0.8px solid grey;
-
-
 }
 
 .offcanvas .nav-link+.nav-link {

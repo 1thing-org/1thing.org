@@ -24,34 +24,22 @@
 @media screen and (max-width: 991px){
     #actionPage-text{
         font-size: 3.25vw;
-     
     }
-   
 }
 @media screen and (min-width:700px) and (max-width: 765px){
     #actionPage-text{
         font-size: 3vw;
-
-      
     }
-
-   
 }
 
 @media screen and (min-width:591px) and (max-width: 650px){
     #actionPage-text{
         font-size: 3.5vw;
-
-      
     }
-
-   
 }
 
 @media screen and (max-width: 590px){
     #actionPage-text{
         font-size: 4vw;
-     
     }
-   
 }
