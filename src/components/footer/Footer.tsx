@@ -26,6 +26,8 @@ function SocialMedia({ name, refLink }: { name: IconProp; refLink: string }) {
 }
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer>
       <div className="footer-container">
@@ -62,7 +64,7 @@ function Footer() {
             />
           </div>
           <p className="copy-right">
-            1 Thing Against Racism © 2023 All rights reserved.{" "}
+            1 Thing Against Racism © {currentYear} All rights reserved.{" "}
           </p>
         </div>
         <div className="split-line"></div>
