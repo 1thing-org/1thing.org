@@ -112,23 +112,22 @@ form.signin-form {
   background: #fff;
 }
 
+
+
 button.btn {
-  text-decoration: none;
-  width: 100%;
+  width: 240px;
+  height: 60px;
+  padding: 0.7rem 3rem;
+  background-color: #FFC530;
+  color: black;
+  font-weight: bolder;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  padding: 12px 20px;
   font-size: 16px;
-  line-height: 25px;
-  text-align: center;
-  color: #fff;
-  background: grey;
-  display: inline-block;
-  border-radius: 4px;
-  transition: 0.3s ease;
+  font-weight: 700px;
 }
 
 button.btn:hover {
-  background: #8d8b8b;
-  transition: 0.3s ease;
+  background-color: #FFC530;
 }
