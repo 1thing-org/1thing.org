@@ -26,7 +26,7 @@ function SupportFundContent(props: Props) {
         <Row id="support-sections">
           <Container id="main-support-content">
             <Col id="supportHeading-container">
-              <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+              <Card.Img id="support-sideLogo" src={sideLogo} />
               <Card.Text id="supportHeadingText">
                 Why we have this fund
               </Card.Text>
@@ -35,7 +35,7 @@ function SupportFundContent(props: Props) {
             <Container fluid>
               <Container className="contentRow">
                 <Col xs={12} md={6}>
-                  <Card.Img src={section1}></Card.Img>
+                  <Card.Img src={section1} />
                 </Col>
                 <Col xs={12} md={6}>
                   <Card.Body className="support-contents">
@@ -49,7 +49,7 @@ function SupportFundContent(props: Props) {
           <Container fluid>
             <Container id="main-support-content">
               <Col id="supportHeading-container">
-                <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+                <Card.Img id="support-sideLogo" src={sideLogo} />
                 <Card.Text id="supportHeadingText">
                   Where's the money from
                 </Card.Text>
@@ -61,7 +61,7 @@ function SupportFundContent(props: Props) {
                     <Col id="support-section2-text-container">
                       <Card.Text className="s1">
                         1thing.org receives donations from individuals and
-                        corporationslike Google.
+                        corporations like Google.
                       </Card.Text>
                       <Col id="p1">
                         <span id="symbol">|</span>
@@ -79,7 +79,7 @@ function SupportFundContent(props: Props) {
                       <Col md={6} id="button-container">
                         <Button
                           id="Donate-button"
-                          href="https://gofund.me/c67ed274"
+                          href=""
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -88,9 +88,8 @@ function SupportFundContent(props: Props) {
                       </Col>
                     </Col>
                   </Col>
-
-                  <Col xs={12} md={6}>
-                    <Card.Img src={section2}></Card.Img>
+                  <Col md={6}>
+                    <Card.Img src={section2} />
                   </Col>
                 </Container>
               </Container>
@@ -100,7 +99,7 @@ function SupportFundContent(props: Props) {
           <Container fluid>
             <Container id="main-support-content">
               <Col id="supportHeading-container">
-                <Card.Img id="support-sideLogo" src={sideLogo}></Card.Img>
+                <Card.Img id="support-sideLogo" src={sideLogo} />
                 <Card.Text id="supportHeadingText">
                   Where's the money going
                 </Card.Text>
@@ -109,8 +108,8 @@ function SupportFundContent(props: Props) {
               <Container className="money-gose-content">
                 <Container id="support-number">
                   <Col md={6} className="childword">
-                    <h3 className="t-cases"> $1990 Funds</h3>
-                    <p className="t1">Being effectively distributes </p>
+                    <h3 className="t-cases">$1990 Funds</h3>
+                    <p className="t1">Being effectively distributes</p>
                   </Col>
 
                   <Col md={6} className="childword">
@@ -127,4 +126,5 @@ function SupportFundContent(props: Props) {
     </Container>
   );
 }
+
 export default SupportFundContent;

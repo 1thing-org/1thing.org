@@ -4,10 +4,6 @@
     align-items: center;
 }
 
-.signup-title-section {
-    margin-bottom: 2rem;
-}
-
 .signup input{
     width: 30%;
     padding: 0.5rem;
@@ -20,7 +16,7 @@
     height: 100px;
 }
 
-.signup button {
+.signup-button {
     padding: 0.7rem 3rem;
     background-color: #FFC530;
     color: black;
