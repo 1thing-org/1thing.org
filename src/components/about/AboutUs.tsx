@@ -1,18 +1,13 @@
-import NavBar from "../navbar/NavBar";
 import Footer from "../footer/Footer";
 import AboutUsSection from "./AboutUsContent";
-import ContactOneThing from "./ContactUs";
 import "./AboutUs.css";
-import HeartImg from "../../assets/AboutUs/1thing heart.png"
-import HeroSection from "components/hero/HeroSection";
-import HeroAction from "../actions/heroaction/HeroAction"
-import ShareOneThing from "components/actions/share/ShareOneThing";
+import Signup from "components/signup/SignUp";
 
 function AboutUs() {
   return (
     <div>
       <AboutUsSection />
-      <ContactOneThing />
+      <Signup  signupTitle={"Contact Us"} />
       <Footer />
     </div>
   );

@@ -47,10 +47,6 @@ function ContactSection(props: Props) {
                     </Col>
                 </Row>
             </Container>
-
-            <Container className="helpbottom">
-                <ContactOneThing />
-            </Container>
         </Container>
 
     );
