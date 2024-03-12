@@ -36,18 +36,21 @@ function AboutUsSection() {
         }}
 
       />
+     
+     
       <Row className="about-us-row">
-        <Col xs={4} className="about-us-title">{aboutUsData[0].name}</Col>
+        <Col xs={2} className="about-us-title">{aboutUsData[0].name}</Col>
         <Col xs={8} className="about-paragraph">{aboutUsData[0].desc}</Col>
       </Row>
       <Row className="about-us-row">
-        <Col xs={4} className="subtitle">{aboutUsData[1].name}</Col>
+        <Col xs={2} className="subtitle">{aboutUsData[1].name}</Col>
         <Col xs={8} className="about-paragraph">{aboutUsData[1].desc}</Col>
       </Row>
       <Row className="about-us-row">
-        <Col xs={4} className="subtitle">{aboutUsData[2].name}</Col>
+        <Col xs={2} className="subtitle">{aboutUsData[2].name}</Col>
         <Col xs={8} className="about-paragraph">{aboutUsData[2].desc}</Col>
       </Row>
+
     </Container>
   );
 }

@@ -12,7 +12,10 @@
 }
 
 .about-us-row {
+    display: flex;
+    justify-content: center;
     padding: 3rem;
+
 }
 
 .about-us-title {

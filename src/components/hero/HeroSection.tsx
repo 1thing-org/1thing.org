@@ -60,26 +60,8 @@ function HeroSection(props: Props) {
               <Col md={12}>
                 <Card.Text id="hero-subtitle">{subheading}</Card.Text>
               </Col>
-              <Button
+              <Button className="hero-button"
                 href="/takeaction"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "space-evenly",
-                  backgroundColor: "#FFC530",
-                  borderColor: "#FFC530",
-                  borderRadius: "2px",
-                  width: "201px",
-                  height: "61px",
-                  fontSize: "20px",
-                  color: "#372A06",
-                  textAlign: "center",
-                  fontFamily: "sans-serif",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  textTransform: "uppercase",
-                }}
               >
                 Take Action
               </Button>
