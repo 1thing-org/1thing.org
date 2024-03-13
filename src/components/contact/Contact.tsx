@@ -4,6 +4,7 @@ import ContactSection from './ContactSection';
 import SignUpForm from 'utility/signup';
 import HeroImage from "assets/hero.svg";
 import "./Contact.css";
+import Signup from 'components/signup/SignUp';
 
 const contactHeroData: { heading: string, subheading: string } = {
     "heading": `Contact Us`,
@@ -12,17 +13,18 @@ const contactHeroData: { heading: string, subheading: string } = {
 
 function Contact() {
     return (
-        <div>
-            <NavBar />
-            <ContactSection
-                heading={contactHeroData.heading}
-                subheading={contactHeroData.subheading}
-                imageSrc={HeroImage}
-                hideHeroText={true} />
-            {/* <SignUpForm className={"signup"} signupTitle={"Sign Up to Volunteer"} /> */}
-            <Footer />
-        </div>
-    )
+      <div>
+        <NavBar />
+        <ContactSection
+          heading={contactHeroData.heading}
+          subheading={contactHeroData.subheading}
+          imageSrc={HeroImage}
+          hideHeroText={true}
+        />
+        <Signup signupTitle={"Contact Us"} />
+        <Footer />
+      </div>
+    );
 }
 
 export default Contact;

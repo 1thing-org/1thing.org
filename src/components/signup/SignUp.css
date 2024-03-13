@@ -15,3 +15,17 @@
     padding: 0.7rem 3rem;
     background-color: grey;
 }
+
+.signup-title-section {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.signup-title {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+}

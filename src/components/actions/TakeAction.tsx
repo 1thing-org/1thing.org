@@ -1,9 +1,10 @@
 import NavBar from "./navbaraction/NavAction";
 import Footer from "../footer/Footer";
-import ShareOneThing from "./share/ShareOneThing";
 import ActionsGroup from "./actionsgroup/ActionsGroup";
 import HeroSection from "./heroaction/HeroAction";
 import HeroActionImage from "assets/hero-action.svg";
+import Signup from "components/signup/SignUp";
+import { Container } from "react-bootstrap";
 
 function TakeAction() {
   return (
@@ -11,7 +12,11 @@ function TakeAction() {
       <NavBar />
       <HeroSection imageSrc={HeroActionImage} />
       <ActionsGroup />
-      <ShareOneThing />
+      <Container style={{ width: "100vw" , backgroundColor:'#f5f5f5', marginTop:"120px", marginBottom: "120px"}}>
+      <Container style={{ paddingTop:"60px", paddingBottom: "60px"}}>
+      <Signup signupTitle={"Share Your One Thing"} />
+      </Container>
+      </Container>
       <Footer />
     </div>
   );
