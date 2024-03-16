@@ -85,6 +85,7 @@ function TopSection(props: Props) {
                   fontStyle: "normal",
                   fontWeight: "700",
                   textTransform: "uppercase",
+                  padding: "0px"
                 }}
               >
                 Try Our App

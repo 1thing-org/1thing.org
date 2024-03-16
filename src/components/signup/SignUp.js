@@ -33,12 +33,6 @@ class Signup extends Component {
               },
 
               {
-                name: "Subject",
-                placeholder: "Enter your email",
-                type: "text",
-                required: true,
-              },
-              {
                 name: "EMAIL",
                 placeholder: "Enter your email",
                 type: "email",
