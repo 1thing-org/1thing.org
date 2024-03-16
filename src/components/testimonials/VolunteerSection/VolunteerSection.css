@@ -65,189 +65,10 @@
     line-height: normal;
 }
 
-@media screen and (min-width:968px) and (max-width: 1440px) {
 
-    #volunteer {
-        width: 100%;
-        border: none;
-        --bs-card-bg: transparent;
-        display: flex;
-        align-items: center;
-        align-self: stretch;
-    }
-
-    .our-volunteers {
-        align-self: stretch;
-        color: #18181A;
-        text-align: center;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 60px;
-        letter-spacing: 0.4px;
-    }
-
+@media screen and (min-width: 375px) and (max-width: 765px) {
     #volunteer-section {
-        display: flex;
-        padding: 50px 50px 40px 20px;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        align-self: stretch;
-    }
-
-    #volunteers {
-        gap: 40px;
-        border: none;
-        --bs-card-bg: transparent;
-        display: flex;
-        align-items: center;
-        align-self: stretch;
-    }
-
-    #volunteer-name {
-        color: var(--neutral-neutral-01, #18181A);
-        text-align: center;
-        align-self: stretch;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 28px;
-        letter-spacing: 0.4px;
-        margin-top: 8px;
-    }
-
-    #volunteer-quote {
-        color: var(--neutral-neutral-01, #18181A);
-        align-self: stretch;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-align: start;
-        height: 210px;
-    }
-
-    #volunteer-interview {
-        color: var(--Secondary-color, #0F54DB);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    #volunteer-profile-pic {
-        width: 292px;
-        height: 292px;
-        border-radius: 600px;
-    }
-
-    #volunteer-section {
-        display: flex;
-        width: 1008px;
-        padding: 0;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        align-self: stretch;
-        margin: 128px auto;
-    }
-
-    #volunteer-name {
-        margin-top: 8px;
-    }
-
-    #volunteer-quote {
-        height: 210px;
-    }
-}
-
-@media screen and (min-width: 1011px) and (max-width: 1399px) {
-    #volunteer-profile-pic {
-        width: 90%;
-        height: auto;
-        border-radius: 50%;
-    }
-
-    #volunteer-name {
-        margin-bottom: 12px;
-    }
-
-    #volunteer-quote {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 1011px) and (max-width: 1200px) {
-    #volunteer-quote {
-        font-size: 13px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1010px) {
-    #volunteer-profile-pic {
-        width: 90%;
-        height: auto;
-        border-radius: 50%;
-    }
-
-    #volunteer-name {
-        line-height: 22px;
-        font-size: 20px;
-        margin-bottom: 8px;
-    }
-
-    #volunteer-quote {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 830px) and (max-width: 960px) {
-    .volunteer-element {
-        padding: 6px;
-    }
-
-    #volunteer-name {
-        font-size: 16px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-
-    #volunteer-quote {
-        font-size: 9px;
-    }
-
-    #volunteer-interview {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 829px) {
-    #volunteer {
-        height: 425px;
-    }
-
-    .volunteer-element {
-        padding: 3px;
-    }
-
-    #volunteer-name {
-        font-size: 16px;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-
-    #volunteer-quote {
-        height: 200px;
-    }
-}
-
-/* mobile version max width 767px */
-@media screen and (min-width: 375px) and (max-width: 767px) {
-    #volunteer-section {
-        width: 85%;
+        width: 50%;
         padding: 0;
     }
 
@@ -283,15 +104,21 @@
     }
 
     #volunteer-quote {
-        height: 154px;
+        height: 120px;
         font-size: 15px;
     }
 
     #volunteer-interview {
-        display: none;
+        /* display: none; */
+        margin:0;
+        padding:0;
+        
+    }
+    #volunteer-interview{
+        margin:10px;
     }
 
-    #volunteers-read-more-button {
+    /* #volunteers-read-more-button {
         padding: 0.7rem 3rem;
         background-color: #FFC530;
         color: black;
@@ -300,5 +127,95 @@
         border-radius: 5px;
         cursor: pointer;
         margin-bottom: 4rem;
+    } */
+}
+
+@media screen and (min-width: 766px) and (max-width: 779px){
+    #volunteer-quote {
+        height: 100px;
+        font-size: 15px;
+    }
+    #volunteer-profile-pic {
+        width: 60%;
+        height: auto;
+        border-radius: 50%;
+    }
+    #our-story-brief-text {
+        text-align: left;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    #volunteer-interview{
+        margin:20px;
+    }
+
+
+}
+
+@media screen and (min-width: 780px) and (max-width: 1010px) {
+    .volunteer-element {
+        padding: 3px;
+    }
+    #volunteer-profile-pic {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #volunteer-name {
+        line-height: 22px;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    #volunteer-quote {
+        height: 200px;
+        font-size: 13px;
+    }
+   
+
+}
+
+@media screen and (min-width: 1011px) and (max-width: 1399px) {
+    #volunteer-profile-pic {
+        width: 90%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #volunteer-name {
+        margin-bottom: 12px;
+    }
+
+    #volunteer-quote {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    #volunteer-profile-pic {
+        width: 292px;
+        height: 292px;
+        border-radius: 600px;
+    }
+
+    #volunteer-section {
+        display: flex;
+        width: 1008px;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        margin: 128px auto;
+    }
+
+    #volunteer-name {
+        margin-top: 8px;
+    }
+
+    #volunteer-quote {
+        height: 210px;
     }
 }

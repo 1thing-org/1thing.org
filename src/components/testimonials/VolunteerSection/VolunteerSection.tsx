@@ -85,7 +85,7 @@ function VolunteerSection() {
           />
         </Row>
       ))}
-      <button id="volunteers-read-more-button">Read More</button>
+      {/* <button id="volunteers-read-more-button">Read More</button> */}
     </>
   );
 
