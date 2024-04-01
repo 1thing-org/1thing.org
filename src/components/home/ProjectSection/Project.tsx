@@ -20,14 +20,6 @@ function Project(props: Props){
                 <Card.Title className='card-title'>{props.name}</Card.Title>
                 <Card.Text className='card-text'>{props.desc}</Card.Text>
             </Card.Body>
-
-          
-				 {/*need to make dynamic graph*/}
-            {/* the tracker graph and the cases still need to work on */}
-            {/* <Card.Img id={"image-" + props.projectId} src={props.imageUrl}/>     */}
-            {/*image url in css*/}
-
-
             <div className='cases-container'>
                 <div className='months-cases'>
                 <Card.Title className='cases-text'> 5 cases </Card.Title>

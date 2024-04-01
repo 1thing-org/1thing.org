@@ -12,7 +12,10 @@
 }
 
 .about-us-row {
+    display: flex;
+    justify-content: center;
     padding: 3rem;
+
 }
 
 .about-us-title {
@@ -27,9 +30,16 @@
     font-size: 20px;
     text-align: left;
 }
-
 .about-paragraph {
     font-size: 16px;
     text-align: left;
     font-family: sans-serif;
+}
+.signupTitle{
+        color: #333;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 50px;
+            margin-bottom: 35px;
+            text-transform: capitalize;
 }

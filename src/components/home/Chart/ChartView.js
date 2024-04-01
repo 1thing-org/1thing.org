@@ -130,7 +130,7 @@ const ChartView = () => {
           <Col>
             <p className="t4">
               Anti-Asian hate crimes are happening everyday and we’ve built a
-              tool to help track them. 1 Thing’s Hate Crime Tracker project
+              tool to help track them. 1 Thing’s Hate Crime Tracker
               scrapes reports from national media news outlets and visualizes
               the data to raise awareness about these terrible incidents.
             </p>
@@ -172,25 +172,25 @@ const ChartView = () => {
             </Container>
           </div>
         )}
-        <Col className="links">   
-            <Button
-              className="chart-button"
-              href="https://hatecrimetracker.1thing.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="chart-button-text">View Project</div>
-            </Button>
+        <Col className="links">
+          <Button
+            className="chart-button"
+            href="https://hatecrimetracker.1thing.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="chart-button-text">View Project</div>
+          </Button>
 
-            <Button
-              className="chart-button"
-              href="https://hatecrimetracker.1thing.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="chart-button-text">See Live Tracker</div>
-            </Button>
-         
+          <Button
+            className="chart-button"
+            href="https://hatecrimetracker.1thing.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="chart-button-text">See Live Tracker</div>
+          </Button>
+
         </Col>
       </Container>
     </Container>

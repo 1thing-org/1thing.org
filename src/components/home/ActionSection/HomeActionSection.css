@@ -86,20 +86,16 @@
   display: flex;
   width: 201px;
   height: 61px;
-  padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: var(--Redius, 2px);
-  border: 1px solid var(--Primary-color, #FFC530);
   background: var(--Primary-color, #FFC530);
-  color: #372A06;
   text-align: center;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  padding: 0px !important;
 }
 
 @media screen and (min-width:1200px) and (max-width:1399px) {

@@ -20,11 +20,13 @@ function WorkingOn() {
         <Col id="block-project">
           <img id="workingOn-pic" src={project_together} alt="Project Together"/>
           <div id="inner">
-            <h2 className="title">Project Together</h2>
+            <h2 className="title">Together</h2>
             <p className="working-text">
-              A volunteer's social network, where everybody can share their actions, inspire or be inspired, and contribute to their favorite causes. The mobile app will serve as an online community where people can easily exercise 1 Thing idea, make real difference 1 thing at time.
+              Together is a volunteers' social network we are developing, where everybody can share their actions, 
+              inspire or be inspired, and contribute to their favorite causes. The mobile app will serve as an 
+              online community where people can easily implement the 1 Thing idea, and make real difference 1 Thing at a time.
             </p>
-            <Link className="link" to="/projects/project-together">Learn More</Link>
+            <a href="/projects/project-together">Learn More</a>
           </div>
         </Col>
 
@@ -35,7 +37,7 @@ function WorkingOn() {
             <p className="working-text">
               As a non-profit organization, 1 Thing Org uses donations from individuals and corporations to support victims of anti-Asian hate crimes. We carefully plan and distribute the funds promptly to victims in urgent need. We are transparent and accountable in our disbursement of funds, regularly updating donors and the public on our progress and how we use the money.
             </p>
-            <Link className="link" to="/projects/victim-support-fund">Learn More</Link>
+            <a href="/projects/victim-support-fund">Learn More</a>
           </div>
         </Col>
       </Row>
