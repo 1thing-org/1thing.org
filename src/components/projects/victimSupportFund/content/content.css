@@ -98,6 +98,7 @@
   border-radius: var(--Redius, 2px);
   border: 1px solid var(--Primary-color, #FFC530);
   background: var(--Primary-color, #FFC530);
+  padding: 0px;
 }
 
 #support-paragrah {
