@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import heartImg from "../../assets/AboutUs/1thing heart.png";
-import NavBar from '../navbar/NavBar';
+
 
 
 
@@ -27,17 +27,6 @@ const aboutUsData: {
 function AboutUsSection() {
   return (
     <Container id="about-us-container">
-      <NavBar />
-      <img className="heart"
-        // src={}
-        style={{
-          borderRadius: '0',
-         
-        }}
-
-      />
-     
-     
       <Row className="about-us-row">
         <Col xs={2} className="about-us-title">{aboutUsData[0].name}</Col>
         <Col xs={8} className="about-paragraph">{aboutUsData[0].desc}</Col>
@@ -50,7 +39,6 @@ function AboutUsSection() {
         <Col xs={2} className="subtitle">{aboutUsData[2].name}</Col>
         <Col xs={8} className="about-paragraph">{aboutUsData[2].desc}</Col>
       </Row>
-
     </Container>
   );
 }
