@@ -43,7 +43,8 @@
     font-weight: bolder;
     padding: .7rem 3rem;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #ffc530;
 }
 
@@ -84,6 +85,5 @@
     margin: 0 auto;
     padding: 0;
     font-size: 24px;
-    font-family: 'Open Sans';
-    font-weight: normal;
+    font-weight: bold;
 }
