@@ -21,7 +21,7 @@ function Contact() {
           imageSrc={HeroImage}
           hideHeroText={true}
         />
-        <Signup signupTitle={"Contact Us"} />
+        <Signup signupTitle={"Contact Us"} containsSubject={true} />
         <Footer />
       </div>
     );

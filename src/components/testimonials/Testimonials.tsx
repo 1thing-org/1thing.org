@@ -7,9 +7,8 @@ function Testimonials() {
   return (
     <div>
       <NavBar />
-
       <VolunteerSection />
-      <Signup signupTitle={"Sign Up to Volunteer"} />
+      <Signup signupTitle={"Sign Up to Volunteer"} containsSubject={false} />
       <Footer />
     </div>
   );
