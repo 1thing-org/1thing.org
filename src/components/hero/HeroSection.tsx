@@ -24,15 +24,17 @@ function HeroSection(props: Props) {
 
         {/* Image Section */}
      
+
           <Card.Img
             src={imageSrc}
             style={{ width: "100%", maxWidth: "522px", objectFit:"cover" }}
           />
+       
 
         {/* Text Section */}
         {!hideHeroText && (
           <Col
-            md={6}
+            md={4}
             xs={12}
             style={{
               paddingLeft: "40px",
