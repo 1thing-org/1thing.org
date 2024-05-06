@@ -2,7 +2,6 @@ import NavBar from "../../navbar/NavBar";
 import Footer from "../../footer/Footer";
 import Mac from "../../../assets/project-tracker/mac.png"
 import TopSection from "../projectTogether/topSection/TopSection";
-import Iphone from "../../../assets/project-together/iphone.png";
 import BottomSec from "../projectTogether/bottomSection/BottomSec";
 
 const aboutHeroData: {

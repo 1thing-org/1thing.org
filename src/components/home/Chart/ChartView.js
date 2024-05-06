@@ -175,7 +175,7 @@ const ChartView = () => {
         <Col className="links">
           <Button
             className="chart-button"
-            href="https://hatecrimetracker.1thing.org/"
+            href="/projects/project-tracker"
             target="_blank"
             rel="noopener noreferrer"
           >

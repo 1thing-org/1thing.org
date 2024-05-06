@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
 import trackerLogo from "../../../../assets/project-tracker/trackerLogo.png";
-import ProjectTogether from "../../../../assets/home-page/ProjectTogether.svg";
+
 
 type Props = {
     heading?: string;
