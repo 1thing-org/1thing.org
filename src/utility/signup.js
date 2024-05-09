@@ -16,11 +16,10 @@ class SignUpForm extends Component {
               alt="1 Thing Logo"
             ></img>
             &nbsp;
-            {/* <p id="signup-title">{signupTitle}</p> */}
             {signupTitle}
           </Col>
         </Row>
-        <div>
+        <div className="signup">
           <Mailchimp
             action="https://1thing.us20.list-manage.com/subscribe/post?u=21d473c726961a9ff53d21a35&id=81aac402d9"
             fields={[
@@ -54,7 +53,6 @@ class SignUpForm extends Component {
               duplicate: "Too many subscribe attempts for this email address",
               button: "CONFIRM!",
             }}
-            className="signup"
           />
         </div>
       </>

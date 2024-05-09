@@ -7,10 +7,39 @@ import { Container } from "react-bootstrap";
 
 class Signup extends Component {
   render() {
-    const { signupTitle } = this.props;
+    const { signupTitle, containsSubject } = this.props;
+    const fields = [
+      {
+        name: "NAME",
+        placeholder: "Enter your Name",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "EMAIL",
+        placeholder: "Enter your email",
+        type: "email",
+        required: true,
+      },
+      {
+        name: "MESSAGE",
+        placeholder: "Enter your message",
+        type: "textarea",
+        required: true,
+        rows: 7,
+      },
+    ];
+    if (containsSubject) {
+      fields.splice(1, 0, {
+        name: "SUBJECT",
+        placeholder: "Enter subject",
+        type: "text",
+        required: true,
+      });
+    }
     return (
-      <>
-        <Row>
+      <Container id="signup-email-container">
+        <Row className="signup-title-section-row">
           <Col className="signup-title-section">
             <img
               src={logo}
@@ -21,37 +50,10 @@ class Signup extends Component {
             <h1 className="signup-title">{signupTitle}</h1>
           </Col>
         </Row>
-        <div>
+        <div className="signup">
           <Mailchimp
             action="https://1thing.us20.list-manage.com/subscribe/post?u=21d473c726961a9ff53d21a35&id=81aac402d9"
-            fields={[
-              {
-                name: "NAME",
-                placeholder: "Enter your Name",
-                type: "text",
-                required: true,
-              },
-
-              {
-                name: "Subject",
-                placeholder: "Enter your email",
-                type: "text",
-                required: true,
-              },
-              {
-                name: "EMAIL",
-                placeholder: "Enter your email",
-                type: "email",
-                required: true,
-              },
-              {
-                name: "MESSAGE",
-                placeholder: "Enter your message",
-                type: "textarea",
-                required: true,
-                rows: 7,
-              },
-            ]}
+            fields={fields}
             messages={{
               sending: "Sending...",
               success: "Thank you for subscribing!",
@@ -62,7 +64,7 @@ class Signup extends Component {
             }}
           />
         </div>
-      </>
+      </Container>
     );
   }
 }

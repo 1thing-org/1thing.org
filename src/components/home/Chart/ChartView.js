@@ -158,19 +158,19 @@ const ChartView = () => {
             </Container>
           </div>
         ) : (
-          <div>
-            <Container className="word">
-              <Col md={6} className="childword">
+       
+            <Container className="chartview-word">
+              <Col md={2} className="childword">
                 <h3 className="t-cases">{totalLastMonthCases} Cases</h3>
                 <p className="t1">were reported in {lastMonthName}</p>
               </Col>
 
-              <Col md={6} className="childword">
+              <Col md={2} className="childword">
                 <h3 className="t-cases">{totalAnnualCases} Cases</h3>
                 <p className="t1">were reported in the past 12 months</p>
               </Col>
             </Container>
-          </div>
+       
         )}
         <Col className="links">
           <Button
@@ -179,7 +179,7 @@ const ChartView = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="chart-button-text">View Project</div>
+            <div className="chart-button-text">About the Project</div>
           </Button>
 
           <Button

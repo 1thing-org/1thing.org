@@ -103,21 +103,24 @@ class Mailchimp extends React.Component {
     const { status } = this.state;
     return (
       <form onSubmit={this.handleSubmit} className={className}>
-        {fields.map((input, idx) => this.renderField(input, idx))}
+        <div>{fields.map((input, idx) => this.renderField(input, idx))}</div>
         <button
           disabled={status === "sending" || status === "success"}
           type="submit"
           className={buttonClassName}
+          id="signup-button"
         >
-          {messages.button}
+          CONFIRM
         </button>
-        <div className="msg-alert">
-          {status === "sending" && <p>{messages.sending}</p>}
-          {status === "success" && <p>{messages.success}</p>}
-          {status === "duplicate" && <p>{messages.duplicate}</p>}
-          {status === "empty" && <p>{messages.empty}</p>}
-          {status === "error" && <p>{messages.error}</p>}
-        </div>
+        {!status ? null : (
+          <div className="msg-alert">
+            {status === "sending" && <p>{messages.sending}</p>}
+            {status === "success" && <p>{messages.success}</p>}
+            {status === "duplicate" && <p>{messages.duplicate}</p>}
+            {status === "empty" && <p>{messages.empty}</p>}
+            {status === "error" && <p>{messages.error}</p>}
+          </div>
+        )}
       </form>
     );
   }
