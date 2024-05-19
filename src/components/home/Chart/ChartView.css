@@ -16,10 +16,11 @@
   gap: 10px;
 }
 
-.chart{
+.chart {
   display: flex;
   justify-content: center;
 }
+
 .chart-title {
   display: flex;
   justify-content: center;
@@ -86,7 +87,7 @@
 
 .chart-button {
   display: flex;
-  width: 233px; 
+  width: 233px;
   height: 61px;
   padding: 10px;
   justify-content: center;
@@ -126,8 +127,6 @@
   line-height: normal;
 }
 
-
-
 .chart-button-text {
   font-style: normal;
   font-weight: 700;
@@ -138,9 +137,7 @@
   text-transform: uppercase;
 }
 
-
-
-
+/* Responsive */
 @media only screen and (min-width: 500px) and (max-width:767px) {
   .chart-title {
     flex-direction: column;
@@ -213,12 +210,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
-
-
   .chart {
     width: 1200px;
     height: 330px;
-    margin-bottom:  0;
+    margin-bottom: 0;
   }
 
   .col-3 {

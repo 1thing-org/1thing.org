@@ -69,7 +69,6 @@
   line-height: 20px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-
 }
 
 #p1 {
@@ -115,21 +114,21 @@
 }
 
 @media screen and (min-width:414px) and (max-width:768px) {
-  #support-section{
+  #support-section {
     gap: 50px;
   }
 
-  #main-support-content{
-        display: flex;
-          flex-direction: column;
-          gap: 20px;
-          padding-bottom: 10%;
+  #main-support-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10%;
   }
 
-    #support-section2-text-container{
-      padding-bottom: 10%;
-    }
-  
+  #support-section2-text-container {
+    padding-bottom: 10%;
+  }
+
   #topSection-title {
     font-size: 33px;
   }
@@ -147,8 +146,6 @@
     flex-direction: column;
   }
 }
-
-
 
 @media screen and (min-width:769px) {
   #support-sections {
@@ -190,10 +187,8 @@
     align-self: stretch;
   }
 
-    #support-number{
-      display: flex;
-      flex-direction: row;
-    }
-  
-
+  #support-number {
+    display: flex;
+    flex-direction: row;
+  }
 }

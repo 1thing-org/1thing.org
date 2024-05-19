@@ -1,7 +1,7 @@
 .nav {
   max-width: 1440px;
   margin: 0 auto;
-  padding:0;
+  padding: 0;
   background: rgba(255, 255, 255, 0.80);
 }
 
@@ -10,7 +10,6 @@
   align-items: center;
   justify-content: flex-start;
 }
-
 
 .logo-text {
   width: 80px;
@@ -82,11 +81,10 @@
 
 .offcanvas .nav-link {
   padding: 2rem 50rem;
-
   text-align: center;
   border-bottom: 0.8px solid grey;
 }
 
-.offcanvas .nav-link + .nav-link {
+.offcanvas .nav-link+.nav-link {
   margin-top: 1.5rem;
 }
