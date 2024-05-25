@@ -1,4 +1,4 @@
-import "./TopSection.css"
+"./TopSection.css"
 import Card from "react-bootstrap/Card";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
@@ -26,7 +26,7 @@ function TopSection(props: Props) {
                 </Col>
 
                 {/* Image Section */}
-                <Col md={6} xs={12}>
+                <Col md={12} xs={12}>
                     <Card.Img
                         src={imageSrc}
                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -36,7 +36,7 @@ function TopSection(props: Props) {
                 {/* Text Section */}
                 {!hideHeroText && (
                     <Col
-                        md={6}
+                        md={12}
                         xs={12}
                         style={{
                             paddingLeft: "40px",
@@ -99,4 +99,3 @@ function TopSection(props: Props) {
 }
 
 export default TopSection;
-

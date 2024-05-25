@@ -2,14 +2,15 @@ import NavBar from "../../navbar/NavBar";
 import Footer from "../../footer/Footer";
 import Mac from "../../../assets/project-tracker/mac.png"
 import TopSection from "../projectTogether/topSection/TopSection";
-import BottomSec from "../projectTogether/bottomSection/BottomSec";
+import BottomSec from "../projectTracker/bottomSection/BottomSec";
+import Bottom from "../projectTracker/bottomSection/Bottom";
 
 const aboutHeroData: {
     heading: string;
     secondheading: string;
     subheading: string;
 } = {
-    heading: `Project Tracker`,
+    heading: `Anti-Asian Hate Crime Tracker`,
     secondheading: `Anti-Asian Hate Crime Tracker is a first-of-its-kind website 
     gathers anti-Asian crime incidents reported by credible news sources`,
     subheading: `Despite reduced media coverage, 
@@ -36,6 +37,7 @@ function ProjectTracker() {
                 imageSrc={Mac}
             />
             <BottomSec />
+            <Bottom />
             <Footer />
         </div>
     );
