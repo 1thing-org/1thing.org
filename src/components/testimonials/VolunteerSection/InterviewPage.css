@@ -1,131 +1,131 @@
 .interview-container {
-    width: 1048px;
-    margin-top: 127px;
-    margin-bottom: 48px;
+  width: 1048px;
+  margin-top: 127px;
+  margin-bottom: 48px;
 }
 
 .interview-introduction {
-    padding: 0;
+  padding: 0;
 }
 
 .interview-profile-container {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .interview-profile {
-    max-width: 90%;
-    height: auto;
+  max-width: 90%;
+  height: auto;
 }
 
 .interview-brief-introduction {
-    text-align: left;
+  text-align: left;
 }
 
 .interview-name {
-    font-size: 2.5rem;
-    font-family: Open Sans;
-    line-height: 3rem;
-    letter-spacing: 0.4px;
-    font-weight: bolder;
-    margin: 1rem;
+  font-size: 2.5rem;
+  font-family: Open Sans;
+  line-height: 3rem;
+  letter-spacing: 0.4px;
+  font-weight: bolder;
+  margin: 1rem;
 }
 
 .interview-quote {
-    font-size: 28px;
-    font-family: Avenir;
-    line-height: 40px;
-    font-weight: 600;
+  font-size: 28px;
+  font-family: Avenir;
+  line-height: 40px;
+  font-weight: 600;
 }
 
 .interview-content {
-    text-align: left;
+  text-align: left;
 }
 
 .interview-paragraph {
-    text-align: left;
-    margin: 2rem;
-    font-size: Times New Roman;
+  text-align: left;
+  margin: 2rem;
+  font-size: Times New Roman;
 }
 
 .interview-profile {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .interview-detials-container {
-    width: 1048px;
-    margin-top: 48px;
+  width: 1048px;
+  margin-top: 48px;
 }
 
 .interview-paragraph {
-    margin: 0;
+  margin: 0;
 }
 
 .interview-paragraph:first-child::first-letter {
-    font-size: 200%;
-    font-weight: 800;
+  font-size: 200%;
+  font-weight: 800;
 }
 
 .interview-name-bottom {
-    font-family: Open Sans;
-    font-weight: bolder;
+  font-family: Open Sans;
+  font-weight: bolder;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .interview-name {
-        font-size: 2rem;
-        font-family: Open Sans;
-        line-height: 2rem;
-        letter-spacing: 0.4px;
-        font-weight: bolder;
-        margin: 1rem;
-    }
+  .interview-name {
+    font-size: 2rem;
+    font-family: Open Sans;
+    line-height: 2rem;
+    letter-spacing: 0.4px;
+    font-weight: bolder;
+    margin: 1rem;
+  }
 
-    .interview-quote {
-        font-size: 1rem;
-        line-height: 2rem;
-    }
+  .interview-quote {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 }
 
 /* mobile version max width 767px */
 @media screen and (max-width: 767px) {
-    .interview-container {
-        width: 85%;
-        margin-top: 40px;
-        margin-bottom: 48px;
-        padding: 0;
-    }
+  .interview-container {
+    width: 85%;
+    margin-top: 40px;
+    margin-bottom: 48px;
+    padding: 0;
+  }
 
-    .interview-brief-introduction {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .interview-brief-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .interview-quote {
-        font-size: 22px;
-        text-align: center;
-    }
+  .interview-quote {
+    font-size: 22px;
+    text-align: center;
+  }
 
-    .interview-detials-container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  .interview-detials-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .interview-paragraph-container {
-        padding: 0;
-    }
+  .interview-paragraph-container {
+    padding: 0;
+  }
 
-    .interview-paragraph {
-        font-size: 18px;
-    }
+  .interview-paragraph {
+    font-size: 18px;
+  }
 
-    .interview-name {
-        font-weight: bolder;
-        margin-top: 32px;
-    }
+  .interview-name {
+    font-weight: bolder;
+    margin-top: 32px;
+  }
 }

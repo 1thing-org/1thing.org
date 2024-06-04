@@ -105,14 +105,11 @@ form.signin-form {
   border-radius: 3px;
 }
 
-
 .form-inner-cont input:focus,
 .form-inner-cont textarea:focus {
   border: 1px solid #272626;
   background: #fff;
 }
-
-
 
 button.btn {
   width: 240px;

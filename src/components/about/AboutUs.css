@@ -2,59 +2,60 @@
 
 
 #about-us-container {
-    position: relative;
-    max-width: 1440px;
-    height: 55.5rem;
-    padding: 8rem 13.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  position: relative;
+  max-width: 1440px;
+  height: 55.5rem;
+  padding: 8rem 13.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .heart {
-    margin-top: -220px;
-    max-width: 1440px;
-    width: 100%;
+  margin-top: -220px;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .about-us-row {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0px;
-    margin-right: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .about-us-title {
-    font-size: 44px;
-    font-weight: bold;
-    font: normal;
-    color: #18181A;
-    text-align: left;
-    padding: 0;
-    width: 21%;
+  font-size: 44px;
+  font-weight: bold;
+  font: normal;
+  color: #18181A;
+  text-align: left;
+  padding: 0;
+  width: 21%;
 }
 
 .subtitle {
-    color: #18181A;
-    font-weight: bold;
-    font-size: 22px;
-    text-align: left;
-    padding: 0;
-    width: 13%;
+  color: #18181A;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: left;
+  padding: 0;
+  width: 13%;
 }
 
 .about-paragraph {
-    font-size: 16px;
-    text-align: left;
-    font-family: sans-serif;
-    padding: 0;
-    width: 59.5%;
+  font-size: 16px;
+  text-align: left;
+  font-family: sans-serif;
+  padding: 0;
+  width: 59.5%;
 }
-.signupTitle{
-        color: #333;
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 50px;
-            margin-bottom: 35px;
-            text-transform: capitalize;
+
+.signupTitle {
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 35px;
+  text-transform: capitalize;
 }
