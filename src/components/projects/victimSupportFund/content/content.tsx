@@ -79,7 +79,7 @@ function SupportFundContent(props: Props) {
                       <Col md={6} id="button-container">
                         <Button
                           id="Donate-button"
-                          href="https://gofund.me/c67ed274"
+                          href="https://www.zeffy.com/donation-form/db8063f1-309d-4df7-a1a1-1a60c28fec49"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
