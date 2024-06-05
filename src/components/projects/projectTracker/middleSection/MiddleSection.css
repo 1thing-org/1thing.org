@@ -18,6 +18,7 @@
 }
 
 .core-features {
+    display: flex;
     color: #18181A;
     text-align: center;
     font-size: 32px;
@@ -143,28 +144,25 @@
     align-self: stretch;
 }
 
-#donate-button {
-    display: flex;
-    width: 132px;
-    height: 61px;
-    padding: 10px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: var(--Redius, 2px);
-    background: var(--Primary-color, #FFC530);
-    color: #372A06;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-top: 32px;
-}
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #feature {
         height: 165px;
     }
+}
+
+#ProjectTracker-title-2 {
+    display: flex;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#hero-subtitle {
+    padding-bottom: 48px;
+    padding-top: 24px;
+}
+
+#stores {
+    width: 430px;
+    height: 64px;
 }

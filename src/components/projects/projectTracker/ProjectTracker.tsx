@@ -1,9 +1,9 @@
 import NavBar from "../../navbar/NavBar";
 import Footer from "../../footer/Footer";
 import Mac from "../../../assets/project-tracker/mac.png"
-import TopSection from "../projectTogether/topSection/TopSection";
-import BottomSec from "../projectTracker/bottomSection/BottomSec";
-import Bottom from "../projectTracker/bottomSection/Bottom";
+import TopSection from "../projectTracker/topSection/TopSection";
+import MiddleSection from "./middleSection/MiddleSection";
+import BottomSection from "./bottomSection/BottomSection";
 
 const aboutHeroData: {
     heading: string;
@@ -36,8 +36,8 @@ function ProjectTracker() {
                 subheading={aboutHeroData.subheading}
                 imageSrc={Mac}
             />
-            <BottomSec />
-            <Bottom />
+            <MiddleSection />
+            <BottomSection />
             <Footer />
         </div>
     );

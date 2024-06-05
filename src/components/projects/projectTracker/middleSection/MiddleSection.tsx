@@ -1,4 +1,4 @@
-import "./BottomSec.css"
+import "./MiddleSection.css"
 import Card from "react-bootstrap/Card";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
@@ -14,14 +14,12 @@ type Props = {
     hideHeroText?: boolean;
 };
 
-function BottomSec(props: Props) {
+function MiddleSection(props: Props) {
     const { heading, secondheading, subheading, hideHeroText } = props;
 
     return (
         <Container id="projectTogether-container" fluid>
             <Row>
-
-
 
 
                 {/* Text Section */}
@@ -55,14 +53,14 @@ function BottomSec(props: Props) {
                                 </Card.Title>
                             </div>
                             <Col md={12}>
-                                <Card.Text id="hero-subtitle">For even greater accessibility,
+                                <Card.Text id="hero-subtitle"> For even greater accessibility,
                                     1 Thing is developing a mobile app,
                                     which will be available soon.
                                     Please check their website for updates.</Card.Text>
                             </Col>
                             <Card.Img
                                 id="stores" src={stores} alt="stores"
-                                style={{width: "100%", height: "10%"}}
+
                             />
                         </div>
                     </Col>
@@ -71,7 +69,7 @@ function BottomSec(props: Props) {
                 <Col md={6} xs={12}>
                     <Card.Img
                         id="iphones" src={iphones} alt="iphones"
-                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+
                     />
                 </Col>
 
@@ -80,4 +78,4 @@ function BottomSec(props: Props) {
     );
 }
 
-export default BottomSec;
+export default MiddleSection;

@@ -1,6 +1,9 @@
 #projectTracker-container {
-    padding-top: 100px;
+    padding-top: 128px;
     max-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 64px;
 }
 
 .project-h2 {
@@ -15,9 +18,11 @@
     text-align: center;
     font-size: 32px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
     line-height: 40px;
     letter-spacing: 0.4px;
+
 }
 
 #topSection-title {
@@ -31,10 +36,14 @@
     background: linear-gradient(to top, #ffd500 50%, #ffd500 50%, transparent 50%, transparent 100%);
 }
 
-#hands {
-    width: 83.871px;
+#eye {
+    width: 100px;
     height: var(--Section-Vertical-Margin-Large, 100px);
     flex-shrink: 0;
+}
+
+.p2 {
+    font-size: 16px;
 }
 
 .pj-titleContainer {
@@ -42,4 +51,59 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    margin-bottom: 64px;
 }
+
+#working-text {
+    text-align:left;
+    margin-top: 24px;
+}
+
+
+#mac {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+}
+
+#tracker-button {
+
+    background-color: rgb(255, 197, 48);
+    border-color: rgb(255, 197, 48);
+    border-radius: 2px;
+    width: 297px;
+    height: 61px;
+    font-size: 20px;
+    color: rgb(55, 42, 6);
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+
+#button-container {
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    text-transform: uppercase;
+
+
+
+}
+
+#picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#what-is-tracker {
+    padding-bottom: 128px;
+
+}
+
