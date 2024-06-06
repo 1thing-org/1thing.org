@@ -79,7 +79,7 @@ function SupportFundContent(props: Props) {
                       <Col md={6} id="button-container">
                         <Button
                           id="Donate-button"
-                          href=""
+                          href="https://www.zeffy.com/donation-form/db8063f1-309d-4df7-a1a1-1a60c28fec49"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -108,12 +108,12 @@ function SupportFundContent(props: Props) {
               <Container className="money-gose-content">
                 <Container id="support-number">
                   <Col md={6} className="childword">
-                    <h3 className="t-cases">$1990 Funds</h3>
+                    <h3 className="t-cases">$40,414 Funds</h3>
                     <p className="t1">Being effectively distributes</p>
                   </Col>
 
                   <Col md={6} className="childword">
-                    <h3 className="t-cases">199 Victims</h3>
+                    <h3 className="t-cases">15 Victims</h3>
                     <p className="t1">Received help from 1thing</p>
                   </Col>
                 </Container>

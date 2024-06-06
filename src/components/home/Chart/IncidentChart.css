@@ -39,24 +39,22 @@
 }
 
 .date {
-  font-family: "Quicksand";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
-
   color: rgba(8, 13, 31, 0.7);
 }
 
 .cases {
-  font-family: "Quicksand";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
-
   color: #080d1f;
 }
 

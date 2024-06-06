@@ -5,7 +5,6 @@ import a2 from "../../../assets/home-page/a2.svg";
 import a3 from "../../../assets/home-page/a3.svg";
 import a4 from "../../../assets/home-page/a4.svg";
 import backgroundImage from "../../../assets/home-page/action.svg";
-import Action from "./Action";
 
 const ActionSectionContainer = styled.div`
   height: 782px;

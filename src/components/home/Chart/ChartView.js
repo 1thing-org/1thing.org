@@ -1,15 +1,10 @@
 import React, { useEffect, useState, useCallback, useMemo } from "react";
-
 import "./ChartView.css";
-
 import moment from "moment";
 import { Row, Col, Container } from "reactstrap";
 import { Button } from "react-bootstrap";
-
 import IncidentChart from "./IncidentChart";
-
 import * as incidentsService from "./incident";
-
 import logo from "../../../assets/home-page/smallLogo.svg";
 
 const ChartView = () => {
@@ -130,9 +125,9 @@ const ChartView = () => {
           <Col>
             <p className="t4">
               Anti-Asian hate crimes are happening everyday and we’ve built a
-              tool to help track them. 1 Thing’s Hate Crime Tracker
-              scrapes reports from national media news outlets and visualizes
-              the data to raise awareness about these terrible incidents.
+              tool to help track them. 1 Thing’s Hate Crime Tracker scrapes
+              reports from national media news outlets and visualizes the data
+              to raise awareness about these terrible incidents.
             </p>
           </Col>
         </Row>
@@ -158,19 +153,17 @@ const ChartView = () => {
             </Container>
           </div>
         ) : (
-       
-            <Container className="chartview-word">
-              <Col md={2} className="childword">
-                <h3 className="t-cases">{totalLastMonthCases} Cases</h3>
-                <p className="t1">were reported in {lastMonthName}</p>
-              </Col>
+          <Container className="chartview-word">
+            <Col md={2} className="childword">
+              <h3 className="t-cases">{totalLastMonthCases} Cases</h3>
+              <p className="t1">were reported in {lastMonthName}</p>
+            </Col>
 
-              <Col md={2} className="childword">
-                <h3 className="t-cases">{totalAnnualCases} Cases</h3>
-                <p className="t1">were reported in the past 12 months</p>
-              </Col>
-            </Container>
-       
+            <Col md={2} className="childword">
+              <h3 className="t-cases">{totalAnnualCases} Cases</h3>
+              <p className="t1">were reported in the past 12 months</p>
+            </Col>
+          </Container>
         )}
         <Col className="links">
           <Button
@@ -190,7 +183,6 @@ const ChartView = () => {
           >
             <div className="chart-button-text">See Live Tracker</div>
           </Button>
-
         </Col>
       </Container>
     </Container>
