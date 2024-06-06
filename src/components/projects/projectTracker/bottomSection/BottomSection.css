@@ -17,11 +17,12 @@
     margin-bottom: 24px;
 }
 
-#support-fund-container {
+#support-fund-content-container {
     display: flex;
+    flex-direction: row;
+    gap: 16px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     margin-bottom: 24px;
 }
 
@@ -37,6 +38,7 @@
     font-weight: 400;
     text-align: left;
     width: 1008px;
+    justify-content: center;
 
 }
 
@@ -66,9 +68,20 @@
 }
 
 #support-fund-title {
+
     padding-bottom: 28px;
 
 }
+
+#hero-subtitle {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
 
 
 

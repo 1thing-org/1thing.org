@@ -49,7 +49,8 @@ function TopSection(props: Props) {
                             but they may not always be categorized as hate crimes.
                             It's important to recognize that these incidents are likely motivated by anti-Asian bias,
                             even if they don't meet specific legal definitions.
-
+                            <br/>
+                            <br/>
                             To raise awareness of this ongoing problem,
                             1 Thing Org created the Anti-Asian Hate Crime Tracker.
                             This first-of-its-kind website gathers anti-Asian crime incidents reported by credible news

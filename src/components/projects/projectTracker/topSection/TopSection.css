@@ -67,6 +67,7 @@
     width: 100%;
     height: auto;
 
+
 }
 
 #tracker-button {
@@ -84,6 +85,10 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 20px;
+    border-radius: var(--Redius, 2px);
+    border: 1px solid var(--Primary-color, #ffc530) !important;
+    background: var(--Primary-color, #ffc530) !important;
+    padding: 0px !important;
 
 }
 
@@ -91,7 +96,7 @@
     justify-content: center; /* Center horizontally */
     align-items: center;
     text-transform: uppercase;
-
+    padding: 0px !important;
 
 
 }
