@@ -1,8 +1,8 @@
 import "./content.css";
 import { Container, Col, Card, Row, Button } from "react-bootstrap";
 import sideLogo from "../../../../assets/home-page/smallLogo.svg";
-import section1 from "../../../../assets/supportFund/section1.png";
-import section2 from "../../../../assets/supportFund/section2.png";
+import section1 from "../../../../assets/supportFund/section1.svg";
+import section2 from "../../../../assets/supportFund/section2.svg";
 type Props = {
   heading?: string;
   subheading?: string;
