@@ -1,8 +1,5 @@
 import NavBar from "../../navbar/NavBar";
 import Footer from "../../footer/Footer";
-import HeroSection from "../../hero/HeroSection";
-import HeroImage from "assets/hero.svg";
-import Content from "./content/content";
 import SupportFundContent from "./content/content";
 import supportImg from "../../../assets/home-page/supportFund.png";
 

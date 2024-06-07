@@ -1,27 +1,27 @@
-.signup{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.signup input{
-    width: 30%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.signup input {
+  width: 30%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .signup input[type="text"] {
-    height: 100px;
+  height: 100px;
 }
 
 .signup-button {
-    padding: 0.7rem 3rem;
-    background-color: #FFC530;
-    color: black;
-    font-weight: bolder;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 0.7rem 3rem;
+  background-color: #FFC530;
+  color: black;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

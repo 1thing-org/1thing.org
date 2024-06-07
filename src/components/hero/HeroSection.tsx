@@ -18,18 +18,14 @@ function HeroSection(props: Props) {
       <Row id="middle">
         <Col className="titleContainer" md={12} xxl={12}>
           <Card.Title id="hero-title">{heading}</Card.Title>
-
           <p className="p2">Together we can make a real difference.</p>
         </Col>
 
         {/* Image Section */}
-     
-
-          <Card.Img
-            src={imageSrc}
-            style={{ width: "100%", maxWidth: "522px", objectFit:"cover" }}
-          />
-       
+        <Card.Img
+          src={imageSrc}
+          style={{ width: "100%", maxWidth: "522px", objectFit: "cover" }}
+        />
 
         {/* Text Section */}
         {!hideHeroText && (
@@ -49,8 +45,8 @@ function HeroSection(props: Props) {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "flex-start",
-                padding:"0",
-                gap:"4px"
+                padding: "0",
+                gap: "4px",
               }}
             >
               <div className="h2">
@@ -63,13 +59,10 @@ function HeroSection(props: Props) {
               <Col md={12}>
                 <Card.Text id="hero-subtitle">{subheading}</Card.Text>
               </Col>
-              <Button className="hero-button"
-                href="/takeaction"
-              >
+              <Button className="hero-button" href="/takeaction">
                 Take Action
               </Button>
             </div>
-            
           </Col>
         )}
       </Row>

@@ -1,4 +1,4 @@
-import NavBar from "./navbaraction/NavAction";
+import NavBar from "../navbar/NavBar";
 import Footer from "../footer/Footer";
 import ActionsGroup from "./actionsgroup/ActionsGroup";
 import HeroSection from "./heroaction/HeroAction";
@@ -12,10 +12,17 @@ function TakeAction() {
       <NavBar />
       <HeroSection imageSrc={HeroActionImage} />
       <ActionsGroup />
-      <Container style={{ width: "100vw" , backgroundColor:'#f5f5f5', marginTop:"120px", marginBottom: "120px"}}>
-      <Container style={{ paddingTop:"60px", paddingBottom: "60px"}}>
-      <Signup signupTitle={"Share Your One Thing"} containsSubject={true}/>
-      </Container>
+      <Container
+        style={{
+          width: "100vw",
+          backgroundColor: "#f5f5f5",
+          marginTop: "120px",
+          marginBottom: "120px",
+        }}
+      >
+        <Container style={{ paddingTop: "60px", paddingBottom: "60px" }}>
+          <Signup signupTitle={"Share Your One Thing"} containsSubject={true} />
+        </Container>
       </Container>
       <Footer />
     </div>
