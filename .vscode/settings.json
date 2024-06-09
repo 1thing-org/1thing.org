@@ -7,6 +7,9 @@
   "emmet.triggerExpansionOnTab": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -19,12 +22,16 @@
   },
   "dart.openDevTools": "flutter",
   "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true
   },
-  "i18n-ally.localesPaths": [
-    "public/locales"
-  ],
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true
+  },
+  "i18n-ally.localesPaths": ["public/locales"]
 }

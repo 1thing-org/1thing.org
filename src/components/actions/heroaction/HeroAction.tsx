@@ -7,15 +7,13 @@ type Props = {
 };
 
 function HeroSection(props: Props) {
-  const { imageSrc } = props;
-
   return (
     <Container id="hero-wrapper-action">
       <Card.Text id="actionPage-text">
         There are many small actions we can take to
       </Card.Text>
       <Card.Text id="actionPage-text">
-      make progress towards racial equality.
+        make progress towards racial equality.
       </Card.Text>
     </Container>
   );

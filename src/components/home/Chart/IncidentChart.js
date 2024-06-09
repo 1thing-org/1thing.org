@@ -163,8 +163,11 @@ const IncidentChart = ({ color, chart_data, state, isFirstLoadData }) => {
           />
           <defs>
             <linearGradient id="monthly-gradient" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#FFE033" />
-              <stop offset="100%" stop-color="rgba(255, 224, 51, 0)" />
+              <stop offset="0%" style={{ stopColor: "#FFE033" }} />
+              <stop
+                offset="100%"
+                style={{ stopColor: "rgba(255, 224, 51, 0)" }}
+              />
             </linearGradient>
           </defs>
         </LineChart>

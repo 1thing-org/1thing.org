@@ -1,7 +1,7 @@
 import Footer from "../footer/Footer";
 import AboutUsSection from "./AboutUsContent";
 import "./AboutUs.css";
-import NavBar from '../navbar/NavBar';
+import NavBar from "../navbar/NavBar";
 import Signup from "components/signup/SignUp";
 
 function AboutUs() {
@@ -9,7 +9,7 @@ function AboutUs() {
     <div>
       <NavBar />
       <AboutUsSection />
-      <Signup  signupTitle={"Contact Us"} containsSubject={true}/>
+      <Signup signupTitle={"Contact Us"} containsSubject={true} />
       <Footer />
     </div>
   );

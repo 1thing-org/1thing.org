@@ -2,7 +2,7 @@ import raiseAwarenessRight from "../../../assets/take-action-page/raise-awarenes
 import supportVictim from "../../../assets/take-action-page/support-victim.svg";
 import useSkillsRight from "../../../assets/take-action-page/use-skills-right.svg";
 import promoteLeft from "../../../assets/take-action-page/promote-left.svg";
-import smallLogo from "../../../assets/home-page/smallLogo.svg"
+import smallLogo from "../../../assets/home-page/smallLogo.svg";
 import { Card, Row, Col } from "react-bootstrap";
 import "./ActionsGroup.css";
 
