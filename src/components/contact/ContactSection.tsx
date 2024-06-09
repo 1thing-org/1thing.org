@@ -1,8 +1,9 @@
 import Card from "react-bootstrap/Card";
 import "./ContactSection.css";
 import smallLogo from "../../assets/home-page/smallLogo.svg";
-import { Container, Col, Row } from "react-bootstrap";
-import contactimg from "../../assets/contact.jpeg";
+import { Container, Col, Row, Button } from "react-bootstrap";
+import contactimg from "../../assets/contact.svg";
+import ContactOneThing from "../about/ContactUs";
 type Props = {
   heading?: string;
   subheading?: string;
