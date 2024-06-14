@@ -1,11 +1,11 @@
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
-import { Container, Image, Col, Row, Card } from "react-bootstrap";
+import { Container, Image, Col, Row, Card, Button } from "react-bootstrap";
 import "./BottomSec.css";
 import Bottom from "./Bottom";
-import a1 from "../../../../assets/home-page/a1.svg";
-import a5 from "../../../../assets/home-page/a5.svg";
-import a3 from "../../../../assets/home-page/a3.svg";
-import a4 from "../../../../assets/home-page/a4.svg";
+import trumpet from "../../../../assets/home-page/trumpet.svg";
+import news from "../../../../assets/home-page/news.svg";
+import lightbulb from "../../../../assets/home-page/lightbulb.svg";
+import puzzle from "../../../../assets/home-page/puzzle.svg";
 const FeatureData: { name: string; quote: string }[] = [
   {
     name: "COMMUNITY",
@@ -79,19 +79,19 @@ function BottomSec() {
           </p>
           <Row className="icon-row">
             <Col md={3} id="icon">
-              <Image src={a1} id="icon-img" />
+              <Image src={trumpet} id="icon-img" />
               <Card.Text id="icon-text">INSPIRATIONAL COMMUNITY</Card.Text>
             </Col>
             <Col md={3} id="icon">
-              <Image src={a5} id="icon-img" />
+              <Image src={news} id="icon-img" />
               <Card.Text id="icon-text">UPDATE NEWS</Card.Text>
             </Col>
             <Col md={3} id="icon">
-              <Image src={a3} id="icon-img" />
+              <Image src={lightbulb} id="icon-img" />
               <Card.Text id="icon-text">RICH IDEAS</Card.Text>
             </Col>
             <Col md={3} id="icon">
-              <Image src={a4} id="icon-img" />
+              <Image src={puzzle} id="icon-img" />
               <Card.Text id="icon-text">TRANSPARENCY</Card.Text>
             </Col>
           </Row>
@@ -99,7 +99,47 @@ function BottomSec() {
       </div>
 
       <div id="support">
-        <div id="core-features-support-section"></div>
+        <div id="core-features-support-section">
+          <Container id="core-features-container">
+            <img
+              className="feature-logo"
+              src={smallLogo}
+              style={{ width: "37px", height: "23.5px" }}
+              alt="1thing logo"
+            ></img>
+            <h2 className="core-features">We appreciate your support!</h2>
+          </Container>
+          <p className="bottom-text">
+            Project Together has the potential to make a real difference in the AAPI community. 
+            It will help to connect people who want to support the AAPI community and make a difference, 
+            and it will make it easier for people to find ways to help.
+          </p>
+          <Button
+            href="https://www.zeffy.com/donation-form/db8063f1-309d-4df7-a1a1-1a60c28fec49"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "space-evenly",
+              backgroundColor: "#FFC530",
+              borderColor: "#FFC530",
+              borderRadius: "2px",
+              width: "201px",
+              height: "61px",
+              fontSize: "20px",
+              color: "#372A06",
+              textAlign: "center",
+              fontFamily: "sans-serif",
+              fontStyle: "normal",
+              fontWeight: "700",
+              textTransform: "uppercase",
+              padding: "0px",
+              marginTop: "20px"
+            }}
+          >
+            DONATE
+          </Button>
+        </div>
       </div>
     </div>
   );
