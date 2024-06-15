@@ -28,7 +28,7 @@
     "editor.detectIndentation": true
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.detectIndentation": true
