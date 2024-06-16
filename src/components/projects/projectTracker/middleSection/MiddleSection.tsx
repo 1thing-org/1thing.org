@@ -1,6 +1,6 @@
 import "./MiddleSection.css"
 import Card from "react-bootstrap/Card";
-import { Container, Col, Row, Button } from "react-bootstrap";
+import { Container, Col, Row} from "react-bootstrap";
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
 import iphones from "../../../../assets/project-tracker/iphones.png";
 import stores from "../../../../assets/project-tracker/stores.png"
@@ -15,7 +15,6 @@ type Props = {
 };
 
 function MiddleSection(props: Props) {
-    const { heading, secondheading, subheading, hideHeroText } = props;
 
     return (
         <Container id="projectTogether-container" fluid>
