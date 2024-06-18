@@ -11,7 +11,6 @@ import VolunteerSection from "./components/testimonials/VolunteerSection/Volunte
 import LiMPage from "./components/testimonials/testimonialsDetails/LiMPage";
 import KaiKPage from "./components/testimonials/testimonialsDetails/KaiKPage";
 import JoshCPage from "./components/testimonials/testimonialsDetails/JoshCPage";
-import projectTracker from "./components/projects/projectTracker/ProjectTracker";
 import ProjectTracker from "./components/projects/projectTracker/ProjectTracker";
 
 function App() {

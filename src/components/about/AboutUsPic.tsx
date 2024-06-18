@@ -4,6 +4,7 @@ const AboutUsPic = () => (
   <img
     src={heart}
     className="heart"
+    alt="heart"
   />
 );
 

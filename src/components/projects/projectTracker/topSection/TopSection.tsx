@@ -3,7 +3,6 @@ import Card from "react-bootstrap/Card";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
 import trackerLogo from "../../../../assets/project-tracker/trackerLogo.png";
-import project_together from "../../../../assets/home-page/ProjectTogether.svg";
 import mac from "../../../../assets/project-tracker/mac.png"
 
 
@@ -16,7 +15,7 @@ type Props = {
 };
 
 function TopSection(props: Props) {
-    const { heading, secondheading, subheading, imageSrc, hideHeroText } = props;
+    const { heading } = props;
 
     return (
         <Container id="projectTracker-container" >
