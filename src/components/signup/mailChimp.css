@@ -81,9 +81,18 @@
 
 #signup-button {
   height: 55px;
-  width: 15rem;
-  margin: 0 auto;
   padding: 0;
   font-size: 24px;
   font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  #signup-button {
+    height: 55px;
+    width: 15rem;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
