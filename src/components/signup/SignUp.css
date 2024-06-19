@@ -47,7 +47,7 @@
 
 @media (max-width: 992px) {
   #signup-email-container {
-    padding: 8rem 15rem;
+    padding: 8rem 12rem;
   }
 
   .signup input {
@@ -57,7 +57,7 @@
 
 @media (max-width: 768px) {
   #signup-email-container {
-    padding: 8rem 10rem;
+    padding: 8rem 7rem;
   }
 
   .signup input {
