@@ -1,7 +1,6 @@
 #signup-email-container {
   background-color: #FBFBFB;
   max-width: 1440px;
-  height: 60rem;
   margin: 10rem auto 5rem auto;
   padding: 8rem 25.3rem;
   display: flex;
@@ -32,7 +31,6 @@
 
 /* Below are the css styles for sign up form. */
 .signup {
-  height: 39.5rem;
   margin: 0 1rem;
 }
 
