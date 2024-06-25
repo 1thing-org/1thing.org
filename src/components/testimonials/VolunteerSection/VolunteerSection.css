@@ -13,7 +13,12 @@
 }
 
 .our-volunteers {
-  align-self: stretch;
+  display: inline-block;
+  background: linear-gradient(to top,
+      #ffd500 50%,
+      #ffd500 50%,
+      transparent 50%,
+      transparent 100%);
   color: #18181A;
   text-align: center;
   font-size: 40px;
@@ -21,6 +26,7 @@
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 0.4px;
+  padding: 0 5px;
 }
 
 #volunteers {
