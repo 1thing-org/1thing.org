@@ -85,7 +85,9 @@
   font-style: normal;
   font-weight: 400;
   text-align: left;
-  width: 380px;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .link {
