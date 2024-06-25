@@ -3,22 +3,8 @@ import { LinkContainer } from "react-router-bootstrap";
 import NewLogo from "../../assets/NewLogo.svg";
 import "./NavBar.css";
 import { useState } from "react";
-
-function Page({
-  title,
-  links,
-  className,
-}: {
-  title: string;
-  links: string;
-  className?: string;
-}) {
-  return (
-    <LinkContainer to={links} className={`link ${className}`}>
-      <Nav.Link>{title}</Nav.Link>
-    </LinkContainer>
-  );
-}
+import Page from "./Page";
+import Dropdown from "./Dropdown";
 
 function NavBar() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -62,23 +48,36 @@ function NavBar() {
                 <Page
                   title={"About Us"}
                   links={"/aboutus"}
-                  className={"inner-text"}
                 ></Page>
                 <Page
                   title={"Take Action"}
                   links={"/takeaction"}
-                  className={"inner-text"}
                 ></Page>
                 <Page
                   title={"Testimonial"}
                   links={"/testimonials"}
-                  className={"inner-text"}
                 ></Page>
                 <Page
                   title={"Contact"}
                   links={"/contact"}
-                  className={"inner-text"}
                 ></Page>
+                <Dropdown
+                  title="Our Projects"
+                  dropdownItems={[
+                    {
+                      title: "Crime Tracker",
+                      links: "/projects/project-tracker"
+                    },
+                    {
+                      title: "Victim Support Fund",
+                      links: "/projects/victim-support-fund"
+                    },
+                    {
+                      title: "Project Together",
+                      links: "/projects/project-together"
+                    }
+                  ]}
+                ></Dropdown>
               </Nav>
             </Navbar.Collapse>
           )}
@@ -96,27 +95,40 @@ function NavBar() {
             </Offcanvas.Header>
 
             <Offcanvas.Body>
-              <Nav className="links-ms-auto">
+              <Nav className="fixed-nav">
                 <Page
                   title={"About Us"}
                   links={"/aboutus"}
-                  className={"inner-text"}
                 ></Page>
                 <Page
                   title={"Take Action"}
                   links={"/takeaction"}
-                  className={"inner-text"}
                 ></Page>
                 <Page
                   title={"Testimonial"}
                   links={"/testimonials"}
-                  className={"inner-text"}
                 ></Page>
                 <Page
                   title={"Contact"}
                   links={"/contact"}
-                  className={"inner-text"}
                 ></Page>
+                <Dropdown
+                  title="Our Projects"
+                  dropdownItems={[
+                    {
+                      title: "Crime Tracker",
+                      links: "/projects/project-tracker"
+                    },
+                    {
+                      title: "Victim Support Fund",
+                      links: "/projects/victim-support-fund"
+                    },
+                    {
+                      title: "Project Together",
+                      links: "/projects/project-together"
+                    }
+                  ]}
+                ></Dropdown>
               </Nav>
             </Offcanvas.Body>
           </Offcanvas>
