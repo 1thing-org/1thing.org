@@ -11,19 +11,16 @@ class Signup extends Component {
     const fields = [
       {
         name: "NAME",
-        placeholder: "Enter your Name",
         type: "text",
         required: true,
       },
       {
         name: "EMAIL",
-        placeholder: "Enter your email",
         type: "email",
         required: true,
       },
       {
         name: "MESSAGE",
-        placeholder: "Enter your message",
         type: "textarea",
         required: true,
         rows: 7,
@@ -32,7 +29,6 @@ class Signup extends Component {
     if (containsSubject) {
       fields.splice(1, 0, {
         name: "SUBJECT",
-        placeholder: "Enter subject",
         type: "text",
         required: true,
       });
