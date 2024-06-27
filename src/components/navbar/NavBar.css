@@ -32,7 +32,6 @@
   line-height: 22px;
   letter-spacing: 0.4000000059604645px;
   text-align: left;
-  text-transform: uppercase;
   color: #18181a !important;
 }
 
@@ -198,7 +197,17 @@
   background-color: transparent;
 }
 
+.nav-dropdown .dropdown-menu {
+  border: none;
+  margin-top: 1em;
+  background-color: transparent;
+}
+
 .fixed-nav {
   width: 35%;
   height: 35%;
+}
+
+.title-spacing {
+  word-spacing: 0.2em;
 }

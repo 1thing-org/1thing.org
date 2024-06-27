@@ -53,19 +53,11 @@ function NavBar() {
                   title={"Take Action"}
                   links={"/takeaction"}
                 ></Page>
-                <Page
-                  title={"Testimonial"}
-                  links={"/testimonials"}
-                ></Page>
-                <Page
-                  title={"Contact"}
-                  links={"/contact"}
-                ></Page>
                 <Dropdown
                   title="Our Projects"
                   dropdownItems={[
                     {
-                      title: "Crime Tracker",
+                      title: "Hate Crime Tracker",
                       links: "/projects/project-tracker"
                     },
                     {
@@ -78,6 +70,14 @@ function NavBar() {
                     }
                   ]}
                 ></Dropdown>
+                <Page
+                  title={"Testimonial"}
+                  links={"/testimonials"}
+                ></Page>
+                <Page
+                  title={"Contact"}
+                  links={"/contact"}
+                ></Page>
               </Nav>
             </Navbar.Collapse>
           )}
@@ -116,7 +116,7 @@ function NavBar() {
                   title="Our Projects"
                   dropdownItems={[
                     {
-                      title: "Crime Tracker",
+                      title: "Hate Crime Tracker",
                       links: "/projects/project-tracker"
                     },
                     {

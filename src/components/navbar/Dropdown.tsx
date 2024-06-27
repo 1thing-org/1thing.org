@@ -10,10 +10,10 @@ function Dropdown({
   dropdownItems: { title: string, links: string }[];
 }) {
   return (
-    <NavDropdown title={title} className={`nav-dropdown inner-text`}>
+    <NavDropdown title={<span className="title-spacing">{title}</span>} className={`nav-dropdown inner-text`}>
       {dropdownItems.map((item, index) => (
         <LinkContainer key={index.toString()} to={item.links}>
-          <NavDropdown.Item className="inner-text">{item.title}</NavDropdown.Item>
+          <NavDropdown.Item className="inner-text">{<span className="title-spacing">{item.title}</span>}</NavDropdown.Item>
         </LinkContainer>
       ))}
     </NavDropdown>
