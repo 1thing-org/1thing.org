@@ -32,7 +32,6 @@
   line-height: 22px;
   letter-spacing: 0.4000000059604645px;
   text-align: left;
-  text-transform: uppercase;
   color: #18181a !important;
 }
 
@@ -79,13 +78,13 @@
   align-items: center;
 }
 
-.offcanvas .nav-link {
+.offcanvas .nav-link .nav-dropdown {
   padding: 2rem 50rem;
   text-align: center;
   border-bottom: 0.8px solid grey;
 }
 
-.offcanvas .nav-link+.nav-link {
+.offcanvas .nav-link+.nav-link .nav-dropdown {
   margin-top: 1.5rem;
 }
 
@@ -172,12 +171,43 @@
   align-items: center;
 }
 
-.offcanvas .nav-link {
-  padding: 2rem 50rem;
-  text-align: center;
-  border-bottom: 0.8px solid grey;
+.offcanvas .nav-link+.nav-link {
+  margin-top: 2rem;
 }
 
-.offcanvas .nav-link+.nav-link {
-  margin-top: 1.5rem;
+.offcanvas .nav-link+.nav-dropdown {
+  margin-top: 2rem;
+}
+
+.nav-link {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #18181a;
+}
+
+.nav-dropdown .inner-text+.inner-text {
+  margin-top: 10px;
+}
+
+.nav-dropdown .dropdown-item {
+  background-color: transparent;
+}
+
+.nav-dropdown .dropdown-menu {
+  border: none;
+  margin-top: 1em;
+  background-color: transparent;
+}
+
+.fixed-nav {
+  width: 35%;
+  height: 35%;
+}
+
+.title-spacing {
+  word-spacing: 0.2em;
 }
