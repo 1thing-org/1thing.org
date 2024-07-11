@@ -1,6 +1,7 @@
 import { Nav, Navbar, Offcanvas, Container, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import NewLogo from "../../assets/NewLogo.svg";
+import logo from "../../assets/logo.svg";
 import "./NavBar.css";
 import { useState } from "react";
 import Page from "./Page";
@@ -19,20 +20,11 @@ function NavBar() {
             <Navbar.Brand className="brand-container">
               <img
                 className="logo"
-                src={NewLogo}
+                src={logo}
                 width="100"
                 height="100"
                 alt="1 Thing Org logo"
               />
-              <Navbar.Text className="text-container">
-                <div className="logo-text">
-                  1 Thing
-                  <br />
-                  Against
-                  <br />
-                  Racism
-                </div>
-              </Navbar.Text>
             </Navbar.Brand>
           </Col>
         </LinkContainer>
@@ -90,7 +82,8 @@ function NavBar() {
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>
                 {" "}
-                <img className="offcanvas-logo" src={NewLogo} alt="Logo" />
+                <img className="offcanvas-logo" src={logo} width="100"
+                  height="100" alt="Logo" />
               </Offcanvas.Title>
             </Offcanvas.Header>
 
