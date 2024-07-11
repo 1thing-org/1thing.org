@@ -1,6 +1,5 @@
 import { Nav, Navbar, Offcanvas, Container, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import NewLogo from "../../assets/NewLogo.svg";
 import logo from "../../assets/logo.svg";
 import "./NavBar.css";
 import { useState } from "react";
