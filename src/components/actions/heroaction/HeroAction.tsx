@@ -6,7 +6,7 @@ type Props = {
   imageSrc: string;
 };
 
-function HeroSection(props: Props) {
+function HeroAction(props: Props) {
   return (
     <Container id="hero-wrapper-action">
       <Card.Text id="actionPage-text">
@@ -19,4 +19,4 @@ function HeroSection(props: Props) {
   );
 }
 
-export default HeroSection;
+export default HeroAction;
