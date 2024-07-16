@@ -19,10 +19,9 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
     line-height: 40px;
     letter-spacing: 0.4px;
-
+    white-space: nowrap;
 }
 
 #topSection-title {
@@ -34,6 +33,7 @@
     line-height: 64px;
     letter-spacing: 0.4px;
     background: linear-gradient(to top, #ffd500 50%, #ffd500 50%, transparent 50%, transparent 100%);
+    white-space: nowrap;
 }
 
 #eye {
@@ -55,7 +55,7 @@
 }
 
 #working-text {
-    text-align:left;
+    text-align: left;
     margin-top: 24px;
 }
 
@@ -66,8 +66,6 @@
     display: flex;
     width: 100%;
     height: auto;
-
-
 }
 
 #tracker-button {
@@ -93,12 +91,11 @@
 }
 
 #button-container {
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
+    /* Center horizontally */
     align-items: center;
     text-transform: uppercase;
     padding: 0px !important;
-
-
 }
 
 #picture-container {
@@ -112,3 +109,62 @@
 
 }
 
+@media screen and (max-width: 991px) {
+    #topSection-title {
+        font-size: 3.25vw;
+        line-height: 4.3vw;
+        background-size: 100% 4.3vw;
+    }
+    #ProjectTracker-title-2 {
+        font-size: 3vw !important; 
+        line-height: 3.75vw !important;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 765px) {
+    #topSection-title {
+        font-size: 3vw;
+        line-height: 4vw;
+        background-size: 100% 4vw;
+    }
+    #ProjectTracker-title-2 {
+        font-size: 2.5vw !important; 
+        line-height: 3.125vw !important;
+    }
+}
+
+@media screen and (min-width: 591px) and (max-width: 650px) {
+    #topSection-title {
+        font-size: 3.5vw;
+        line-height: 4.6vw;
+        background-size: 100% 4.6vw;
+    }
+    #ProjectTracker-title-2 {
+        font-size: 2.75vw !important; 
+        line-height: 3.4375vw !important;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #topSection-title {
+        font-size: 4vw;
+        line-height: 5.2vw;
+        background-size: 100% 5.2vw;
+    }
+    #ProjectTracker-title-2 {
+        font-size: 3vw !important; 
+        line-height: 3.75vw !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #topSection-title {
+        font-size: 48px;
+        line-height: 64px;
+        background-size: 100% 64px;
+    }
+    #ProjectTracker-title-2 {
+        font-size: 32px !important; 
+        line-height: 40px !important;
+    }
+}

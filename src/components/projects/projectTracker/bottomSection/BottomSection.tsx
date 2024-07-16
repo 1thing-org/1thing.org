@@ -11,32 +11,44 @@ function BottomSection() {
     return (
         <Container id="bottom-section">
             <Row id="project-block">
-            <Col md={12} id="self-reporting-container">
+                <Col md={12} id="self-reporting-container">
+                    <div className="project-h2">
+                        <Card.Img
+                            src={smallLogo}
+                            style={{ width: "37.396px", height: "23.499px" }}
+                        />
 
-                <img src={smallLogo} style={{ width: '37px', height: '23.5px' }} alt="smallLogo"></img>
-                <h2 className="main-title">Self-reporting feature</h2>
-
-            </Col>
+                        <Card.Title id="ProjectTracker-title-2">
+                            Self-reporting feature
+                        </Card.Title>
+                    </div>
+                </Col>
 
 
                 <Col id="block-project">
 
-                        <p className="working-text">
-                            Recognizing the limitations of news media coverage,
-                            1 Thing is also creating a self-reporting feature.
-                            This will allow victims and witnesses of anti-Asian crimes to directly report incidents to the tracker,
-                            offering a more comprehensive picture of the situation.
-                            Stay informed about the feature's launch on the website.
-                        </p>
+                    <p className="working-text">
+                        Recognizing the limitations of news media coverage,
+                        1 Thing is also creating a self-reporting feature.
+                        This will allow victims and witnesses of anti-Asian crimes to directly report incidents to the tracker,
+                        offering a more comprehensive picture of the situation.
+                        Stay informed about the feature's launch on the website.
+                    </p>
 
 
                 </Col>
 
                 <Col md={12} id="support-fund-container">
+                    <div className="project-h2">
+                        <Card.Img
+                            src={smallLogo}
+                            style={{ width: "37.396px", height: "23.499px" }}
+                        />
 
-                    <img src={smallLogo} style={{ width: '37px', height: '23.5px' }} alt="smallLogo"></img>
-                    <h2 className="main-title">Support Fund for Victims</h2>
-
+                        <Card.Title id="ProjectTracker-title-2">
+                            Support Fund for Victims
+                        </Card.Title>
+                    </div>
                 </Col>
                 <div id="support-fund-content-container">
                     {/* Image Section */}
