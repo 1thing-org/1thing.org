@@ -8,7 +8,7 @@ import {
 import { IconName, IconProp } from "@fortawesome/fontawesome-svg-core";
 import "./Footer.css";
 import { Navbar } from "react-bootstrap";
-import footerLogo from "../../assets/NewLogo.svg";
+import footerLogo from "../../assets/logo.svg";
 import footerText from "../../assets/1 Thing Against Racism.svg";
 import MailChimpForm from "../../utility/mailchimp";
 
@@ -39,13 +39,6 @@ function Footer() {
               height="100"
               alt="1 Thing Org logo"
             />
-            <Navbar.Text className="text-container">
-              <img
-                src={footerText}
-                alt="1 Thing Against Racism"
-                className="footer-text-logo"
-              />
-            </Navbar.Text>
           </Navbar.Brand>
           <div className="social-icons">
             <SocialMedia name={faEnvelope} refLink="mailto:info@1thing.org" />
