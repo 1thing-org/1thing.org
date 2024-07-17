@@ -100,6 +100,10 @@
   padding: 0px;
 }
 
+#Donate-button:hover .chart-button-text {
+  color: white;
+}
+
 #support-paragrah {
   color: #18181A;
   font-size: 16px;

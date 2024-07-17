@@ -14,12 +14,12 @@ type Props = {
 
 function TopSection(props: Props) {
   const { heading, secondheading, subheading, imageSrc, hideHeroText } = props;
- 
+
   return (
     <Container id="projectTogether-container" fluid>
       <Row>
         <Col className="pj-titleContainer" md={12} xxl={12}>
-          <Card.Img id="hands" src={ProjectTogether} alt="hands"/>
+          <Card.Img id="hands" src={ProjectTogether} alt="hands" />
           <Card.Title id="topSection-title">{heading}</Card.Title>
 
           <Card.Title className="p2">{secondheading}</Card.Title>
@@ -68,25 +68,7 @@ function TopSection(props: Props) {
               </Col>
               <Button
                 href="/takeaction"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "space-evenly",
-                  backgroundColor: "#FFC530",
-                  borderColor: "#FFC530",
-                  borderRadius: "2px",
-                  width: "201px",
-                  height: "61px",
-                  fontSize: "20px",
-                  color: "#372A06",
-                  textAlign: "center",
-                  fontFamily: "sans-serif",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  textTransform: "uppercase",
-                  padding: "0px"
-                }}
+                className="top-secton-btn"
               >
                 Try Our App
               </Button>

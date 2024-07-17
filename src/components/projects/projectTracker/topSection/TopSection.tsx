@@ -21,7 +21,7 @@ function TopSection(props: Props) {
         <Container id="projectTracker-container" >
             <Row>
                 <Col className="pj-titleContainer" md={12} xxl={12}>
-                    <Card.Img id="eye" src={trackerLogo} alt="eye"/>
+                    <Card.Img id="eye" src={trackerLogo} alt="eye" />
                     <Card.Title id="topSection-title">{heading}</Card.Title>
 
                     <p className="p2">Anti-Asian Hate Crime Tracker is a first-of-its-kind website
@@ -32,7 +32,7 @@ function TopSection(props: Props) {
                     <div className="project-h2">
                         <Card.Img
                             src={smallLogo}
-                            style={{width: "37.396px", height: "23.499px"}}
+                            style={{ width: "37.396px", height: "23.499px" }}
                         />
 
                         <Card.Title id="ProjectTracker-title-2">
@@ -48,8 +48,8 @@ function TopSection(props: Props) {
                             but they may not always be categorized as hate crimes.
                             It's important to recognize that these incidents are likely motivated by anti-Asian bias,
                             even if they don't meet specific legal definitions.
-                            <br/>
-                            <br/>
+                            <br />
+                            <br />
                             To raise awareness of this ongoing problem,
                             1 Thing Org created the Anti-Asian Hate Crime Tracker.
                             This first-of-its-kind website gathers anti-Asian crime incidents reported by credible news
@@ -58,23 +58,17 @@ function TopSection(props: Props) {
                         </p>
 
                         <div id="picture-container">
-                            <img id="mac" src={mac} alt="mac"/>
+                            <img id="mac" src={mac} alt="mac" />
                         </div>
                         <div id="button-container">
-                            <Button className="tracker-button"
-                                    href="/takeaction"
-
+                            <Button id="tracker-button"
+                                href="/takeaction"
                             >
                                 Visit Tracker Website
                             </Button>
                         </div>
-
-                        </div>
-
+                    </div>
                 </Col>
-
-
-
             </Row>
         </Container>
     );

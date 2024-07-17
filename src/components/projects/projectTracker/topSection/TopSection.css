@@ -55,7 +55,7 @@
 }
 
 #working-text {
-    text-align:left;
+    text-align: left;
     margin-top: 24px;
 }
 
@@ -66,17 +66,15 @@
     display: flex;
     width: 100%;
     height: auto;
-
-
 }
 
 #tracker-button {
-
     background-color: rgb(255, 197, 48);
     border-color: rgb(255, 197, 48);
     border-radius: 2px;
-    width: 297px;
+    width: 300px;
     height: 61px;
+    line-height: 61px;
     font-size: 20px;
     color: rgb(55, 42, 6);
     text-align: center;
@@ -89,16 +87,18 @@
     border: 1px solid var(--Primary-color, #ffc530) !important;
     background: var(--Primary-color, #ffc530) !important;
     padding: 0px !important;
+}
 
+#tracker-button:hover {
+    color: white;
 }
 
 #button-container {
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
+    /* Center horizontally */
     align-items: center;
     text-transform: uppercase;
     padding: 0px !important;
-
-
 }
 
 #picture-container {
@@ -111,4 +111,3 @@
     padding-bottom: 128px;
 
 }
-

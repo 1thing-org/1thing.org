@@ -87,16 +87,21 @@
 
 .chart-button {
   display: flex;
-  width: 233px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
   height: 61px;
   padding: 10px;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border-radius: var(--Redius, 2px);
   border: 1px solid var(--Primary-color, #ffc530) !important;
   background: var(--Primary-color, #ffc530) !important;
   padding: 0px !important;
+}
+
+.chart-button:hover {
+  background-color: white;
 }
 
 .word-mobile {
@@ -135,6 +140,10 @@
   color: #372A06;
   text-align: center;
   text-transform: uppercase;
+}
+
+.chart-button:hover .chart-button-text {
+  color: white;
 }
 
 /* Responsive */
