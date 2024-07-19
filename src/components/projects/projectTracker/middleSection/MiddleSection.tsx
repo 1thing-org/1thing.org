@@ -1,5 +1,6 @@
 import "./MiddleSection.css"
 import { Container, Col, Row, Card } from "react-bootstrap";
+import { useMediaQuery } from 'react-responsive';
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
 import iphones from "../../../../assets/project-tracker/iphones.png";
 import stores from "../../../../assets/project-tracker/stores.png"
@@ -9,16 +10,19 @@ type Props = {
     heading?: string;
     secondheading?: string;
     subheading?: string;
-
     hideHeroText?: boolean;
 };
 
 function MiddleSection(props: Props) {
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const descriptionText1 = `For even greater accessibility, 
+                              1 Thing is developing a mobile app, which will be available soon. 
+                              Please check their website for updates.`;
+    const title = `Mobile App is on its way`;
 
     return (
-        <Container id="projectTogether-container" fluid>
+        <Container id="projectTracker-container">
             <Row>
-                {/* Text Section */}
                 <Col
                     md={6}
                     xs={12}
@@ -45,31 +49,34 @@ function MiddleSection(props: Props) {
                             />
 
                             <Card.Title id="ProjectTracker-title-2">
-                                Mobile App is on its way
+                                {title}
                             </Card.Title>
                         </div>
                         <Col md={12}>
-                            <Card.Text id="hero-subtitle"> For even greater accessibility,
-                                1 Thing is developing a mobile app,
-                                which will be available soon.
-                                Please check their website for updates.</Card.Text>
+                            <Card.Text id="working-text"> 
+                                {descriptionText1}
+                            </Card.Text>
                         </Col>
                         <Card.Img
-                            id="stores" 
-                            src={stores} 
+                            id="stores"
+                            src={stores}
                             alt="stores"
-                            style={{ maxWidth: "100%", height: "auto" }}
+                            style={{ maxWidth: "100%", 
+                                    height: "auto", 
+                                    marginTop: isMobile ? '20px' : '0' }}
                         />
                     </div>
                 </Col>
 
-                {/* Image Section */}
                 <Col md={6} xs={12}>
                     <Card.Img
-                        id="iphones" 
-                        src={iphones} 
+                        id="iphones"
+                        src={iphones}
                         alt="iphones"
-                        style={{ maxWidth: "100%", height: "auto" }}
+                        style={{ maxWidth: isMobile ? '80%' : '100%', 
+                                height: "auto", 
+                                margin: isMobile ? '0 auto' : '0',
+                                marginBottom: isMobile ? '80px' : '0'}}
                     />
                 </Col>
             </Row>
