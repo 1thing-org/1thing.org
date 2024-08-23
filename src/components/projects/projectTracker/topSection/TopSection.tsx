@@ -62,7 +62,7 @@ function TopSection(props: Props) {
                         </div>
                         <div id="button-container">
                             <Button id="tracker-button"
-                                href="/takeaction"
+                                href="https://hatecrimetracker.1thing.org"
                             >
                                 Visit Tracker Website
                             </Button>
