@@ -1,6 +1,7 @@
 import './TopSection.css';
 import Card from "react-bootstrap/Card";
 import { Container, Col, Row, Button } from "react-bootstrap";
+import { useMediaQuery } from 'react-responsive';
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
 import trackerLogo from "../../../../assets/project-tracker/trackerLogo.png";
 import mac from "../../../../assets/project-tracker/mac.png"
@@ -16,9 +17,21 @@ type Props = {
 
 function TopSection(props: Props) {
     const { heading } = props;
+    const isDesktop = useMediaQuery({ minWidth: 768 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const introText = `Anti-Asian Hate Crime Tracker is a first-of-its-kind website
+                       that gathers anti-Asian crime incidents reported by credible news sources.`;
+    const descriptionText1 = `Despite reduced media coverage, anti-Asian hate crimes continue to occur daily across North America.
+                             These incidents often involve violence and robberies targeting Asian elders and businesses, but they may not always be categorized as hate crimes.
+                             It's important to recognize that these incidents are likely motivated by anti-Asian bias, even if they don't meet specific legal definitions.`;
+    const descriptionText2 = `To raise awareness of this ongoing problem, 1 Thing Org created the Anti-Asian Hate Crime Tracker.
+                             This first-of-its-kind website gathers anti-Asian crime incidents reported by credible news sources, providing insights into their trends and geographic distribution.`;
+    const buttonText = "Visit Tracker Website";
+    const title = `What is Anti-Asian Hate Crime Tracker`;
 
     return (
         <Container id="projectTracker-container" >
+
             <Row>
                 <Col className="pj-titleContainer" md={12} xxl={12}>
                     <Card.Img id="eye" src={trackerLogo} alt="eye" />

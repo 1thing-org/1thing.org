@@ -39,7 +39,6 @@
     text-align: left;
     width: 1008px;
     justify-content: center;
-
 }
 
 #project-block {
@@ -68,14 +67,12 @@
 }
 
 #support-fund-title {
-
     padding-bottom: 28px;
-
 }
 
 #hero-subtitle {
     display: flex;
-    justify-content: center; /* Horizontal centering */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }

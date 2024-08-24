@@ -144,13 +144,6 @@
     align-self: stretch;
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    #feature {
-        height: 165px;
-    }
-}
-
 #ProjectTracker-title-2 {
     display: flex;
     font-size: 28px;
@@ -165,4 +158,10 @@
 #stores {
     width: 430px;
     height: 64px;
+}
+
+@media screen and (max-width: 767px) {
+    #feature {
+        height: 165px;
+    }
 }

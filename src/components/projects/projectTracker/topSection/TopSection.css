@@ -19,10 +19,8 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
     line-height: 40px;
     letter-spacing: 0.4px;
-
 }
 
 #topSection-title {
@@ -34,6 +32,7 @@
     line-height: 64px;
     letter-spacing: 0.4px;
     background: linear-gradient(to top, #ffd500 50%, #ffd500 50%, transparent 50%, transparent 100%);
+    white-space: nowrap;
 }
 
 #eye {
@@ -80,7 +79,7 @@
     text-align: center;
     font-family: sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
     margin-top: 20px;
     border-radius: var(--Redius, 2px);
@@ -110,4 +109,67 @@
 #what-is-tracker {
     padding-bottom: 128px;
 
+}
+
+/* Phone */
+@media screen and (max-width: 767px) {
+    #eye {
+        margin-top: 120px;
+    }
+
+    #topSection-title {
+        font-size: 32px;
+        line-height: 40px;
+        white-space: wrap;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    #ProjectTracker-title-2 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.4px;
+    }
+
+    #picture-container {
+        height: 215px;
+        width: 366.48px;
+        transform: translateX(-20px);
+    }
+
+    .pj-titleContainer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    #projectTracker-container {
+        padding: 0 24px;
+    }
+
+    #button-container {
+        justify-content: center;
+        letter-spacing: 0px;
+        line-height: auto;
+        transform: translateY(40px)
+    }
+
+    .p2 {
+        font-size: 12px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .project-h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #working-text {
+        font-size: 12px;
+    }
 }
