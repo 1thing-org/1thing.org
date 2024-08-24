@@ -3,15 +3,15 @@ import supportVictim from "../../../assets/take-action-page/support-victim.svg";
 import useSkillsRight from "../../../assets/take-action-page/use-skills-right.svg";
 import promoteLeft from "../../../assets/take-action-page/promote-left.svg";
 import smallLogo from "../../../assets/home-page/smallLogo.svg";
+import HeroAction from "../heroaction/HeroAction";
+import HeroActionImage from "../../../assets/hero-action.svg";
 import { Card, Row, Col } from "react-bootstrap";
 import "./ActionsGroup.css";
 
 function ActionsGroup() {
   return (
-    <div
-      style={{ width: "100%", maxWidth: "1440px", margin: "0 auto" }}
-      id="action-section"
-    >
+    <div className="action-section">
+      <HeroAction imageSrc={HeroActionImage} />
       <h3
         style={{
           marginTop: "96px",

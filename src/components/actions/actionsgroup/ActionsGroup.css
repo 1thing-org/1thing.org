@@ -12,3 +12,9 @@
   width: 100%;
   height: auto;
 }
+
+.action-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 120px auto;
+}

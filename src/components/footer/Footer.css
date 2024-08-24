@@ -116,6 +116,11 @@ footer {
   margin: 1rem;
   border: none;
   box-shadow: none;
+  font-family: sans-serif;
+}
+
+.subscribe-form button:hover {
+  color: white;
 }
 
 .split-line {

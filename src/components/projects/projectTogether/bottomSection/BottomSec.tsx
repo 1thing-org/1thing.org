@@ -110,32 +110,13 @@ function BottomSec() {
             <h2 className="core-features">We appreciate your support!</h2>
           </Container>
           <p className="bottom-text">
-            Project Together has the potential to make a real difference in the AAPI community. 
-            It will help to connect people who want to support the AAPI community and make a difference, 
+            Project Together has the potential to make a real difference in the AAPI community.
+            It will help to connect people who want to support the AAPI community and make a difference,
             and it will make it easier for people to find ways to help.
           </p>
           <Button
+            id="donate-button"
             href="https://www.zeffy.com/donation-form/db8063f1-309d-4df7-a1a1-1a60c28fec49"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "space-evenly",
-              backgroundColor: "#FFC530",
-              borderColor: "#FFC530",
-              borderRadius: "2px",
-              width: "201px",
-              height: "61px",
-              fontSize: "20px",
-              color: "#372A06",
-              textAlign: "center",
-              fontFamily: "sans-serif",
-              fontStyle: "normal",
-              fontWeight: "700",
-              textTransform: "uppercase",
-              padding: "0px",
-              marginTop: "20px"
-            }}
           >
             DONATE
           </Button>
