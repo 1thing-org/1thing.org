@@ -1,0 +1,103 @@
+#signup-email-container {
+  background-color: #FBFBFB;
+  max-width: 1440px;
+  margin: 10rem auto 5rem auto;
+  padding: 8rem 25.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Below are the css styles for sign up title. */
+.signup-title-section-row {
+  height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.signup-title-section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  height: 100%;
+}
+
+.signup-title {
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+
+/* Below are the css styles for sign up form. */
+.signup {
+  margin: 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  #signup-email-container {
+    padding: 8rem 20rem;
+  }
+
+  .signup input {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  #signup-email-container {
+    padding: 8rem 12rem;
+  }
+
+  .signup input {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #signup-email-container {
+    padding: 8rem 7rem;
+  }
+
+  .signup input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  #signup-email-container {
+    padding: 4rem 5rem;
+  }
+
+  .signup-title {
+    font-size: 24px;
+  }
+
+  .signup input {
+    width: 80%;
+  }
+
+  .signup-button {
+    padding: 0.7rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #signup-email-container {
+    padding: 2rem 2rem;
+  }
+
+  .signup-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .signup input {
+    width: 90%;
+  }
+
+  .signup-button {
+    padding: 0.5rem 1.5rem;
+  }
+}

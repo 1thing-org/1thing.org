@@ -1,8 +1,5 @@
-import React, { Component } from "react"
-// import the component
-import Mailchimp from "react-mailchimp-form"
-
-import styles from "../components/Footers/Footer.module.scss"
+import { Component } from "react";
+import Mailchimp from "react-mailchimp-form";
 
 class MailChimpForm extends Component {
   render() {
@@ -12,25 +9,22 @@ class MailChimpForm extends Component {
         fields={[
           {
             name: "EMAIL",
-            placeholder: "Email",
+            placeholder: "Enter your email",
             type: "email",
-            required: true
-          }
+            required: true,
+          },
         ]}
-        // Change predetermined language
         messages={{
           sending: "Sending...",
           success: "Thank you for subscribing!",
           error: "An unexpected internal error has occurred.",
           empty: "Please provide a valid e-mail.",
           duplicate: "Too many subscribe attempts for this email address",
-          button: "Subscribe!"
+          button: "Subscribe",
         }}
-        // Add a personalized class
-        className={styles.email}
       />
-    )
+    );
   }
 }
 
-export default MailChimpForm
+export default MailChimpForm;

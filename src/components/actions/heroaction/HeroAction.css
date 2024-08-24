@@ -1,0 +1,45 @@
+#hero-wrapper-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+#actionPage-text {
+  color: #18181a;
+  background: linear-gradient(to top,
+      #ffd500 50%,
+      #ffd500 50%,
+      transparent 50%,
+      transparent 100%);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3vw;
+  letter-spacing: 0.4px;
+}
+
+@media screen and (max-width: 991px) {
+  #actionPage-text {
+    font-size: 3.25vw;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width: 765px) {
+  #actionPage-text {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width:591px) and (max-width: 650px) {
+  #actionPage-text {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  #actionPage-text {
+    font-size: 4vw;
+  }
+}

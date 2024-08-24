@@ -1,0 +1,153 @@
+#home-action-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  align-self: stretch;
+  background: #FBFBFB;
+}
+
+#left-image {
+  width: 100%;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+#right-side-container {
+  display: flex;
+  padding: 0px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+#box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--space_1, 8px);
+  align-self: stretch;
+}
+
+#action-title {
+  color: #18181A;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+  align-self: stretch;
+}
+
+#action-body-text {
+  color: var(--neutral-neutral-01, #18181A);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+
+#small-action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+#action-image {
+  width: 60.84px;
+  height: 59.994px;
+  border-radius: 0;
+}
+
+#step-action {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+#small-action-text {
+  color: var(--neutral-neutral-01, #18181A);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+}
+
+.take-action-button {
+  display: flex;
+  width: 201px;
+  height: 61px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--Primary-color, #FFC530);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 0px !important;
+}
+
+@media screen and (min-width:1200px) and (max-width:1399px) {
+  #action-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width: 1199px) {
+  #right-side-container {
+    gap: 13px;
+  }
+
+  #action-title {
+    font-size: 20px;
+  }
+
+  #action-body-text {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  #action-image {
+    width: 60.84px;
+    height: 59.994px;
+    border-radius: 0;
+  }
+
+  #small-action-text {
+    font-size: 24px;
+  }
+
+  .take-action-button {
+
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:991px) and (min-width: 768px) {
+  #right-side-container {
+    padding: 0 0;
+  }
+
+  #action-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  #action-title {
+    width: max-content;
+    font-size: 32px;
+  }
+}
