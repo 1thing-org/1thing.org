@@ -1,0 +1,24 @@
+#home-project-section {
+  margin: 4rem 9rem;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+#middle {
+  width: 6rem;
+}
+
+/* media rules for large screens */
+@media screen and (min-width: 1600px) {
+  #tracker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(111.14deg, #0C0928 32.23%, #261A7E 95.87%);
+  }
+}

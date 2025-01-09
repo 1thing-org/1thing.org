@@ -1,0 +1,20 @@
+.text ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.action-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 120px auto;
+}
