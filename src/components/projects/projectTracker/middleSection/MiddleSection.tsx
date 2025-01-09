@@ -3,7 +3,8 @@ import { Container, Col, Row, Card } from "react-bootstrap";
 import { useMediaQuery } from 'react-responsive';
 import smallLogo from "../../../../assets/home-page/smallLogo.svg";
 import iphones from "../../../../assets/project-tracker/iphones.png";
-import stores from "../../../../assets/project-tracker/stores.png"
+import imgAppStore from "../../../../assets/project-tracker/appstore.png"
+import imgGooglePlay from "../../../../assets/project-tracker/googleplay.png"
 
 
 type Props = {
@@ -15,10 +16,10 @@ type Props = {
 
 function MiddleSection(props: Props) {
     const isMobile = useMediaQuery({ maxWidth: 767 });
-    const descriptionText1 = `For even greater accessibility, 
+    const appDescription = `For even greater accessibility, 
                               1 Thing is developing a mobile app, which will be available soon. 
                               Please check their website for updates.`;
-    const title = `Mobile App is on its way`;
+    const title = `Mobile App`;
 
     return (
         <Container id="projectTracker-container">
@@ -52,19 +53,41 @@ function MiddleSection(props: Props) {
                                 {title}
                             </Card.Title>
                         </div>
-                        <Col md={12}>
-                            <Card.Text id="working-text"> 
-                                {descriptionText1}
-                            </Card.Text>
-                        </Col>
-                        <Card.Img
-                            id="stores"
-                            src={stores}
-                            alt="stores"
-                            style={{ maxWidth: "100%", 
-                                    height: "auto", 
-                                    marginTop: isMobile ? '20px' : '0' }}
-                        />
+                        <Row>
+                            <Col md={12}>
+                                <Card.Text id="working-text">
+                                    {appDescription}
+                                </Card.Text>
+                            </Col>
+                            <Col sm={6}>
+                                <a href="https://apps.apple.com/us/app/anti-asian-hate-crime-tracker" target="_blank">
+                                    <Card.Img
+                                        id="appstore"
+                                        src={imgAppStore}
+                                        alt="App Store"
+                                        style={{
+                                            maxWidth: "100%",
+                                            height: "auto",
+                                            marginTop: isMobile ? '20px' : '0'
+                                        }}
+                                    />
+                                </a>
+                            </Col>
+                            <Col sm={6}>
+                                <a href="https://play.google.com/store/apps/details?id=org.onething.hatecrimetracker" target="_blank">
+                                    <Card.Img
+                                        id="googleplay"
+                                        src={imgGooglePlay}
+                                        alt="Google Play Store"
+                                        style={{
+                                            maxWidth: "100%",
+                                            height: "auto",
+                                            marginTop: isMobile ? '20px' : '0'
+                                        }}
+                                    />
+                                </a>
+                            </Col>
+                        </Row>
                     </div>
                 </Col>
 
@@ -73,10 +96,12 @@ function MiddleSection(props: Props) {
                         id="iphones"
                         src={iphones}
                         alt="iphones"
-                        style={{ maxWidth: isMobile ? '80%' : '100%', 
-                                height: "auto", 
-                                margin: isMobile ? '0 auto' : '0',
-                                marginBottom: isMobile ? '80px' : '0'}}
+                        style={{
+                            maxWidth: isMobile ? '80%' : '100%',
+                            height: "auto",
+                            margin: isMobile ? '0 auto' : '0',
+                            marginBottom: isMobile ? '80px' : '0'
+                        }}
                     />
                 </Col>
             </Row>
