@@ -14,9 +14,10 @@ function NavBar() {
   return (
     <Navbar className="nav" expand="lg">
       <Container id="navbar-container">
-        <LinkContainer to="/">
-          <Col md={2}>
-            <Navbar.Brand className="brand-container">
+        <Col md={2}>
+          <Navbar.Brand className="brand-container">
+            <a href="/">
+
               <img
                 className="logo"
                 src={logo}
@@ -24,9 +25,9 @@ function NavBar() {
                 height="100"
                 alt="1 Thing Org logo"
               />
-            </Navbar.Brand>
-          </Col>
-        </LinkContainer>
+            </a>
+          </Navbar.Brand>
+        </Col>
         <Col sm={7} md={5} className="link-container">
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
